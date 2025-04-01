@@ -1,0 +1,4117 @@
+Tanulsagok:
+- felso sor nem kell, ú,ű jó lesz combon is
+
+- gombok eleit lekerekiteni
+- gombokra oldalrol draftot, hogy vastagabb ujak is beferjenek
+- felulrol csak akkor ha dontve lenne a plate - egyebkent konnyiti a kombo nyomast egy ujjal, ha nincs...
+
+- kell hagyni kis terpeszt a kozepso ujaknak, hohu konnyen hajoljanak lefele
+- 19.05 * 0.2-el csokkenteni a kozepso, kisuj elhuzasat, figyelve hogy az ujjak iranyban maradjanak, ha elfordul a csuklo
+- megdontve a huvelyk gombok kozelebb tudnak kerulni 
+- thumb billentyuk meredekebben kanyarodjanak lefele!
+- mutato inner oszlopat kicsit feljebb tolni (0.1 unittal), mert az alsot nehez elerni
+- reset gombot kivezetni
+- homerow/thumb shift
+- layer lock?
+- zkvé-uchw gyakorisag elteresek magyar-angol korrelacios tabla? - nem kell, hunglishra vagyunk optimalizalva.
+- megfigyeles: klasszik egyenes soroknál 0.25 következetes oszlopelhúzásra van szükség, de következetesen, nem úgy, mint a QWERTY-nél
+
+
+Layout 'jbgmvkzuo;/{pdstrlynaei.qcfwh-x(,)"}' (layer 3):
+            ┌───┐                         ┌───┐
+        ┌───┤ [ ├───┬───┐         ┌───┬───┤ 8 ├───┐
+┌───┬───┤ & ├───┤ ] │ ' │         │ ~ │ 7 ├───┤ 9 ├───┬───┐
+│ ` │ | ├───┤ ( ├───┼───┤         ├───┼───┤ 5 ├───┤ / │ * │
+├───┼───┤ } ├───┤ ) │ " │         │ . │ 4 ├───┤ 6 ├───┼───┤
+│ \ │ { ├───┤ < ├───┼───┤         ├───┼───┤ 2 ├───┤ - │ + │
+├───┼───┤ # ├───┤ > │ = │         │ 0 │ 1 ├───┤ 3 ├───┼───┤
+│ $ │ @ ├───┘   └───┴───┘         └───┴───┘   └───┤ ^ │ % │
+└───┴───┘       ┌───┬───┬───┐ ┌───┬───┬───┐       └───┴───┘
+                │ ↶ │   │ ⇥ │ │ ⏎ │ ⌫ │ ⌦ │
+                └───┴───┴───┘ └───┴───┴───┘
+
+developed with:
+https://github.com/dariogoetz/keyboard_layout_optimizer
+winner is:
+            ┌───┐                         ┌───┐
+        ┌───┤ g ├───┬───┐         ┌───┬───┤ o ├───┐
+┌───┬───┤ d ├───┤ k │ b │         │ w │ y ├───┤ u ├───┬───┐
+│ ü │ m ├───┤ t ├───┼───┤         ├───┼───┤ a ├───┤ á │ ö │
+├───┼───┤ s ├───┤ l │ f │         │ j │ r ├───┤ e ├───┼───┤
+│ ó │ n ├───┤ p ├───┼───┤         ├───┼───┤ . ├───┤ i │ é │
+├───┼───┤ v ├───┤ h │ q │         │ x │ z ├───┤ ; ├───┼───┤
+│ í │ c ├───┘   └───┴───┘         └───┴───┘   └───┤ , │ ő │
+└───┴───┘       ┌───┬───┬───┐ ┌───┬───┬───┐       └───┴───┘
+                │ ↶ │ ␣ │ ⇥ │ │ ⏎ │ ⌫ │ ⌦ │
+                └───┴───┴───┘ └───┴───┴───┘
+
+
+
+
+				
+
+            ┌───┐                         ┌───┐
+        ┌───┤d12├───┬───┐         ┌───┬───┤o21├───┐
+┌───┬───┤g14├───┤m14│k14│         │w3 │u7 ├───┤q0 ├───┬───┐
+│ } │b7 ├───┤t36├───┼───┤         ├───┼───┤a35├───┤ = │ { │
+├───┼───┤s22├───┤r17│h13│         │z11│n24├───┤e44├───┼───┤
+│ ) │c4 ├───┤f5 ├───┼───┤         ├───┼───┤,10├───┤i19│ ( │
+├───┼───┤v7 ├───┤l24│j3 │         │x0 │.7 ├───┤ ; ├───┼───┤
+│ " │p4 ├───┘   └───┴───┘         └───┴───┘   └───┤y9 │ / │
+└───┴───┘       ┌───┬───┬───┐ ┌───┬───┬───┐       └───┴───┘
+                │ ↶ │ ␣ │ ⇥ │ │ ⏎ │ ⌫ │ ⌦ │
+                └───┴───┴───┘ └───┴───┴───┘
+				
+hunglih:
+            ┌───┐                         ┌───┐
+        ┌───┤d12├───┬───┐         ┌───┬───┤u7 ├───┐
+┌───┬───┤g14├───┤m14│k14│         │f5 │,10├───┤q0 ├───┬───┐
+│ü2 │b7 ├───┤t36├───┼───┤         ├───┼───┤a35├───┤o21│ö4 │
+├───┼───┤s22├───┤r17│y9 │         │p4 │n24├───┤e44├───┼───┤
+│ó2 │l24├───┤w3 ├───┼───┤         ├───┼───┤.7 ├───┤i19│é10│
+├───┼───┤v7 ├───┤h13│j3 │         │x0 │z11├───┤ ; ├───┼───┤
+│í1 │c4 ├───┘   └───┴───┘         └───┴───┘   └───┤á9 │ő2 │
+└───┴───┘       ┌───┬───┬───┐ ┌───┬───┬───┐       └───┴───┘
+                │ ↶ │ ␣ │ ⇥ │ │ ⏎ │ ⌫ │ ⌦ │
+                └───┴───┴───┘ └───┴───┴───┘
+
+
+proglishnohu:
+            ┌───┐                         ┌───┐
+        ┌───┤d43├───┬───┐         ┌───┬───┤u35├───┐
+┌───┬───┤g28├───┤m40│k28│         │f27│,20├───┤q3 ├───┬───┐
+│}5 │b15├───┤t114───┼───┤         ├───┼───┤a103───┤o80│{5 │
+├───┼───┤s69├───┤r80│y17│         │p25│n80├───┤e154───┼───┤
+│)17│l58├───┤w9 ├───┼───┤         ├───┼───┤.30├───┤i88│(17│
+├───┼───┤v18├───┤h24│j5 │         │x5 │z13├───┤;11├───┼───┤
+│"7 │c40├───┘   └───┴───┘         └───┴───┘   └───┤=9 │/9 │
+└───┴───┘       ┌───┬───┬───┐ ┌───┬───┬───┐       └───┴───┘
+                │ ↶ │ ␣ │ ⇥ │ │ ⏎ │ ⌫ │ ⌦ │
+                └───┴───┴───┘ └───┴───┴───┘
+
+etanlsoir		
+				
+hunglish:
+etanlsoirmkghdz,éyábuv.fcpöjwő-ó'üí`!ú?ű:;x–q")(*_’[]/
+eatonlsirmkghdzu,ybv.fcpjw-'`!?:;x–q"()*_’[]/
+
+eaoiéáu öőóüíúű                      - maganhangzok hunglish
+tnlsrmkghdzy bvfcpjwxq               - massalhangzok hunglish
+,.-'`!?:;–")(*_’[]/                  - text
+.,)(;=/"_{}:>-!'?<&+`*[]|–#\%@~’$^   - proglish
+
+proghunglish:
+jbgmvkőuoáíúpdstrlynaei,qcfwhzűóx.öé;ü
+etairnosld\nmcu.gfph,vk)(y	bz;éw=/á"_x{}j0:>-öqőó1!'?2ü<&+í`3*ú[]|98ű465–#7\%@~’$^
+etairnosldmcugfphvkybzéwáxjöqőóüíúű
+.,)(;=/"_{}:>-!'?<&+`*[]|–#\%@~’$^
+
+betuk ekezetek nelkul:
+etairnosldmcu.gfph,vk)(ybz;w=/"_x{}j0:>-q1!'?2<&+`*[]|98465–#7\\%@~’$^
+etairnosldmcu.gfph,vk()ybz;w=/"_x{}j:>-q!'?<&+`*[]|–#\\%@~’$^
+
+etairnosldmcugfphvkybzéwáxjöqőóüíúű
+etairnosldmcugfphvkybzw_xjq
+.,();=/"_{}:>-!'?<&+`*[]|#\%@~’$^
+------------------  ----
+!?<>:+*'[]
+.,();=/"{}
+
+qwerty hun: 
+
+úqwertyuiopőóasdfghjkl;áüzxcvbnm.,éö
+
+úqwert    yuiopő
+óasdfg    hjkl;á
+üzxcvb    nm.,éö
+
+colemak hun: 
+
+úqwfpgjluyáöőarstdhneio;üzxcvbkm.,éó
+
+úqwfpg    jluyáö
+őarstd    hneio;
+üzxcvb    km.,éó
+
+colemak-dh hun: 
+
+úqwfpbjluyáöőarstgmneio;üzxcdvkh.,éó
+
+úqwfpb    jluyáö
+őarstg    mneio;
+üzxcdv    kh.,éó
+
+qwerty en: 
+
+/qwertyuiop;\"asdfghjkl()=zxcvbnm.,{}
+
+/qwert    yuiop;
+"asdfg    hjkl()
+-zxcvb    nm.,{}
+
+colemak en: 
+
+/qwfpgjluy()\"arstdhneio;=zxcvbkm.,{}
+
+/qwfpg    jluy()
+"arstd    hneio;
+-zxcvb    km.,{}
+
+colemak-dh en: 
+
+/qwfpbjluy()\"arstgmneio;=zxcdvkh.,{}
+
+/qwfpb    jluy()
+"arstg    mneio;
+-zxcdv    kh.,{}
+
+-f 'qwertyuiopasdfghjkl;zxcvbnm,.'
+
+
+./target/release/plot -l config/keyboard/draft.yml 'jbgmvkzuo;/{pdstrlynaei.qcfwh=x(,)\"}'
+./target/release/evaluate -c .\corpus_low_nohun.txt -e config/evaluation/default_hun.yml -l config/keyboard/draft.yml 'jbgmvkzuo;/{pdstrlynaei.qcfwh=x(,)\"}'
+./target/release/optimize_genetic -c .\corpus_low_nohun.txt -e config/evaluation/default_hun.yml -l config/keyboard/draft.yml -s 'jbgmvkzuo;/{pdstrlynaei.qcfwh=x(,)\"}'
+./target/release/optimize_sa -c .\corpus_low_nohun.txt -e config/evaluation/default_hun.yml -l config/keyboard/draft.yml -s 'jbgmvkzuo;/{pdstrlynaei.qcfwh=x(,)\"}'
+
+============================================
+QWERTY
+
+}qwertyuiop{)asdfghjkl(="zxcvbnm.,;/
+
+}qwert yuiop{
+)asdfg hjkl(=
+"zxcvb nm.,;/
+
+            ┌───┐                         ┌───┐
+        ┌───┤ e ├───┬───┐         ┌───┬───┤ i ├───┐
+┌───┬───┤ w ├───┤ r │ t │         │ y │ u ├───┤ o ├───┬───┐
+│ } │ q ├───┤ d ├───┼───┤         ├───┼───┤ k ├───┤ p │ { │
+├───┼───┤ s ├───┤ f │ g │         │ h │ j ├───┤ l ├───┼───┤
+│ ) │ a ├───┤ c ├───┼───┤         ├───┼───┤ . ├───┤ ( │ = │
+├───┼───┤ x ├───┤ v │ b │         │ n │ m ├───┤ , ├───┼───┤
+│ " │ z ├───┘   └───┴───┘         └───┴───┘   └───┤ ; │ / │
+└───┴───┘       ┌───┬───┬───┐ ┌───┬───┬───┐       └───┴───┘
+                │ ↶ │ ␣ │ ⇥ │ │ ⏎ │ ⌫ │ ⌦ │
+                └───┴───┴───┘ └───┴───┴───┘
+
+Unigram metrics:
+  Not found: 0.8171% of 2058604.0000
+    17.12 Finger Balance                      | Finger loads % (no thumb): 11.5 6.2 17.6 21.1 - 15.0 10.3 11.9 6.5
+     2.56 Hand Disbalance                     | Hand loads % (no thumb): 56.40 - 43.60
+     0.00 Row Loads                           | Row 1: 45.9%; Row 2: 31.9%; Row 3: 22.3%
+     1.39 Modifier Usage                      |
+   167.49 Key Costs                           |
+
+Bigram metrics:
+  Not found: 1.3984% of 2058603.0000
+   124.70 Finger Repeats                      |
+    67.11 Movement Pattern                    |
+     8.08 No Handswitch After Unbalancing Key |
+
+Trigram metrics:
+  Not found: 1.8604% of 2058602.0000
+    53.43 No Handswitch in Trigram            |
+   416.66 Irregularity                        |
+    17.24 Secondary Bigrams                   |
+   -18.02 Inward Rolls                        |
+    -9.76 Outward Rolls                       |
+
+Cost: 848.01 (optimization score: 117923)
+==================
+ 
+COLEMAK:
+
+=qwfpgjluy/{)arstdhneio;"zxcvbkm.,(}
+
+=qwfpg jluy/{
+)arstd hneio;
+"zxcvb km.,(}
+
+            ┌───┐                         ┌───┐
+        ┌───┤ f ├───┬───┐         ┌───┬───┤ u ├───┐
+┌───┬───┤ w ├───┤ p │ g │         │ j │ l ├───┤ y ├───┬───┐
+│ = │ q ├───┤ s ├───┼───┤         ├───┼───┤ e ├───┤ / │ { │
+├───┼───┤ r ├───┤ t │ d │         │ h │ n ├───┤ i ├───┼───┤
+│ ) │ a ├───┤ c ├───┼───┤         ├───┼───┤ . ├───┤ o │ ; │
+├───┼───┤ x ├───┤ v │ b │         │ k │ m ├───┤ , ├───┼───┤
+│ " │ z ├───┘   └───┴───┘         └───┴───┘   └───┤ ( │ } │
+└───┴───┘       ┌───┬───┬───┐ ┌───┬───┬───┐       └───┴───┘
+                │ ↶ │ ␣ │ ⇥ │ │ ⏎ │ ⌫ │ ⌦ │
+                └───┴───┴───┘ └───┴───┴───┘
+
+Unigram metrics:
+  Not found: 0.8171% of 2058604.0000
+    17.18 Finger Balance                      | Finger loads % (no thumb): 12.0 7.0 10.1 18.1 - 16.7 16.4 9.5 10.0
+     1.08 Hand Disbalance                     | Hand loads % (no thumb): 47.29 - 52.71
+     0.00 Row Loads                           | Row 1: 17.5%; Row 2: 64.8%; Row 3: 17.7%
+     1.39 Modifier Usage                      |
+   118.51 Key Costs                           |
+
+Bigram metrics:
+  Not found: 1.3984% of 2058603.0000
+    86.51 Finger Repeats                      |
+    34.08 Movement Pattern                    |
+     3.12 No Handswitch After Unbalancing Key |
+
+Trigram metrics:
+  Not found: 1.8604% of 2058602.0000
+    37.85 No Handswitch in Trigram            |
+   415.33 Irregularity                        |
+    15.32 Secondary Bigrams                   |
+   -21.85 Inward Rolls                        |
+    -9.42 Outward Rolls                       |
+
+Cost: 699.10 (optimization score: 143040)
+
+================ 
+
+COLEMAK-DH:
+
+=qwfpbjluy/{)arstgmneio;"zxcdvkh.,(}
+
+=qwfpb jluy/{
+)arstg mneio;
+"zxcdv kh.,(}
+
+            ┌───┐                         ┌───┐
+        ┌───┤ f ├───┬───┐         ┌───┬───┤ u ├───┐
+┌───┬───┤ w ├───┤ p │ b │         │ j │ l ├───┤ y ├───┬───┐
+│ = │ q ├───┤ s ├───┼───┤         ├───┼───┤ e ├───┤ / │ { │
+├───┼───┤ r ├───┤ t │ g │         │ m │ n ├───┤ i ├───┼───┤
+│ ) │ a ├───┤ c ├───┼───┤         ├───┼───┤ . ├───┤ o │ ; │
+├───┼───┤ x ├───┤ d │ v │         │ k │ h ├───┤ , ├───┼───┤
+│ " │ z ├───┘   └───┴───┘         └───┴───┘   └───┤ ( │ } │
+└───┴───┘       ┌───┬───┬───┐ ┌───┬───┬───┐       └───┴───┘
+                │ ↶ │ ␣ │ ⇥ │ │ ⏎ │ ⌫ │ ⌦ │
+                └───┴───┴───┘ └───┴───┴───┘
+
+Unigram metrics:
+  Not found: 0.8171% of 2058604.0000
+    17.18 Finger Balance                      | Finger loads % (no thumb): 12.0 7.0 10.1 18.1 - 16.7 16.4 9.5 10.0
+     1.08 Hand Disbalance                     | Hand loads % (no thumb): 47.29 - 52.71
+     0.00 Row Loads                           | Row 1: 16.5%; Row 2: 64.9%; Row 3: 18.6%
+     1.39 Modifier Usage                      |
+   118.46 Key Costs                           |
+
+Bigram metrics:
+  Not found: 1.3984% of 2058603.0000
+    86.30 Finger Repeats                      |
+    33.67 Movement Pattern                    |
+     3.53 No Handswitch After Unbalancing Key |
+
+Trigram metrics:
+  Not found: 1.8604% of 2058602.0000
+    37.85 No Handswitch in Trigram            |
+   415.33 Irregularity                        |
+    15.26 Secondary Bigrams                   |
+   -21.85 Inward Rolls                        |
+    -9.33 Outward Rolls                       |
+
+Cost: 698.88 (optimization score: 143086)
+
+************************************************************************************
+***WINNER*** with symbols outside:
+
+}bgdmkwuoq={)cstrhznaei("pvfljx.,;y/
+
+}bgdmk wuoq={
+)cstrh znaei(
+"pvflj x.,;y/
+
+            ┌───┐                         ┌───┐
+        ┌───┤ d ├───┬───┐         ┌───┬───┤ o ├───┐
+┌───┬───┤ g ├───┤ m │ k │         │ w │ u ├───┤ q ├───┬───┐
+│ } │ b ├───┤ t ├───┼───┤         ├───┼───┤ a ├───┤ = │ { │
+├───┼───┤ s ├───┤ r │ h │         │ z │ n ├───┤ e ├───┼───┤
+│ ) │ c ├───┤ f ├───┼───┤         ├───┼───┤ , ├───┤ i │ ( │
+├───┼───┤ v ├───┤ l │ j │         │ x │ . ├───┤ ; ├───┼───┤
+│ " │ p ├───┘   └───┴───┘         └───┴───┘   └───┤ y │ / │
+└───┴───┘       ┌───┬───┬───┐ ┌───┬───┬───┐       └───┴───┘
+                │ ↶ │ ␣ │ ⇥ │ │ ⏎ │ ⌫ │ ⌦ │
+                └───┴───┴───┘ └───┴───┴───┘
+
+Unigram metrics:
+  Not found: 0.8171% of 2058604.0000
+     7.77 Finger Balance                      | Finger loads % (no thumb): 8.6 8.6 13.8 16.8 - 13.0 15.2 12.8 11.3
+     0.92 Hand Disbalance                     | Hand loads % (no thumb): 47.70 - 52.30
+     0.00 Row Loads                           | Row 1: 21.9%; Row 2: 60.0%; Row 3: 18.2%
+     1.39 Modifier Usage                      |
+   116.55 Key Costs                           |
+
+Bigram metrics:
+  Not found: 1.3984% of 2058603.0000
+    84.21 Finger Repeats                      |
+    19.26 Movement Pattern                    |
+     2.10 No Handswitch After Unbalancing Key |
+
+Trigram metrics:
+  Not found: 1.8604% of 2058602.0000
+    17.75 No Handswitch in Trigram            |
+   415.23 Irregularity                        |
+    14.12 Secondary Bigrams                   |
+   -23.75 Inward Rolls                        |
+    -7.26 Outward Rolls                       |
+
+Cost: 648.31 (optimization score: 154248)
+
+--hun version:
+
+óbgdmkwuoqáöőcstrhznaeiéüpvfljx.,;yí
+
+óbgdmk wuoqáö
+őcstrh znaeié
+üpvflj x.,;yí
+
+            ┌───┐                         ┌───┐
+        ┌───┤ d ├───┬───┐         ┌───┬───┤ o ├───┐
+┌───┬───┤ g ├───┤ m │ k │         │ w │ u ├───┤ q ├───┬───┐
+│ ó │ b ├───┤ t ├───┼───┤         ├───┼───┤ a ├───┤ á │ ö │
+├───┼───┤ s ├───┤ r │ h │         │ z │ n ├───┤ e ├───┼───┤
+│ ő │ c ├───┤ f ├───┼───┤         ├───┼───┤ , ├───┤ i │ é │
+├───┼───┤ v ├───┤ l │ j │         │ x │ . ├───┤ ; ├───┼───┤
+│ ü │ p ├───┘   └───┴───┘         └───┴───┘   └───┤ y │ í │
+└───┴───┘       ┌───┬───┬───┐ ┌───┬───┬───┐       └───┴───┘
+                │ ↶ │ ␣ │ ⇥ │ │ ⏎ │ ⌫ │ ⌦ │
+                └───┴───┴───┘ └───┴───┴───┘
+
+Unigram metrics:
+  Not found: 4.9182% of 2058604.0000
+     8.42 Finger Balance                      | Finger loads % (no thumb): 6.8 9.1 14.7 17.9 - 13.6 14.9 12.9 10.1
+     0.58 Hand Disbalance                     | Hand loads % (no thumb): 48.54 - 51.46   
+     0.00 Row Loads                           | Row 1: 21.6%; Row 2: 60.2%; Row 3: 18.2% 
+     0.74 Modifier Usage                      |
+   109.73 Key Costs                           |
+
+Bigram metrics:
+  Not found: 8.4146% of 2058603.0000
+    84.32 Finger Repeats                      |
+    19.01 Movement Pattern                    |
+     2.07 No Handswitch After Unbalancing Key |
+
+Trigram metrics:
+  Not found: 10.8641% of 2058602.0000
+    17.25 No Handswitch in Trigram            |
+   457.17 Irregularity                        |
+    13.78 Secondary Bigrams                   |
+   -22.72 Inward Rolls                        |
+    -6.41 Outward Rolls                       |
+
+Cost: 683.94 (optimization score: 146210)
+
+*********************************************************************************
+
+(fullsize WINNER):
+
+wbdfmz,uo=/{pcstrh)naeiyqgvkljx.;"(}
+
+wbdfmz ,uo=/{
+pcstrh )naeiy
+qgvklj x.;"(}
+
+            ┌───┐                         ┌───┐
+        ┌───┤ f ├───┬───┐         ┌───┬───┤ o ├───┐
+┌───┬───┤ d ├───┤ m │ z │         │ , │ u ├───┤ = ├───┬───┐
+│ w │ b ├───┤ t ├───┼───┤         ├───┼───┤ a ├───┤ / │ { │
+├───┼───┤ s ├───┤ r │ h │         │ ) │ n ├───┤ e ├───┼───┤
+│ p │ c ├───┤ k ├───┼───┤         ├───┼───┤ ; ├───┤ i │ y │
+├───┼───┤ v ├───┤ l │ j │         │ x │ . ├───┤ " ├───┼───┤
+│ q │ g ├───┘   └───┴───┘         └───┴───┘   └───┤ ( │ } │
+└───┴───┘       ┌───┬───┬───┐ ┌───┬───┬───┐       └───┴───┘
+                │ ↶ │ ␣ │ ⇥ │ │ ⏎ │ ⌫ │ ⌦ │
+                └───┴───┴───┘ └───┴───┴───┘
+
+Unigram metrics:
+  Not found: 0.8171% of 2058604.0000
+     6.57 Finger Balance                      | Finger loads % (no thumb): 8.8 9.7 11.9 16.5 - 14.6 14.7 13.0 10.9
+     1.25 Hand Disbalance                     | Hand loads % (no thumb): 46.88 - 53.12
+     0.00 Row Loads                           | Row 1: 23.2%; Row 2: 60.7%; Row 3: 16.1%
+     1.39 Modifier Usage                      |
+   115.59 Key Costs                           |
+
+Bigram metrics:
+  Not found: 1.3984% of 2058603.0000
+    80.91 Finger Repeats                      |
+    19.64 Movement Pattern                    |
+     2.54 No Handswitch After Unbalancing Key |
+
+Trigram metrics:
+  Not found: 1.8604% of 2058602.0000
+    17.27 No Handswitch in Trigram            |
+   415.24 Irregularity                        |
+    13.90 Secondary Bigrams                   |
+   -25.16 Inward Rolls                        |
+    -6.60 Outward Rolls                       |
+
+Cost: 642.53 (optimization score: 155634)
+
+wbdfmz,uoáéöpcstrhínaeiyqgvkljx.;óőü
+
+wbdfmz ,uoáéö
+pcstrh ínaeiy
+qgvklj x.;óőü
+               
+
+            ┌───┐                         ┌───┐
+        ┌───┤ f ├───┬───┐         ┌───┬───┤ o ├───┐
+┌───┬───┤ d ├───┤ m │ z │         │ , │ u ├───┤ á ├───┬───┐
+│ w │ b ├───┤ t ├───┼───┤         ├───┼───┤ a ├───┤ é │ ö │
+├───┼───┤ s ├───┤ r │ h │         │ í │ n ├───┤ e ├───┼───┤
+│ p │ c ├───┤ k ├───┼───┤         ├───┼───┤ ; ├───┤ i │ y │
+├───┼───┤ v ├───┤ l │ j │         │ x │ . ├───┤ ó ├───┼───┤
+│ q │ g ├───┘   └───┴───┘         └───┴───┘   └───┤ ő │ ü │
+└───┴───┘       ┌───┬───┬───┐ ┌───┬───┬───┐       └───┴───┘
+                │ ↶ │ ␣ │ ⇥ │ │ ⏎ │ ⌫ │ ⌦ │
+                └───┴───┴───┘ └───┴───┴───┘
+
+Unigram metrics:
+  Not found: 4.9182% of 2058604.0000
+     5.36 Finger Balance                      | Finger loads % (no thumb): 9.4 10.3 12.7 17.6 - 13.7 14.4 12.3 9.6
+     0.00 Hand Disbalance                     | Hand loads % (no thumb): 50.01 - 49.99
+     0.00 Row Loads                           | Row 1: 23.4%; Row 2: 61.6%; Row 3: 15.0%
+     0.74 Modifier Usage                      |
+   109.10 Key Costs                           |
+
+Bigram metrics:
+  Not found: 8.4146% of 2058603.0000
+    79.66 Finger Repeats                      |
+    15.44 Movement Pattern                    |
+     2.14 No Handswitch After Unbalancing Key |
+
+Trigram metrics:
+  Not found: 10.8641% of 2058602.0000
+    13.74 No Handswitch in Trigram            |
+   457.15 Irregularity                        |
+    13.51 Secondary Bigrams                   |
+   -23.51 Inward Rolls                        |
+    -6.03 Outward Rolls                       |
+
+Cost: 667.32 (optimization score: 149852)
+
+=======================================================
+)WINNER with symbols outside /moved v/) :
+
+íbgmvkwuoqáöódstrhznaeiéücpfljx.,;yő
+
+íbgmvk wuoqáö
+ódstrh znaeié
+ücpflj x.,;yő
+
+            ┌───┐                         ┌───┐
+        ┌───┤ m ├───┬───┐         ┌───┬───┤ o ├───┐
+┌───┬───┤ g ├───┤ v │ k │         │ w │ u ├───┤ q ├───┬───┐
+│ í │ b ├───┤ t ├───┼───┤         ├───┼───┤ a ├───┤ á │ ö │
+├───┼───┤ s ├───┤ r │ h │         │ z │ n ├───┤ e ├───┼───┤
+│ ó │ d ├───┤ f ├───┼───┤         ├───┼───┤ , ├───┤ i │ é │
+├───┼───┤ p ├───┤ l │ j │         │ x │ . ├───┤ ; ├───┼───┤
+│ ü │ c ├───┘   └───┴───┘         └───┴───┘   └───┤ y │ ő │
+└───┴───┘       ┌───┬───┬───┐ ┌───┬───┬───┐       └───┴───┘
+                │ ↶ │ ␣ │ ⇥ │ │ ⏎ │ ⌫ │ ⌦ │
+                └───┴───┴───┘ └───┴───┴───┘
+
+Unigram metrics:
+  Not found: 4.9182% of 2058604.0000
+     5.43 Finger Balance                      | Finger loads % (no thumb): 8.2 9.6 14.5 16.2 - 13.6 14.9 12.9 10.2
+     0.62 Hand Disbalance                     | Hand loads % (no thumb): 48.45 - 51.55   
+     0.00 Row Loads                           | Row 1: 19.6%; Row 2: 60.4%; Row 3: 20.0% 
+     0.74 Modifier Usage                      |
+   110.96 Key Costs                           |
+
+Bigram metrics:
+  Not found: 8.4146% of 2058603.0000
+    82.84 Finger Repeats                      |
+    20.55 Movement Pattern                    |
+     1.97 No Handswitch After Unbalancing Key |
+
+Trigram metrics:
+  Not found: 10.8641% of 2058602.0000
+    17.13 No Handswitch in Trigram            |
+   457.16 Irregularity                        |
+    13.76 Secondary Bigrams                   |
+   -23.32 Inward Rolls                        |
+    -6.25 Outward Rolls                       |
+
+Cost: 681.60 (optimization score: 146712)
+
+}bgmvkwuoq={)dstrhznaei("cpfljx.,;y/
+
+}bgmvk wuoq={
+)dstrh znaei(
+"cpflj x.,;y/
+
+            ┌───┐                         ┌───┐
+        ┌───┤ m ├───┬───┐         ┌───┬───┤ o ├───┐
+┌───┬───┤ g ├───┤ v │ k │         │ w │ u ├───┤ q ├───┬───┐
+│ } │ b ├───┤ t ├───┼───┤         ├───┼───┤ a ├───┤ = │ { │
+├───┼───┤ s ├───┤ r │ h │         │ z │ n ├───┤ e ├───┼───┤
+│ ) │ d ├───┤ f ├───┼───┤         ├───┼───┤ , ├───┤ i │ ( │
+├───┼───┤ p ├───┤ l │ j │         │ x │ . ├───┤ ; ├───┼───┤
+│ " │ c ├───┘   └───┴───┘         └───┴───┘   └───┤ y │ / │
+└───┴───┘       ┌───┬───┬───┐ ┌───┬───┬───┐       └───┴───┘
+                │ ↶ │ ␣ │ ⇥ │ │ ⏎ │ ⌫ │ ⌦ │
+                └───┴───┴───┘ └───┴───┴───┘
+
+Unigram metrics:
+  Not found: 0.8171% of 2058604.0000
+     6.63 Finger Balance                      | Finger loads % (no thumb): 10.0 9.0 13.6 
+15.2 - 13.0 15.2 12.8 11.3
+     0.92 Hand Disbalance                     | Hand loads % (no thumb): 47.70 - 52.30   
+     0.00 Row Loads                           | Row 1: 20.0%; Row 2: 60.2%; Row 3: 19.8% 
+     1.39 Modifier Usage                      |
+   117.52 Key Costs                           |
+
+Bigram metrics:
+  Not found: 1.3984% of 2058603.0000
+    83.62 Finger Repeats                      |
+    21.17 Movement Pattern                    |
+     2.05 No Handswitch After Unbalancing Key |
+
+Trigram metrics:
+  Not found: 1.8604% of 2058602.0000
+    17.79 No Handswitch in Trigram            |
+   415.23 Irregularity                        |
+    14.20 Secondary Bigrams                   |
+   -24.36 Inward Rolls                        |
+    -7.12 Outward Rolls                       |
+
+Cost: 649.05 (optimization score: 154071)
+
+
+========================
+
+wbdfm);uo=/{pcstrzhnaeiyqgvkljx.,"(}
+
+wbdfm) ;uo=/{
+pcstrz hnaeiy
+qgvklj x.,"(}
+
+            ┌───┐                         ┌───┐
+        ┌───┤ f ├───┬───┐         ┌───┬───┤ o ├───┐
+┌───┬───┤ d ├───┤ m │ ) │         │ ; │ u ├───┤ = ├───┬───┐
+│ w │ b ├───┤ t ├───┼───┤         ├───┼───┤ a ├───┤ / │ { │
+├───┼───┤ s ├───┤ r │ z │         │ h │ n ├───┤ e ├───┼───┤
+│ p │ c ├───┤ k ├───┼───┤         ├───┼───┤ , ├───┤ i │ y │
+├───┼───┤ v ├───┤ l │ j │         │ x │ . ├───┤ " ├───┼───┤
+│ q │ g ├───┘   └───┴───┘         └───┴───┘   └───┤ ( │ } │
+└───┴───┘       ┌───┬───┬───┐ ┌───┬───┬───┐       └───┴───┘
+                │ ↶ │ ␣ │ ⇥ │ │ ⏎ │ ⌫ │ ⌦ │
+                └───┴───┴───┘ └───┴───┴───┘
+
+Unigram metrics:
+  Not found: 0.8171% of 2058604.0000
+     6.53 Finger Balance                      | Finger loads % (no thumb): 8.8 9.7 11.9 16.3 - 14.3 15.2 13.0 10.9
+     1.34 Hand Disbalance                     | Hand loads % (no thumb): 46.65 - 53.35
+     0.00 Row Loads                           | Row 1: 23.3%; Row 2: 60.1%; Row 3: 16.6%
+     1.39 Modifier Usage                      |
+   115.14 Key Costs                           |
+
+Bigram metrics:
+  Not found: 1.3984% of 2058603.0000
+    80.43 Finger Repeats                      |
+    18.52 Movement Pattern                    |
+     2.05 No Handswitch After Unbalancing Key |
+
+Trigram metrics:
+  Not found: 1.8604% of 2058602.0000
+    15.79 No Handswitch in Trigram            |
+   415.22 Irregularity                        |
+    13.48 Secondary Bigrams                   |
+   -23.35 Inward Rolls                        |
+    -7.70 Outward Rolls                       |
+
+Cost: 638.86 (optimization score: 156529)
+
+
+
+
+
+TIB1:
+
+jbgmvkzuo=/{pdstrlynaei.qcfwh)x(,";}
+
+jbgmvk zuo=/{
+pdstrl ynaei.
+qcfwh) x(,";}
+
+            ┌───┐                         ┌───┐
+        ┌───┤ m ├───┬───┐         ┌───┬───┤ o ├───┐
+┌───┬───┤ g ├───┤ v │ k │         │ z │ u ├───┤ = ├───┬───┐
+│ j │ b ├───┤ t ├───┼───┤         ├───┼───┤ a ├───┤ / │ { │
+├───┼───┤ s ├───┤ r │ l │         │ y │ n ├───┤ e ├───┼───┤
+│ p │ d ├───┤ w ├───┼───┤         ├───┼───┤ , ├───┤ i │ . │
+├───┼───┤ f ├───┤ h │ ) │         │ x │ ( ├───┤ " ├───┼───┤
+│ q │ c ├───┘   └───┴───┘         └───┴───┘   └───┤ ; │ } │
+└───┴───┘       ┌───┬───┬───┐ ┌───┬───┬───┐       └───┴───┘
+                │ ↶ │ ␣ │ ⇥ │ │ ⏎ │ ⌫ │ ⌦ │
+                └───┴───┴───┘ └───┴───┴───┘
+
+Unigram metrics:
+  Not found: 0.8171% of 2058604.0000
+    13.22 Finger Balance                      | Finger loads % (no thumb): 9.7 9.2 12.2 16.4 - 12.6 15.2 13.0 11.7
+     1.02 Hand Disbalance                     | Hand loads % (no thumb): 47.46 - 52.54
+     0.00 Row Loads                           | Row 1: 20.8%; Row 2: 64.2%; Row 3: 15.0%
+     1.39 Modifier Usage                      |
+   122.42 Key Costs                           |
+
+Bigram metrics:
+  Not found: 1.3984% of 2058603.0000
+    79.13 Finger Repeats                      |
+    18.14 Movement Pattern                    |
+     2.60 No Handswitch After Unbalancing Key |
+
+Trigram metrics:
+  Not found: 1.8604% of 2058602.0000
+    16.68 No Handswitch in Trigram            |
+   415.22 Irregularity                        |
+    13.16 Secondary Bigrams                   |
+   -24.37 Inward Rolls                        |
+    -7.26 Outward Rolls                       |
+
+Cost: 651.35 (optimization score: 153527)
+
+=================
+
+TIB1 optimized:
+
+qbgmv)(uo/={pcstrh;naeijwfdklzx.,y"}
+
+qbgmv) (uo/={
+pcstrh ;naeij
+wfdklz x.,y"}
+
+            ┌───┐                         ┌───┐
+        ┌───┤ m ├───┬───┐         ┌───┬───┤ o ├───┐
+┌───┬───┤ g ├───┤ v │ ) │         │ ( │ u ├───┤ / ├───┬───┐
+│ q │ b ├───┤ t ├───┼───┤         ├───┼───┤ a ├───┤ = │ { │
+├───┼───┤ s ├───┤ r │ h │         │ ; │ n ├───┤ e ├───┼───┤
+│ p │ c ├───┤ k ├───┼───┤         ├───┼───┤ , ├───┤ i │ j │
+├───┼───┤ d ├───┤ l │ z │         │ x │ . ├───┤ y ├───┼───┤
+│ w │ f ├───┘   └───┴───┘         └───┴───┘   └───┤ " │ } │
+└───┴───┘       ┌───┬───┬───┐ ┌───┬───┬───┐       └───┴───┘
+                │ ↶ │ ␣ │ ⇥ │ │ ⏎ │ ⌫ │ ⌦ │
+                └───┴───┴───┘ └───┴───┴───┘
+
+Unigram metrics:
+  Not found: 0.8171% of 2058604.0000
+     7.24 Finger Balance                      | Finger loads % (no thumb): 8.8 10.4 12.8 16.1 - 13.9 15.2 13.4 9.4
+     0.77 Hand Disbalance                     | Hand loads % (no thumb): 48.09 - 51.91
+     0.00 Row Loads                           | Row 1: 21.3%; Row 2: 59.3%; Row 3: 19.4%
+     1.39 Modifier Usage                      |
+   118.27 Key Costs                           |
+
+Bigram metrics:
+  Not found: 1.3984% of 2058603.0000
+    77.72 Finger Repeats                      |
+    19.16 Movement Pattern                    |
+     2.24 No Handswitch After Unbalancing Key |
+
+Trigram metrics:
+  Not found: 1.8604% of 2058602.0000
+    16.61 No Handswitch in Trigram            |
+   415.23 Irregularity                        |
+    14.11 Secondary Bigrams                   |
+   -25.38 Inward Rolls                        |
+    -6.82 Outward Rolls                       |
+
+Cost: 640.54 (optimization score: 156117)
+
+==============
+
+qbdfm(;uo=/{pcstrh)naeijwvgklzx.,"y}
+
+qbdfm( ;uo=/{
+pcstrh )naeij
+wvgklz x.,"y}
+
+            ┌───┐                         ┌───┐
+        ┌───┤ f ├───┬───┐         ┌───┬───┤ o ├───┐
+┌───┬───┤ d ├───┤ m │ ( │         │ ; │ u ├───┤ = ├───┬───┐
+│ q │ b ├───┤ t ├───┼───┤         ├───┼───┤ a ├───┤ / │ { │
+├───┼───┤ s ├───┤ r │ h │         │ ) │ n ├───┤ e ├───┼───┤
+│ p │ c ├───┤ k ├───┼───┤         ├───┼───┤ , ├───┤ i │ j │
+├───┼───┤ g ├───┤ l │ z │         │ x │ . ├───┤ " ├───┼───┤
+│ w │ v ├───┘   └───┴───┘         └───┴───┘   └───┤ y │ } │
+└───┴───┘       ┌───┬───┬───┐ ┌───┬───┬───┐       └───┴───┘
+                │ ↶ │ ␣ │ ⇥ │ │ ⏎ │ ⌫ │ ⌦ │
+                └───┴───┴───┘ └───┴───┴───┘
+
+Unigram metrics:
+  Not found: 0.8171% of 2058604.0000
+     8.37 Finger Balance                      | Finger loads % (no thumb): 8.1 10.4 11.9 17.7 - 13.9 15.2 13.0 9.8
+     0.77 Hand Disbalance                     | Hand loads % (no thumb): 48.09 - 51.91
+     0.00 Row Loads                           | Row 1: 22.8%; Row 2: 59.6%; Row 3: 17.5%
+   117.16 Key Costs                           |
+
+Bigram metrics:
+  Not found: 1.3984% of 2058603.0000
+    77.59 Finger Repeats                      |
+    17.27 Movement Pattern                    |
+     2.17 No Handswitch After Unbalancing Key |
+
+Trigram metrics:
+  Not found: 1.8604% of 2058602.0000
+    16.31 No Handswitch in Trigram            |
+   415.22 Irregularity                        |
+    13.30 Secondary Bigrams                   |
+   -25.22 Inward Rolls                        |
+    -6.73 Outward Rolls                       |
+
+Cost: 637.61 (optimization score: 156836)
+
+
+----------------
+
+kyo".,fclpqzhieau/dstnrvj={)(;wgmbx}
+
+kyo"., fclpqz
+hieau/ dstnrv
+j={)(; wgmbx}
+
+            ┌───┐                         ┌───┐
+        ┌───┤ " ├───┬───┐         ┌───┬───┤ l ├───┐
+┌───┬───┤ o ├───┤ . │ , │         │ f │ c ├───┤ p ├───┬───┐
+│ k │ y ├───┤ a ├───┼───┤         ├───┼───┤ t ├───┤ q │ z │
+├───┼───┤ e ├───┤ u │ / │         │ d │ s ├───┤ n ├───┼───┤
+│ h │ i ├───┤ ) ├───┼───┤         ├───┼───┤ m ├───┤ r │ v │
+├───┼───┤ { ├───┤ ( │ ; │         │ w │ g ├───┤ b ├───┼───┤
+│ j │ = ├───┘   └───┴───┘         └───┴───┘   └───┤ x │ } │
+└───┴───┘       ┌───┬───┬───┐ ┌───┬───┬───┐       └───┴───┘
+                │ ↶ │ ␣ │ ⇥ │ │ ⏎ │ ⌫ │ ⌦ │
+                └───┴───┴───┘ └───┴───┴───┘
+
+Unigram metrics:
+  Not found: 0.8171% of 2058604.0000
+    18.39 Finger Balance                      | Finger loads % (no thumb): 12.3 17.8 9.9 9.9 - 16.1 15.8 8.8 9.4
+     0.05 Hand Disbalance                     | Hand loads % (no thumb): 49.87 - 50.13
+     0.00 Row Loads                           | Row 1: 25.6%; Row 2: 60.9%; Row 3: 13.5%
+     1.39 Modifier Usage                      |
+   121.47 Key Costs                           |
+
+Bigram metrics:
+  Not found: 1.3984% of 2058603.0000
+    82.59 Finger Repeats                      |
+    56.68 Movement Pattern                    |
+     3.56 No Handswitch After Unbalancing Key |
+
+Trigram metrics:
+  Not found: 1.8604% of 2058602.0000
+    14.28 No Handswitch in Trigram            |
+   415.52 Irregularity                        |
+    16.65 Secondary Bigrams                   |
+   -22.72 Inward Rolls                        |
+    -6.99 Outward Rolls                       |
+
+Cost: 700.89 (optimization score: 142676)
+
+{/"ou,kclfwqhmeai(gsrtnp}y=).;xdvbzj
+
+{/"ou, kclfwq
+hmeai( gsrtnp
+}y=).; xdvbzj
+
+            ┌───┐                         ┌───┐
+        ┌───┤ o ├───┬───┐         ┌───┬───┤ l ├───┐
+┌───┬───┤ " ├───┤ u │ , │         │ k │ c ├───┤ f ├───┬───┐
+│ { │ / ├───┤ a ├───┼───┤         ├───┼───┤ r ├───┤ w │ q │
+├───┼───┤ e ├───┤ i │ ( │         │ g │ s ├───┤ t ├───┼───┤
+│ h │ m ├───┤ ) ├───┼───┤         ├───┼───┤ v ├───┤ n │ p │
+├───┼───┤ = ├───┤ . │ ; │         │ x │ d ├───┤ b ├───┼───┤
+│ } │ y ├───┘   └───┴───┘         └───┴───┘   └───┤ z │ j │
+└───┴───┘       ┌───┬───┬───┐ ┌───┬───┬───┐       └───┴───┘
+                │ ↶ │ ␣ │ ⇥ │ │ ⏎ │ ⌫ │ ⌦ │
+                └───┴───┴───┘ └───┴───┴───┘
+
+Unigram metrics:
+  Not found: 0.8171% of 2058604.0000
+     7.51 Finger Balance                      | Finger loads % (no thumb): 7.7 13.0 15.1 15.8 - 15.1 11.7 11.7 10.0
+     0.65 Hand Disbalance                     | Hand loads % (no thumb): 51.62 - 48.38
+     0.00 Row Loads                           | Row 1: 23.5%; Row 2: 61.3%; Row 3: 15.2%
+     1.39 Modifier Usage                      |
+   117.79 Key Costs                           |
+
+Bigram metrics:
+  Not found: 1.3984% of 2058603.0000
+    74.62 Finger Repeats                      |
+    21.59 Movement Pattern                    |
+     2.57 No Handswitch After Unbalancing Key |
+
+Trigram metrics:
+  Not found: 1.8604% of 2058602.0000
+    16.01 No Handswitch in Trigram            |
+   415.20 Irregularity                        |
+    13.69 Secondary Bigrams                   |
+   -23.63 Inward Rolls                        |
+    -7.80 Outward Rolls                       |
+
+Cost: 639.60 (optimization score: 156347)
+
+}bkldg/ouy={pntrsmxaei.(qzfvcw");,hj
+
+}bkldg /ouy={
+pntrsm xaei.(
+qzfvcw ");,hj
+
+            ┌───┐                         ┌───┐
+        ┌───┤ l ├───┬───┐         ┌───┬───┤ u ├───┐
+┌───┬───┤ k ├───┤ d │ g │         │ / │ o ├───┤ y ├───┬───┐
+│ } │ b ├───┤ r ├───┼───┤         ├───┼───┤ e ├───┤ = │ { │
+├───┼───┤ t ├───┤ s │ m │         │ x │ a ├───┤ i ├───┼───┤
+│ p │ n ├───┤ v ├───┼───┤         ├───┼───┤ ; ├───┤ . │ ( │
+├───┼───┤ f ├───┤ c │ w │         │ " │ ) ├───┤ , ├───┼───┤
+│ q │ z ├───┘   └───┴───┘         └───┴───┘   └───┤ h │ j │
+└───┴───┘       ┌───┬───┬───┐ ┌───┬───┬───┐       └───┴───┘
+                │ ↶ │ ␣ │ ⇥ │ │ ⏎ │ ⌫ │ ⌦ │
+                └───┴───┴───┘ └───┴───┴───┘
+
+Unigram metrics:
+  Not found: 0.8171% of 2058604.0000
+     9.90 Finger Balance                      | Finger loads % (no thumb): 10.5 11.9 11.7 17.0 - 16.9 15.2 9.5 7.4
+     0.42 Hand Disbalance                     | Hand loads % (no thumb): 51.05 - 48.95
+     0.00 Row Loads                           | Row 1: 24.3%; Row 2: 60.2%; Row 3: 15.5%
+     1.39 Modifier Usage                      |
+   117.81 Key Costs                           |
+
+Bigram metrics:
+  Not found: 1.3984% of 2058603.0000
+    76.80 Finger Repeats                      |
+    19.74 Movement Pattern                    |
+     2.51 No Handswitch After Unbalancing Key |
+
+Trigram metrics:
+  Not found: 1.8604% of 2058602.0000
+    12.13 No Handswitch in Trigram            |
+   415.21 Irregularity                        |
+    14.11 Secondary Bigrams                   |
+   -22.25 Inward Rolls                        |
+    -7.26 Outward Rolls                       |
+
+Cost: 640.50 (optimization score: 156127)
+
+
+
+==============
+
+etairnosldmcu.gfph,vk)(ybz;w=/"_x{}j0:>-q1!'?2<&+`*[]|98465–#7\\%@~’$^
+.,)(;=/"_{}:>-!'?<&+`*[]|–#\%@~’$^
+
+MANUAL -> try!
+
+qbdfmz"uo=/{pcstrh(naeijwvgklx).,;y}
+
+qbdfmz "uo=/{
+pcstrh (naeij
+wvgklx ).,;y}
+
+Layout (layer 1):
+            ┌───┐                         ┌───┐
+        ┌───┤ f ├───┬───┐         ┌───┬───┤ o ├───┐
+┌───┬───┤ d ├───┤ m │ z │         │ " │ u ├───┤ = ├───┬───┐
+│ q │ b ├───┤ t ├───┼───┤         ├───┼───┤ a ├───┤ / │ { │
+├───┼───┤ s ├───┤ r │ h │         │ ( │ n ├───┤ e ├───┼───┤
+│ p │ c ├───┤ k ├───┼───┤         ├───┼───┤ , ├───┤ i │ j │
+├───┼───┤ g ├───┤ l │ x │         │ ) │ . ├───┤ ; ├───┼───┤
+│ w │ v ├───┘   └───┴───┘         └───┴───┘   └───┤ y │ } │
+└───┴───┘       ┌───┬───┬───┐ ┌───┬───┬───┐       └───┴───┘
+                │ ↶ │ ␣ │ ⇥ │ │ ⏎ │ ⌫ │ ⌦ │
+                └───┴───┴───┘ └───┴───┴───┘
+
+Layout string (layer 1):
+qbdfmz"uo=/{pcstrh(naeijwvgklx).,;y}
+
+Unigram metrics:
+  Not found: 0.8171% of 2058604.0000
+     7.95 Finger Balance                      | Finger loads % (no thumb): 8.1 10.4 11.9 16.5 - 14.6 15.2 13.5 9.8
+     1.24 Hand Disbalance                     | Hand loads % (no thumb): 46.90 - 53.10
+     0.00 Row Loads                           | Row 1: 21.8%; Row 2: 59.6%; Row 3: 18.6%
+     1.39 Modifier Usage                      | Worst unigrams: [ ] (76.93%), [⌫] (23.07%)
+   118.41 Key Costs                           | Worst unigrams:   (15.79%), o ( 7.89%), d ( 4.63%)
+
+Bigram metrics:
+  Not found: 1.3984% of 2058603.0000
+    81.49 Finger Repeats                      | Worst:    (65.24%), \t\t ( 1.70%), () ( 1.52%);  Worst non-fixed: () ( 1.52%), un ( 1.42%), rm ( 1.17%)
+    20.54 Movement Pattern                    | Worst: \", (10.09%), ;/ ( 5.89%), e, ( 4.27%);  Worst non-fixed: \", (10.09%), ;/ ( 5.89%), e, ( 4.27%)
+     2.59 No Handswitch After Unbalancing Key | Worst: ); ( 8.98%), sz ( 6.25%), th ( 5.72%);  Worst non-fixed: ); ( 8.98%), sz ( 6.25%), th ( 5.72%)
+
+Trigram metrics:
+  Not found: 1.8604% of 2058602.0000
+    17.67 No Handswitch in Trigram            | Worst: ion ( 4.17%), one ( 2.57%), oje ( 2.48%);  Worst non-fixed: ion ( 4.17%), one ( 2.57%), oje ( 2.48%)
+   415.25 Irregularity                        | Worst:     (99.93%), \t\t\t ( 0.04%), ion ( 0.01%);  Worst non-fixed: ion ( 0.01%), n\", ( 0.00%), ;// ( 0.00%)
+    13.89 Secondary Bigrams                   | Worst:     (25.36%), ; / ( 1.28%), lem ( 0.82%);  Worst non-fixed: lem ( 0.82%), bug ( 0.71%), ;// ( 0.61%)
+   -24.37 Inward Rolls                        | Worst: ent ( 2.78%), tio ( 2.64%), the ( 1.69%);  Worst non-fixed: ent ( 2.78%), tio ( 2.64%), the ( 1.69%)
+    -6.83 Outward Rolls                       | Worst: nal ( 1.78%), nit ( 1.78%), ert ( 1.45%);  Worst non-fixed: nal ( 1.78%), nit ( 1.78%), ert ( 1.45%)
+
+Cost: 649.22 (optimization score: 154031)
+
+
+qbdfmz ".,=/{
+pcstrh (naeij
+wvgklx )ou;y}
+
+qbdfmz "uo=y{pcstrh (naeijwvgklx ).,;/}
+
+----------------
+
+wbdfm),uoy={pcstrh(naeijqgvklzx.;/"}
+
+wbdfm) ,uoy={
+pcstrh (naeij
+qgvklz x.;/"}
+
+            ┌───┐                         ┌───┐
+        ┌───┤ f ├───┬───┐         ┌───┬───┤ o ├───┐
+┌───┬───┤ d ├───┤ m │ ) │         │ , │ u ├───┤ y ├───┬───┐
+│ w │ b ├───┤ t ├───┼───┤         ├───┼───┤ a ├───┤ = │ { │
+├───┼───┤ s ├───┤ r │ h │         │ ( │ n ├───┤ e ├───┼───┤
+│ p │ c ├───┤ k ├───┼───┤         ├───┼───┤ ; ├───┤ i │ j │
+├───┼───┤ v ├───┤ l │ z │         │ x │ . ├───┤ / ├───┼───┤
+│ q │ g ├───┘   └───┴───┘         └───┴───┘   └───┤ " │ } │
+└───┴───┘       ┌───┬───┬───┐ ┌───┬───┬───┐       └───┴───┘
+                │ ↶ │ ␣ │ ⇥ │ │ ⏎ │ ⌫ │ ⌦ │
+                └───┴───┴───┘ └───┴───┴───┘
+
+Unigram metrics:
+  Not found: 0.8171% of 2058604.0000
+     8.72 Finger Balance                      | Finger loads % (no thumb): 8.8 9.7 11.9 17.7 - 14.4 14.7 13.4 9.4
+     0.77 Hand Disbalance                     | Hand loads % (no thumb): 48.09 - 51.91
+     0.00 Row Loads                           | Row 1: 24.4%; Row 2: 59.6%; Row 3: 16.0%
+     1.39 Modifier Usage                      |
+   116.64 Key Costs                           |
+
+Bigram metrics:
+  Not found: 1.3984% of 2058603.0000
+    78.09 Finger Repeats                      |
+    18.14 Movement Pattern                    |
+     2.38 No Handswitch After Unbalancing Key |
+
+Trigram metrics:
+  Not found: 1.8604% of 2058602.0000
+    16.26 No Handswitch in Trigram            |
+   415.23 Irregularity                        |
+    13.10 Secondary Bigrams                   |
+   -25.20 Inward Rolls                        |
+    -6.72 Outward Rolls                       |
+
+Cost: 638.80 (optimization score: 156543)
+
+wbdfmz,uoy={pcstrh(naeijqgvklx).;/"}
+
+wbdfmz ,uoy={
+pcstrh (naeij
+qgvklx ).;/"}
+
+            ┌───┐                         ┌───┐
+        ┌───┤ f ├───┬───┐         ┌───┬───┤ o ├───┐
+┌───┬───┤ d ├───┤ m │ z │         │ , │ u ├───┤ y ├───┬───┐
+│ w │ b ├───┤ t ├───┼───┤         ├───┼───┤ a ├───┤ = │ { │
+├───┼───┤ s ├───┤ r │ h │         │ ( │ n ├───┤ e ├───┼───┤
+│ p │ c ├───┤ k ├───┼───┤         ├───┼───┤ ; ├───┤ i │ j │
+├───┼───┤ v ├───┤ l │ x │         │ ) │ . ├───┤ / ├───┼───┤
+│ q │ g ├───┘   └───┴───┘         └───┴───┘   └───┤ " │ } │
+└───┴───┘       ┌───┬───┬───┐ ┌───┬───┬───┐       └───┴───┘
+                │ ↶ │ ␣ │ ⇥ │ │ ⏎ │ ⌫ │ ⌦ │
+                └───┴───┴───┘ └───┴───┴───┘
+
+Unigram metrics:
+  Not found: 0.8171% of 2058604.0000
+     8.26 Finger Balance                      | Finger loads % (no thumb): 8.8 9.7 11.9 16.5 - 15.6 14.7 13.4 9.4
+     1.24 Hand Disbalance                     | Hand loads % (no thumb): 46.90 - 53.10
+     0.00 Row Loads                           | Row 1: 23.8%; Row 2: 59.6%; Row 3: 16.6%
+     1.39 Modifier Usage                      |
+   117.87 Key Costs                           |
+
+Bigram metrics:
+  Not found: 1.3984% of 2058603.0000
+    79.75 Finger Repeats                      |
+    18.23 Movement Pattern                    |
+     2.72 No Handswitch After Unbalancing Key |
+
+Trigram metrics:
+  Not found: 1.8604% of 2058602.0000
+    17.59 No Handswitch in Trigram            |
+   415.24 Irregularity                        |
+    13.43 Secondary Bigrams                   |
+   -24.56 Inward Rolls                        |
+    -6.89 Outward Rolls                       |
+
+Cost: 644.27 (optimization score: 155214)
+
+wbdfm),uo"={pcstrh(naeijqgvklzx.;/y}
+
+wbdfm) ,uo"={
+pcstrh (naeij
+qgvklz x.;/y}
+
+            ┌───┐                         ┌───┐
+        ┌───┤ f ├───┬───┐         ┌───┬───┤ o ├───┐
+┌───┬───┤ d ├───┤ m │ ) │         │ , │ u ├───┤ " ├───┬───┐
+│ w │ b ├───┤ t ├───┼───┤         ├───┼───┤ a ├───┤ = │ { │
+├───┼───┤ s ├───┤ r │ h │         │ ( │ n ├───┤ e ├───┼───┤
+│ p │ c ├───┤ k ├───┼───┤         ├───┼───┤ ; ├───┤ i │ j │
+├───┼───┤ v ├───┤ l │ z │         │ x │ . ├───┤ / ├───┼───┤
+│ q │ g ├───┘   └───┴───┘         └───┴───┘   └───┤ y │ } │
+└───┴───┘       ┌───┬───┬───┐ ┌───┬───┬───┐       └───┴───┘
+                │ ↶ │ ␣ │ ⇥ │ │ ⏎ │ ⌫ │ ⌦ │
+                └───┴───┴───┘ └───┴───┴───┘
+
+Unigram metrics:
+  Not found: 0.8171% of 2058604.0000
+     6.75 Finger Balance                      | Finger loads % (no thumb): 8.8 9.7 11.9 17.7 - 14.4 14.7 12.8 10.0
+     0.77 Hand Disbalance                     | Hand loads % (no thumb): 48.09 - 51.91
+     0.00 Row Loads                           | Row 1: 23.8%; Row 2: 59.6%; Row 3: 16.6%
+     1.39 Modifier Usage                      |
+
+Bigram metrics:
+  Not found: 1.3984% of 2058603.0000
+    80.25 Finger Repeats                      |
+    18.52 Movement Pattern                    |
+     2.38 No Handswitch After Unbalancing Key |
+
+Trigram metrics:
+  Not found: 1.8604% of 2058602.0000
+    16.23 No Handswitch in Trigram            |
+   415.23 Irregularity                        |
+    13.74 Secondary Bigrams                   |
+   -25.42 Inward Rolls                        |
+    -6.71 Outward Rolls                       |
+
+Cost: 639.85 (optimization score: 156287)
+
+
+Optimized layouts found during this run, ordered from best (lowest cost) to worst (highest cost):
+ 1. wbdfm),uo"={pcstrh(naeijqgvklzx.;/y} (639.8) (current)
+
+PS E:\Private_tibi\_rust\keyboard_layout_optimizer> ./target/release/optimize_genetic -c .\corpus_low_nohun.txt -e config/evaluation/default_hun.yml -l config/keyboard/draft.yml -s "wbdfmz ,uoy={pcstrh (naeijqgvklx ).;/\`"}" -f "qwertyuiopasdfghjklzxcvbnm"
+Final result after generation 1000, duration 2s 952ms 544,500ns, processing time 49s 163ms 309,800ns
+
+wbdfmz,uoy={pcstrh(naeijqgvklx).;/"}
+
+wbdfmz ,uoy={
+pcstrh (naeij
+qgvklx ).;/"}
+
+            ┌───┐                         ┌───┐
+        ┌───┤ f ├───┬───┐         ┌───┬───┤ o ├───┐
+┌───┬───┤ d ├───┤ m │ z │         │ , │ u ├───┤ y ├───┬───┐
+│ w │ b ├───┤ t ├───┼───┤         ├───┼───┤ a ├───┤ = │ { │
+├───┼───┤ s ├───┤ r │ h │         │ ( │ n ├───┤ e ├───┼───┤
+│ p │ c ├───┤ k ├───┼───┤         ├───┼───┤ ; ├───┤ i │ j │
+├───┼───┤ v ├───┤ l │ x │         │ ) │ . ├───┤ / ├───┼───┤
+│ q │ g ├───┘   └───┴───┘         └───┴───┘   └───┤ " │ } │
+└───┴───┘       ┌───┬───┬───┐ ┌───┬───┬───┐       └───┴───┘
+                │ ↶ │ ␣ │ ⇥ │ │ ⏎ │ ⌫ │ ⌦ │
+                └───┴───┴───┘ └───┴───┴───┘
+
+Unigram metrics:
+  Not found: 0.8171% of 2058604.0000
+     6.36 Finger Balance                      | Finger loads % (no thumb): 8.8 9.7 11.9 16.5 - 15.6 14.7 13.4 9.4
+     1.24 Hand Disbalance                     | Hand loads % (no thumb): 46.90 - 53.10
+     0.00 Row Loads                           | Row 1: 23.8%; Row 2: 59.6%; Row 3: 16.6%
+     1.39 Modifier Usage                      |
+   117.87 Key Costs                           |
+
+Bigram metrics:
+  Not found: 1.3984% of 2058603.0000
+    83.47 Finger Repeats                      |
+    18.23 Movement Pattern                    |
+     2.72 No Handswitch After Unbalancing Key |
+
+Trigram metrics:
+  Not found: 1.8604% of 2058602.0000
+    17.59 No Handswitch in Trigram            |
+   415.25 Irregularity                        |
+    14.08 Secondary Bigrams                   |
+   -24.56 Inward Rolls                        |
+    -6.89 Outward Rolls                       |
+
+Cost: 646.75 (optimization score: 154618)
+
+
+==============================
+etairnosld\nmcu.gfph,vk)(y	bz;éw=/á"_x{}j0:>-öqőó1!'?2ü<&+í`3*ú[]|98ű465–#7\%@~’$^
+etairnosldmcugfphvkybzéwáxjöqőóüíúű
+.,)(;=/"_{}:>-!'?<&+`*[]|–#\%@~’$^
+
+HUN:
+
+wbdfmz,uoyöőpcstrhónaeijqgvklxü.;éáí
+
+wbdfmz ,uoyöő
+pcstrh ónaeij
+qgvklx ü.;éáí
+
+            ┌───┐                         ┌───┐
+        ┌───┤ f ├───┬───┐         ┌───┬───┤ o ├───┐
+┌───┬───┤ d ├───┤ m │ z │         │ , │ u ├───┤ y ├───┬───┐
+│ w │ b ├───┤ t ├───┼───┤         ├───┼───┤ a ├───┤ ö │ ő │
+├───┼───┤ s ├───┤ r │ h │         │ ó │ n ├───┤ e ├───┼───┤
+│ p │ c ├───┤ k ├───┼───┤         ├───┼───┤ ; ├───┤ i │ j │
+├───┼───┤ v ├───┤ l │ x │         │ ü │ . ├───┤ é ├───┼───┤
+│ q │ g ├───┘   └───┴───┘         └───┴───┘   └───┤ á │ í │
+└───┴───┘       ┌───┬───┬───┐ ┌───┬───┬───┐       └───┴───┘
+                │ ↶ │ ␣ │ ⇥ │ │ ⏎ │ ⌫ │ ⌦ │
+                └───┴───┴───┘ └───┴───┴───┘
+
+Unigram metrics:
+  Not found: 4.8529% of 2058604.0000
+     7.55 Finger Balance                      | Finger loads % (no thumb): 9.4 10.3 12.7 17.6 - 13.4 15.7 13.5 7.4
+     0.01 Hand Disbalance                     | Hand loads % (no thumb): 49.98 - 50.02
+     0.00 Row Loads                           | Row 1: 23.9%; Row 2: 62.0%; Row 3: 14.1%
+     0.74 Modifier Usage                      |
+   105.99 Key Costs                           |
+
+Bigram metrics:
+  Not found: 8.2851% of 2058603.0000
+    79.95 Finger Repeats                      |
+    17.01 Movement Pattern                    |
+     1.84 No Handswitch After Unbalancing Key |
+
+Trigram metrics:
+  Not found: 10.6721% of 2058602.0000
+    14.33 No Handswitch in Trigram            |
+   456.18 Irregularity                        |
+    13.06 Secondary Bigrams                   |
+   -23.19 Inward Rolls                        |
+    -6.19 Outward Rolls                       |
+
+Cost: 667.28 (optimization score: 149861)
+
+============================================================================
+
+[
+
+wbdfmz ,uoóéí
+pcstrh xnaeiy
+qgvklj ü.áö;ő
+
+            ┌───┐                         ┌───┐
+        ┌───┤ f ├───┬───┐         ┌───┬───┤ o ├───┐
+┌───┬───┤ d ├───┤ m │ z │         │ , │ u ├───┤ ó ├───┬───┐
+│ w │ b ├───┤ t ├───┼───┤         ├───┼───┤ a ├───┤ é │ í │
+├───┼───┤ s ├───┤ r │ h │         │ x │ n ├───┤ e ├───┼───┤
+│ p │ c ├───┤ k ├───┼───┤         ├───┼───┤ á ├───┤ i │ y │
+├───┼───┤ v ├───┤ l │ j │         │ ü │ . ├───┤ ö ├───┼───┤
+│ q │ g ├───┘   └───┴───┘         └───┴───┘   └───┤ ; │ ő │
+└───┴───┘       ┌───┬───┬───┐ ┌───┬───┬───┐       └───┴───┘
+                │ ↶ │ ␣ │ ⇥ │ │ ⏎ │ ⌫ │ ⌦ │
+                └───┴───┴───┘ └───┴───┴───┘
+
+Unigram metrics:
+  Not found: 4.8529% of 2058604.0000
+     5.29 Finger Balance                      | Finger loads % (no thumb): 9.4 10.3 12.7 17.6 - 13.8 14.5 12.2 9.6
+     0.02 Hand Disbalance                     | Hand loads % (no thumb): 49.96 - 50.04
+     0.00 Row Loads                           | Row 1: 22.6%; Row 2: 63.4%; Row 3: 14.1%
+     0.74 Modifier Usage                      |
+   106.68 Key Costs                           |
+
+Bigram metrics:
+  Not found: 8.2851% of 2058603.0000
+    79.61 Finger Repeats                      |
+    14.72 Movement Pattern                    |
+     1.99 No Handswitch After Unbalancing Key |
+
+Trigram metrics:
+  Not found: 10.6721% of 2058602.0000
+    13.65 No Handswitch in Trigram            |
+   456.17 Irregularity                        |
+    12.71 Secondary Bigrams                   |
+   -23.49 Inward Rolls                        |
+    -6.09 Outward Rolls                       |
+
+Cost: 662.01 (optimization score: 151054)
+
+
+wbdfmz,uo=/{pcstrhxnaeiyqgvklj).(";}
+
+wbdfmz ,uo=/{
+pcstrh xnaeiy
+qgvklj ).(";}
+
+            ┌───┐                         ┌───┐
+        ┌───┤ f ├───┬───┐         ┌───┬───┤ o ├───┐
+┌───┬───┤ d ├───┤ m │ z │         │ , │ u ├───┤ = ├───┬───┐
+│ w │ b ├───┤ t ├───┼───┤         ├───┼───┤ a ├───┤ / │ { │
+├───┼───┤ s ├───┤ r │ h │         │ x │ n ├───┤ e ├───┼───┤
+│ p │ c ├───┤ k ├───┼───┤         ├───┼───┤ ( ├───┤ i │ y │
+├───┼───┤ v ├───┤ l │ j │         │ ) │ . ├───┤ " ├───┼───┤
+│ q │ g ├───┘   └───┴───┘         └───┴───┘   └───┤ ; │ } │
+└───┴───┘       ┌───┬───┬───┐ ┌───┬───┬───┐       └───┴───┘
+                │ ↶ │ ␣ │ ⇥ │ │ ⏎ │ ⌫ │ ⌦ │
+                └───┴───┴───┘ └───┴───┴───┘
+
+Unigram metrics:
+  Not found: 0.8171% of 2058604.0000
+     6.37 Finger Balance                      | Finger loads % (no thumb): 8.8 9.7 11.9 16.5 - 14.6 15.0 13.0 10.6
+     1.25 Hand Disbalance                     | Hand loads % (no thumb): 46.88 - 53.12
+     0.00 Row Loads                           | Row 1: 23.2%; Row 2: 59.5%; Row 3: 17.3%
+     1.39 Modifier Usage                      |
+   117.21 Key Costs                           |
+
+Bigram metrics:
+  Not found: 1.3984% of 2058603.0000
+    81.32 Finger Repeats                      |
+    19.18 Movement Pattern                    |
+     2.76 No Handswitch After Unbalancing Key |
+
+Trigram metrics:
+  Not found: 1.8604% of 2058602.0000
+    17.26 No Handswitch in Trigram            |
+   415.23 Irregularity                        |
+    14.18 Secondary Bigrams                   |
+   -25.01 Inward Rolls                        |
+    -6.70 Outward Rolls                       |
+
+Cost: 644.45 (optimization score: 155170)
+
+wbdfmz,uo=/{pcstrh)naeiyqgvkljx.(";}
+
+wbdfmz ,uo=/{
+pcstrh )naeiy
+qgvklj x.(";}
+
+            ┌───┐                         ┌───┐
+        ┌───┤ f ├───┬───┐         ┌───┬───┤ o ├───┐
+┌───┬───┤ d ├───┤ m │ z │         │ , │ u ├───┤ = ├───┬───┐
+│ w │ b ├───┤ t ├───┼───┤         ├───┼───┤ a ├───┤ / │ { │
+├───┼───┤ s ├───┤ r │ h │         │ ) │ n ├───┤ e ├───┼───┤
+│ p │ c ├───┤ k ├───┼───┤         ├───┼───┤ ( ├───┤ i │ y │
+├───┼───┤ v ├───┤ l │ j │         │ x │ . ├───┤ " ├───┼───┤
+│ q │ g ├───┘   └───┴───┘         └───┴───┘   └───┤ ; │ } │
+└───┴───┘       ┌───┬───┬───┐ ┌───┬───┬───┐       └───┴───┘
+                │ ↶ │ ␣ │ ⇥ │ │ ⏎ │ ⌫ │ ⌦ │
+                └───┴───┴───┘ └───┴───┴───┘
+
+Unigram metrics:
+  Not found: 0.8171% of 2058604.0000
+     6.37 Finger Balance                      | Finger loads % (no thumb): 8.8 9.7 11.9 16.5 - 14.6 15.0 13.0 10.6
+     1.25 Hand Disbalance                     | Hand loads % (no thumb): 46.88 - 53.12
+     0.00 Row Loads                           | Row 1: 23.2%; Row 2: 60.7%; Row 3: 16.1%
+     1.39 Modifier Usage                      |
+   115.48 Key Costs                           |
+
+Bigram metrics:
+  Not found: 1.3984% of 2058603.0000
+    81.07 Finger Repeats                      |
+    19.77 Movement Pattern                    |
+     2.54 No Handswitch After Unbalancing Key |
+
+Trigram metrics:
+  Not found: 1.8604% of 2058602.0000
+    17.26 No Handswitch in Trigram            |
+   415.23 Irregularity                        |
+    14.06 Secondary Bigrams                   |
+   -25.01 Inward Rolls                        |
+    -6.70 Outward Rolls                       |
+
+Cost: 642.72 (optimization score: 155588)
+
+wbdfmz,uo;/}pcstrh)naeiyqgvkljx.="({
+
+wbdfmz ,uo;/}
+pcstrh )naeiy
+qgvklj x.="({
+
+            ┌───┐                         ┌───┐
+        ┌───┤ f ├───┬───┐         ┌───┬───┤ o ├───┐
+┌───┬───┤ d ├───┤ m │ z │         │ , │ u ├───┤ ; ├───┬───┐
+│ w │ b ├───┤ t ├───┼───┤         ├───┼───┤ a ├───┤ / │ } │
+├───┼───┤ s ├───┤ r │ h │         │ ) │ n ├───┤ e ├───┼───┤
+│ p │ c ├───┤ k ├───┼───┤         ├───┼───┤ = ├───┤ i │ y │
+├───┼───┤ v ├───┤ l │ j │         │ x │ . ├───┤ " ├───┼───┤
+│ q │ g ├───┘   └───┴───┘         └───┴───┘   └───┤ ( │ { │
+└───┴───┘       ┌───┬───┬───┐ ┌───┬───┬───┐       └───┴───┘
+                │ ↶ │ ␣ │ ⇥ │ │ ⏎ │ ⌫ │ ⌦ │
+                └───┴───┴───┘ └───┴───┴───┘
+
+Unigram metrics:
+  Not found: 0.8171% of 2058604.0000
+     6.70 Finger Balance                      | Finger loads % (no thumb): 8.8 9.7 11.9 16.5 - 14.6 14.5 13.2 10.9
+     1.25 Hand Disbalance                     | Hand loads % (no thumb): 46.88 - 53.12
+     0.00 Row Loads                           | Row 1: 23.4%; Row 2: 60.7%; Row 3: 15.9%
+     1.39 Modifier Usage                      |
+   115.65 Key Costs                           |
+
+Bigram metrics:
+  Not found: 1.3984% of 2058603.0000
+    82.17 Finger Repeats                      |
+    17.25 Movement Pattern                    |
+     2.53 No Handswitch After Unbalancing Key |
+
+Trigram metrics:
+  Not found: 1.8604% of 2058602.0000
+    17.27 No Handswitch in Trigram            |
+   415.23 Irregularity                        |
+    13.84 Secondary Bigrams                   |
+   -25.06 Inward Rolls                        |
+    -6.61 Outward Rolls                       |
+
+Cost: 641.62 (optimization score: 155855)
+
+wbdfmz,uo;áöpcstrhónaeiyqgvkljx.éíőü
+
+wbdfmz ,uo;áö
+pcstrh ónaeiy
+qgvklj x.éíőü
+
+            ┌───┐                         ┌───┐
+        ┌───┤ f ├───┬───┐         ┌───┬───┤ o ├───┐
+┌───┬───┤ d ├───┤ m │ z │         │ , │ u ├───┤ ; ├───┬───┐
+│ w │ b ├───┤ t ├───┼───┤         ├───┼───┤ a ├───┤ á │ ö │
+├───┼───┤ s ├───┤ r │ h │         │ ó │ n ├───┤ e ├───┼───┤
+│ p │ c ├───┤ k ├───┼───┤         ├───┼───┤ é ├───┤ i │ y │
+├───┼───┤ v ├───┤ l │ j │         │ x │ . ├───┤ í ├───┼───┤
+│ q │ g ├───┘   └───┴───┘         └───┴───┘   └───┤ ő │ ü │
+└───┴───┘       ┌───┬───┬───┐ ┌───┬───┬───┐       └───┴───┘
+                │ ↶ │ ␣ │ ⇥ │ │ ⏎ │ ⌫ │ ⌦ │
+                └───┴───┴───┘ └───┴───┴───┘
+
+Unigram metrics:
+  Not found: 4.9182% of 2058604.0000
+     5.59 Finger Balance                      | Finger loads % (no thumb): 9.4 10.3 12.7 17.6 - 13.8 13.9 12.7 9.6
+     0.00 Hand Disbalance                     | Hand loads % (no thumb): 50.01 - 49.99
+     0.00 Row Loads                           | Row 1: 23.9%; Row 2: 61.7%; Row 3: 14.5%
+     0.74 Modifier Usage                      |
+   109.28 Key Costs                           |
+
+Bigram metrics:
+  Not found: 8.4146% of 2058603.0000
+    80.80 Finger Repeats                      |
+    15.03 Movement Pattern                    |
+     2.14 No Handswitch After Unbalancing Key |
+
+Trigram metrics:
+  Not found: 10.8641% of 2058602.0000
+    13.75 No Handswitch in Trigram            |
+   457.15 Irregularity                        |
+    13.55 Secondary Bigrams                   |
+   -23.40 Inward Rolls                        |
+    -6.03 Outward Rolls                       |
+
+Cost: 668.60 (optimization score: 149565)
+
+wbdfmz,uoáéöpcstrhxnaeiyqgvkljí.;óőü
+
+wbdfmz ,uoáéö
+pcstrh xnaeiy
+qgvklj í.;óőü
+
+            ┌───┐                         ┌───┐
+        ┌───┤ f ├───┬───┐         ┌───┬───┤ o ├───┐
+┌───┬───┤ d ├───┤ m │ z │         │ , │ u ├───┤ á ├───┬───┐
+│ w │ b ├───┤ t ├───┼───┤         ├───┼───┤ a ├───┤ é │ ö │
+├───┼───┤ s ├───┤ r │ h │         │ x │ n ├───┤ e ├───┼───┤
+│ p │ c ├───┤ k ├───┼───┤         ├───┼───┤ ; ├───┤ i │ y │
+├───┼───┤ v ├───┤ l │ j │         │ í │ . ├───┤ ó ├───┼───┤
+│ q │ g ├───┘   └───┴───┘         └───┴───┘   └───┤ ő │ ü │
+└───┴───┘       ┌───┬───┬───┐ ┌───┬───┬───┐       └───┴───┘
+                │ ↶ │ ␣ │ ⇥ │ │ ⏎ │ ⌫ │ ⌦ │
+                └───┴───┴───┘ └───┴───┴───┘
+
+Unigram metrics:
+  Not found: 4.9182% of 2058604.0000
+     5.36 Finger Balance                      | Finger loads % (no thumb): 9.4 10.3 12.7 17.6 - 13.7 14.4 12.3 9.6
+     0.00 Hand Disbalance                     | Hand loads % (no thumb): 50.01 - 49.99
+     0.00 Row Loads                           | Row 1: 23.4%; Row 2: 61.9%; Row 3: 14.7%
+     0.74 Modifier Usage                      |
+   108.65 Key Costs                           |
+
+Bigram metrics:
+  Not found: 8.4146% of 2058603.0000
+    79.76 Finger Repeats                      |
+    15.29 Movement Pattern                    |
+     2.04 No Handswitch After Unbalancing Key |
+
+Trigram metrics:
+  Not found: 10.8641% of 2058602.0000
+    13.74 No Handswitch in Trigram            |
+   457.15 Irregularity                        |
+    13.52 Secondary Bigrams                   |
+   -23.51 Inward Rolls                        |
+    -6.03 Outward Rolls                       |
+
+Cost: 666.73 (optimization score: 149985)
+
+wbdfmz,uo=/{pcstrhxnaeiyqgvklj).;"(}
+
+wbdfmz ,uo=/{
+pcstrh xnaeiy
+qgvklj ).;"(}
+
+            ┌───┐                         ┌───┐
+        ┌───┤ f ├───┬───┐         ┌───┬───┤ o ├───┐
+┌───┬───┤ d ├───┤ m │ z │         │ , │ u ├───┤ = ├───┬───┐
+│ w │ b ├───┤ t ├───┼───┤         ├───┼───┤ a ├───┤ / │ { │
+├───┼───┤ s ├───┤ r │ h │         │ x │ n ├───┤ e ├───┼───┤
+│ p │ c ├───┤ k ├───┼───┤         ├───┼───┤ ; ├───┤ i │ y │
+├───┼───┤ v ├───┤ l │ j │         │ ) │ . ├───┤ " ├───┼───┤
+│ q │ g ├───┘   └───┴───┘         └───┴───┘   └───┤ ( │ } │
+└───┴───┘       ┌───┬───┬───┐ ┌───┬───┬───┐       └───┴───┘
+                │ ↶ │ ␣ │ ⇥ │ │ ⏎ │ ⌫ │ ⌦ │
+                └───┴───┴───┘ └───┴───┴───┘
+
+Unigram metrics:
+  Not found: 0.8171% of 2058604.0000
+     6.57 Finger Balance                      | Finger loads % (no thumb): 8.8 9.7 11.9 16.5 - 14.6 14.7 13.0 10.9
+     1.25 Hand Disbalance                     | Hand loads % (no thumb): 46.88 - 53.12
+     0.00 Row Loads                           | Row 1: 23.2%; Row 2: 59.5%; Row 3: 17.3%
+     1.39 Modifier Usage                      |
+   117.32 Key Costs                           |
+
+Bigram metrics:
+  Not found: 1.3984% of 2058603.0000
+    81.16 Finger Repeats                      |
+    18.24 Movement Pattern                    |
+     2.76 No Handswitch After Unbalancing Key |
+
+Trigram metrics:
+  Not found: 1.8604% of 2058602.0000
+    17.27 No Handswitch in Trigram            |
+   415.23 Irregularity                        |
+    14.01 Secondary Bigrams                   |
+   -25.16 Inward Rolls                        |
+    -6.60 Outward Rolls                       |
+
+Cost: 643.45 (optimization score: 155413)
+
+
+wbdfmz,uoáéöpcstrhőnaeiyqgvkljx.;óüí
+
+wbdfmz ,uoáéö
+pcstrh őnaeiy
+qgvklj x.;óüí
+
+            ┌───┐                         ┌───┐
+        ┌───┤ f ├───┬───┐         ┌───┬───┤ o ├───┐
+┌───┬───┤ d ├───┤ m │ z │         │ , │ u ├───┤ á ├───┬───┐
+│ w │ b ├───┤ t ├───┼───┤         ├───┼───┤ a ├───┤ é │ ö │
+├───┼───┤ s ├───┤ r │ h │         │ ő │ n ├───┤ e ├───┼───┤
+│ p │ c ├───┤ k ├───┼───┤         ├───┼───┤ ; ├───┤ i │ y │
+├───┼───┤ v ├───┤ l │ j │         │ x │ . ├───┤ ó ├───┼───┤
+│ q │ g ├───┘   └───┴───┘         └───┴───┘   └───┤ ü │ í │
+└───┴───┘       ┌───┬───┬───┐ ┌───┬───┬───┐       └───┴───┘
+                │ ↶ │ ␣ │ ⇥ │ │ ⏎ │ ⌫ │ ⌦ │
+                └───┴───┴───┘ └───┴───┴───┘
+
+Unigram metrics:
+  Not found: 4.9182% of 2058604.0000
+     5.33 Finger Balance                      | Finger loads % (no thumb): 9.4 10.3 12.7 17.6 - 13.8 14.4 12.3 9.6
+     0.00 Hand Disbalance                     | Hand loads % (no thumb): 50.01 - 49.99
+     0.00 Row Loads                           | Row 1: 23.4%; Row 2: 61.7%; Row 3: 14.9%
+     0.74 Modifier Usage                      |
+   109.07 Key Costs                           |
+
+Bigram metrics:
+  Not found: 8.4146% of 2058603.0000
+    79.76 Finger Repeats                      |
+    15.43 Movement Pattern                    |
+     2.13 No Handswitch After Unbalancing Key |
+
+Trigram metrics:
+  Not found: 10.8641% of 2058602.0000
+    13.74 No Handswitch in Trigram            |
+   457.15 Irregularity                        |
+    13.51 Secondary Bigrams                   |
+   -23.51 Inward Rolls                        |
+    -6.03 Outward Rolls                       |
+
+Cost: 667.35 (optimization score: 149847)
+
+
+==============
+narrow version
+
+./target/release/optimize_genetic -c .\corpus_low_nohun.txt -e config/evaluation/default_hun.yml -l config/keyboard/draft_narrow.yml -s "fgdck(h.w;nstrzviaeopmblxju,qy"
+
+bgkmz;uowqcstrhvnaeidpfljx.,y(
+
+bgkmz ;uowq
+cstrh vnaei
+dpflj x.,y(
+
+            ┌───┐                         ┌───┐
+        ┌───┤ k ├───┬───┐         ┌───┬───┤ o ├───┐
+┌───┬───┤ g ├───┤ m │ z │         │ ; │ u ├───┤ w ├───┬───┐
+│   │ b ├───┤ t ├───┼───┤         ├───┼───┤ a ├───┤ q │   │
+├───┼───┤ s ├───┤ r │ h │         │ v │ n ├───┤ e ├───┼───┤
+│   │ c ├───┤ f ├───┼───┤         ├───┼───┤ , ├───┤ i │   │
+├───┼───┤ p ├───┤ l │ j │         │ x │ . ├───┤ y ├───┼───┤
+│   │ d ├───┘   └───┴───┘         └───┴───┘   └───┤ ( │   │
+└───┴───┘       ┌───┬───┬───┐ ┌───┬───┬───┐       └───┴───┘
+                │ ↶ │ ␣ │ ⇥ │ │ ⏎ │ ⌫ │ ⌦ │
+                └───┴───┴───┘ └───┴───┴───┘
+
+Unigram metrics:
+  Not found: 3.1618% of 2058604.0000
+     7.98 Finger Balance                      | Finger loads % (no thumb): 7.5 9.4 12.3 17.1 - 14.3 15.8 13.9 9.7
+     1.47 Hand Disbalance                     | Hand loads % (no thumb): 46.32 - 53.68
+     0.00 Row Loads                           | Row 1: 19.7%; Row 2: 59.5%; Row 3: 20.8%
+     1.60 Modifier Usage                      |
+   111.51 Key Costs                           |
+
+Bigram metrics:
+  Not found: 5.5104% of 2058603.0000
+    84.11 Finger Repeats                      |
+    18.68 Movement Pattern                    |
+     1.95 No Handswitch After Unbalancing Key |
+
+Trigram metrics:
+  Not found: 7.1471% of 2058602.0000
+    19.32 No Handswitch in Trigram            |
+   438.87 Irregularity                        |
+    13.38 Secondary Bigrams                   |
+   -23.90 Inward Rolls                        |
+    -6.68 Outward Rolls                       |
+
+Cost: 668.29 (optimization score: 149635)
+
+
+fgdck(h.w;nstrzviaeopmblxju,qy
+
+fgdck (h.w;
+nstrz viaeo
+pmblx ju,qy
+
+            ┌───┐                         ┌───┐
+        ┌───┤ d ├───┬───┐         ┌───┬───┤ . ├───┐
+┌───┬───┤ g ├───┤ c │ k │         │ ( │ h ├───┤ w ├───┬───┐
+│   │ f ├───┤ t ├───┼───┤         ├───┼───┤ a ├───┤ ; │   │
+├───┼───┤ s ├───┤ r │ z │         │ v │ i ├───┤ e ├───┼───┤
+│   │ n ├───┤ b ├───┼───┤         ├───┼───┤ , ├───┤ o │   │
+├───┼───┤ m ├───┤ l │ x │         │ j │ u ├───┤ q ├───┼───┤
+│   │ p ├───┘   └───┴───┘         └───┴───┘   └───┤ y │   │
+└───┴───┘       ┌───┬───┬───┐ ┌───┬───┬───┐       └───┴───┘
+                │ ↶ │ ␣ │ ⇥ │ │ ⏎ │ ⌫ │ ⌦ │
+                └───┴───┴───┘ └───┴───┴───┘
+
+Unigram metrics:
+  Not found: 3.1618% of 2058604.0000
+     5.80 Finger Balance                      | Finger loads % (no thumb): 10.2 10.6 13.3 16.6 - 15.9 12.1 12.7 8.6
+     0.24 Hand Disbalance                     | Hand loads % (no thumb): 50.59 - 49.41
+     0.00 Row Loads                           | Row 1: 20.9%; Row 2: 61.7%; Row 3: 17.4%
+     1.60 Modifier Usage                      |
+   107.15 Key Costs                           |
+
+Bigram metrics:
+  Not found: 5.5104% of 2058603.0000
+    85.73 Finger Repeats                      |
+    23.03 Movement Pattern                    |
+     2.09 No Handswitch After Unbalancing Key |
+
+Trigram metrics:
+  Not found: 7.1471% of 2058602.0000
+    13.26 No Handswitch in Trigram            |
+   438.85 Irregularity                        |
+    14.56 Secondary Bigrams                   |
+   -18.20 Inward Rolls                        |
+    -8.54 Outward Rolls                       |
+
+Cost: 665.58 (optimization score: 150245)
+
+
+--------------------
+wide version:
+bvgkmuo;jqzcstrnaeihwdpfl(,y.x
+
+bvgkm uo;jq
+zcstr naeih
+wdpfl (,y.x
+
+            ┌───┐                         ┌───┐
+        ┌───┤ k ├───┬───┐         ┌───┬───┤ o ├───┐
+┌───┬───┤ g ├───┤ m │   │         │   │ u ├───┤ ; ├───┬───┐
+│ b │ v ├───┤ t ├───┼───┤         ├───┼───┤ a ├───┤ j │ q │
+├───┼───┤ s ├───┤ r │   │         │   │ n ├───┤ e ├───┼───┤
+│ z │ c ├───┤ f ├───┼───┤         ├───┼───┤ , ├───┤ i │ h │
+├───┼───┤ p ├───┤ l │   │         │   │ ( ├───┤ y ├───┼───┤
+│ w │ d ├───┘   └───┴───┘         └───┴───┘   └───┤ . │ x │
+└───┴───┘       ┌───┬───┬───┐ ┌───┬───┬───┐       └───┴───┘
+                │ ↶ │ ␣ │ ⇥ │ │ ⏎ │ ⌫ │ ⌦ │
+                └───┴───┴───┘ └───┴───┴───┘
+
+Unigram metrics:
+  Not found: 3.1618% of 2058604.0000
+     9.80 Finger Balance                      | Finger loads % (no thumb): 10.7 9.4 12.3 13.8 - 11.5 15.8 14.4 12.2
+     1.54 Hand Disbalance                     | Hand loads % (no thumb): 46.15 - 53.85
+     0.00 Row Loads                           | Row 1: 19.8%; Row 2: 59.1%; Row 3: 21.1%
+     1.60 Modifier Usage                      |
+   109.75 Key Costs                           |
+
+Bigram metrics:
+  Not found: 5.5104% of 2058603.0000
+    85.07 Finger Repeats                      |
+    28.53 Movement Pattern                    |
+     1.49 No Handswitch After Unbalancing Key |
+
+Trigram metrics:
+  Not found: 7.1471% of 2058602.0000
+    18.36 No Handswitch in Trigram            |
+   438.88 Irregularity                        |
+    13.96 Secondary Bigrams                   |
+   -23.24 Inward Rolls                        |
+    -6.77 Outward Rolls                       |
+
+Cost: 678.97 (optimization score: 147282)
+
+qbfdl(,uy;gcntsaei.zxmpkrowvhj
+
+qbfdl (,uy;
+gcnts aei.z
+xmpkr owvhj
+
+            ┌───┐                         ┌───┐
+        ┌───┤ d ├───┬───┐         ┌───┬───┤ , ├───┐
+┌───┬───┤ f ├───┤ l │   │         │   │ ( ├───┤ u ├───┬───┐
+│ q │ b ├───┤ t ├───┼───┤         ├───┼───┤ e ├───┤ y │ ; │
+├───┼───┤ n ├───┤ s │   │         │   │ a ├───┤ i ├───┼───┤
+│ g │ c ├───┤ k ├───┼───┤         ├───┼───┤ w ├───┤ . │ z │
+├───┼───┤ p ├───┤ r │   │         │   │ o ├───┤ v ├───┼───┤
+│ x │ m ├───┘   └───┴───┘         └───┴───┘   └───┤ h │ j │
+└───┴───┘       ┌───┬───┬───┐ ┌───┬───┬───┐       └───┴───┘
+                │ ↶ │ ␣ │ ⇥ │ │ ⏎ │ ⌫ │ ⌦ │
+                └───┴───┴───┘ └───┴───┴───┘
+
+Unigram metrics:
+  Not found: 3.1618% of 2058604.0000
+     5.27 Finger Balance                      | Finger loads % (no thumb): 10.1 10.2 13.5 16.0 - 16.7 14.3 10.9 8.3
+     0.09 Hand Disbalance                     | Hand loads % (no thumb): 49.77 - 50.23
+     0.00 Row Loads                           | Row 1: 20.9%; Row 2: 55.7%; Row 3: 23.4%
+     1.60 Modifier Usage                      |
+   109.03 Key Costs                           |
+
+Bigram metrics:
+  Not found: 5.5104% of 2058603.0000
+    79.63 Finger Repeats                      |
+    27.72 Movement Pattern                    |
+     1.58 No Handswitch After Unbalancing Key |
+
+Trigram metrics:
+  Not found: 7.1471% of 2058602.0000
+    14.66 No Handswitch in Trigram            |
+   438.85 Irregularity                        |
+    14.49 Secondary Bigrams                   |
+   -22.74 Inward Rolls                        |
+    -6.70 Outward Rolls                       |
+
+Cost: 663.48 (optimization score: 150720)
+
+
+wbdfmz ,uo=/{
+pcstrh )naeiy
+qgvklj x.;"(}
+
+qbfdl x,y;=
+gcnts aei.v
+wmpkr ouzhj
+
+            ┌───┐                         ┌───┐
+        ┌───┤ d ├───┬───┐         ┌───┬───┤ , ├───┐
+┌───┬───┤ f ├───┤ l │ { │         │ } │ x ├───┤ y ├───┬───┐
+│ q │ b ├───┤ t ├───┼───┤         ├───┼───┤ e ├───┤ ; │ = │
+├───┼───┤ n ├───┤ s │ ( │         │ ) │ a ├───┤ i ├───┼───┤
+│ g │ c ├───┤ k ├───┼───┤         ├───┼───┤ u ├───┤ . │ v │
+├───┼───┤ p ├───┤ r │ " │         │ / │ o ├───┤ z ├───┼───┤
+│ w │ m ├───┘   └───┴───┘         └───┴───┘   └───┤ h │ j │
+└───┴───┘       ┌───┬───┬───┐ ┌───┬───┬───┐       └───┴───┘
+                │ ↶ │ ␣ │ ⇥ │ │ ⏎ │ ⌫ │ ⌦ │
+                └───┴───┴───┘ └───┴───┴───┘
+
+Unigram metrics:
+  Not found: 0.8171% of 2058604.0000
+     8.49 Finger Balance                      | Finger loads % (no thumb): 10.0 9.8 13.0 17.9 - 16.7 15.7 8.8 8.0
+     0.31 Hand Disbalance                     | Hand loads % (no thumb): 50.77 - 49.23
+     0.00 Row Loads                           | Row 1: 17.2%; Row 2: 57.0%; Row 3: 25.8%
+     1.39 Modifier Usage                      |
+   118.46 Key Costs                           |
+
+Bigram metrics:
+  Not found: 1.3984% of 2058603.0000
+    84.89 Finger Repeats                      |
+    21.96 Movement Pattern                    |
+     2.49 No Handswitch After Unbalancing Key |
+
+Trigram metrics:
+  Not found: 1.8604% of 2058602.0000
+    16.39 No Handswitch in Trigram            |
+   415.22 Irregularity                        |
+    14.40 Secondary Bigrams                   |
+   -23.18 Inward Rolls                        |
+    -7.21 Outward Rolls                       |
+
+Cost: 653.60 (optimization score: 152997)
+
+
+bvgmzuo;q=pdstrnaeihwcfkl.,xyj
+
+bvgmz uo;q=
+pdstr naeih
+wcfkl .,xyj
+
+            ┌───┐                         ┌───┐
+        ┌───┤ m ├───┬───┐         ┌───┬───┤ o ├───┐
+┌───┬───┤ g ├───┤ z │ { │         │ } │ u ├───┤ ; ├───┬───┐
+│ b │ v ├───┤ t ├───┼───┤         ├───┼───┤ a ├───┤ q │ = │
+├───┼───┤ s ├───┤ r │ ( │         │ ) │ n ├───┤ e ├───┼───┤
+│ p │ d ├───┤ k ├───┼───┤         ├───┼───┤ , ├───┤ i │ h │
+├───┼───┤ f ├───┤ l │ " │         │ / │ . ├───┤ x ├───┼───┤
+│ w │ c ├───┘   └───┴───┘         └───┴───┘   └───┤ y │ j │
+└───┴───┘       ┌───┬───┬───┐ ┌───┬───┬───┐       └───┴───┘
+                │ ↶ │ ␣ │ ⇥ │ │ ⏎ │ ⌫ │ ⌦ │
+                └───┴───┴───┘ └───┴───┴───┘
+
+Unigram metrics:
+  Not found: 0.8171% of 2058604.0000
+     7.11 Finger Balance                      | Finger loads % (no thumb): 11.1 9.2 12.8 13.8 - 13.6 15.2 13.0 11.2
+     1.19 Hand Disbalance                     | Hand loads % (no thumb): 47.01 - 52.99
+     0.00 Row Loads                           | Row 1: 20.4%; Row 2: 61.3%; Row 3: 18.4%
+     1.39 Modifier Usage                      |
+   118.40 Key Costs                           |
+
+Bigram metrics:
+  Not found: 1.3984% of 2058603.0000
+    83.49 Finger Repeats                      |
+    26.14 Movement Pattern                    |
+     2.54 No Handswitch After Unbalancing Key |
+
+Trigram metrics:
+  Not found: 1.8604% of 2058602.0000
+    18.76 No Handswitch in Trigram            |
+   415.29 Irregularity                        |
+    13.84 Secondary Bigrams                   |
+   -25.01 Inward Rolls                        |
+    -7.27 Outward Rolls                       |
+
+Cost: 655.90 (optimization score: 152463)
+
+
+./target/release/optimize_genetic -c .\corpus_low_nohun.txt -e config/evaluation/default_hun.yml -l config/keyboard/draft.yml -s "bvgmz{}uo;q=pdstr()naeihwcfkl"/.,xyj" -f"qwertyuiopasdfghjklzxcvbnm,.;"
+
+bvgmz"/uo;q=pdstr()naeihwcfkl{}.,xyj
+
+bvgmz" /uo;q=
+pdstr( )naeih
+wcfkl{ }.,xyj
+
+            ┌───┐                         ┌───┐
+        ┌───┤ m ├───┬───┐         ┌───┬───┤ o ├───┐
+┌───┬───┤ g ├───┤ z │ " │         │ / │ u ├───┤ ; ├───┬───┐
+│ b │ v ├───┤ t ├───┼───┤         ├───┼───┤ a ├───┤ q │ = │
+├───┼───┤ s ├───┤ r │ ( │         │ ) │ n ├───┤ e ├───┼───┤
+│ p │ d ├───┤ k ├───┼───┤         ├───┼───┤ , ├───┤ i │ h │
+├───┼───┤ f ├───┤ l │ { │         │ } │ . ├───┤ x ├───┼───┤
+│ w │ c ├───┘   └───┴───┘         └───┴───┘   └───┤ y │ j │
+└───┴───┘       ┌───┬───┬───┐ ┌───┬───┬───┐       └───┴───┘
+                │ ↶ │ ␣ │ ⇥ │ │ ⏎ │ ⌫ │ ⌦ │
+                └───┴───┴───┘ └───┴───┴───┘
+
+Unigram metrics:
+  Not found: 0.8171% of 2058604.0000
+     7.11 Finger Balance                      | Finger loads % (no thumb): 11.1 9.2 12.8 13.8 - 13.6 15.2 13.0 11.2
+     1.19 Hand Disbalance                     | Hand loads % (no thumb): 47.01 - 52.99
+     0.00 Row Loads                           | Row 1: 20.7%; Row 2: 61.0%; Row 3: 18.3%
+     1.39 Modifier Usage                      |
+   117.36 Key Costs                           |
+
+Bigram metrics:
+  Not found: 1.3984% of 2058603.0000
+    83.69 Finger Repeats                      |
+    26.15 Movement Pattern                    |
+     2.54 No Handswitch After Unbalancing Key |
+
+Trigram metrics:
+  Not found: 1.8604% of 2058602.0000
+    18.76 No Handswitch in Trigram            |
+   415.29 Irregularity                        |
+    13.94 Secondary Bigrams                   |
+   -25.01 Inward Rolls                        |
+    -7.27 Outward Rolls                       |
+
+Cost: 655.15 (optimization score: 152637)
+
+
+}bgkmz;uow/{)cstrhvnaei("dpfljx.,yq=
+
+}bgkmz ;uow/{
+)cstrh vnaei(
+"dpflj x.,yq=
+
+            ┌───┐                         ┌───┐
+        ┌───┤ k ├───┬───┐         ┌───┬───┤ o ├───┐
+┌───┬───┤ g ├───┤ m │ z │         │ ; │ u ├───┤ w ├───┬───┐
+│ } │ b ├───┤ t ├───┼───┤         ├───┼───┤ a ├───┤ / │ { │
+├───┼───┤ s ├───┤ r │ h │         │ v │ n ├───┤ e ├───┼───┤
+│ ) │ c ├───┤ f ├───┼───┤         ├───┼───┤ , ├───┤ i │ ( │
+├───┼───┤ p ├───┤ l │ j │         │ x │ . ├───┤ y ├───┼───┤
+│ " │ d ├───┘   └───┴───┘         └───┴───┘   └───┤ q │ = │
+└───┴───┘       ┌───┬───┬───┐ ┌───┬───┬───┐       └───┴───┘
+                │ ↶ │ ␣ │ ⇥ │ │ ⏎ │ ⌫ │ ⌦ │
+                └───┴───┴───┘ └───┴───┴───┘
+
+Unigram metrics:
+  Not found: 0.8171% of 2058604.0000
+     7.06 Finger Balance                      | Finger loads % (no thumb): 10.0 9.0 11.9 16.5 - 13.8 15.2 13.4 10.3
+     1.06 Hand Disbalance                     | Hand loads % (no thumb): 47.34 - 52.66
+     0.00 Row Loads                           | Row 1: 20.4%; Row 2: 60.3%; Row 3: 19.3%
+     1.39 Modifier Usage                      |
+   117.85 Key Costs                           |
+
+Bigram metrics:
+  Not found: 1.3984% of 2058603.0000
+    86.28 Finger Repeats                      |
+    18.95 Movement Pattern                    |
+     2.18 No Handswitch After Unbalancing Key |
+
+Trigram metrics:
+  Not found: 1.8604% of 2058602.0000
+    18.85 No Handswitch in Trigram            |
+   415.24 Irregularity                        |
+    13.79 Secondary Bigrams                   |
+   -24.21 Inward Rolls                        |
+    -7.22 Outward Rolls                       |
+
+Cost: 651.23 (optimization score: 153556)
+
+
+}bgkmz;uow/{)dstrhvnaei("cpfljx.,qy=
+
+}bgkmz ;uow/{
+)dstrh vnaei(
+"cpflj x.,qy=
+
+            ┌───┐                         ┌───┐
+        ┌───┤ k ├───┬───┐         ┌───┬───┤ o ├───┐
+┌───┬───┤ g ├───┤ m │ z │         │ ; │ u ├───┤ w ├───┬───┐
+│ } │ b ├───┤ t ├───┼───┤         ├───┼───┤ a ├───┤ / │ { │
+├───┼───┤ s ├───┤ r │ h │         │ v │ n ├───┤ e ├───┼───┤
+│ ) │ d ├───┤ f ├───┼───┤         ├───┼───┤ , ├───┤ i │ ( │
+├───┼───┤ p ├───┤ l │ j │         │ x │ . ├───┤ q ├───┼───┤
+│ " │ c ├───┘   └───┴───┘         └───┴───┘   └───┤ y │ = │
+└───┴───┘       ┌───┬───┬───┐ ┌───┬───┬───┐       └───┴───┘
+                │ ↶ │ ␣ │ ⇥ │ │ ⏎ │ ⌫ │ ⌦ │
+                └───┴───┴───┘ └───┴───┴───┘
+
+Unigram metrics:
+  Not found: 0.8171% of 2058604.0000
+     7.39 Finger Balance                      | Finger loads % (no thumb): 10.0 9.0 11.9 16.5 - 13.8 15.2 12.3 11.3
+     1.06 Hand Disbalance                     | Hand loads % (no thumb): 47.34 - 52.66
+     0.00 Row Loads                           | Row 1: 20.4%; Row 2: 60.6%; Row 3: 19.1%
+     1.39 Modifier Usage                      |
+   117.29 Key Costs                           |
+
+Bigram metrics:
+  Not found: 1.3984% of 2058603.0000
+    84.17 Finger Repeats                      |
+    20.69 Movement Pattern                    |
+     2.18 No Handswitch After Unbalancing Key |
+
+Trigram metrics:
+  Not found: 1.8604% of 2058602.0000
+    18.81 No Handswitch in Trigram            |
+   415.23 Irregularity                        |
+    13.50 Secondary Bigrams                   |
+   -24.41 Inward Rolls                        |
+    -7.29 Outward Rolls                       |
+
+Cost: 650.02 (optimization score: 153842)
+
+
+====================
+WINNER with symbols outside:
+
+}bgdmkwuoq={)cstrhznaei("pvfljx.,;y/
+
+}bgdmk wuoq={
+)cstrh znaei(
+"pvflj x.,;y/
+
+            ┌───┐                         ┌───┐
+        ┌───┤ d ├───┬───┐         ┌───┬───┤ o ├───┐
+┌───┬───┤ g ├───┤ m │ k │         │ w │ u ├───┤ q ├───┬───┐
+│ } │ b ├───┤ t ├───┼───┤         ├───┼───┤ a ├───┤ = │ { │
+├───┼───┤ s ├───┤ r │ h │         │ z │ n ├───┤ e ├───┼───┤
+│ ) │ c ├───┤ f ├───┼───┤         ├───┼───┤ , ├───┤ i │ ( │
+├───┼───┤ v ├───┤ l │ j │         │ x │ . ├───┤ ; ├───┼───┤
+│ " │ p ├───┘   └───┴───┘         └───┴───┘   └───┤ y │ / │
+└───┴───┘       ┌───┬───┬───┐ ┌───┬───┬───┐       └───┴───┘
+                │ ↶ │ ␣ │ ⇥ │ │ ⏎ │ ⌫ │ ⌦ │
+                └───┴───┴───┘ └───┴───┴───┘
+
+Unigram metrics:
+  Not found: 0.8171% of 2058604.0000
+     7.77 Finger Balance                      | Finger loads % (no thumb): 8.6 8.6 13.8 16.8 - 13.0 15.2 12.8 11.3
+     0.92 Hand Disbalance                     | Hand loads % (no thumb): 47.70 - 52.30
+     0.00 Row Loads                           | Row 1: 21.9%; Row 2: 60.0%; Row 3: 18.2%
+     1.39 Modifier Usage                      |
+   116.55 Key Costs                           |
+
+Bigram metrics:
+  Not found: 1.3984% of 2058603.0000
+    84.21 Finger Repeats                      |
+    19.26 Movement Pattern                    |
+     2.10 No Handswitch After Unbalancing Key |
+
+Trigram metrics:
+  Not found: 1.8604% of 2058602.0000
+    17.75 No Handswitch in Trigram            |
+   415.23 Irregularity                        |
+    14.12 Secondary Bigrams                   |
+   -23.75 Inward Rolls                        |
+    -7.26 Outward Rolls                       |
+
+Cost: 648.31 (optimization score: 154248)
+
+
+}bgkmzwuoyq{)dstrhvnaei("cpfljx.;=,/
+
+}bgkmz wuoyq{
+)dstrh vnaei(
+"cpflj x.;=,/
+
+            ┌───┐                         ┌───┐
+        ┌───┤ k ├───┬───┐         ┌───┬───┤ o ├───┐
+┌───┬───┤ g ├───┤ m │ z │         │ w │ u ├───┤ y ├───┬───┐
+│ } │ b ├───┤ t ├───┼───┤         ├───┼───┤ a ├───┤ q │ { │
+├───┼───┤ s ├───┤ r │ h │         │ v │ n ├───┤ e ├───┼───┤
+│ ) │ d ├───┤ f ├───┼───┤         ├───┼───┤ ; ├───┤ i │ ( │
+├───┼───┤ p ├───┤ l │ j │         │ x │ . ├───┤ = ├───┼───┤
+│ " │ c ├───┘   └───┴───┘         └───┴───┘   └───┤ , │ / │
+└───┴───┘       ┌───┬───┬───┐ ┌───┬───┬───┐       └───┴───┘
+                │ ↶ │ ␣ │ ⇥ │ │ ⏎ │ ⌫ │ ⌦ │
+                └───┴───┴───┘ └───┴───┴───┘
+
+Unigram metrics:
+  Not found: 0.8171% of 2058604.0000
+     7.75 Finger Balance                      | Finger loads % (no thumb): 10.0 9.0 11.9 16.5 - 13.3 14.7 13.6 11.0
+     1.06 Hand Disbalance                     | Hand loads % (no thumb): 47.34 - 52.66
+     0.00 Row Loads                           | Row 1: 20.0%; Row 2: 60.6%; Row 3: 19.4%
+     1.39 Modifier Usage                      |
+   117.52 Key Costs                           |
+
+Bigram metrics:
+  Not found: 1.3984% of 2058603.0000
+    84.81 Finger Repeats                      |
+    19.64 Movement Pattern                    |
+     2.38 No Handswitch After Unbalancing Key |
+
+Trigram metrics:
+  Not found: 1.8604% of 2058602.0000
+    18.74 No Handswitch in Trigram            |
+   415.23 Irregularity                        |
+    13.64 Secondary Bigrams                   |
+   -23.95 Inward Rolls                        |
+    -7.40 Outward Rolls                       |
+
+Cost: 650.83 (optimization score: 153651)
+
+{bfdmz;uowq}(cstrhvnaei)/pgkljx.,"y=
+
+{bfdmz ;uowq}
+(cstrh vnaei)
+/pgklj x.,"y=
+
+            ┌───┐                         ┌───┐
+        ┌───┤ d ├───┬───┐         ┌───┬───┤ o ├───┐
+┌───┬───┤ f ├───┤ m │ z │         │ ; │ u ├───┤ w ├───┬───┐
+│ { │ b ├───┤ t ├───┼───┤         ├───┼───┤ a ├───┤ q │ } │
+├───┼───┤ s ├───┤ r │ h │         │ v │ n ├───┤ e ├───┼───┤
+│ ( │ c ├───┤ k ├───┼───┤         ├───┼───┤ , ├───┤ i │ ) │
+├───┼───┤ g ├───┤ l │ j │         │ x │ . ├───┤ " ├───┼───┤
+│ / │ p ├───┘   └───┴───┘         └───┴───┘   └───┤ y │ = │
+└───┴───┘       ┌───┬───┬───┐ ┌───┬───┬───┐       └───┴───┘
+                │ ↶ │ ␣ │ ⇥ │ │ ⏎ │ ⌫ │ ⌦ │
+                └───┴───┴───┘ └───┴───┴───┘
+
+Unigram metrics:
+  Not found: 0.8171% of 2058604.0000
+     6.63 Finger Balance                      | Finger loads % (no thumb): 8.5 9.2 13.0 16.5 - 13.8 15.2 12.7 11.0
+     1.11 Hand Disbalance                     | Hand loads % (no thumb): 47.22 - 52.78
+     0.00 Row Loads                           | Row 1: 21.7%; Row 2: 60.3%; Row 3: 17.9%
+     1.39 Modifier Usage                      |
+   117.90 Key Costs                           |
+
+Bigram metrics:
+  Not found: 1.3984% of 2058603.0000
+    85.32 Finger Repeats                      |
+    24.32 Movement Pattern                    |
+     2.67 No Handswitch After Unbalancing Key |
+
+Trigram metrics:
+  Not found: 1.8604% of 2058602.0000
+    21.42 No Handswitch in Trigram            |
+   415.23 Irregularity                        |
+    13.91 Secondary Bigrams                   |
+   -24.68 Inward Rolls                        |
+    -7.40 Outward Rolls                       |
+
+Cost: 657.82 (optimization score: 152017)
+
+}bdfmz,uowq{)cstrhpnaei("gvkljx.;=y/
+
+}bdfmz ,uowq{
+)cstrh pnaei(
+"gvklj x.;=y/
+
+            ┌───┐                         ┌───┐
+        ┌───┤ f ├───┬───┐         ┌───┬───┤ o ├───┐
+┌───┬───┤ d ├───┤ m │ z │         │ , │ u ├───┤ w ├───┬───┐
+│ } │ b ├───┤ t ├───┼───┤         ├───┼───┤ a ├───┤ q │ { │
+├───┼───┤ s ├───┤ r │ h │         │ p │ n ├───┤ e ├───┼───┤
+│ ) │ c ├───┤ k ├───┼───┤         ├───┼───┤ ; ├───┤ i │ ( │
+├───┼───┤ v ├───┤ l │ j │         │ x │ . ├───┤ = ├───┼───┤
+│ " │ g ├───┘   └───┴───┘         └───┴───┘   └───┤ y │ / │
+└───┴───┘       ┌───┬───┬───┐ ┌───┬───┬───┐       └───┴───┘
+                │ ↶ │ ␣ │ ⇥ │ │ ⏎ │ ⌫ │ ⌦ │
+                └───┴───┴───┘ └───┴───┴───┘
+
+Unigram metrics:
+  Not found: 0.8171% of 2058604.0000
+     6.39 Finger Balance                      | Finger loads % (no thumb): 8.8 9.7 11.9 16.5 - 14.8 14.7 13.0 10.6
+     1.25 Hand Disbalance                     | Hand loads % (no thumb): 46.87 - 53.13
+     0.00 Row Loads                           | Row 1: 22.2%; Row 2: 60.8%; Row 3: 16.9%
+     1.39 Modifier Usage                      |
+   117.69 Key Costs                           |
+
+Bigram metrics:
+  Not found: 1.3984% of 2058603.0000
+    85.60 Finger Repeats                      |
+    19.22 Movement Pattern                    |
+     2.35 No Handswitch After Unbalancing Key |
+
+Trigram metrics:
+  Not found: 1.8604% of 2058602.0000
+    18.62 No Handswitch in Trigram            |
+   415.23 Irregularity                        |
+    13.54 Secondary Bigrams                   |
+   -23.96 Inward Rolls                        |
+    -6.97 Outward Rolls                       |
+
+Cost: 650.35 (optimization score: 153763)
+
+
+            ┌───┐                         ┌───┐
+        ┌───┤ f ├───┬───┐         ┌───┬───┤ o`├───┐
+┌───┬───┤ d ├───┤ m`│ z │         │ , │ u`├───┤ = ├───┬───┐
+│ w │ b`├───┤ t`├───┼───┤         ├───┼───┤ a`├───┤ / │ {`│
+├───┼───┤ s`├───┤ r`│ h`│         │ ) │ n`├───┤ e`├───┼───┤
+│ p │ c`├───┤ k ├───┼───┤         ├───┼───┤ ; ├───┤ i`│ y │
+├───┼───┤ v`├───┤ l`│ j`│         │ x`│ .`├───┤ " ├───┼───┤
+│ q │ g ├───┘   └───┴───┘         └───┴───┘   └───┤ ( │ } │
+└───┴───┘       ┌───┬───┬───┐ ┌───┬───┬───┐       └───┴───┘
+                │ ↶ │ ␣ │ ⇥ │ │ ⏎ │ ⌫ │ ⌦ │
+                └───┴───┴───┘ └───┴───┴───┘
+
+Cost: 642.53 (optimization score: 155634)
+
+//643: }vfdmz;uoq/{)cstrhwnaei(bpgkljx.,=y"
+
+}bgkmz quowy{)dstrh vnaei("cpflj x.,;/=
+
+
+{bgkmzwuoyq}(dstrhvnaei)"cpfljx.;=,/
+
+
+{bplmk".,uy}(snrtg;aeic)/fhxdjqowzv=
+
+{bplmk ".,uy}
+(snrtg ;aeic)
+/fhxdj qowzv=
+
+
+}bdfmz;uowq{)cstrhpnaei(/vgkljx.,"y=
+
+
+}bfdmz;uowq{)cstrhvnaei(/pgkljx.,"y=
+
+}bfdmz ;uowq{
+)cstrh vnaei(
+/pgklj x.,"y=
+
+            ┌───┐                         ┌───┐
+        ┌───┤ d ├───┬───┐         ┌───┬───┤ o ├───┐
+┌───┬───┤ f ├───┤ m │ z │         │ ; │ u ├───┤ w ├───┬───┐
+│ } │ b ├───┤ t ├───┼───┤         ├───┼───┤ a ├───┤ q │ { │
+├───┼───┤ s ├───┤ r │ h │         │ v │ n ├───┤ e ├───┼───┤
+│ ) │ c ├───┤ k ├───┼───┤         ├───┼───┤ , ├───┤ i │ ( │
+├───┼───┤ g ├───┤ l │ j │         │ x │ . ├───┤ " ├───┼───┤
+│ / │ p ├───┘   └───┴───┘         └───┴───┘   └───┤ y │ = │
+└───┴───┘       ┌───┬───┬───┐ ┌───┬───┬───┐       └───┴───┘
+                │ ↶ │ ␣ │ ⇥ │ │ ⏎ │ ⌫ │ ⌦ │
+                └───┴───┴───┘ └───┴───┴───┘
+
+Unigram metrics:
+  Not found: 0.8171% of 2058604.0000
+     6.39 Finger Balance                      | Finger loads % (no thumb): 8.6 9.2 13.0 16.5 - 13.8 15.2 12.7 10.8
+     1.05 Hand Disbalance                     | Hand loads % (no thumb): 47.38 - 52.62
+     0.00 Row Loads                           | Row 1: 21.7%; Row 2: 60.3%; Row 3: 17.9%
+     1.39 Modifier Usage                      |
+   117.90 Key Costs                           |
+
+Bigram metrics:
+  Not found: 1.3984% of 2058603.0000
+    83.26 Finger Repeats                      |
+    21.51 Movement Pattern                    |
+     2.14 No Handswitch After Unbalancing Key |
+
+Trigram metrics:
+  Not found: 1.8604% of 2058602.0000
+    19.69 No Handswitch in Trigram            |
+   415.23 Irregularity                        |
+    13.52 Secondary Bigrams                   |
+   -24.35 Inward Rolls                        |
+    -7.34 Outward Rolls                       |
+
+Cost: 650.39 (optimization score: 153754)
+
+colemak-dh
+            ┌───┐                         ┌───┐
+        ┌───┤ f ├───┬───┐         ┌───┬───┤ u ├───┐
+┌───┬───┤ w ├───┤ p │ b │         │ j │ l ├───┤ y ├───┬───┐
+│ } │ q ├───┤ s ├───┼───┤         ├───┼───┤ e ├───┤ ; │ { │
+├───┼───┤ r ├───┤ t │ g │         │ m │ n ├───┤ i ├───┼───┤
+│ ) │ a ├───┤ c ├───┼───┤         ├───┼───┤ . ├───┤ o │ ( │
+├───┼───┤ x ├───┤ d │ v │         │ k │ h ├───┤ , ├───┼───┤
+│ " │ z ├───┘   └───┴───┘         └───┴───┘   └───┤ = │ / │
+└───┴───┘       ┌───┬───┬───┐ ┌───┬───┬───┐       └───┴───┘
+                │ ↶ │ ␣ │ ⇥ │ │ ⏎ │ ⌫ │ ⌦ │
+                └───┴───┴───┘ └───┴───┴───┘
+
+Layout string (layer 1):
+}qwfpbjluy;{)arstgmneio("zxcdvkh.,=/
+
+Unigram metrics:
+  Not found: 0.8171% of 2058604.0000
+    12.63 Finger Balance                      | Finger loads % (no thumb): 11.5 7.0 10.1 18.1 - 16.7 16.4 9.5 10.5
+     1.28 Hand Disbalance                     | Hand loads % (no thumb): 46.80 - 53.20
+     0.00 Row Loads                           | Row 1: 16.5%; Row 2: 65.2%; Row 3: 18.4%
+     1.39 Modifier Usage                      | Worst unigrams: [ ] (53.43%), [⌫] (46.57%)
+   120.22 Key Costs                           | Worst unigrams:   (15.56%), m ( 5.89%), v ( 4.33%)
+
+Bigram metrics:
+  Not found: 1.3984% of 2058603.0000
+    88.04 Finger Repeats                      | Worst:    (60.39%), e. ( 2.88%), cs ( 1.63%);  Worst non-fixed: e. ( 2.88%), cs ( 1.63%), az ( 1.50%)
+    33.75 Movement Pattern                    | Worst: ca ( 9.05%), ac ( 6.92%), le ( 6.38%);  Worst non-fixed: ca ( 9.05%), ac ( 6.92%), le ( 6.38%)
+     3.60 No Handswitch After Unbalancing Key | Worst: va ( 7.27%), me ( 5.64%), em ( 4.31%);  Worst non-fixed: va ( 7.27%), me ( 5.64%), em ( 4.31%)
+
+Trigram metrics:
+  Not found: 1.8604% of 2058602.0000
+    37.68 No Handswitch in Trigram            | Worst: ion ( 3.92%), men ( 2.10%), rac ( 1.59%);  Worst non-fixed: ion ( 3.92%), men ( 2.10%), rac ( 1.59%)
+   415.34 Irregularity                        | Worst:     (99.89%), \t\t\t ( 0.04%), act ( 0.02%);  Worst non-fixed: act ( 0.02%), fcf ( 0.01%), ele ( 0.01%)
+    15.45 Secondary Bigrams                   | Worst:     (22.80%), men ( 1.26%), cur ( 1.09%);  Worst non-fixed: men ( 1.26%), cur ( 1.09%), ure ( 0.98%)
+   -21.85 Inward Rolls                        | Worst: ent ( 3.10%), atu ( 1.72%), eat ( 1.68%);  Worst non-fixed: ent ( 3.10%), atu ( 1.72%), eat ( 1.68%)
+    -9.34 Outward Rolls                       | Worst: tio ( 3.44%), the ( 2.20%), tri ( 2.17%);  Worst non-fixed: tio ( 3.44%), the ( 2.20%), tri ( 2.17%)
+
+Cost: 698.19 (optimization score: 143228)
+
+
+
+}bgdmk wuoq={
+)cstrh znaei(
+"pvflj x.,;y/
+
+            ┌───┐                         ┌───┐
+        ┌───┤ d ├───┬───┐         ┌───┬───┤ o ├───┐
+┌───┬───┤ g ├───┤ m │ k │         │ w │ u ├───┤ q ├───┬───┐
+│ } │ b ├───┤ t ├───┼───┤         ├───┼───┤ a ├───┤ = │ { │
+├───┼───┤ s ├───┤ r │ h │         │ z │ n ├───┤ e ├───┼───┤
+│ ) │ c ├───┤ f ├───┼───┤         ├───┼───┤ , ├───┤ i │ ( │
+├───┼───┤ v ├───┤ l │ j │         │ x │ . ├───┤ ; ├───┼───┤
+│ " │ p ├───┘   └───┴───┘         └───┴───┘   └───┤ y │ / │
+└───┴───┘       ┌───┬───┬───┐ ┌───┬───┬───┐       └───┴───┘
+                │ ↶ │ ␣ │ ⇥ │ │ ⏎ │ ⌫ │ ⌦ │
+                └───┴───┴───┘ └───┴───┴───┘
+			
+			
+			┌───┐                         ┌───┐
+        ┌───┤ d ├───┬───┐         ┌───┬───┤ o ├───┐
+┌───┬───┤ g ├───┤ m │ h │         │ w │ u ├───┤ q ├───┬───┐
+│ } │ b ├───┤ t ├───┼───┤         ├───┼───┤ a ├───┤ y │ { │
+├───┼───┤ s ├───┤ r │ k │         │ = │ n ├───┤ e ├───┼───┤
+│ ) │ c ├───┤ f ├───┼───┤         ├───┼───┤ , ├───┤ i │ ( │
+├───┼───┤ v ├───┤ l │ j │         │ x │ . ├───┤ ; ├───┼───┤
+│ " │ p ├───┘   └───┴───┘         └───┴───┘   └───┤ z │ / │
+└───┴───┘       ┌───┬───┬───┐ ┌───┬───┬───┐       └───┴───┘
+                │ ↶ │ ␣ │ ⇥ │ │ ⏎ │ ⌫ │ ⌦ │
+                └───┴───┴───┘ └───┴───┴───┘
+
+Layout string (layer 1):
+}bgdmhwuoqy{)cstrk=naei("pvfljx.,;z/
+
+Unigram metrics:
+  Not found: 0.8171% of 2058604.0000
+     7.87 Finger Balance                      | Finger loads % (no thumb): 8.6 8.6 13.8 16.8 - 12.9 15.2 12.8 11.4
+     0.92 Hand Disbalance                     | Hand loads % (no thumb): 47.70 - 52.30
+     0.00 Row Loads                           | Row 1: 22.7%; Row 2: 59.4%; Row 3: 17.9%
+     1.39 Modifier Usage                      | Worst unigrams: [ ] (53.43%), [⌫] (46.57%)
+   115.99 Key Costs                           | Worst unigrams:   (16.12%), o ( 8.05%), d ( 4.37%)
+
+Bigram metrics:
+  Not found: 1.3984% of 2058603.0000
+    84.26 Finger Repeats                      | Worst:    (63.10%), un ( 1.71%), \t\t ( 1.65%);  Worst non-fixed: un ( 1.71%), rm ( 1.42%), n. ( 1.39%)
+    28.27 Movement Pattern                    | Worst: th ( 5.76%), y, ( 5.08%), ye ( 4.37%);  Worst non-fixed: th ( 5.76%), y, ( 5.08%), ye ( 4.37%)
+     2.19 No Handswitch After Unbalancing Key | Worst: th (13.52%), ch ( 6.95%), ex ( 3.67%);  Worst non-fixed: th (13.52%), ch ( 6.95%), ex ( 3.67%)
+
+Trigram metrics:
+  Not found: 1.8604% of 2058602.0000
+    18.16 No Handswitch in Trigram            | Worst: ion ( 4.06%), one ( 2.50%), ina ( 2.23%);  Worst non-fixed: ion ( 4.06%), one ( 2.50%), ina ( 2.23%)
+   415.26 Irregularity                        | Worst:     (99.93%), \t\t\t ( 0.04%), ion ( 0.01%);  Worst non-fixed: ion ( 0.01%), fcf ( 0.00%), ize ( 0.00%)
+    14.47 Secondary Bigrams                   | Worst:     (24.34%), def ( 1.26%), har ( 1.02%);  Worst non-fixed: def ( 1.26%), har ( 1.02%), lem ( 0.99%)
+   -24.13 Inward Rolls                        | Worst: ent ( 2.81%), tio ( 2.67%), the ( 1.71%);  Worst non-fixed: ent ( 2.81%), tio ( 2.67%), the ( 1.71%)
+    -6.99 Outward Rolls                       | Worst: nal ( 1.74%), nit ( 1.73%), ert ( 1.41%);  Worst non-fixed: nal ( 1.74%), nit ( 1.73%), ert ( 1.41%)
+
+Cost: 657.65 (optimization score: 152056)
+
+
+}bgdmk f,uqo{
+)lstry pnaei(
+"cvwhj xz.;=/
+
+            ┌───┐                         ┌───┐
+        ┌───┤ d ├───┬───┐         ┌───┬───┤ u ├───┐
+┌───┬───┤ g ├───┤ m │ k │         │ f │ , ├───┤ q ├───┬───┐
+│ } │ b ├───┤ t ├───┼───┤         ├───┼───┤ a ├───┤ o │ { │
+├───┼───┤ s ├───┤ r │ y │         │ p │ n ├───┤ e ├───┼───┤
+│ ) │ l ├───┤ w ├───┼───┤         ├───┼───┤ . ├───┤ i │ ( │
+├───┼───┤ v ├───┤ h │ j │         │ x │ z ├───┤ ; ├───┼───┤
+│ " │ c ├───┘   └───┴───┘         └───┴───┘   └───┤ = │ / │
+└───┴───┘       ┌───┬───┬───┐ ┌───┬───┬───┐       └───┴───┘
+                │ ↶ │ ␣ │ ⇥ │ │ ⏎ │ ⌫ │ ⌦ │
+                └───┴───┴───┘ └───┴───┴───┘
+
+Unigram metrics:
+  Not found: 0.3215% of 524056.0000
+     8.20 Finger Balance                      | Finger loads % (no thumb): 8.9 10.1 12.0 16.6 - 13.0 14.3 12.8 12.4
+     0.99 Hand Disbalance                     | Hand loads % (no thumb): 47.52 - 52.48
+     0.00 Row Loads                           | Row 1: 27.4%; Row 2: 59.9%; Row 3: 12.7%
+     1.21 Modifier Usage                      |
+   125.31 Key Costs                           |
+
+Bigram metrics:
+  Not found: 0.5742% of 524055.0000
+    29.18 Finger Repeats                      |
+    16.65 Movement Pattern                    |
+     2.69 No Handswitch After Unbalancing Key |
+
+Trigram metrics:
+  Not found: 0.7908% of 524054.0000
+    14.99 No Handswitch in Trigram            |
+    10.58 Irregularity                        |
+    14.70 Secondary Bigrams                   |
+   -26.54 Inward Rolls                        |
+    -7.40 Outward Rolls                       |
+
+Cost: 190.58 (optimization score: 524701)
+
+
+Optimized layouts found during this run, ordered from best (lowest cost) to worst (highest cost):
+ 1. }bgdmkf,uqo{)lstrypnaei("cvwhjxz.;=/ (190.6) (current)
+ 
+ 
+            ┌───┐                         ┌───┐
+        ┌───┤ d ├───┬───┐         ┌───┬───┤ u ├───┐
+┌───┬───┤ g ├───┤ m │ k │         │ f │ z ├───┤ q ├───┬───┐
+│ } │ b ├───┤ t ├───┼───┤         ├───┼───┤ a ├───┤ o │ { │
+├───┼───┤ s ├───┤ r │ y │         │ p │ n ├───┤ e ├───┼───┤
+│ ) │ l ├───┤ w ├───┼───┤         ├───┼───┤ . ├───┤ i │ ( │
+├───┼───┤ v ├───┤ h │ j │         │ x │ , ├───┤ ; ├───┼───┤
+│ " │ c ├───┘   └───┴───┘         └───┴───┘   └───┤ = │ / │
+└───┴───┘       ┌───┬───┬───┐ ┌───┬───┬───┐       └───┴───┘
+                │ ↶ │ ␣ │ ⇥ │ │ ⏎ │ ⌫ │ ⌦ │
+                └───┴───┴───┘ └───┴───┴───┘
+				
+}bgdmkf,uqo{)lstrypnaei("cvwhjxz.;=/
+
+}bgdmk f,uqo{
+)lstry pnaei(
+"cvwhj xz.;=/
+
+            ┌───┐                         ┌───┐
+        ┌───┤ d ├───┬───┐         ┌───┬───┤ u ├───┐
+┌───┬───┤ g ├───┤ m │ k │         │ f │ , ├───┤ q ├───┬───┐
+│ } │ b ├───┤ t ├───┼───┤         ├───┼───┤ a ├───┤ o │ { │
+├───┼───┤ s ├───┤ r │ y │         │ p │ n ├───┤ e ├───┼───┤
+│ ) │ l ├───┤ w ├───┼───┤         ├───┼───┤ . ├───┤ i │ ( │
+├───┼───┤ v ├───┤ h │ j │         │ x │ z ├───┤ ; ├───┼───┤
+│ " │ c ├───┘   └───┴───┘         └───┴───┘   └───┤ = │ / │
+└───┴───┘       ┌───┬───┬───┐ ┌───┬───┬───┐       └───┴───┘
+                │ ↶ │ ␣ │ ⇥ │ │ ⏎ │ ⌫ │ ⌦ │
+                └───┴───┴───┘ └───┴───┴───┘
+
+Unigram metrics:
+  Not found: 0.3215% of 524056.0000
+     8.20 Finger Balance                      | Finger loads % (no thumb): 8.9 10.1 12.0 16.6 - 13.0 14.3 12.8 12.4
+     0.99 Hand Disbalance                     | Hand loads % (no thumb): 47.52 - 52.48
+     0.00 Row Loads                           | Row 1: 27.4%; Row 2: 59.9%; Row 3: 12.7%
+     1.21 Modifier Usage                      |
+   125.31 Key Costs                           |
+
+Bigram metrics:
+  Not found: 0.5742% of 524055.0000
+    29.18 Finger Repeats                      |
+    16.65 Movement Pattern                    |
+     2.69 No Handswitch After Unbalancing Key |
+
+Trigram metrics:
+  Not found: 0.7908% of 524054.0000
+    14.99 No Handswitch in Trigram            |
+    10.58 Irregularity                        |
+    14.70 Secondary Bigrams                   |
+   -26.54 Inward Rolls                        |
+    -7.40 Outward Rolls                       |
+
+Cost: 190.58 (optimization score: 524701)
+
+
+Optimized layouts found during this run, ordered from best (lowest cost) to worst (highest cost):
+ 1. }bgdmkf,uqo{)lstrypnaei("cvwhjxz.;=/ (190.6) (current)				
+
+Layout string (layer 1):
+}bgdmkfzuqo{)lstrypnaei("cvwhjx,.;=/
+
+Unigram metrics:
+  Not found: 0.8171% of 2058604.0000
+    11.51 Finger Balance                      | Finger loads % (no thumb): 11.1 8.6 12.4 13.7 - 12.8 12.7 12.8 16.0
+     1.70 Hand Disbalance                     | Hand loads % (no thumb): 45.75 - 54.25
+     0.00 Row Loads                           | Row 1: 23.3%; Row 2: 61.6%; Row 3: 15.0%
+     1.39 Modifier Usage                      | Worst unigrams: [ ] (53.43%), [⌫] (46.57%)
+   121.18 Key Costs                           | Worst unigrams:   (15.43%), o ( 6.42%), p ( 4.79%)
+
+Bigram metrics:
+  Not found: 1.3984% of 2058603.0000
+    88.51 Finger Repeats                      | Worst:    (60.07%), io ( 4.86%), .a ( 1.60%);  Worst non-fixed: io ( 4.86%), .a ( 1.60%), ry ( 1.42%)
+    26.24 Movement Pattern                    | Worst: eo ( 8.53%), .i ( 5.53%), e. ( 5.00%);  Worst non-fixed: eo ( 8.53%), .i ( 5.53%), e. ( 5.00%)
+     3.39 No Handswitch After Unbalancing Key | Worst: if ( 6.57%), fi ( 6.42%), fe ( 5.28%);  Worst non-fixed: if ( 6.57%), fi ( 6.42%), fe ( 5.28%)
+
+Trigram metrics:
+  Not found: 1.8604% of 2058602.0000
+    34.32 No Handswitch in Trigram            | Worst: ion ( 6.88%), fea ( 2.89%), one ( 2.12%);  Worst non-fixed: ion ( 6.88%), fea ( 2.89%), one ( 2.12%)
+   415.25 Irregularity                        | Worst:     (99.93%), \t\t\t ( 0.04%), ion ( 0.01%);  Worst non-fixed: ion ( 0.01%), .fe ( 0.00%), qif ( 0.00%)
+    17.10 Secondary Bigrams                   | Worst:     (20.60%), on. ( 1.22%), val ( 1.13%);  Worst non-fixed: on. ( 1.22%), val ( 1.13%), fin ( 1.13%)
+   -23.97 Inward Rolls                        | Worst: ent ( 2.82%), the ( 1.72%), tri ( 1.69%);  Worst non-fixed: ent ( 2.82%), the ( 1.72%), tri ( 1.69%)
+    -7.05 Outward Rolls                       | Worst: nal ( 1.72%), nit ( 1.72%), for ( 1.48%);  Worst non-fixed: nal ( 1.72%), nit ( 1.72%), for ( 1.48%)
+
+Cost: 689.57 (optimization score: 145016)
+
+übgdmkf,uqoöólstrypnaeiéícvwhjxz.;áő
+
+übgdmk f,uqoö
+ólstry pnaeié
+ícvwhj xz.;áő
+
+            ┌───┐                         ┌───┐
+        ┌───┤ d ├───┬───┐         ┌───┬───┤ u ├───┐
+┌───┬───┤ g ├───┤ m │ k │         │ f │ , ├───┤ q ├───┬───┐
+│ ü │ b ├───┤ t ├───┼───┤         ├───┼───┤ a ├───┤ o │ ö │
+├───┼───┤ s ├───┤ r │ y │         │ p │ n ├───┤ e ├───┼───┤
+│ ó │ l ├───┤ w ├───┼───┤         ├───┼───┤ . ├───┤ i │ é │
+├───┼───┤ v ├───┤ h │ j │         │ x │ z ├───┤ ; ├───┼───┤
+│ í │ c ├───┘   └───┴───┘         └───┴───┘   └───┤ á │ ő │
+└───┴───┘       ┌───┬───┬───┐ ┌───┬───┬───┐       └───┴───┘
+                │ ↶ │ ␣ │ ⇥ │ │ ⏎ │ ⌫ │ ⌦ │
+                └───┴───┴───┘ └───┴───┴───┘
+
+Unigram metrics:
+  Not found: 4.9182% of 2058604.0000
+    11.48 Finger Balance                      | Finger loads % (no thumb): 9.4 9.1 13.2 14.6 - 13.7 12.6 12.9 14.5
+     1.45 Hand Disbalance                     | Hand loads % (no thumb): 46.36 - 53.64
+     0.00 Row Loads                           | Row 1: 24.2%; Row 2: 62.0%; Row 3: 13.9%
+     0.74 Modifier Usage                      |
+   110.72 Key Costs                           |
+
+Bigram metrics:
+  Not found: 8.4146% of 2058603.0000
+    89.59 Finger Repeats                      |
+    26.53 Movement Pattern                    |
+     3.31 No Handswitch After Unbalancing Key |
+
+Trigram metrics:
+  Not found: 10.8641% of 2058602.0000
+    23.20 No Handswitch in Trigram            |
+   457.18 Irregularity                        |
+    16.71 Secondary Bigrams                   |
+   -22.68 Inward Rolls                        |
+    -6.22 Outward Rolls                       |
+
+Cost: 712.02 (optimization score: 140446)
+
+
+Optimized layouts found during this run, ordered from best (lowest cost) to worst (highest cost):
+ 1. übgdmkf,uqoöólstrypnaeiéícvwhjxz.;áő (712.0) (current)
+ 
+ übgdmkf,uqoöólstrypnaeiéícvwhjxz.;áő
+
+übgdmk f,uqoö
+ólstry pnaeié
+ícvwhj xz.;áő
+
+            ┌───┐                         ┌───┐
+        ┌───┤ d ├───┬───┐         ┌───┬───┤ u ├───┐
+┌───┬───┤ g ├───┤ m │ k │         │ f │ , ├───┤ q ├───┬───┐
+│ ü │ b ├───┤ t ├───┼───┤         ├───┼───┤ a ├───┤ o │ ö │
+├───┼───┤ s ├───┤ r │ y │         │ p │ n ├───┤ e ├───┼───┤
+│ ó │ l ├───┤ w ├───┼───┤         ├───┼───┤ . ├───┤ i │ é │
+├───┼───┤ v ├───┤ h │ j │         │ x │ z ├───┤ ; ├───┼───┤
+│ í │ c ├───┘   └───┴───┘         └───┴───┘   └───┤ á │ ő │
+└───┴───┘       ┌───┬───┬───┐ ┌───┬───┬───┐       └───┴───┘
+                │ ↶ │ ␣ │ ⇥ │ │ ⏎ │ ⌫ │ ⌦ │
+                └───┴───┴───┘ └───┴───┴───┘
+
+Unigram metrics:
+  Not found: 1.4507% of 519527.0000
+    13.45 Finger Balance                      | Finger loads % (no thumb): 9.7 10.2 12.1 16.8 - 13.2 11.8 10.7 15.4
+     0.43 Hand Disbalance                     | Hand loads % (no thumb): 48.92 - 51.08
+     0.00 Row Loads                           | Row 1: 26.3%; Row 2: 59.0%; Row 3: 14.7%
+     0.39 Modifier Usage                      |
+   129.65 Key Costs                           |
+
+Bigram metrics:
+  Not found: 2.5845% of 519526.0000
+    36.05 Finger Repeats                      |
+    22.79 Movement Pattern                    |
+     3.94 No Handswitch After Unbalancing Key |
+
+Trigram metrics:
+  Not found: 3.6435% of 519525.0000
+    19.50 No Handswitch in Trigram            |
+    11.88 Irregularity                        |
+    14.21 Secondary Bigrams                   |
+   -25.71 Inward Rolls                        |
+    -7.43 Outward Rolls                       |
+
+Cost: 219.14 (optimization score: 456319)
+
+
+Optimized layouts found during this run, ordered from best (lowest cost) to worst (highest cost):
+ 1. übgdmkf,uqoöólstrypnaeiéícvwhjxz.;áő (219.1) (current)
+ 
+ 
+ üvydgkfp,á;öórtslbjnaeiéímcwhxqz.uoő
+
+üvydgk fp,á;ö
+órtslb jnaeié
+ímcwhx qz.uoő
+
+            ┌───┐                         ┌───┐
+        ┌───┤ d ├───┬───┐         ┌───┬───┤ , ├───┐
+┌───┬───┤ y ├───┤ g │ k │         │ f │ p ├───┤ á ├───┬───┐
+│ ü │ v ├───┤ s ├───┼───┤         ├───┼───┤ a ├───┤ ; │ ö │
+├───┼───┤ t ├───┤ l │ b │         │ j │ n ├───┤ e ├───┼───┤
+│ ó │ r ├───┤ w ├───┼───┤         ├───┼───┤ . ├───┤ i │ é │
+├───┼───┤ c ├───┤ h │ x │         │ q │ z ├───┤ u ├───┼───┤
+│ í │ m ├───┘   └───┴───┘         └───┴───┘   └───┤ o │ ő │
+└───┴───┘       ┌───┬───┬───┐ ┌───┬───┬───┐       └───┴───┘
+                │ ↶ │ ␣ │ ⇥ │ │ ⏎ │ ⌫ │ ⌦ │
+                └───┴───┴───┘ └───┴───┴───┘
+
+Unigram metrics:
+  Not found: 1.4507% of 519527.0000
+    13.11 Finger Balance                      | Finger loads % (no thumb): 10.3 11.8 8.9 17.2 - 11.5 12.7 14.2 13.5
+     0.74 Hand Disbalance                     | Hand loads % (no thumb): 48.16 - 51.84
+     0.00 Row Loads                           | Row 1: 21.3%; Row 2: 58.5%; Row 3: 20.3%
+     0.39 Modifier Usage                      |
+   131.71 Key Costs                           |
+
+Bigram metrics:
+  Not found: 2.5845% of 519526.0000
+    30.44 Finger Repeats                      |
+    20.96 Movement Pattern                    |
+     3.22 No Handswitch After Unbalancing Key |
+
+Trigram metrics:
+  Not found: 3.6435% of 519525.0000
+    19.37 No Handswitch in Trigram            |
+    10.99 Irregularity                        |
+    12.42 Secondary Bigrams                   |
+   -22.17 Inward Rolls                        |
+    -9.36 Outward Rolls                       |
+
+Cost: 211.82 (optimization score: 472100)
+
+
+Optimized layouts found during this run, ordered from best (lowest cost) to worst (highest cost):
+ 1. üvydgkfp,á;öórtslbjnaeiéímcwhxqz.uoő (211.8) (current)
+ 
+ üfdgkvc,ouqöónstrywlaeiéípmbhjxz.;áő
+
+üfdgkvc,ouqöőnstrywlaeiéópmbhjxz.;áí
+
+üfdgkv c,ouqö
+őnstry wlaeié
+ópmbhj xz.;áí
+
+            ┌───┐                         ┌───┐
+        ┌───┤ g ├───┬───┐         ┌───┬───┤ o ├───┐
+┌───┬───┤ d ├───┤ k │ v │         │ c │ , ├───┤ u ├───┬───┐
+│ ü │ f ├───┤ t ├───┼───┤         ├───┼───┤ a ├───┤ q │ ö │
+├───┼───┤ s ├───┤ r │ y │         │ w │ l ├───┤ e ├───┼───┤
+│ ő │ n ├───┤ b ├───┼───┤         ├───┼───┤ . ├───┤ i │ é │
+├───┼───┤ m ├───┤ h │ j │         │ x │ z ├───┤ ; ├───┼───┤
+│ ó │ p ├───┘   └───┴───┘         └───┴───┘   └───┤ á │ í │
+└───┴───┘       ┌───┬───┬───┐ ┌───┬───┬───┐       └───┴───┘
+                │ ↶ │ ␣ │ ⇥ │ │ ⏎ │ ⌫ │ ⌦ │
+                └───┴───┴───┘ └───┴───┴───┘
+
+Unigram metrics:
+  Not found: 1.4507% of 519527.0000
+     3.36 Finger Balance                      | Finger loads % (no thumb): 9.4 11.7 13.7 15.0 - 12.6 15.2 12.3 10.1
+     0.10 Hand Disbalance                     | Hand loads % (no thumb): 49.75 - 50.25
+     0.00 Row Loads                           | Row 1: 23.8%; Row 2: 58.7%; Row 3: 17.5%
+     0.39 Modifier Usage                      |
+   132.01 Key Costs                           |
+
+Bigram metrics:
+  Not found: 2.5845% of 519526.0000
+    26.41 Finger Repeats                      |
+    26.09 Movement Pattern                    |
+     3.08 No Handswitch After Unbalancing Key |
+
+Trigram metrics:
+  Not found: 3.6435% of 519525.0000
+    18.60 No Handswitch in Trigram            |
+    10.92 Irregularity                        |
+    13.75 Secondary Bigrams                   |
+   -24.60 Inward Rolls                        |
+    -8.09 Outward Rolls                       |
+
+Cost: 202.01 (optimization score: 495012)
+
+
+Optimized layouts found during this run, ordered from best (lowest cost) to worst (highest cost):
+ 1. üfdgkvc,ouqöőnstrywlaeiéópmbhjxz.;áí (202.0) (current)
+ 
+ wfdgkv;,ouáóclsthy.naeiéqpmbzjxröüőí
+
+wfdgkv ;,ouáó
+clsthy .naeié
+qpmbzj xröüőí
+
+            ┌───┐                         ┌───┐
+        ┌───┤ g ├───┬───┐         ┌───┬───┤ o ├───┐
+┌───┬───┤ d ├───┤ k │ v │         │ ; │ , ├───┤ u ├───┬───┐
+│ w │ f ├───┤ t ├───┼───┤         ├───┼───┤ a ├───┤ á │ ó │
+├───┼───┤ s ├───┤ h │ y │         │ . │ n ├───┤ e ├───┼───┤
+│ c │ l ├───┤ b ├───┼───┤         ├───┼───┤ ö ├───┤ i │ é │
+├───┼───┤ m ├───┤ z │ j │         │ x │ r ├───┤ ü ├───┼───┤
+│ q │ p ├───┘   └───┴───┘         └───┴───┘   └───┤ ő │ í │
+└───┴───┘       ┌───┬───┬───┐ ┌───┬───┬───┐       └───┴───┘
+                │ ↶ │ ␣ │ ⇥ │ │ ⏎ │ ⌫ │ ⌦ │
+                └───┴───┴───┘ └───┴───┴───┘
+
+Unigram metrics:
+  Not found: 1.4507% of 519527.0000
+     2.82 Finger Balance                      | Finger loads % (no thumb): 9.5 11.7 13.7 13.6 - 14.4 14.3 12.6 10.3
+     0.61 Hand Disbalance                     | Hand loads % (no thumb): 48.48 - 51.52
+     0.00 Row Loads                           | Row 1: 24.8%; Row 2: 59.3%; Row 3: 16.0%
+     0.39 Modifier Usage                      |
+   131.81 Key Costs                           |
+
+Bigram metrics:
+  Not found: 2.5845% of 519526.0000
+    24.39 Finger Repeats                      |
+    16.23 Movement Pattern                    |
+     2.03 No Handswitch After Unbalancing Key |
+
+Trigram metrics:
+  Not found: 3.6435% of 519525.0000
+    15.62 No Handswitch in Trigram            |
+    10.18 Irregularity                        |
+    13.66 Secondary Bigrams                   |
+   -30.60 Inward Rolls                        |
+    -5.71 Outward Rolls                       |
+
+Cost: 181.42 (optimization score: 551215)
+
+
+Optimized layouts found during this run, ordered from best (lowest cost) to worst (highest cost):
+ 1. wfdgkv;,ouáóclsthy.naeiéqpmbzjxröüőí (181.4) (current)
+ 
+ 
+            ┌───┐                         ┌───┐
+        ┌───┤d12├───┬───┐         ┌───┬───┤o21├───┐
+┌───┬───┤g14├───┤m14│k14│         │w3 │u7 ├───┤q0 ├───┬───┐
+│ } │b7 ├───┤t36├───┼───┤         ├───┼───┤a35├───┤ = │ { │
+├───┼───┤s22├───┤r17│h13│         │z11│n24├───┤e44├───┼───┤
+│ ) │c4 ├───┤f5 ├───┼───┤         ├───┼───┤,10├───┤i19│ ( │
+├───┼───┤v7 ├───┤l24│j3 │         │x0 │.7 ├───┤ ; ├───┼───┤
+│ " │p4 ├───┘   └───┴───┘         └───┴───┘   └───┤y9 │ / │
+└───┴───┘       ┌───┬───┬───┐ ┌───┬───┬───┐       └───┴───┘
+                │ ↶ │ ␣ │ ⇥ │ │ ⏎ │ ⌫ │ ⌦ │
+                └───┴───┴───┘ └───┴───┴───┘
+				
+hunglih:
+            ┌───┐                         ┌───┐
+        ┌───┤d12├───┬───┐         ┌───┬───┤u7 ├───┐
+┌───┬───┤g14├───┤m14│k14│         │f5 │,10├───┤q0 ├───┬───┐
+│ü2 │b7 ├───┤t36├───┼───┤         ├───┼───┤a35├───┤o21│ö4 │
+├───┼───┤s22├───┤r17│y9 │         │p4 │n24├───┤e44├───┼───┤
+│ó2 │l24├───┤w3 ├───┼───┤         ├───┼───┤.7 ├───┤i19│é10│
+├───┼───┤v7 ├───┤h13│j3 │         │x0 │z11├───┤ ; ├───┼───┤
+│í1 │c4 ├───┘   └───┴───┘         └───┴───┘   └───┤á9 │ő2 │
+└───┴───┘       ┌───┬───┬───┐ ┌───┬───┬───┐       └───┴───┘
+                │ ↶ │ ␣ │ ⇥ │ │ ⏎ │ ⌫ │ ⌦ │
+                └───┴───┴───┘ └───┴───┴───┘
+
+
+übgdmk f,uqrö
+ólntsy poaeié
+ícvwhj xz.;áő
+
+übgdmkf,uqröólntsypoaeiéícvwhjxz.;áő
+
+proglishnohu:
+            ┌───┐                         ┌───┐
+        ┌───┤d43├───┬───┐         ┌───┬───┤u35├───┐
+┌───┬───┤g28├───┤m40│k28│         │f27│,20├───┤q3 ├───┬───┐
+│}5 │b15├───┤t114───┼───┤         ├───┼───┤a103───┤o80│{5 │
+├───┼───┤s69├───┤r80│y17│         │p25│n80├───┤e154───┼───┤
+│)17│l58├───┤w9 ├───┼───┤         ├───┼───┤.30├───┤i88│(17│
+├───┼───┤v18├───┤h24│j5 │         │x5 │z13├───┤;11├───┼───┤
+│"7 │c40├───┘   └───┴───┘         └───┴───┘   └───┤=9 │/9 │
+└───┴───┘       ┌───┬───┬───┐ ┌───┬───┬───┐       └───┴───┘
+                │ ↶ │ ␣ │ ⇥ │ │ ⏎ │ ⌫ │ ⌦ │
+                └───┴───┴───┘ └───┴───┴───┘
+
+etanlsoir		
+				
+hunglish:
+etanlsoirmkghdz,éyábuv.fcpöjwő-ó'üí`!ú?ű:;x–q")(*_’[]/
+eatonlsirmkghdzu,ybv.fcpjw-'`!?:;x–q"()*_’[]/
+
+eaoiéáu öőóüíúű                      - maganhangzok hunglish
+tnlsrmkghdzy bvfcpjwxq               - massalhangzok hunglish
+,.-'`!?:;–")(*_’[]/                  - text
+.,)(;=/"_{}:>-!'?<&+`*[]|–#\%@~’$^   - proglish
+
+
+ümrgkbj,áuqöósntlhcoeaiéífwvdpxz.;yő
+
+ümrgkb j,áuqö
+ósntlh coeaié
+ífwvdp xz.;yő
+
+            ┌───┐                         ┌───┐
+        ┌───┤ g ├───┬───┐         ┌───┬───┤ á ├───┐
+┌───┬───┤ r ├───┤ k │ b │         │ j │ , ├───┤ u ├───┬───┐
+│ ü │ m ├───┤ t ├───┼───┤         ├───┼───┤ e ├───┤ q │ ö │
+├───┼───┤ n ├───┤ l │ h │         │ c │ o ├───┤ a ├───┼───┤
+│ ó │ s ├───┤ v ├───┼───┤         ├───┼───┤ . ├───┤ i │ é │
+├───┼───┤ w ├───┤ d │ p │         │ x │ z ├───┤ ; ├───┼───┤
+│ í │ f ├───┘   └───┴───┘         └───┴───┘   └───┤ y │ ő │
+└───┴───┘       ┌───┬───┬───┐ ┌───┬───┬───┐       └───┴───┘
+                │ ↶ │ ␣ │ ⇥ │ │ ⏎ │ ⌫ │ ⌦ │
+                └───┴───┴───┘ └───┴───┴───┘
+
+Unigram metrics:
+  Not found: 1.4507% of 519527.0000
+     6.08 Finger Balance                      | Finger loads % (no thumb): 11.1 10.5 13.5 17.7 - 12.2 14.3 10.2 10.4
+     1.16 Hand Disbalance                     | Hand loads % (no thumb): 52.89 - 47.11
+     0.00 Row Loads                           | Row 1: 24.1%; Row 2: 61.0%; Row 3: 14.9%
+     0.39 Modifier Usage                      |
+   129.68 Key Costs                           |
+
+Bigram metrics:
+  Not found: 2.5845% of 519526.0000
+    36.20 Finger Repeats                      |
+    26.26 Movement Pattern                    |
+     3.12 No Handswitch After Unbalancing Key |
+
+Trigram metrics:
+  Not found: 3.6435% of 519525.0000
+    17.76 No Handswitch in Trigram            |
+    11.77 Irregularity                        |
+    15.37 Secondary Bigrams                   |
+   -18.46 Inward Rolls                        |
+    -7.33 Outward Rolls                       |
+
+Cost: 221.99 (optimization score: 450471)
+
+
+ümdkzbf,ouqöórstlcjnaeiéíyvwgpxh.;áő
+
+ümdkzb f,ouqö
+órstlc jnaeié
+íyvwgp xh.;áő
+
+            ┌───┐                         ┌───┐
+        ┌───┤ k ├───┬───┐         ┌───┬───┤ o ├───┐
+┌───┬───┤ d ├───┤ z │ b │         │ f │ , ├───┤ u ├───┬───┐
+│ ü │ m ├───┤ t ├───┼───┤         ├───┼───┤ a ├───┤ q │ ö │
+├───┼───┤ s ├───┤ l │ c │         │ j │ n ├───┤ e ├───┼───┤
+│ ó │ r ├───┤ w ├───┼───┤         ├───┼───┤ . ├───┤ i │ é │
+├───┼───┤ v ├───┤ g │ p │         │ x │ h ├───┤ ; ├───┼───┤
+│ í │ y ├───┘   └───┴───┘         └───┴───┘   └───┤ á │ ő │
+└───┴───┘       ┌───┬───┬───┐ ┌───┬───┬───┐       └───┴───┘
+                │ ↶ │ ␣ │ ⇥ │ │ ⏎ │ ⌫ │ ⌦ │
+                └───┴───┴───┘ └───┴───┴───┘
+
+Unigram metrics:
+  Not found: 1.4507% of 519527.0000
+     4.50 Finger Balance                      | Finger loads % (no thumb): 10.8 9.8 12.6 15.5 - 13.4 15.2 12.3 10.3
+     0.50 Hand Disbalance                     | Hand loads % (no thumb): 48.76 - 51.24
+     0.00 Row Loads                           | Row 1: 25.7%; Row 2: 57.8%; Row 3: 16.5%
+     0.39 Modifier Usage                      |
+   129.30 Key Costs                           |
+
+Bigram metrics:
+  Not found: 2.5845% of 519526.0000
+    30.84 Finger Repeats                      |
+    22.96 Movement Pattern                    |
+     3.29 No Handswitch After Unbalancing Key |
+
+Trigram metrics:
+  Not found: 3.6435% of 519525.0000
+    28.61 No Handswitch in Trigram            |
+    11.18 Irregularity                        |
+    13.33 Secondary Bigrams                   |
+   -19.39 Inward Rolls                        |
+   -10.93 Outward Rolls                       |
+
+Cost: 214.57 (optimization score: 466040)
+
+üwdkybf,ouqöólstrvcnaeiéígmphjxz.;áő
+
+üwdkyb f,ouqö
+ólstrv cnaeié
+ígmphj xz.;áő
+
+            ┌───┐                         ┌───┐
+        ┌───┤ k ├───┬───┐         ┌───┬───┤ o ├───┐
+┌───┬───┤ d ├───┤ y │ b │         │ f │ , ├───┤ u ├───┬───┐
+│ ü │ w ├───┤ t ├───┼───┤         ├───┼───┤ a ├───┤ q │ ö │
+├───┼───┤ s ├───┤ r │ v │         │ c │ n ├───┤ e ├───┼───┤
+│ ó │ l ├───┤ p ├───┼───┤         ├───┼───┤ . ├───┤ i │ é │
+├───┼───┤ m ├───┤ h │ j │         │ x │ z ├───┤ ; ├───┼───┤
+│ í │ g ├───┘   └───┴───┘         └───┴───┘   └───┤ á │ ő │
+└───┴───┘       ┌───┬───┬───┐ ┌───┬───┬───┐       └───┴───┘
+                │ ↶ │ ␣ │ ⇥ │ │ ⏎ │ ⌫ │ ⌦ │
+                └───┴───┴───┘ └───┴───┴───┘
+
+Unigram metrics:
+  Not found: 1.4507% of 519527.0000
+     3.29 Finger Balance                      | Finger loads % (no thumb): 10.9 11.7 12.9 13.4 - 13.3 15.2 12.3 10.3
+     0.46 Hand Disbalance                     | Hand loads % (no thumb): 48.85 - 51.15
+     0.00 Row Loads                           | Row 1: 22.3%; Row 2: 58.5%; Row 3: 19.1%
+     0.39 Modifier Usage                      |
+   133.66 Key Costs                           |
+
+Bigram metrics:
+  Not found: 2.5845% of 519526.0000
+    36.40 Finger Repeats                      |
+    23.27 Movement Pattern                    |
+     3.33 No Handswitch After Unbalancing Key |
+
+Trigram metrics:
+  Not found: 3.6435% of 519525.0000
+    28.23 No Handswitch in Trigram            |
+    12.01 Irregularity                        |
+    12.98 Secondary Bigrams                   |
+   -25.20 Inward Rolls                        |
+    -7.38 Outward Rolls                       |
+
+Cost: 221.45 (optimization score: 451570)
+
+
+colemak dh:
+üqwfpb jluy;ö
+óarstg mneioé
+ízxcdv kh.,áő
+
+üqwfpbjluy;öóarstgmneioéízxcdvkh.,áő
+
+
+ü,kdmb fzuoyö
+órstlp xnaeié
+ícvwgj qh.;áő
+
+ü,kdmbfzuoyöórstlpxnaeiéícvwgjqh.;áő
+
+tnlsrmkghdzy bvfcpjwxq
+
+hunglih:
+            ┌───┐                         ┌───┐
+        ┌───┤d12├───┬───┐         ┌───┬───┤u7 ├───┐
+┌───┬───┤g14├───┤m14│k14│         │f5 │,10├───┤q0 ├───┬───┐
+│ü2 │b7 ├───┤t36├───┼───┤         ├───┼───┤a35├───┤o21│ö4 │
+├───┼───┤s22├───┤r17│y9 │         │p4 │n24├───┤e44├───┼───┤
+│ó2 │l24├───┤w3 ├───┼───┤         ├───┼───┤.7 ├───┤i19│é10│
+├───┼───┤v7 ├───┤h13│j3 │         │x0 │z11├───┤ ; ├───┼───┤
+│í1 │c4 ├───┘   └───┴───┘         └───┴───┘   └───┤á9 │ő2 │
+└───┴───┘       ┌───┬───┬───┐ ┌───┬───┬───┐       └───┴───┘
+                │ ↶ │ ␣ │ ⇥ │ │ ⏎ │ ⌫ │ ⌦ │
+                └───┴───┴───┘ └───┴───┴───┘
+
+
+proglishnohu:
+            ┌───┐                         ┌───┐
+        ┌───┤d43├───┬───┐         ┌───┬───┤u35├───┐
+┌───┬───┤g28├───┤m40│k28│         │f27│,20├───┤q3 ├───┬───┐
+│}5 │b15├───┤t114───┼───┤         ├───┼───┤a103───┤o80│{5 │
+├───┼───┤s69├───┤r80│y17│         │p25│n80├───┤e154───┼───┤
+│)17│l58├───┤w9 ├───┼───┤         ├───┼───┤.30├───┤i88│(17│
+├───┼───┤v18├───┤h24│j5 │         │x5 │z13├───┤;11├───┼───┤
+│"7 │c40├───┘   └───┴───┘         └───┴───┘   └───┤=9 │/9 │
+└───┴───┘       ┌───┬───┬───┐ ┌───┬───┬───┐       └───┴───┘
+                │ ↶ │ ␣ │ ⇥ │ │ ⏎ │ ⌫ │ ⌦ │
+                └───┴───┴───┘ └───┴───┴───┘
+				
+				ü,kdmbfzuoyöórstlpxnaeiéícvwgjqh.;áő
+
+ü,kdmb fzuoyö
+órstlp xnaeié
+ícvwgj qh.;áő
+
+            ┌───┐                         ┌───┐
+        ┌───┤ d ├───┬───┐         ┌───┬───┤ u ├───┐
+┌───┬───┤ k ├───┤ m │ b │         │ f │ z ├───┤ o ├───┬───┐
+│ ü │ , ├───┤ t ├───┼───┤         ├───┼───┤ a ├───┤ y │ ö │
+├───┼───┤ s ├───┤ l │ p │         │ x │ n ├───┤ e ├───┼───┤
+│ ó │ r ├───┤ w ├───┼───┤         ├───┼───┤ . ├───┤ i │ é │
+├───┼───┤ v ├───┤ g │ j │         │ q │ h ├───┤ ; ├───┼───┤
+│ í │ c ├───┘   └───┴───┘         └───┴───┘   └───┤ á │ ő │
+└───┴───┘       ┌───┬───┬───┐ ┌───┬───┬───┐       └───┴───┘
+                │ ↶ │ ␣ │ ⇥ │ │ ⏎ │ ⌫ │ ⌦ │
+                └───┴───┴───┘ └───┴───┴───┘
+
+Unigram metrics:
+  Not found: 1.4507% of 519527.0000
+    10.23 Finger Balance                      | Finger loads % (no thumb): 8.8 10.3 12.1 16.0 - 12.8 11.8 15.8 12.4
+     1.10 Hand Disbalance                     | Hand loads % (no thumb): 47.24 - 52.76
+     0.00 Row Loads                           | Row 1: 27.8%; Row 2: 56.9%; Row 3: 15.3%
+     0.39 Modifier Usage                      |
+   127.50 Key Costs                           |
+
+Bigram metrics:
+  Not found: 2.5845% of 519526.0000
+    33.55 Finger Repeats                      |
+    43.45 Movement Pattern                    |
+     3.50 No Handswitch After Unbalancing Key |
+
+Trigram metrics:
+  Not found: 3.6435% of 519525.0000
+    31.22 No Handswitch in Trigram            |
+    12.33 Irregularity                        |
+    14.90 Secondary Bigrams                   |
+   -19.37 Inward Rolls                        |
+   -10.35 Outward Rolls                       |
+
+Cost: 248.46 (optimization score: 402472)
+
+übdgmv,zuoyöólstrfjneaiéícwpkqxh.;áő
+
+übdgmv ,zuoyö
+ólstrf jneaié
+ícwpkq xh.;áő
+
+            ┌───┐                         ┌───┐
+        ┌───┤ g ├───┬───┐         ┌───┬───┤ u ├───┐
+┌───┬───┤ d ├───┤ m │ v │         │ , │ z ├───┤ o ├───┬───┐
+│ ü │ b ├───┤ t ├───┼───┤         ├───┼───┤ e ├───┤ y │ ö │
+├───┼───┤ s ├───┤ r │ f │         │ j │ n ├───┤ a ├───┼───┤
+│ ó │ l ├───┤ p ├───┼───┤         ├───┼───┤ . ├───┤ i │ é │
+├───┼───┤ w ├───┤ k │ q │         │ x │ h ├───┤ ; ├───┼───┤
+│ í │ c ├───┘   └───┴───┘         └───┴───┘   └───┤ á │ ő │
+└───┴───┘       ┌───┬───┬───┐ ┌───┬───┬───┐       └───┴───┘
+                │ ↶ │ ␣ │ ⇥ │ │ ⏎ │ ⌫ │ ⌦ │
+                └───┴───┴───┘ └───┴───┴───┘
+
+Unigram metrics:
+  Not found: 1.4507% of 519527.0000
+     6.97 Finger Balance                      | Finger loads % (no thumb): 9.7 8.9 12.9 13.6 - 14.9 13.9 13.6 12.4
+     1.95 Hand Disbalance                     | Hand loads % (no thumb): 45.11 - 54.89
+     0.00 Row Loads                           | Row 1: 28.2%; Row 2: 57.9%; Row 3: 14.0%
+     0.39 Modifier Usage                      |
+   126.15 Key Costs                           |
+
+Bigram metrics:
+  Not found: 2.5845% of 519526.0000
+    37.92 Finger Repeats                      |
+    32.16 Movement Pattern                    |
+     3.12 No Handswitch After Unbalancing Key |
+
+Trigram metrics:
+  Not found: 3.6435% of 519525.0000
+    31.65 No Handswitch in Trigram            |
+    12.77 Irregularity                        |
+    13.94 Secondary Bigrams                   |
+   -20.32 Inward Rolls                        |
+    -9.38 Outward Rolls                       |
+
+Cost: 237.33 (optimization score: 421353)
+
+ümdkbcf,ouqöórstlzpnaeiéíyvwgjxh.;áő
+
+üwdkybf,ouqöólstrvcnaeiéígmphjxz.;áő
+
+üwdkyb f,ouqö
+ólstrv cnaeié
+ígmphj xz.;áő
+
+            ┌───┐                         ┌───┐
+        ┌───┤ k ├───┬───┐         ┌───┬───┤ o ├───┐
+┌───┬───┤ d ├───┤ y │ b │         │ f │ , ├───┤ u ├───┬───┐
+│ ü │ w ├───┤ t ├───┼───┤         ├───┼───┤ a ├───┤ q │ ö │
+├───┼───┤ s ├───┤ r │ v │         │ c │ n ├───┤ e ├───┼───┤
+│ ó │ l ├───┤ p ├───┼───┤         ├───┼───┤ . ├───┤ i │ é │
+├───┼───┤ m ├───┤ h │ j │         │ x │ z ├───┤ ; ├───┼───┤
+│ í │ g ├───┘   └───┴───┘         └───┴───┘   └───┤ á │ ő │
+└───┴───┘       ┌───┬───┬───┐ ┌───┬───┬───┐       └───┴───┘
+                │ ↶ │ ␣ │ ⇥ │ │ ⏎ │ ⌫ │ ⌦ │
+                └───┴───┴───┘ └───┴───┴───┘
+
+
+Cost: 221.45 (optimization score: 451570)
+
+üydgmpf,ouqöórstlzjnaeiéícvbkwxh.;áő
+
+üydgmp f,ouqö
+órstlz jnaeié
+ícvbkw xh.;áő
+
+            ┌───┐                         ┌───┐
+        ┌───┤ g ├───┬───┐         ┌───┬───┤ o ├───┐
+┌───┬───┤ d ├───┤ m │ p │         │ f │ , ├───┤ u ├───┬───┐
+│ ü │ y ├───┤ t ├───┼───┤         ├───┼───┤ a ├───┤ q │ ö │
+├───┼───┤ s ├───┤ l │ z │         │ j │ n ├───┤ e ├───┼───┤
+│ ó │ r ├───┤ b ├───┼───┤         ├───┼───┤ . ├───┤ i │ é │
+├───┼───┤ v ├───┤ k │ w │         │ x │ h ├───┤ ; ├───┼───┤
+│ í │ c ├───┘   └───┴───┘         └───┴───┘   └───┤ á │ ő │
+└───┴───┘       ┌───┬───┬───┐ ┌───┬───┬───┐       └───┴───┘
+                │ ↶ │ ␣ │ ⇥ │ │ ⏎ │ ⌫ │ ⌦ │
+                └───┴───┴───┘ └───┴───┴───┘
+
+
+Cost: 222.18 (optimization score: 450075)
+
+üfdgmv.houqöónstryjlaeiéícbpkwxz,;áő
+
+üfdgmv .houqö
+ónstry jlaeié
+ícbpkw xz,;áő
+
+            ┌───┐                         ┌───┐
+        ┌───┤ g ├───┬───┐         ┌───┬───┤ o ├───┐
+┌───┬───┤ d ├───┤ m │ v │         │ . │ h ├───┤ u ├───┬───┐
+│ ü │ f ├───┤ t ├───┼───┤         ├───┼───┤ a ├───┤ q │ ö │
+├───┼───┤ s ├───┤ r │ y │         │ j │ l ├───┤ e ├───┼───┤
+│ ó │ n ├───┤ p ├───┼───┤         ├───┼───┤ , ├───┤ i │ é │
+├───┼───┤ b ├───┤ k │ w │         │ x │ z ├───┤ ; ├───┼───┤
+│ í │ c ├───┘   └───┴───┘         └───┴───┘   └───┤ á │ ő │
+└───┴───┘       ┌───┬───┬───┐ ┌───┬───┬───┐       └───┴───┘
+                │ ↶ │ ␣ │ ⇥ │ │ ⏎ │ ⌫ │ ⌦ │
+                └───┴───┴───┘ └───┴───┴───┘
+ |
+
+Cost: 220.97 (optimization score: 452549)
+
+ümdkbc f,ouqö
+órstlz pnaeié
+íyvwgj xh.;áő
+
+            ┌───┐                         ┌───┐
+        ┌───┤ k ├───┬───┐         ┌───┬───┤ o ├───┐
+┌───┬───┤ d ├───┤ b │ c │         │ f │ , ├───┤ u ├───┬───┐
+│ ü │ m ├───┤ t ├───┼───┤         ├───┼───┤ a ├───┤ q │ ö │
+├───┼───┤ s ├───┤ l │ z │         │ p │ n ├───┤ e ├───┼───┤
+│ ó │ r ├───┤ w ├───┼───┤         ├───┼───┤ . ├───┤ i │ é │
+├───┼───┤ v ├───┤ g │ j │         │ x │ h ├───┤ ; ├───┼───┤
+│ í │ y ├───┘   └───┴───┘         └───┴───┘   └───┤ á │ ő │
+└───┴───┘       ┌───┬───┬───┐ ┌───┬───┬───┐       └───┴───┘
+                │ ↶ │ ␣ │ ⇥ │ │ ⏎ │ ⌫ │ ⌦ │
+                └───┴───┴───┘ └───┴───┴───┘
+
+Cost: 217.21 (optimization score: 460376)
+
+
+ümdkbyf,ouqöórstlzpnaeiéícvwgjxh.;áő
+
+
+
+***************************
+ümdkzbf,ouqöórstlpjnaeiéícyvgwxh.;áő
+
+ümdkzb f,ouqö
+órstlp jnaeié
+ícyvgw xh.;áő
+
+            ┌───┐                         ┌───┐
+        ┌───┤ k ├───┬───┐         ┌───┬───┤ o ├───┐
+┌───┬───┤ d ├───┤ z │ b │         │ f │ , ├───┤ u ├───┬───┐
+│ ü │ m ├───┤ t ├───┼───┤         ├───┼───┤ a ├───┤ q │ ö │
+├───┼───┤ s ├───┤ l │ p │         │ j │ n ├───┤ e ├───┼───┤
+│ ó │ r ├───┤ v ├───┼───┤         ├───┼───┤ . ├───┤ i │ é │
+├───┼───┤ y ├───┤ g │ w │         │ x │ h ├───┤ ; ├───┼───┤
+│ í │ c ├───┘   └───┴───┘         └───┴───┘   └───┤ á │ ő │
+└───┴───┘       ┌───┬───┬───┐ ┌───┬───┬───┐       └───┴───┘
+                │ ↶ │ ␣ │ ⇥ │ │ ⏎ │ ⌫ │ ⌦ │
+                └───┴───┴───┘ └───┴───┴───┘
+
+Cost: 216.48 (optimization score: 461937)
+
+
+
+
+            ┌───┐                         ┌───┐
+        ┌───┤k28├───┬───┐         ┌───┬───┤o80├───┐
+┌───┬───┤d43├───┤z13│b15│         │f27│,20├───┤u35├───┬───┐
+│ ü │m40├───┤t114───┼───┤         ├───┼───┤a103───┤q3 │ ö │
+├───┼───┤s69├───┤l48│p25│         │j5 │n80├───┤e154───┼───┤
+│ ó │r80├───┤v18├───┼───┤         ├───┼───┤.30├───┤i88│ é │
+├───┼───┤y17├───┤g28│w9 │         │x5 │h24├───┤;11├───┼───┤
+│ í │c40├───┘   └───┴───┘         └───┴───┘   └───┤ á │ ő │
+└───┴───┘       ┌───┬───┬───┐ ┌───┬───┬───┐       └───┴───┘
+                │ ↶ │ ␣ │ ⇥ │ │ ⏎ │ ⌫ │ ⌦ │
+                └───┴───┴───┘ └───┴───┴───┘
+
+
+            ┌───┐                         ┌───┐
+        ┌───┤d43├───┬───┐         ┌───┬───┤u35├───┐
+┌───┬───┤g28├───┤m40│k28│         │f27│,20├───┤q3 ├───┬───┐
+│}5 │b15├───┤t114───┼───┤         ├───┼───┤a103───┤o80│{5 │
+├───┼───┤s69├───┤r80│y17│         │p25│n80├───┤e154───┼───┤
+│)17│l58├───┤w9 ├───┼───┤         ├───┼───┤.30├───┤i88│(17│
+├───┼───┤v18├───┤h24│j5 │         │x5 │z13├───┤;11├───┼───┤
+│"7 │c40├───┘   └───┴───┘         └───┴───┘   └───┤=9 │/9 │
+└───┴───┘       ┌───┬───┬───┐ ┌───┬───┬───┐       └───┴───┘
+
+
+wfmkzb.houáócrstlpjnaeiéqdyvgx;,őüöí
+
+wfmkzb .houáó
+crstlp jnaeié
+qdyvgx ;,őüöí
+
+            ┌───┐                         ┌───┐
+        ┌───┤ k ├───┬───┐         ┌───┬───┤ o ├───┐
+┌───┬───┤ m ├───┤ z │ b │         │ . │ h ├───┤ u ├───┬───┐
+│ w │ f ├───┤ t ├───┼───┤         ├───┼───┤ a ├───┤ á │ ó │
+├───┼───┤ s ├───┤ l │ p │         │ j │ n ├───┤ e ├───┼───┤
+│ c │ r ├───┤ v ├───┼───┤         ├───┼───┤ ő ├───┤ i │ é │
+├───┼───┤ y ├───┤ g │ x │         │ ; │ , ├───┤ ü ├───┼───┤
+│ q │ d ├───┘   └───┴───┘         └───┴───┘   └───┤ ö │ í │
+└───┴───┘       ┌───┬───┬───┐ ┌───┬───┬───┐       └───┴───┘
+                │ ↶ │ ␣ │ ⇥ │ │ ⏎ │ ⌫ │ ⌦ │
+                └───┴───┴───┘ └───┴───┴───┘
+
+Unigram metrics:
+  Not found: 1.4507% of 519527.0000
+     2.80 Finger Balance                      | Finger loads % (no thumb): 9.8 10.9 13.5 14.5 - 14.1 14.0 12.6 10.5
+     0.50 Hand Disbalance                     | Hand loads % (no thumb): 48.75 - 51.25
+     0.00 Row Loads                           | Row 1: 27.0%; Row 2: 58.2%; Row 3: 14.8%
+     0.39 Modifier Usage                      |
+   126.28 Key Costs                           |
+
+Bigram metrics:
+  Not found: 2.5845% of 519526.0000
+    27.61 Finger Repeats                      |
+    14.65 Movement Pattern                    |
+     2.21 No Handswitch After Unbalancing Key |
+
+Trigram metrics:
+  Not found: 3.6435% of 519525.0000
+    19.72 No Handswitch in Trigram            |
+    10.13 Irregularity                        |
+    13.59 Secondary Bigrams                   |
+   -19.97 Inward Rolls                        |
+    -9.94 Outward Rolls                       |
+
+Cost: 187.96 (optimization score: 532014)
+
+ümdkzbf,ouqöórstlcjnaeiéíyvwgpxh.;áő
+
+ümdkzb f,ouqö
+órstlc jnaeié
+íyvwgp xh.;áő
+
+            ┌───┐                         ┌───┐
+        ┌───┤ k ├───┬───┐         ┌───┬───┤ o ├───┐
+┌───┬───┤ d ├───┤ z │ b │         │ f │ , ├───┤ u ├───┬───┐
+│ ü │ m ├───┤ t ├───┼───┤         ├───┼───┤ a ├───┤ q │ ö │
+├───┼───┤ s ├───┤ l │ c │         │ j │ n ├───┤ e ├───┼───┤
+│ ó │ r ├───┤ w ├───┼───┤         ├───┼───┤ . ├───┤ i │ é │
+├───┼───┤ v ├───┤ g │ p │         │ x │ h ├───┤ ; ├───┼───┤
+│ í │ y ├───┘   └───┴───┘         └───┴───┘   └───┤ á │ ő │
+└───┴───┘       ┌───┬───┬───┐ ┌───┬───┬───┐       └───┴───┘
+                │ ↶ │ ␣ │ ⇥ │ │ ⏎ │ ⌫ │ ⌦ │
+                └───┴───┴───┘ └───┴───┴───┘
+
+Unigram metrics:
+  Not found: 1.4507% of 519527.0000
+     4.50 Finger Balance                      | Finger loads % (no thumb): 10.8 9.8 12.6 15.5 - 13.4 15.2 12.3 10.3
+     0.50 Hand Disbalance                     | Hand loads % (no thumb): 48.76 - 51.24
+     0.00 Row Loads                           | Row 1: 25.7%; Row 2: 57.8%; Row 3: 16.5%
+     0.39 Modifier Usage                      |
+   129.30 Key Costs                           |
+
+Bigram metrics:
+  Not found: 2.5845% of 519526.0000
+    30.84 Finger Repeats                      |
+    22.96 Movement Pattern                    |
+     3.29 No Handswitch After Unbalancing Key |
+
+Trigram metrics:
+  Not found: 3.6435% of 519525.0000
+    28.61 No Handswitch in Trigram            |
+    11.18 Irregularity                        |
+    13.33 Secondary Bigrams                   |
+   -19.39 Inward Rolls                        |
+   -10.93 Outward Rolls                       |
+
+Cost: 214.57 (optimization score: 466040)
+
+
+
+========================================================================
+
+Layout (layer 1):
+            ┌───┐                         ┌───┐
+        ┌───┤ d ├───┬───┐         ┌───┬───┤ o ├───┐
+┌───┬───┤ g ├───┤ m │ h │         │ w │ u ├───┤ q ├───┬───┐
+│ ü │ b ├───┤ t ├───┼───┤         ├───┼───┤ a ├───┤ y │ ö │
+├───┼───┤ s ├───┤ r │ k │         │ á │ n ├───┤ e ├───┼───┤
+│ ó │ c ├───┤ f ├───┼───┤         ├───┼───┤ , ├───┤ i │ é │
+├───┼───┤ v ├───┤ l │ j │         │ x │ . ├───┤ ; ├───┼───┤
+│ í │ p ├───┘   └───┴───┘         └───┴───┘   └───┤ z │ ő │
+└───┴───┘       ┌───┬───┬───┐ ┌───┬───┬───┐       └───┴───┘
+                │ ↶ │ ␣ │ ⇥ │ │ ⏎ │ ⌫ │ ⌦ │
+                └───┴───┴───┘ └───┴───┴───┘
+
+Layout string (layer 1):
+übgdmhwuoqyöócstrkánaeiéípvfljx.,;ző
+
+Unigram metrics:
+  Not found: 1.4507% of 519527.0000
+    14.60 Finger Balance                      | Finger loads % (no thumb): 5.0 10.2 12.6 20.4 - 11.9 15.9 10.7 13.1
+     0.69 Hand Disbalance                     | Hand loads % (no thumb): 48.28 - 51.72
+     0.00 Row Loads                           | Row 1: 25.1%; Row 2: 56.6%; Row 3: 18.3%
+     0.39 Modifier Usage                      | Worst unigrams: [ ] (99.80%), [⌫] ( 0.20%)
+   137.22 Key Costs                           | Worst unigrams: o ( 7.28%), k ( 7.26%),   ( 6.99%)
+
+Bigram metrics:
+  Not found: 2.5845% of 519526.0000
+    50.44 Finger Repeats                      | Worst: án ( 7.26%), zé ( 6.70%), lk ( 4.48%);  Worst non-fixed: án ( 7.26%), zé ( 6.70%), lk ( 4.48%)
+    43.88 Movement Pattern                    | Worst: ye ( 7.36%), y, ( 6.94%), th ( 5.93%);  Worst non-fixed: ye ( 7.36%), y, ( 6.94%), th ( 5.93%)
+     3.74 No Handswitch After Unbalancing Key | Worst: th (13.94%), ül ( 3.56%), sh ( 3.35%);  Worst non-fixed: th (13.94%), ül ( 3.56%), sh ( 3.35%)
+
+Trigram metrics:
+  Not found: 3.6435% of 519525.0000
+    27.98 No Handswitch in Trigram            | Worst: enn ( 1.48%), ény ( 1.43%), ány ( 1.32%);  Worst non-fixed: enn ( 1.48%), ény ( 1.43%), ány ( 1.32%)
+    14.09 Irregularity                        | Worst:     (47.14%), özö (12.43%), ezé ( 8.48%);  Worst non-fixed: özö (12.43%), ezé ( 8.48%), eze ( 3.37%)
+    16.23 Secondary Bigrams                   | Worst: egy ( 2.36%), her ( 1.69%), agy ( 1.32%);  Worst non-fixed: egy ( 2.36%), her ( 1.69%), agy ( 1.32%)
+   -21.85 Inward Rolls                        | Worst: the ( 4.17%), sze ( 1.99%), ing ( 1.81%);  Worst non-fixed: the ( 4.17%), sze ( 1.99%), ing ( 1.81%)
+    -7.21 Outward Rolls                       | Worst: nem ( 3.62%), olt ( 1.91%), nek ( 1.73%);  Worst non-fixed: nem ( 3.62%), olt ( 1.91%), nek ( 1.73%)
+
+Cost: 280.19 (optimization score: 356895)
+
+================
+
+Layout (layer 1):
+            ┌───┐                         ┌───┐
+        ┌───┤ d ├───┬───┐         ┌───┬───┤ o ├───┐
+┌───┬───┤ g ├───┤ m │ k │         │ w │ u ├───┤ q ├───┬───┐
+│ ü │ b ├───┤ t ├───┼───┤         ├───┼───┤ a ├───┤ á │ ö │
+├───┼───┤ s ├───┤ r │ h │         │ z │ n ├───┤ e ├───┼───┤
+│ ó │ c ├───┤ f ├───┼───┤         ├───┼───┤ , ├───┤ i │ é │
+├───┼───┤ v ├───┤ l │ j │         │ x │ . ├───┤ ; ├───┼───┤
+│ í │ p ├───┘   └───┴───┘         └───┴───┘   └───┤ y │ ő │
+└───┴───┘       ┌───┬───┬───┐ ┌───┬───┬───┐       └───┴───┘
+                │ ↶ │ ␣ │ ⇥ │ │ ⏎ │ ⌫ │ ⌦ │
+                └───┴───┴───┘ └───┴───┴───┘
+
+Layout string (layer 1):
+übgdmkwuoqáöócstrhznaeiéípvfljx.,;yő
+
+Unigram metrics:
+  Not found: 1.4507% of 519527.0000
+    14.08 Finger Balance                      | Finger loads % (no thumb): 5.0 10.2 12.6 20.4 - 12.6 15.9 10.7 12.4
+     0.69 Hand Disbalance                     | Hand loads % (no thumb): 48.28 - 51.72
+     0.00 Row Loads                           | Row 1: 25.3%; Row 2: 57.0%; Row 3: 17.6%
+     0.39 Modifier Usage                      | Worst unigrams: [ ] (99.80%), [⌫] ( 0.20%)
+   137.49 Key Costs                           | Worst unigrams: o ( 7.27%),   ( 6.98%), h ( 6.55%)
+
+Bigram metrics:
+  Not found: 2.5845% of 519526.0000
+    40.68 Finger Repeats                      | Worst: lk ( 7.60%),    ( 4.79%), lm ( 4.19%);  Worst non-fixed: lk ( 7.60%), lm ( 4.19%), a, ( 3.71%)
+    27.17 Movement Pattern                    | Worst: fü ( 7.55%), yo ( 6.45%), íg ( 5.52%);  Worst non-fixed: fü ( 7.55%), yo ( 6.45%), íg ( 5.52%)
+     3.94 No Handswitch After Unbalancing Key | Worst: th ( 6.60%), az ( 4.14%), ül ( 3.38%);  Worst non-fixed: th ( 6.60%), az ( 4.14%), ül ( 3.38%)
+
+Trigram metrics:
+  Not found: 3.6435% of 519525.0000
+    27.56 No Handswitch in Trigram            | Worst: enn ( 1.50%), ény ( 1.45%), ány ( 1.34%);  Worst non-fixed: enn ( 1.50%), ény ( 1.45%), ány ( 1.34%)
+    11.05 Irregularity                        | Worst:     (76.66%), gít ( 2.04%), füs ( 1.61%);  Worst non-fixed: gít ( 2.04%), füs ( 1.61%), you ( 1.52%)
+    15.95 Secondary Bigrams                   | Worst: ogy ( 1.34%), kor ( 1.25%), her ( 1.11%);  Worst non-fixed: ogy ( 1.34%), kor ( 1.25%), her ( 1.11%)
+   -21.42 Inward Rolls                        | Worst: the ( 4.26%), ing ( 1.85%), and ( 1.77%);  Worst non-fixed: the ( 4.26%), ing ( 1.85%), and ( 1.77%)
+    -7.65 Outward Rolls                       | Worst: nem ( 3.41%), sze ( 2.84%), olt ( 1.80%);  Worst non-fixed: nem ( 3.41%), sze ( 2.84%), olt ( 1.80%)
+
+Cost: 249.93 (optimization score: 400108
+
+=================
+
+Layout (layer 1):
+            ┌───┐                         ┌───┐
+        ┌───┤ d ├───┬───┐         ┌───┬───┤ u ├───┐
+┌───┬───┤ g ├───┤ m │ k │         │ f │ , ├───┤ q ├───┬───┐
+│ ü │ b ├───┤ t ├───┼───┤         ├───┼───┤ a ├───┤ o │ ö │
+├───┼───┤ s ├───┤ r │ y │         │ p │ n ├───┤ e ├───┼───┤
+│ ó │ l ├───┤ w ├───┼───┤         ├───┼───┤ . ├───┤ i │ é │
+├───┼───┤ v ├───┤ h │ j │         │ x │ z ├───┤ ; ├───┼───┤
+│ í │ c ├───┘   └───┴───┘         └───┴───┘   └───┤ á │ ő │
+└───┴───┘       ┌───┬───┬───┐ ┌───┬───┬───┐       └───┴───┘
+                │ ↶ │ ␣ │ ⇥ │ │ ⏎ │ ⌫ │ ⌦ │
+                └───┴───┴───┘ └───┴───┴───┘
+
+Layout string (layer 1):
+übgdmkf,uqoöólstrypnaeiéícvwhjxz.;áő
+
+Unigram metrics:
+  Not found: 1.4507% of 519527.0000
+    10.49 Finger Balance                      | Finger loads % (no thumb): 9.7 10.2 12.1 16.8 - 13.2 11.8 10.7 15.4
+     0.43 Hand Disbalance                     | Hand loads % (no thumb): 48.92 - 51.08
+     0.00 Row Loads                           | Row 1: 26.3%; Row 2: 59.0%; Row 3: 14.7%
+     0.39 Modifier Usage                      | Worst unigrams: [ ] (99.80%), [⌫] ( 0.20%)
+   129.65 Key Costs                           | Worst unigrams:   ( 7.40%), o ( 6.42%), k ( 5.55%)
+
+Bigram metrics:
+  Not found: 2.5845% of 519526.0000
+    37.91 Finger Repeats                      | Worst: ül (11.99%),    ( 5.14%), n, ( 4.83%);  Worst non-fixed: ül (11.99%), n, ( 4.83%), ól ( 4.41%)
+    23.00 Movement Pattern                    | Worst: íg ( 6.52%), cs ( 5.65%), tü ( 4.48%);  Worst non-fixed: íg ( 6.52%), cs ( 5.65%), tü ( 4.48%)
+     3.94 No Handswitch After Unbalancing Key | Worst: gy ( 7.10%), fe ( 3.61%), ül ( 3.38%);  Worst non-fixed: gy ( 7.10%), fe ( 3.61%), ül ( 3.38%)
+
+Trigram metrics:
+  Not found: 3.6435% of 519525.0000
+    28.06 No Handswitch in Trigram            | Worst: enn ( 1.48%), en, ( 1.29%), ült ( 1.08%);  Worst non-fixed: enn ( 1.48%), en, ( 1.29%), ült ( 1.08%)
+    12.18 Irregularity                        | Worst:     (63.08%), ból (11.56%), vül ( 3.67%);  Worst non-fixed: ból (11.56%), vül ( 3.67%), rül ( 2.59%)
+    14.22 Secondary Bigrams                   | Worst: kor ( 1.41%), vol ( 1.25%),  a  ( 1.16%);  Worst non-fixed: kor ( 1.41%), vol ( 1.25%), her ( 0.86%)
+   -25.71 Inward Rolls                        | Worst: the ( 3.55%), ogy ( 1.58%), egy ( 1.58%);  Worst non-fixed: the ( 3.55%), ogy ( 1.58%), egy ( 1.58%)
+    -7.43 Outward Rolls                       | Worst: nem ( 3.51%), sze ( 2.93%), nek ( 1.67%);  Worst non-fixed: nem ( 3.51%), sze ( 2.93%), nek ( 1.67%)
+
+Cost: 227.13 (optimization score: 440285)
+
+=================
+
+Layout (layer 1): ***** NoProg WINNER *****
+            ┌───┐                         ┌───┐
+        ┌───┤ k ├───┬───┐         ┌───┬───┤ o ├───┐
+┌───┬───┤ d ├───┤ z │ b │         │ f │ , ├───┤ u ├───┬───┐
+│ ü │ m*├───┤ t ├───┼───┤         ├───┼───┤ a ├───┤ q*│ ö │
+├───┼───┤ s ├───┤ l │ p │         │ j │ n ├───┤ e ├───┼───┤
+│ ó │ r ├───┤ v ├───┼───┤         ├───┼───┤ . ├───┤ i │ é │
+├───┼───┤ y*├───┤ g │ w*│         │ x │ h ├───┤ ; ├───┼───┤
+│ í │ c ├───┘   └───┴───┘         └───┴───┘   └───┤ á │ ő │
+└───┴───┘       ┌───┬───┬───┐ ┌───┬───┬───┐       └───┴───┘
+                │ ↶ │ ␣ │ ⇥ │ │ ⏎ │ ⌫ │ ⌦ │
+                └───┴───┴───┘ └───┴───┴───┘
+
+Layout string (layer 1):
+ümdkzbf,ouqöórstlpjnaeiéícyvgwxh.;áő
+
+Unigram metrics:
+  Not found: 1.4507% of 519527.0000
+     3.65 Finger Balance                      | Finger loads % (no thumb): 9.8 10.4 13.5 15.1 - 13.4 15.2 12.3 10.3
+     0.50 Hand Disbalance                     | Hand loads % (no thumb): 48.76 - 51.24
+     0.00 Row Loads                           | Row 1: 25.7%; Row 2: 57.7%; Row 3: 16.6%
+     0.39 Modifier Usage                      | Worst unigrams: [ ] (99.80%), [⌫] ( 0.20%)
+   128.14 Key Costs                           | Worst unigrams: o ( 7.80%),   ( 7.49%), k ( 5.18%)
+
+Bigram metrics:
+  Not found: 2.5845% of 519526.0000
+    29.01 Finger Repeats                      | Worst:    ( 6.71%), n, ( 6.31%), tt ( 4.87%);  Worst non-fixed: n, ( 6.31%), tt ( 4.87%), rü ( 3.69%)
+    28.63 Movement Pattern                    | Worst: yü ( 6.17%), ho ( 5.59%), cs ( 4.54%);  Worst non-fixed: yü ( 6.17%), ho ( 5.59%), cs ( 4.54%)
+     3.06 No Handswitch After Unbalancing Key | Worst: sz ( 5.25%), fe ( 4.64%), ül ( 4.35%);  Worst non-fixed: sz ( 5.25%), fe ( 4.64%), ül ( 4.35%)
+
+Trigram metrics:
+  Not found: 3.6435% of 519525.0000
+    28.64 No Handswitch in Trigram            | Worst: ssz ( 2.07%), szt ( 1.76%), han ( 1.62%);  Worst non-fixed: ssz ( 2.07%), szt ( 1.76%), han ( 1.62%)
+    11.36 Irregularity                        | Worst:     (72.51%), yüt ( 3.87%), dít ( 2.43%);  Worst non-fixed: yüt ( 3.87%), dít ( 2.43%), tür ( 1.71%)
+    13.79 Secondary Bigrams                   | Worst: y m ( 1.89%),  a  ( 1.20%), t m ( 1.08%);  Worst non-fixed: sem ( 0.91%), utá ( 0.87%), vad ( 0.83%)
+   -20.16 Inward Rolls                        | Worst: sze ( 2.16%), ing ( 1.96%), and ( 1.88%);  Worst non-fixed: sze ( 2.16%), ing ( 1.96%), and ( 1.88%)
+   -10.53 Outward Rolls                       | Worst: the ( 4.33%), nem ( 2.47%), hog ( 1.94%);  Worst non-fixed: the ( 4.33%), nem ( 2.47%), hog ( 1.94%)
+
+Cost: 216.48 (optimization score: 461937)
+
+
+===============================
+            ┌───┐                         ┌───┐
+        ┌───┤ g ├───┬───┐         ┌───┬───┤ o ├───┐
+┌───┬───┤ d ├───┤ k │ b │         │ c*│ y ├───┤ á ├───┬───┐
+│ ü │ f ├───┤ t ├───┼───┤         ├───┼───┤ a ├───┤ u │ ö │
+├───┼───┤ s ├───┤ l │ v*│         │ j │ r ├───┤ e ├───┼───┤
+│ ó │ n ├───┤ w ├───┼───┤         ├───┼───┤ . ├───┤ i │ é │
+├───┼───┤ p ├───┤ h │ q │         │ x │ z ├───┤ ; ├───┼───┤
+│ í │ m ├───┘   └───┴───┘         └───┴───┘   └───┤ , │ ő │
+└───┴───┘       ┌───┬───┬───┐ ┌───┬───┬───┐       └───┴───┘
+                │ ↶ │ ␣ │ ⇥ │ │ ⏎ │ ⌫ │ ⌦ │
+                └───┴───┴───┘ └───┴───┴───┘
+
+Layout string (layer 1):
+üfdgkbcyoáuöónstlvjraeiéímpwhqxz.;,ő
+
+Unigram metrics:
+  Not found: 1.4507% of 519527.0000
+     7.79 Finger Balance                      | Finger loads % (no thumb): 11.6 9.2 12.6 15.5 - 10.8 15.2 12.7 12.4
+     0.45 Hand Disbalance                     | Hand loads % (no thumb): 48.86 - 51.14
+     0.00 Row Loads                           | Row 1: 25.5%; Row 2: 58.3%; Row 3: 16.2%
+     0.39 Modifier Usage                      | Worst unigrams: [ ] (99.80%), [⌫] ( 0.20%)
+   128.96 Key Costs                           | Worst unigrams: o ( 7.75%),   ( 7.44%), m ( 6.07%)
+
+Bigram metrics:
+  Not found: 2.5845% of 519526.0000
+    26.19 Finger Repeats                      | Worst:    ( 7.44%), tt ( 5.40%), \n\n ( 5.04%);  Worst non-fixed: tt ( 5.40%), rc ( 4.30%), lk ( 3.85%)
+    26.96 Movement Pattern                    | Worst: nd ( 8.71%), e, ( 5.83%), tü ( 3.82%);  Worst non-fixed: nd ( 8.71%), e, ( 5.83%), tü ( 3.82%)
+     2.91 No Handswitch After Unbalancing Key | Worst: ül ( 4.57%), ce ( 3.82%), ic ( 3.36%);  Worst non-fixed: ül ( 4.57%), ce ( 3.82%), ic ( 3.36%)
+
+Trigram metrics:
+  Not found: 3.6435% of 519525.0000
+    25.95 No Handswitch in Trigram            | Worst: ice ( 2.44%), zer ( 2.24%), you ( 1.22%);  Worst non-fixed: ice ( 2.44%), zer ( 2.24%), you ( 1.22%)
+    11.28 Irregularity                        | Worst:     (73.55%), míg ( 4.52%), tün ( 4.15%);  Worst non-fixed: míg ( 4.52%), tün ( 4.15%), dít ( 2.47%)
+    13.52 Secondary Bigrams                   | Worst: nem ( 1.68%),  a  ( 1.22%), vol ( 1.20%);  Worst non-fixed: nem ( 1.68%), vol ( 1.20%), min ( 1.11%)
+   -20.80 Inward Rolls                        | Worst: the ( 4.38%), ing ( 1.90%), and ( 1.82%);  Worst non-fixed: the ( 4.38%), ing ( 1.90%), and ( 1.82%)
+    -8.40 Outward Rolls                       | Worst: sze ( 2.59%), olt ( 1.64%), sai ( 1.14%);  Worst non-fixed: sze ( 2.59%), olt ( 1.64%), sai ( 1.14%)
+
+Cost: 215.21 (optimization score: 464665)
+
+================
+
+Layout (layer 1):
+            ┌───┐                         ┌───┐
+        ┌───┤ k ├───┬───┐         ┌───┬───┤ o ├───┐
+┌───┬───┤ d ├───┤ z │ b │         │ f │ , ├───┤ u ├───┬───┐
+│ ü │ m ├───┤ t ├───┼───┤         ├───┼───┤ a ├───┤ q │ ö │
+├───┼───┤ s ├───┤ l │ c*│         │ j │ n ├───┤ e ├───┼───┤
+│ ó │ r ├───┤ w ├───┼───┤         ├───┼───┤ . ├───┤ i │ é │
+├───┼───┤ v ├───┤ g │ p │         │ x │ h ├───┤ ; ├───┼───┤
+│ í │ y ├───┘   └───┴───┘         └───┴───┘   └───┤ á │ ő │
+└───┴───┘       ┌───┬───┬───┐ ┌───┬───┬───┐       └───┴───┘
+                │ ↶ │ ␣ │ ⇥ │ │ ⏎ │ ⌫ │ ⌦ │
+                └───┴───┴───┘ └───┴───┴───┘
+
+Layout string (layer 1):
+ümdkzbf,ouqöórstlcjnaeiéíyvwgpxh.;áő
+
+Unigram metrics:
+  Not found: 1.4507% of 519527.0000
+     4.50 Finger Balance                      | Finger loads % (no thumb): 10.8 9.8 12.6 15.5 - 13.4 15.2 12.3 10.3
+     0.50 Hand Disbalance                     | Hand loads % (no thumb): 48.76 - 51.24
+     0.00 Row Loads                           | Row 1: 25.7%; Row 2: 57.8%; Row 3: 16.5%
+     0.39 Modifier Usage                      | Worst unigrams: [ ] (99.80%), [⌫] ( 0.20%)
+   129.30 Key Costs                           | Worst unigrams: o ( 7.73%),   ( 7.42%), k ( 5.14%)
+
+Bigram metrics:
+  Not found: 2.5845% of 519526.0000
+    30.84 Finger Repeats                      | Worst:    ( 6.32%), n, ( 5.94%), tt ( 4.58%);  Worst non-fixed: n, ( 5.94%), tt ( 4.58%), rü ( 3.48%)
+    22.96 Movement Pattern                    | Worst: ho ( 6.97%), tü ( 4.49%), e. ( 3.69%);  Worst non-fixed: ho ( 6.97%), tü ( 4.49%), e. ( 3.69%)
+     3.29 No Handswitch After Unbalancing Key | Worst: sz ( 4.89%), fe ( 4.32%), ül ( 4.05%);  Worst non-fixed: sz ( 4.89%), fe ( 4.32%), ül ( 4.05%)
+
+Trigram metrics:
+  Not found: 3.6435% of 519525.0000
+    28.61 No Handswitch in Trigram            | Worst: ssz ( 2.07%), szt ( 1.76%), han ( 1.62%);  Worst non-fixed: ssz ( 2.07%), szt ( 1.76%), han ( 1.62%)
+    11.18 Irregularity                        | Worst:     (74.82%), dít ( 2.51%), tür ( 1.77%);  Worst non-fixed: dít ( 2.51%), tür ( 1.77%), rül ( 1.73%)
+    13.33 Secondary Bigrams                   | Worst:  a  ( 1.24%), t m ( 1.11%), ver ( 0.98%);  Worst non-fixed: ver ( 0.98%), sem ( 0.95%), utá ( 0.90%)
+   -19.39 Inward Rolls                        | Worst: sze ( 2.24%), ing ( 2.04%), and ( 1.95%);  Worst non-fixed: sze ( 2.24%), ing ( 2.04%), and ( 1.95%)
+   -10.93 Outward Rolls                       | Worst: the ( 4.17%), nem ( 2.38%), hog ( 1.87%);  Worst non-fixed: the ( 4.17%), nem ( 2.38%), hog ( 1.87%)
+
+Cost: 214.57 (optimization score: 466040)
+
+
+==========================
+
+ümdgkbf,ouyöórstlpjnaeiéícvwhqxz.;áő
+
+ümdgkb f,ouyö
+órstlp jnaeié
+ícvwhq xz.;áő
+
+            ┌───┐                         ┌───┐
+        ┌───┤ g ├───┬───┐         ┌───┬───┤ o ├───┐
+┌───┬───┤ d ├───┤ k │ b │         │ f │ , ├───┤ u ├───┬───┐
+│ ü │ m ├───┤ t ├───┼───┤         ├───┼───┤ a ├───┤ y │ ö │
+├───┼───┤ s ├───┤ l │ p │         │ j │ n ├───┤ e ├───┼───┤
+│ ó │ r ├───┤ w ├───┼───┤         ├───┼───┤ . ├───┤ i │ é │
+├───┼───┤ v ├───┤ h │ q │         │ x │ z ├───┤ ; ├───┼───┤
+│ í │ c ├───┘   └───┴───┘         └───┴───┘   └───┤ á │ ő │
+└───┴───┘       ┌───┬───┬───┐ ┌───┬───┬───┐       └───┴───┘
+                │ ↶ │ ␣ │ ⇥ │ │ ⏎ │ ⌫ │ ⌦ │
+                └───┴───┴───┘ └───┴───┴───┘
+
+Unigram metrics:
+  Not found: 1.4507% of 519527.0000
+     5.60 Finger Balance                      | Finger loads % (no thumb): 9.8 9.8 12.6 14.9 - 13.0 15.2 12.3 12.4
+     1.19 Hand Disbalance                     | Hand loads % (no thumb): 47.03 - 52.97
+     0.00 Row Loads                           | Row 1: 28.4%; Row 2: 57.7%; Row 3: 13.9%
+     0.39 Modifier Usage                      |
+   125.80 Key Costs                           |
+
+Bigram metrics:
+  Not found: 2.5845% of 519526.0000
+    32.26 Finger Repeats                      |
+    31.66 Movement Pattern                    |
+     3.11 No Handswitch After Unbalancing Key |
+
+Trigram metrics:
+  Not found: 3.6435% of 519525.0000
+    29.53 No Handswitch in Trigram            |
+    11.81 Irregularity                        |
+    14.19 Secondary Bigrams                   |
+   -23.00 Inward Rolls                        |
+    -7.98 Outward Rolls                       |
+
+Cost: 224.56 (optimization score: 445307)
+
+
+üfdgkbcyoáuöónstlvjraeiéímpwhqxz.;,ő
+
+üfdgkb cyoáuö
+ónstlv jraeié
+ímpwhq xz.;,ő
+
+            ┌───┐                         ┌───┐
+        ┌───┤ g ├───┬───┐         ┌───┬───┤ o ├───┐
+┌───┬───┤ d ├───┤ k │ b │         │ c │ y ├───┤ á ├───┬───┐
+│ ü │ f ├───┤ t ├───┼───┤         ├───┼───┤ a ├───┤ u │ ö │
+├───┼───┤ s ├───┤ l │ v │         │ j │ r ├───┤ e ├───┼───┤
+│ ó │ n ├───┤ w ├───┼───┤         ├───┼───┤ . ├───┤ i │ é │
+├───┼───┤ p ├───┤ h │ q │         │ x │ z ├───┤ ; ├───┼───┤
+│ í │ m ├───┘   └───┴───┘         └───┴───┘   └───┤ , │ ő │
+└───┴───┘       ┌───┬───┬───┐ ┌───┬───┬───┐       └───┴───┘
+                │ ↶ │ ␣ │ ⇥ │ │ ⏎ │ ⌫ │ ⌦ │
+                └───┴───┴───┘ └───┴───┴───┘
+
+Unigram metrics:
+  Not found: 1.4507% of 519527.0000
+     7.79 Finger Balance                      | Finger loads % (no thumb): 11.6 9.2 12.6 15.5 - 10.8 15.2 12.7 12.4
+     0.45 Hand Disbalance                     | Hand loads % (no thumb): 48.86 - 51.14
+     0.00 Row Loads                           | Row 1: 25.5%; Row 2: 58.3%; Row 3: 16.2%
+     0.39 Modifier Usage                      |
+   128.96 Key Costs                           |
+
+Bigram metrics:
+  Not found: 2.5845% of 519526.0000
+    26.19 Finger Repeats                      |
+    26.96 Movement Pattern                    |
+     2.91 No Handswitch After Unbalancing Key |
+
+Trigram metrics:
+  Not found: 3.6435% of 519525.0000
+    25.95 No Handswitch in Trigram            |
+    11.28 Irregularity                        |
+    13.52 Secondary Bigrams                   |
+   -20.80 Inward Rolls                        |
+    -8.40 Outward Rolls                       |
+
+Cost: 215.21 (optimization score: 464665)
+
+Layout (layer 1): ***** NoProg WINNER mod ***
+            ┌───┐                         ┌───┐
+        ┌───┤ k ├───┬───┐         ┌───┬───┤ o ├───┐
+┌───┬───┤ d ├───┤ z │ b │         │ f │ , ├───┤ u ├───┬───┐
+│ ü │ m ├───┤ t ├───┼───┤         ├───┼───┤ a ├───┤ y │ ö │
+├───┼───┤ s ├───┤ l │ p │         │ j │ n ├───┤ e ├───┼───┤
+│ ó │ r ├───┤ v ├───┼───┤         ├───┼───┤ . ├───┤ i │ é │
+├───┼───┤ w ├───┤ g │ q │         │ x │ h ├───┤ ; ├───┼───┤
+│ í │ c ├───┘   └───┴───┘         └───┴───┘   └───┤ á │ ő │
+└───┴───┘       ┌───┬───┬───┐ ┌───┬───┬───┐       └───┴───┘
+                │ ↶ │ ␣ │ ⇥ │ │ ⏎ │ ⌫ │ ⌦ │
+                └───┴───┴───┘ └───┴───┴───┘
+
+Layout string (layer 1):
+ümdkzbf,ouyö
+órstlpjnaeié
+ícwvgqxh.;áő
+
+**************************************** winner? ******************
+            ┌───┐                         ┌───┐
+        ┌───┤ g ├───┬───┐         ┌───┬───┤ o ├───┐
+┌───┬───┤ d ├───┤ k │ b │         │ f*│ y ├───┤ á ├───┬───┐
+│ ü │ m ├───┤ t ├───┼───┤         ├───┼───┤ a ├───┤ u │ ö │
+├───┼───┤ s ├───┤ l │ p │         │ j │ n ├───┤ e ├───┼───┤
+│ ó │ r ├───┤ w ├───┼───┤         ├───┼───┤ . ├───┤ i │ é │
+├───┼───┤ v ├───┤ h │ q │         │ x │ z ├───┤ ; ├───┼───┤
+│ í │ c ├───┘   └───┴───┘         └───┴───┘   └───┤ , │ ő │
+└───┴───┘       ┌───┬───┬───┐ ┌───┬───┬───┐       └───┴───┘
+                │ ↶ │ ␣ │ ⇥ │ │ ⏎ │ ⌫ │ ⌦ │
+                └───┴───┴───┘ └───┴───┴───┘
+
+Layout string (layer 1):
+ümdgkbfyoáuöórstlpjnaeiéícvwhqxz.;,ő
+
+Unigram metrics:
+  Not found: 1.4507% of 519527.0000
+     5.97 Finger Balance                      | Finger loads % (no thumb): 9.8 9.8 12.6 14.9 - 12.6 15.2 12.7 12.4
+     1.19 Hand Disbalance                     | Hand loads % (no thumb): 47.03 - 52.97
+     0.00 Row Loads                           | Row 1: 27.9%; Row 2: 57.7%; Row 3: 14.4%
+     0.39 Modifier Usage                      | Worst unigrams: [ ] (99.80%), [⌫] ( 0.20%)
+   126.38 Key Costs                           | Worst unigrams: o ( 7.91%),   ( 7.59%), g ( 5.19%)
+
+Bigram metrics:
+  Not found: 2.5845% of 519526.0000
+    30.89 Finger Repeats                      | Worst: ny (12.65%),    ( 6.31%), tt ( 4.58%);  Worst non-fixed: ny (12.65%), tt ( 4.58%), rü ( 3.47%)
+    27.28 Movement Pattern                    | Worst: e, ( 5.76%), cs ( 4.76%), tü ( 3.78%);  Worst non-fixed: e, ( 5.76%), cs ( 4.76%), tü ( 3.78%)
+     3.11 No Handswitch After Unbalancing Key | Worst: fe ( 4.57%), ül ( 4.28%), fo ( 3.85%);  Worst non-fixed: fe ( 4.57%), ül ( 4.28%), fo ( 3.85%)
+
+Trigram metrics:
+  Not found: 3.6435% of 519525.0000
+    29.27 No Handswitch in Trigram            | Worst: enn ( 1.42%), ény ( 1.37%), ány ( 1.26%);  Worst non-fixed: enn ( 1.42%), ény ( 1.37%), ány ( 1.26%)
+    11.95 Irregularity                        | Worst:     (65.49%), míg ( 8.20%), nny ( 2.64%);  Worst non-fixed: míg ( 8.20%), nny ( 2.64%), dít ( 2.20%)
+    13.63 Secondary Bigrams                   | Worst:  a  ( 1.21%), t m ( 1.09%), ver ( 0.95%);  Worst non-fixed: ver ( 0.95%), sem ( 0.93%), tud ( 0.77%)
+   -21.29 Inward Rolls                        | Worst: the ( 4.28%), ing ( 1.86%), and ( 1.78%);  Worst non-fixed: the ( 4.28%), ing ( 1.86%), and ( 1.78%)
+    -8.93 Outward Rolls                       | Worst: nem ( 2.92%), sze ( 2.44%), olt ( 1.55%);  Worst non-fixed: nem ( 2.92%), sze ( 2.44%), olt ( 1.55%)
+
+Cost: 219.84 (optimization score: 454881)
+
+--------------------
+ümdgkbfyoáuöónstlpjraeiéícvwhqxz.;,ő
+
+ümdgkb fyoáuö
+ónstlp jraeié
+ícvwhq xz.;,ő
+
+            ┌───┐                         ┌───┐
+        ┌───┤ g ├───┬───┐         ┌───┬───┤ o ├───┐
+┌───┬───┤ d ├───┤ k │ b │         │ f*│ y ├───┤ á ├───┬───┐
+│ ü │ m ├───┤ t ├───┼───┤         ├───┼───┤ a ├───┤ u │ ö │
+├───┼───┤ s ├───┤ l │ p │         │ j │ r ├───┤ e ├───┼───┤
+│ ó │ n ├───┤ w ├───┼───┤         ├───┼───┤ . ├───┤ i │ é │
+├───┼───┤ v ├───┤ h │ q │         │ x │ z ├───┤ ; ├───┼───┤
+│ í │ c ├───┘   └───┴───┘         └───┴───┘   └───┤ , │ ő │
+└───┴───┘       ┌───┬───┬───┐ ┌───┬───┬───┐       └───┴───┘
+                │ ↶ │ ␣ │ ⇥ │ │ ⏎ │ ⌫ │ ⌦ │
+                └───┴───┴───┘ └───┴───┴───┘
+
+Unigram metrics:
+  Not found: 1.4507% of 519527.0000
+     7.14 Finger Balance                      | Finger loads % (no thumb): 11.5 9.8 12.6 14.9 - 10.9 15.2 12.7 12.4
+     0.49 Hand Disbalance                     | Hand loads % (no thumb): 48.78 - 51.22
+     0.00 Row Loads                           | Row 1: 27.9%; Row 2: 57.7%; Row 3: 14.4%
+     0.39 Modifier Usage                      |
+   127.24 Key Costs                           |
+
+Bigram metrics:
+  Not found: 2.5845% of 519526.0000
+    26.62 Finger Repeats                      |
+    29.51 Movement Pattern                    |
+     3.10 No Handswitch After Unbalancing Key |
+
+Trigram metrics:
+  Not found: 3.6435% of 519525.0000
+    26.53 No Handswitch in Trigram            |
+    11.67 Irregularity                        |
+    14.10 Secondary Bigrams                   |
+   -20.54 Inward Rolls                        |
+    -8.96 Outward Rolls                       |
+
+Cost: 217.29 (optimization score: 460213)
+
+====================== to test ======================
+
+üfdgkb wyoáuö
+ónstlv jraeié
+ícmphq xz.;,ő
+
+            ┌───┐                         ┌───┐
+        ┌───┤ g ├───┬───┐         ┌───┬───┤ o ├───┐
+┌───┬───┤ d ├───┤ k_│ b_│         │ w │ y_├───┤ á ├───┬───┐
+│ ü │ f ├───┤ t_├───┼───┤         ├───┼───┤ a_├───┤ u`│ ö │
+├───┼───┤ s_├───┤ l │ v*│         │ j │ r`├───┤ e_├───┼───┤cfdmgphkyz
+│ ó │ n`├───┤ p ├───┼───┤         ├───┼───┤ . ├───┤ i_│ é │
+├───┼───┤ m*├───┤ h_│ q_│         │ x_│ z_├───┤ ; ├───┼───┤
+│ í │ c_├───┘   └───┴───┘         └───┴───┘   └───┤ , │ ő │
+└───┴───┘       ┌───┬───┬───┐ ┌───┬───┬───┐       └───┴───┘
+                │ ↶ │ ␣ │ ⇥ │ │ ⏎ │ ⌫ │ ⌦ │
+                └───┴───┴───┘ └───┴───┴───┘
+
+Unigram metrics:
+  Not found: 1.4507% of 519527.0000
+     7.42 Finger Balance                      | Finger loads % (no thumb): 9.2 11.7 12.9 15.5 - 10.4 15.2 12.7 12.4
+     0.29 Hand Disbalance                     | Hand loads % (no thumb): 49.27 - 50.73
+     0.00 Row Loads                           | Row 1: 25.1%; Row 2: 58.3%; Row 3: 16.6%
+     0.39 Modifier Usage                      |
+   129.73 Key Costs                           |
+
+Bigram metrics:
+  Not found: 2.5845% of 519526.0000
+    24.85 Finger Repeats                      |
+    29.18 Movement Pattern                    |
+     2.74 No Handswitch After Unbalancing Key |
+
+Trigram metrics:
+  Not found: 3.6435% of 519525.0000
+    25.25 No Handswitch in Trigram            |
+    11.18 Irregularity                        |
+    14.17 Secondary Bigrams                   |
+   -21.09 Inward Rolls                        |
+    -8.44 Outward Rolls                       |
+
+Cost: 215.66 (optimization score: 463702)
+
+./target/release/optimize_genetic -c .\corpus_hunglish.txt -e config/evaluation/default_my.yml -l config/keyboard/draft_hun.yml -s "üfdgkbwyoáuöónstlvjraeiéícmphqxz.;,ő" -f "kbystaeicüóíöőé"
+
+ümdgkbwyruáöólstovjnaeiéícfphqxz.;,ő
+           ┌───┐                         ┌───┐
+        ┌───┤ k ├───┬───┐         ┌───┬───┤ o ├───┐
+┌───┬───┤ d ├───┤ z │ b │         │ f │ , ├───┤ u ├───┬───┐
+│ ü │ m*├───┤ t ├───┼───┤         ├───┼───┤ a ├───┤ q*│ ö │
+├───┼───┤ s ├───┤ l │ p │         │ j │ n ├───┤ e ├───┼───┤
+│ ó │ r ├───┤ v ├───┼───┤         ├───┼───┤ . ├───┤ i │ é │
+├───┼───┤ y*├───┤ g │ w*│         │ x │ h ├───┤ ; ├───┼───┤
+│ í │ c ├───┘   └───┴───┘         └───┴───┘   └───┤ á │ ő │
+└───┴───┘       ┌───┬───┬───┐ ┌───┬───┬───┐       └───┴───┘
+                │ ↶ │ ␣ │ ⇥ │ │ ⏎ │ ⌫ │ ⌦ │
+                └───┴───┴───┘ └───┴───┴───┘
+				
+ümdgkbfyoáuöórstlpjnaeiéícwvhqxz.;,ő
+
+ümdgkb fyoáuö
+órstlp jnaeié
+ícwvhq xz.;,ő
+
+            ┌───┐                         ┌───┐
+        ┌───┤ g ├───┬───┐         ┌───┬───┤ o ├───┐
+┌───┬───┤ d ├───┤ k │ b │         │ f │ y ├───┤ á ├───┬───┐
+│ ü │ m ├───┤ t ├───┼───┤         ├───┼───┤ a ├───┤ u │ ö │
+├───┼───┤ s ├───┤ l │ p │         │ j │ n ├───┤ e ├───┼───┤
+│ ó │ r ├───┤ v ├───┼───┤         ├───┼───┤ . ├───┤ i │ é │
+├───┼───┤ w ├───┤ h │ q │         │ x │ z ├───┤ ; ├───┼───┤
+│ í │ c ├───┘   └───┴───┘         └───┴───┘   └───┤ , │ ő │
+└───┴───┘       ┌───┬───┬───┐ ┌───┬───┬───┐       └───┴───┘
+                │ ↶ │ ␣ │ ⇥ │ │ ⏎ │ ⌫ │ ⌦ │
+                └───┴───┴───┘ └───┴───┴───┘
+
+Unigram metrics:
+  Not found: 1.4507% of 519527.0000
+     6.50 Finger Balance                      | Finger loads % (no thumb): 9.8 8.9 13.5 14.9 - 12.6 15.2 12.7 12.4
+     1.19 Hand Disbalance                     | Hand loads % (no thumb): 47.03 - 52.97
+     0.00 Row Loads                           | Row 1: 27.9%; Row 2: 57.7%; Row 3: 14.4%
+     0.39 Modifier Usage                      |
+   125.61 Key Costs                           |
+
+Bigram metrics:
+  Not found: 2.5845% of 519526.0000
+    31.18 Finger Repeats                      |
+    26.87 Movement Pattern                    |
+     3.11 No Handswitch After Unbalancing Key |
+
+Trigram metrics:
+  Not found: 3.6435% of 519525.0000
+    29.29 No Handswitch in Trigram            |
+    11.94 Irregularity                        |
+    14.04 Secondary Bigrams                   |
+   -21.33 Inward Rolls                        |
+    -8.86 Outward Rolls                       |
+
+Cost: 219.92 (optimization score: 454706)				
+
+
+ümdgkbfyouáöórstlpjnaeiéícvwhqxz.;,ő
+
+ümdgkb fyouáö
+órstlp jnaeié
+ícvwhq xz.;,ő
+
+            ┌───┐                         ┌───┐
+        ┌───┤ g ├───┬───┐         ┌───┬───┤ o ├───┐
+┌───┬───┤ d ├───┤ k │ b │         │ f │ y ├───┤ u ├───┬───┐
+│ ü │ m ├───┤ t ├───┼───┤         ├───┼───┤ a ├───┤ á │ ö │
+├───┼───┤ s ├───┤ l │ p │         │ j │ n ├───┤ e ├───┼───┤
+│ ó │ r ├───┤ w ├───┼───┤         ├───┼───┤ . ├───┤ i │ é │
+├───┼───┤ v ├───┤ h │ q │         │ x │ z ├───┤ ; ├───┼───┤
+│ í │ c ├───┘   └───┴───┘         └───┴───┘   └───┤ , │ ő │
+└───┴───┘       ┌───┬───┬───┐ ┌───┬───┬───┐       └───┴───┘
+                │ ↶ │ ␣ │ ⇥ │ │ ⏎ │ ⌫ │ ⌦ │
+                └───┴───┴───┘ └───┴───┴───┘
+
+Unigram metrics:
+  Not found: 1.4507% of 519527.0000
+     6.17 Finger Balance                      | Finger loads % (no thumb): 9.8 9.8 12.6 14.9 - 12.6 15.2 12.3 12.8
+     1.19 Hand Disbalance                     | Hand loads % (no thumb): 47.03 - 52.97
+     0.00 Row Loads                           | Row 1: 27.9%; Row 2: 57.7%; Row 3: 14.4%
+     0.39 Modifier Usage                      |
+   126.18 Key Costs                           |
+
+Bigram metrics:
+  Not found: 2.5845% of 519526.0000
+    31.55 Finger Repeats                      |
+    26.79 Movement Pattern                    |
+     3.10 No Handswitch After Unbalancing Key |
+
+Trigram metrics:
+  Not found: 3.6435% of 519525.0000
+    29.27 No Handswitch in Trigram            |
+    11.96 Irregularity                        |
+    13.82 Secondary Bigrams                   |
+   -21.14 Inward Rolls                        |
+    -8.94 Outward Rolls                       |
+
+Cost: 220.34 (optimization score: 453835)
+
+PS E:\Private_tibi\_rust\keyboard_layout_optimizer> ./target/release/evaluate -c .\corpus_hunglish.txt -e config/evaluation/default_my.yml -l config/keyboard/draft_hun.yml  "ümdgkbfyouáöórstlpjnaeiéícvwhqxz.;,o"
+Layout (layer 1):
+            ┌───┐                         ┌───┐
+        ┌───┤ g ├───┬───┐         ┌───┬───┤ o ├───┐
+┌───┬───┤ d ├───┤ k │ b │         │ f │ y ├───┤ u ├───┬───┐
+│ ü │ m ├───┤ t ├───┼───┤         ├───┼───┤ a ├───┤ á │ ö │
+├───┼───┤ s ├───┤ l │ p │         │ j │ n ├───┤ e ├───┼───┤
+│ ó │ r ├───┤ w ├───┼───┤         ├───┼───┤ . ├───┤ i │ é │
+├───┼───┤ v ├───┤ h │ q │         │ x │ z ├───┤ ; ├───┼───┤
+│ í │ c ├───┘   └───┴───┘         └───┴───┘   └───┤ , │ ő │
+└───┴───┘       ┌───┬───┬───┐ ┌───┬───┬───┐       └───┴───┘
+                │ ↶ │ ␣ │ ⇥ │ │ ⏎ │ ⌫ │ ⌦ │
+                └───┴───┴───┘ └───┴───┴───┘
+
+Layout string (layer 1):
+ümdgkbfyouáöórstlpjnaeiéícvwhqxz.;,ő
+
+Unigram metrics:
+  Not found: 1.4507% of 519527.0000
+     6.17 Finger Balance                      | Finger loads % (no thumb): 9.8 9.8 12.6 14.9 - 12.6 15.2 12.3 12.8
+     1.19 Hand Disbalance                     | Hand loads % (no thumb): 47.03 - 52.97
+     0.00 Row Loads                           | Row 1: 27.9%; Row 2: 57.7%; Row 3: 14.4%
+     0.39 Modifier Usage                      | Worst unigrams: [ ] (99.80%), [⌫] ( 0.20%)
+   126.18 Key Costs                           | Worst unigrams: o ( 7.92%),   ( 7.60%), g ( 5.20%)
+
+Bigram metrics:
+  Not found: 2.5845% of 519526.0000
+    31.55 Finger Repeats                      | Worst: ny (12.39%),    ( 6.17%), tt ( 4.48%);  Worst non-fixed: ny (12.39%), tt ( 4.48%), rü ( 3.40%)
+    26.79 Movement Pattern                    | Worst: e, ( 5.87%), cs ( 4.85%), tü ( 3.84%);  Worst non-fixed: e, ( 5.87%), cs ( 4.85%), tü ( 3.84%)
+     3.10 No Handswitch After Unbalancing Key | Worst: fe ( 4.58%), ül ( 4.29%), fo ( 3.86%);  Worst non-fixed: fe ( 4.58%), ül ( 4.29%), fo ( 3.86%)
+
+Trigram metrics:
+  Not found: 3.6435% of 519525.0000
+    29.27 No Handswitch in Trigram            | Worst: enn ( 1.42%), ény ( 1.37%), ány ( 1.26%);  Worst non-fixed: enn ( 1.42%), ény ( 1.37%), ány ( 1.26%)
+    11.96 Irregularity                        | Worst:     (65.44%), míg ( 8.19%), nny ( 2.64%);  Worst non-fixed: míg ( 8.19%), nny ( 2.64%), dít ( 2.20%)
+    13.82 Secondary Bigrams                   | Worst:  a  ( 1.20%), t m ( 1.07%), ver ( 0.94%);  Worst non-fixed: ver ( 0.94%), sem ( 0.91%), tud ( 0.76%)
+   -21.14 Inward Rolls                        | Worst: the ( 4.31%), ing ( 1.87%), and ( 1.79%);  Worst non-fixed: the ( 4.31%), ing ( 1.87%), and ( 1.79%)
+    -8.94 Outward Rolls                       | Worst: nem ( 2.91%), sze ( 2.43%), olt ( 1.54%);  Worst non-fixed: nem ( 2.91%), sze ( 2.43%), olt ( 1.54%)
+
+Cost: 220.34 (optimization score: 453835)
+
+PS E:\Private_tibi\_rust\keyboard_layout_optimizer> ./target/release/evaluate -c .\corpus_hunglish.txt -e config/evaluation/default_my.yml -l config/keyboard/draft_hun.yml  "üfdgkbwyoáuöónstlvjraeiéícmphqxz.;,o" 
+Layout (layer 1):
+            ┌───┐                         ┌───┐
+        ┌───┤ g ├───┬───┐         ┌───┬───┤ o ├───┐
+┌───┬───┤ d ├───┤ k │ b │         │ w │ y ├───┤ á ├───┬───┐
+│ ü │ f ├───┤ t ├───┼───┤         ├───┼───┤ a ├───┤ u │ ö │
+├───┼───┤ s ├───┤ l │ v │         │ j │ r ├───┤ e ├───┼───┤
+│ ó │ n ├───┤ p ├───┼───┤         ├───┼───┤ . ├───┤ i │ é │
+├───┼───┤ m ├───┤ h │ q │         │ x │ z ├───┤ ; ├───┼───┤
+│ í │ c ├───┘   └───┴───┘         └───┴───┘   └───┤ , │ ő │
+└───┴───┘       ┌───┬───┬───┐ ┌───┬───┬───┐       └───┴───┘
+                │ ↶ │ ␣ │ ⇥ │ │ ⏎ │ ⌫ │ ⌦ │
+                └───┴───┴───┘ └───┴───┴───┘
+
+Layout string (layer 1):
+üfdgkbwyoáuöónstlvjraeiéícmphqxz.;,ő
+
+Unigram metrics:
+  Not found: 1.4507% of 519527.0000
+     7.42 Finger Balance                      | Finger loads % (no thumb): 9.2 11.7 12.9 15.5 - 10.4 15.2 12.7 12.4
+     0.29 Hand Disbalance                     | Hand loads % (no thumb): 49.27 - 50.73
+     0.00 Row Loads                           | Row 1: 25.1%; Row 2: 58.3%; Row 3: 16.6%
+     0.39 Modifier Usage                      | Worst unigrams: [ ] (99.80%), [⌫] ( 0.20%)
+   129.73 Key Costs                           | Worst unigrams: o ( 7.70%),   ( 7.40%), m ( 6.90%)
+
+Bigram metrics:
+  Not found: 2.5845% of 519526.0000
+    24.85 Finger Repeats                      | Worst:    ( 7.84%), tt ( 5.69%), \n\n ( 5.31%);  Worst non-fixed: tt ( 5.69%), lk ( 4.06%), a. ( 3.94%)
+    29.18 Movement Pattern                    | Worst: nd ( 8.05%), e, ( 5.39%), cs ( 4.45%);  Worst non-fixed: nd ( 8.05%), e, ( 5.39%), cs ( 4.45%)
+     2.74 No Handswitch After Unbalancing Key | Worst: ül ( 4.87%), ér ( 3.37%), wa ( 3.04%);  Worst non-fixed: ül ( 4.87%), ér ( 3.37%), wa ( 3.04%)
+
+Trigram metrics:
+  Not found: 3.6435% of 519525.0000
+    25.25 No Handswitch in Trigram            | Worst: zer ( 2.30%), you ( 1.26%), ere ( 1.16%);  Worst non-fixed: zer ( 2.30%), you ( 1.26%), ere ( 1.16%)
+    11.18 Irregularity                        | Worst:     (74.89%), tün ( 4.22%), ncs ( 3.18%);  Worst non-fixed: tün ( 4.22%), ncs ( 3.18%), dít ( 2.51%)
+    14.17 Secondary Bigrams                   | Worst: nem ( 1.83%), min ( 1.69%),  a  ( 1.17%);  Worst non-fixed: nem ( 1.83%), min ( 1.69%), vol ( 1.14%)
+   -21.09 Inward Rolls                        | Worst: the ( 4.32%), ing ( 1.87%), and ( 1.80%);  Worst non-fixed: the ( 4.32%), ing ( 1.87%), and ( 1.80%)
+    -8.44 Outward Rolls                       | Worst: sze ( 2.58%), olt ( 1.64%), sai ( 1.14%);  Worst non-fixed: sze ( 2.58%), olt ( 1.64%), sai ( 1.14%)
+
+Cost: 215.66 (optimization score: 463702)
+
+
+ügdmkbfyoáuöólstrvjnaeiéícwphqxz.;,ő
+
+ügdmkb fyoáuö
+ólstrv jnaeié
+ícwphq xz.;,ő
+
+            ┌───┐                         ┌───┐
+        ┌───┤ m ├───┬───┐         ┌───┬───┤ o ├───┐
+┌───┬───┤ d ├───┤ k │ b │         │ f │ y ├───┤ á ├───┬───┐
+│ ü │ g ├───┤ t ├───┼───┤         ├───┼───┤ a ├───┤ u │ ö │
+├───┼───┤ s ├───┤ r │ v │         │ j │ n ├───┤ e ├───┼───┤
+│ ó │ l ├───┤ p ├───┼───┤         ├───┼───┤ . ├───┤ i │ é │
+├───┼───┤ w ├───┤ h │ q │         │ x │ z ├───┤ ; ├───┼───┤
+│ í │ c ├───┘   └───┴───┘         └───┴───┘   └───┤ , │ ő │
+└───┴───┘       ┌───┬───┬───┐ ┌───┬───┬───┐       └───┴───┘
+                │ ↶ │ ␣ │ ⇥ │ │ ⏎ │ ⌫ │ ⌦ │
+                └───┴───┴───┘ └───┴───┴───┘
+
+Unigram metrics:
+  Not found: 1.4507% of 519527.0000
+     6.51 Finger Balance                      | Finger loads % (no thumb): 11.3 8.9 13.0 13.9 - 12.6 15.2 12.7 12.4
+     1.19 Hand Disbalance                     | Hand loads % (no thumb): 47.03 - 52.97
+     0.00 Row Loads                           | Row 1: 27.9%; Row 2: 58.3%; Row 3: 13.8%
+     0.39 Modifier Usage                      |
+   127.12 Key Costs                           |
+
+Bigram metrics:
+  Not found: 2.5845% of 519526.0000
+    35.49 Finger Repeats                      |
+    26.12 Movement Pattern                    |
+     3.13 No Handswitch After Unbalancing Key |
+
+Trigram metrics:
+  Not found: 3.6435% of 519525.0000
+    29.65 No Handswitch in Trigram            |
+    12.83 Irregularity                        |
+    13.41 Secondary Bigrams                   |
+   -21.97 Inward Rolls                        |
+    -8.54 Outward Rolls                       |
+
+Cost: 225.33 (optimization score: 443800)
+
+ümdgkbfyoáuöórstlpjnaeiéícvwhqxz.;,ő
+
+ümdgkb fyoáuö
+órstlp jnaeié
+ícvwhq xz.;,ő
+
+            ┌───┐                         ┌───┐
+        ┌───┤ g ├───┬───┐         ┌───┬───┤ o ├───┐
+┌───┬───┤ d ├───┤ k │ b │         │ f │ y ├───┤ á ├───┬───┐
+│ ü │ m ├───┤ t ├───┼───┤         ├───┼───┤ a ├───┤ u │ ö │
+├───┼───┤ s ├───┤ l │ p │         │ j │ n ├───┤ e ├───┼───┤
+│ ó │ r ├───┤ w ├───┼───┤         ├───┼───┤ . ├───┤ i │ é │
+├───┼───┤ v ├───┤ h │ q │         │ x │ z ├───┤ ; ├───┼───┤
+│ í │ c ├───┘   └───┴───┘         └───┴───┘   └───┤ , │ ő │
+└───┴───┘       ┌───┬───┬───┐ ┌───┬───┬───┐       └───┴───┘
+                │ ↶ │ ␣ │ ⇥ │ │ ⏎ │ ⌫ │ ⌦ │
+                └───┴───┴───┘ └───┴───┴───┘
+
+Unigram metrics:
+  Not found: 1.4507% of 519527.0000
+     5.97 Finger Balance                      | Finger loads % (no thumb): 9.8 9.8 12.6 14.9 - 12.6 15.2 12.7 12.4
+     1.19 Hand Disbalance                     | Hand loads % (no thumb): 47.03 - 52.97
+     0.00 Row Loads                           | Row 1: 27.9%; Row 2: 57.7%; Row 3: 14.4%
+     0.39 Modifier Usage                      |
+   126.38 Key Costs                           |
+
+Bigram metrics:
+  Not found: 2.5845% of 519526.0000
+    30.89 Finger Repeats                      |
+    27.28 Movement Pattern                    |
+     3.11 No Handswitch After Unbalancing Key |
+
+Trigram metrics:
+  Not found: 3.6435% of 519525.0000
+    29.27 No Handswitch in Trigram            |
+    11.95 Irregularity                        |
+    13.63 Secondary Bigrams                   |
+   -21.29 Inward Rolls                        |
+    -8.93 Outward Rolls                       |
+
+Cost: 219.84 (optimization score: 454881)
+
+ümdgkbfyoáuöónstlpjraeiéícvwhqxz.;,ő
+
+ümdgkb fyoáuö
+ónstlp jraeié
+ícvwhq xz.;,ő
+
+            ┌───┐                         ┌───┐
+        ┌───┤ g ├───┬───┐         ┌───┬───┤ o ├───┐
+┌───┬───┤ d ├───┤ k │ b │         │ f │ y ├───┤ á ├───┬───┐
+│ ü │ m ├───┤ t ├───┼───┤         ├───┼───┤ a ├───┤ u │ ö │
+├───┼───┤ s ├───┤ l │ p │         │ j │ r ├───┤ e ├───┼───┤
+│ ó │ n ├───┤ w ├───┼───┤         ├───┼───┤ . ├───┤ i │ é │
+├───┼───┤ v ├───┤ h │ q │         │ x │ z ├───┤ ; ├───┼───┤
+│ í │ c ├───┘   └───┴───┘         └───┴───┘   └───┤ , │ ő │
+└───┴───┘       ┌───┬───┬───┐ ┌───┬───┬───┐       └───┴───┘
+                │ ↶ │ ␣ │ ⇥ │ │ ⏎ │ ⌫ │ ⌦ │
+                └───┴───┴───┘ └───┴───┴───┘
+
+Unigram metrics:
+  Not found: 1.4507% of 519527.0000
+     7.14 Finger Balance                      | Finger loads % (no thumb): 11.5 9.8 12.6 14.9 - 10.9 15.2 12.7 12.4
+     0.49 Hand Disbalance                     | Hand loads % (no thumb): 48.78 - 51.22
+     0.00 Row Loads                           | Row 1: 27.9%; Row 2: 57.7%; Row 3: 14.4%
+     0.39 Modifier Usage                      |
+   127.24 Key Costs                           |
+
+Bigram metrics:
+  Not found: 2.5845% of 519526.0000
+    26.62 Finger Repeats                      |
+    29.51 Movement Pattern                    |
+     3.10 No Handswitch After Unbalancing Key |
+
+Trigram metrics:
+  Not found: 3.6435% of 519525.0000
+    26.53 No Handswitch in Trigram            |
+    11.67 Irregularity                        |
+    14.10 Secondary Bigrams                   |
+   -20.54 Inward Rolls                        |
+    -8.96 Outward Rolls                       |
+
+Cost: 217.29 (optimization score: 460213)
+
+Layout (layer 1):
+            ┌───┐                         ┌───┐
+        ┌───┤ g ├───┬───┐         ┌───┬───┤ o ├───┐
+┌───┬───┤ d ├───┤ k │ b │         │ w │ y ├───┤ á ├───┬───┐
+│ ü │ f ├───┤ t ├───┼───┤         ├───┼───┤ a ├───┤ u │ ö │
+├───┼───┤ s ├───┤ l │ v │         │ j │ r ├───┤ e ├───┼───┤
+│ ó │ n ├───┤ p ├───┼───┤         ├───┼───┤ . ├───┤ i │ é │
+├───┼───┤ m ├───┤ h │ q │         │ x │ z ├───┤ ; ├───┼───┤
+│ í │ c ├───┘   └───┴───┘         └───┴───┘   └───┤ , │ ő │
+└───┴───┘       ┌───┬───┬───┐ ┌───┬───┬───┐       └───┴───┘
+                │ ↶ │ ␣ │ ⇥ │ │ ⏎ │ ⌫ │ ⌦ │
+                └───┴───┴───┘ └───┴───┴───┘
+
+Layout string (layer 1):
+üfdgkbwyoáuöónstlvjraeiéícmphqxz.;,ő
+
+Unigram metrics:
+  Not found: 1.4507% of 519527.0000
+     7.42 Finger Balance                      | Finger loads % (no thumb): 9.2 11.7 12.9 15.5 - 10.4 15.2 12.7 12.4
+     0.29 Hand Disbalance                     | Hand loads % (no thumb): 49.27 - 50.73
+     0.00 Row Loads                           | Row 1: 25.1%; Row 2: 58.3%; Row 3: 16.6%
+     0.39 Modifier Usage                      | Worst unigrams: [ ] (99.80%), [⌫] ( 0.20%)
+   129.73 Key Costs                           | Worst unigrams: o ( 7.70%),   ( 7.40%), m ( 6.90%)
+
+Bigram metrics:
+  Not found: 2.5845% of 519526.0000
+    24.85 Finger Repeats                      | Worst:    ( 7.84%), tt ( 5.69%), \n\n ( 5.31%);  Worst non-fixed: tt ( 5.69%), lk ( 4.06%), a. ( 3.94%)
+    29.18 Movement Pattern                    | Worst: nd ( 8.05%), e, ( 5.39%), cs ( 4.45%);  Worst non-fixed: nd ( 8.05%), e, ( 5.39%), cs ( 4.45%)
+     2.74 No Handswitch After Unbalancing Key | Worst: ül ( 4.87%), ér ( 3.37%), wa ( 3.04%);  Worst non-fixed: ül ( 4.87%), ér ( 3.37%), wa ( 3.04%)
+
+Trigram metrics:
+  Not found: 3.6435% of 519525.0000
+    25.25 No Handswitch in Trigram            | Worst: zer ( 2.30%), you ( 1.26%), ere ( 1.16%);  Worst non-fixed: zer ( 2.30%), you ( 1.26%), ere ( 1.16%)
+    11.18 Irregularity                        | Worst:     (74.89%), tün ( 4.22%), ncs ( 3.18%);  Worst non-fixed: tün ( 4.22%), ncs ( 3.18%), dít ( 2.51%)
+    14.17 Secondary Bigrams                   | Worst: nem ( 1.83%), min ( 1.69%),  a  ( 1.17%);  Worst non-fixed: nem ( 1.83%), min ( 1.69%), vol ( 1.14%)
+   -21.09 Inward Rolls                        | Worst: the ( 4.32%), ing ( 1.87%), and ( 1.80%);  Worst non-fixed: the ( 4.32%), ing ( 1.87%), and ( 1.80%)
+    -8.44 Outward Rolls                       | Worst: sze ( 2.58%), olt ( 1.64%), sai ( 1.14%);  Worst non-fixed: sze ( 2.58%), olt ( 1.64%), sai ( 1.14%)
+
+Cost: 215.66 (optimization score: 463702)
+
+PS E:\Private_tibi\_rust\keyboard_layout_optimizer> ./target/release/evaluate -c .\corpus_hunglish.txt -e config/evaluation/default_my.yml -l config/keyboard/draft_hun.yml  "ümdgkbfyoáuöónstlpjraeiéícvwhqxz.;,o" 
+Layout (layer 1):
+            ┌───┐                         ┌───┐
+        ┌───┤ g ├───┬───┐         ┌───┬───┤ o ├───┐
+┌───┬───┤ d ├───┤ k │ b │         │ f │ y ├───┤ á ├───┬───┐
+│ ü │ m ├───┤ t ├───┼───┤         ├───┼───┤ a ├───┤ u │ ö │
+├───┼───┤ s ├───┤ l │ p │         │ j │ r ├───┤ e ├───┼───┤
+│ ó │ n ├───┤ w ├───┼───┤         ├───┼───┤ . ├───┤ i │ é │
+├───┼───┤ v ├───┤ h │ q │         │ x │ z ├───┤ ; ├───┼───┤
+│ í │ c ├───┘   └───┴───┘         └───┴───┘   └───┤ , │ ő │
+└───┴───┘       ┌───┬───┬───┐ ┌───┬───┬───┐       └───┴───┘
+                │ ↶ │ ␣ │ ⇥ │ │ ⏎ │ ⌫ │ ⌦ │
+                └───┴───┴───┘ └───┴───┴───┘
+
+Layout string (layer 1):
+ümdgkbfyoáuöónstlpjraeiéícvwhqxz.;,ő
+
+Unigram metrics:
+  Not found: 1.4507% of 519527.0000
+     7.14 Finger Balance                      | Finger loads % (no thumb): 11.5 9.8 12.6 14.9 - 10.9 15.2 12.7 12.4
+     0.49 Hand Disbalance                     | Hand loads % (no thumb): 48.78 - 51.22
+     0.00 Row Loads                           | Row 1: 27.9%; Row 2: 57.7%; Row 3: 14.4%
+     0.39 Modifier Usage                      | Worst unigrams: [ ] (99.80%), [⌫] ( 0.20%)
+   127.24 Key Costs                           | Worst unigrams: o ( 7.85%),   ( 7.54%), g ( 5.15%)
+
+Bigram metrics:
+  Not found: 2.5845% of 519526.0000
+    26.62 Finger Repeats                      | Worst:    ( 7.32%), tt ( 5.31%), \n\n ( 4.95%);  Worst non-fixed: tt ( 5.31%), lk ( 3.79%), a. ( 3.68%)
+    29.51 Movement Pattern                    | Worst: nd ( 7.96%), e, ( 5.33%), cs ( 4.40%);  Worst non-fixed: nd ( 7.96%), e, ( 5.33%), cs ( 4.40%)
+     3.10 No Handswitch After Unbalancing Key | Worst: fe ( 4.59%), ül ( 4.30%), fo ( 3.86%);  Worst non-fixed: fe ( 4.59%), ül ( 4.30%), fo ( 3.86%)
+
+Trigram metrics:
+  Not found: 3.6435% of 519525.0000
+    26.53 No Handswitch in Trigram            | Worst: zer ( 2.19%), for ( 1.77%), you ( 1.20%);  Worst non-fixed: zer ( 2.19%), for ( 1.77%), you ( 1.20%)
+    11.67 Irregularity                        | Worst:     (68.72%), míg ( 8.60%), tün ( 3.87%);  Worst non-fixed: míg ( 8.60%), tün ( 3.87%), ncs ( 2.91%)
+    14.10 Secondary Bigrams                   | Worst: nem ( 1.76%),  a  ( 1.17%), t m ( 1.05%);  Worst non-fixed: nem ( 1.76%), min ( 1.01%), for ( 0.92%)
+   -20.54 Inward Rolls                        | Worst: the ( 4.44%), ing ( 1.93%), and ( 1.84%);  Worst non-fixed: the ( 4.44%), ing ( 1.93%), and ( 1.84%)
+    -8.96 Outward Rolls                       | Worst: sze ( 2.43%), olt ( 1.54%), fel ( 1.24%);  Worst non-fixed: sze ( 2.43%), olt ( 1.54%), fel ( 1.24%)
+
+Cost: 217.29 (optimization score: 460213)
+
+PS E:\Private_tibi\_rust\keyboard_layout_optimizer> ./target/release/evaluate -c .\corpus_hunglish.txt -e config/evaluation/default_my.yml -l config/keyboard/draft_hun.yml  "ümdgkbwyoáuöónstlfjraeiéícvphqxz.;,o" 
+Layout (layer 1):
+            ┌───┐                         ┌───┐
+        ┌───┤ g ├───┬───┐         ┌───┬───┤ o ├───┐
+┌───┬───┤ d ├───┤ k │ b │         │ w │ y ├───┤ á ├───┬───┐
+│ ü │ m ├───┤ t ├───┼───┤         ├───┼───┤ a ├───┤ u │ ö │
+├───┼───┤ s ├───┤ l │ f │         │ j │ r ├───┤ e ├───┼───┤
+│ ó │ n ├───┤ p ├───┼───┤         ├───┼───┤ . ├───┤ i │ é │
+├───┼───┤ v ├───┤ h │ q │         │ x │ z ├───┤ ; ├───┼───┤
+│ í │ c ├───┘   └───┴───┘         └───┴───┘   └───┤ , │ ő │
+└───┴───┘       ┌───┬───┬───┐ ┌───┬───┬───┐       └───┴───┘
+                │ ↶ │ ␣ │ ⇥ │ │ ⏎ │ ⌫ │ ⌦ │
+                └───┴───┴───┘ └───┴───┴───┘
+
+Layout string (layer 1):
+ümdgkbwyoáuöónstlfjraeiéícvphqxz.;,ő
+
+Unigram metrics:
+  Not found: 1.4507% of 519527.0000
+     7.47 Finger Balance                      | Finger loads % (no thumb): 11.5 9.8 12.9 15.0 - 10.4 15.2 12.7 12.4
+     0.29 Hand Disbalance                     | Hand loads % (no thumb): 49.27 - 50.73
+     0.00 Row Loads                           | Row 1: 27.4%; Row 2: 57.9%; Row 3: 14.7%
+     0.39 Modifier Usage                      | Worst unigrams: [ ] (99.80%), [⌫] ( 0.20%)
+   127.34 Key Costs                           | Worst unigrams: o ( 7.85%),   ( 7.53%), g ( 5.15%)
+
+Bigram metrics:
+  Not found: 2.5845% of 519526.0000
+    25.58 Finger Repeats                      | Worst:    ( 7.62%), tt ( 5.53%), \n\n ( 5.16%);  Worst non-fixed: tt ( 5.53%), lk ( 3.94%), a. ( 3.83%)
+    31.60 Movement Pattern                    | Worst: nd ( 7.43%), e, ( 4.97%), cs ( 4.11%);  Worst non-fixed: nd ( 7.43%), e, ( 4.97%), cs ( 4.11%)
+     2.72 No Handswitch After Unbalancing Key | Worst: ül ( 4.89%), ér ( 3.38%), wa ( 3.05%);  Worst non-fixed: ül ( 4.89%), ér ( 3.38%), wa ( 3.05%)
+
+Trigram metrics:
+  Not found: 3.6435% of 519525.0000
+    25.29 No Handswitch in Trigram            | Worst: zer ( 2.29%), you ( 1.26%), ere ( 1.16%);  Worst non-fixed: zer ( 2.29%), you ( 1.26%), ere ( 1.16%)
+    11.68 Irregularity                        | Worst:     (68.55%), míg ( 8.58%), tün ( 3.86%);  Worst non-fixed: míg ( 8.58%), tün ( 3.86%), ncs ( 2.91%)
+    14.31 Secondary Bigrams                   | Worst: nem ( 1.74%),  a  ( 1.15%), fel ( 1.05%);  Worst non-fixed: nem ( 1.74%), fel ( 1.05%), min ( 0.99%)
+   -20.97 Inward Rolls                        | Worst: the ( 4.35%), ing ( 1.89%), and ( 1.81%);  Worst non-fixed: the ( 4.35%), ing ( 1.89%), and ( 1.81%)
+    -8.56 Outward Rolls                       | Worst: sze ( 2.54%), olt ( 1.61%), sai ( 1.12%);  Worst non-fixed: sze ( 2.54%), olt ( 1.61%), sai ( 1.12%)
+
+Cost: 217.15 (optimization score: 460520)
+
+
+
+===========================================================================================================
+                                     THE CLEAR WINNER IS:
+===========================================================================================================
+
+PS E:\Private_tibi\_rust\keyboard_layout_optimizer> ./target/release/evaluate -c .\corpus_hunglish.txt -e config/evaluation/default_my.yml -l config/keyboard/draft_hun.yml  "ümdgkbwyouáöónstlfjraeiéícvphqxz.;,o" 
+Layout (layer 1):
+            ┌───┐                         ┌───┐
+        ┌───┤ g ├───┬───┐         ┌───┬───┤ o ├───┐
+┌───┬───┤ d ├───┤ k │ b │         │ w │ y ├───┤ u ├───┬───┐
+│ ü │ m ├───┤ t ├───┼───┤         ├───┼───┤ a ├───┤ á │ ö │
+├───┼───┤ s ├───┤ l │ f │         │ j │ r ├───┤ e ├───┼───┤
+│ ó │ n ├───┤ p ├───┼───┤         ├───┼───┤ . ├───┤ i │ é │
+├───┼───┤ v ├───┤ h │ q │         │ x │ z ├───┤ ; ├───┼───┤
+│ í │ c ├───┘   └───┴───┘         └───┴───┘   └───┤ , │ ő │
+└───┴───┘       ┌───┬───┬───┐ ┌───┬───┬───┐       └───┴───┘
+                │ ↶ │ ␣ │ ⇥ │ │ ⏎ │ ⌫ │ ⌦ │
+                └───┴───┴───┘ └───┴───┴───┘
+
+Layout string (layer 1):
+ümdgkbwyouáöónstlfjraeiéícvphqxz.;,ő
+
+Unigram metrics:
+  Not found: 1.4507% of 519527.0000
+     7.63 Finger Balance                      | Finger loads % (no thumb): 11.5 9.8 12.9 15.0 - 10.4 15.2 12.3 12.8
+     0.29 Hand Disbalance                     | Hand loads % (no thumb): 49.27 - 50.73
+     0.00 Row Loads                           | Row 1: 27.4%; Row 2: 57.9%; Row 3: 14.7%
+     0.39 Modifier Usage                      | Worst unigrams: [ ] (99.80%), [⌫] ( 0.20%)
+   127.14 Key Costs                           | Worst unigrams: o ( 7.86%),   ( 7.55%), g ( 5.16%)
+
+Bigram metrics:
+  Not found: 2.5845% of 519526.0000
+    26.24 Finger Repeats                      | Worst:    ( 7.42%), tt ( 5.39%), \n\n ( 5.03%);  Worst non-fixed: tt ( 5.39%), lk ( 3.84%), a. ( 3.73%)
+    31.12 Movement Pattern                    | Worst: nd ( 7.55%), e, ( 5.05%), cs ( 4.18%);  Worst non-fixed: nd ( 7.55%), e, ( 5.05%), cs ( 4.18%)
+     2.72 No Handswitch After Unbalancing Key | Worst: ül ( 4.89%), ér ( 3.38%), wa ( 3.05%);  Worst non-fixed: ül ( 4.89%), ér ( 3.38%), wa ( 3.05%)
+
+Trigram metrics:
+  Not found: 3.6435% of 519525.0000
+    25.31 No Handswitch in Trigram            | Worst: zer ( 2.29%), you ( 1.26%), ere ( 1.16%);  Worst non-fixed: zer ( 2.29%), you ( 1.26%), ere ( 1.16%)
+    11.68 Irregularity                        | Worst:     (68.53%), míg ( 8.58%), tün ( 3.86%);  Worst non-fixed: míg ( 8.58%), tün ( 3.86%), ncs ( 2.91%)
+    14.50 Secondary Bigrams                   | Worst: nem ( 1.72%),  a  ( 1.14%), fel ( 1.04%);  Worst non-fixed: nem ( 1.72%), fel ( 1.04%), min ( 0.98%)
+   -20.81 Inward Rolls                        | Worst: the ( 4.38%), ing ( 1.90%), and ( 1.82%);  Worst non-fixed: the ( 4.38%), ing ( 1.90%), and ( 1.82%)
+    -8.58 Outward Rolls                       | Worst: sze ( 2.54%), olt ( 1.61%), sai ( 1.12%);  Worst non-fixed: sze ( 2.54%), olt ( 1.61%), sai ( 1.12%)
+
+Cost: 217.63 (optimization score: 459488)
