@@ -14,55 +14,82 @@ chip = "nrf52840"
 [layout]
 rows = 4
 cols = 12
-layers = 8
+layers = 10
 keymap = [
-    #0 Hunglish layer
+    #0 default: Hunglish layer
     [
-        ["No", "No",                "D", "G", "K", "B",                                    "W", "Y", "O", "U", "No", "No"],
-        ["WM(Right, LShift)",  "M", "MT(S,LAlt)", "MT(T,LShift)", "MT(L,LCtrl)", "F",      "J", "MT(R,RCtrl)", "MT(A,RShift)", "MT(E,LAlt)", "Equal", "WM(LeftBracket, LShift)"],
-        ["WM(Kc0, LShift)", "MT(N,LGui)", "V", "P", "H", "Q",                              "X", "Z", "Dot", "Semicolon", "MT(I,RGui)", "WM(Kc9, LShift)"],
-        ["WM(Quote, LShift)", "C", "No", "LT(2, Space)", "LT(4,Tab)", "LT(5,Escape)",      "No", "LT(3,Enter)", "LT(2,Backspace)", "LT(4,Delete)", "Comma", "Slash"]
-    ],
-
-    #1 Hun mods
-    [
-        ["No", "No", "_", "_", "_", "_",              "_", "_", "_", "_", "No", "No"],
-        ["Minus", "_", "_", "_", "_", "_",            "_", "_", "_", "_", "Quote", "Kp0"],
-        ["Equal", "_", "_", "_", "_", "_",      "_", "_", "_", "WM(Comma, RAlt)", "_", "Semicolon"],
-        ["Grave", "_", "No", "_", "_", "_",           "No", "_", "_", "_", "_", "LeftBracket"]
-    ],
-
-    #2 Sym + Numpad
-    [
-        ["_", "_", "WM(Kc7, LShift)", "LeftBracket", "RightBracket", "Quote",                                                       "WM(Grave, LShift)", "Kp7", "Kp8", "Kp9", "_", "_"],
-        ["Grave", "WM(Backslash, LShift)", "WM(RightBracket, LShift)", "WM(Kc9, LShift)", "WM(Kc0, LShift)", "WM(Quote, LShift)",   "KpDot", "Kp4", "Kp5", "Kp6", "KpSlash", "KpAsterisk"],
-        ["Backslash", "WM(LeftBracket, LShift)", "WM(Kc3, LShift)", "WM(Comma, LShift)", "WM(Dot, LShift)", "Equal",                "Kp0", "Kp1", "Kp2", "Kp3", "KpMinus", "KpPlus"],
-        ["WM(Kc4, LShift)", "WM(Kc2, LShift)", "_", "WM(Minus, LShift)", "_", "_",                                                  "_", "_", "_", "_", "WM(Kc6, LShift)", "WM(Kc5, LShift)"]
+        ["No", "No", "Y", "K", "R", "B",                                        "F", "C", "O", "U", "No", "No"],
+        ["LCtrl",  "G", "MT(S, LAlt)", "MT(T,LShift)", "MT(L, LCtrl)", "V",     "J", "MT(N, RCtrl)", "MT(A, RShift)", "MT(E, LAlt)", "Semicolon", "Insert"],
+        ["LShift", "MT(M, LGui)", "P", "W", "H", "Q",                           "X", "Z", "Dot", "Comma", "MT(I, RGui)", "Quote"],
+        ["LAlt", "D", "LT(4, Escape)", "LT(2, Space)", "LT(5, Tab)", "OSL(6)",  "No", "LT(5, Enter)", "LT(2, Backspace)", "LT(4, Delete)", "Slash", "LGui"]
     ],
     
-    #3 Fn + Media
+    #1 Hun mods of default
     [
-        ["_", "_", "F7", "F8", "F9", "F10",                    "WwwRefresh", "MediaPrevTrack", "MediaNextTrack", "Bootloader", "_", "_"],
-        ["NumLock", "PrintScreen", "F4", "F5", "F6", "F11",    "WwwForward", "MediaPlayPause", "MediaStop", "TG(1)", "BrightnessUp", "AudioVolUp"],
-        ["CapsLock", "Insert", "F1", "F2", "F3", "F12",        "WwwBack", "MyComputer", "Calculator", "WM(R,LGui)", "WM(L,LGui)", "AudioMute"],
-        ["ScrollLock", "Pause", "_", "_", "_", "_",            "_", "LCtrl", "LShift", "LAlt", "BrightnessDown", "AudioVolDown"]
+        ["No", "No", "_", "_", "_", "_",                    "_", "_", "_", "_", "No", "No"],
+        ["Minus", "_", "_", "_", "_", "_",                  "_", "_", "_", "_", "_", "Kc0"],
+        ["LeftBracket", "_", "_", "_", "_", "_",            "_", "_", "_", "_", "_", "Quote"],
+        ["Equal", "_", "_", "LT(3, Space)", "_", "OSL(7)",  "No", "_", "LT(3,Backspace)", "_", "_", "Grave"]
     ],
 
-    #4 Nav + Shortcuts
+    #2 Numpad + Sym
     [
-        ["_", "_", "WM(V, LCtrl|LShift)", "WM(V, LCtrl)", "WM(C, LCtrl)", "WM(X, LCtrl)",      "WM(X, LCtrl)", "WM(C, LCtrl)", "WM(V, LCtrl)", "WM(V, LCtrl|LShift)", "_", "_"],
-        ["WM(Z, LCtrl)", "WM(Y, LCtrl)", "LAlt", "LShift", "LCtrl", "WwwForward",              "WwwForward", "Left", "UP", "Down", "WM(Z, LCtrl)", "WM(Y, LCtrl)"],
-        ["WM(F, LCtrl)", "LGui", "MouseWheelDown", "MouseWheelUp", "MouseRight", "WwwBack",    "WwwBack", "Home", "PageUp", "PageDown", "Right", "WM(F, LCtrl)"],
-        ["WM(H, LCtrl)", "MouseWheelLeft", "_", "MouseBtn1", "MouseBtn2", "MouseBtn3",         "_", "LCtrl", "LShift", "LAlt", "End", "WM(H, LCtrl)"]
+        ["No", "No", "Kc7", "Kc8", "Kc9", "KpMinus",                                   "WM(Grave, LShift)", "WM(Kc7, LShift)", "WM(LeftBracket, LShift)", "WM(RightBracket, LShift)", "No", "No"],
+        ["KpSlash", "KpAsterisk", "Kc4", "Kc5", "Kc6", "KpPlus",                       "WM(Kc1, LShift)", "WM(Backslash, LShift)", "WM(Kc9, LShift)", "WM(Kc0, LShift)", "WM(Kc2, LShift)", "WM(Kc4, LShift)"],
+        ["WM(Semicolon, LShift)", "Kp0", "Kc1", "KC2", "Kc3", "Grave",                 "WM(Slash, LShift)", "WM(Kc6, LShift)", "LeftBracket", "RightBracket", "WM(Quote, LShift)", "Quote"],
+        ["WM(Kc5, LShift)", "KpDot", "_", "Equal", "WM(Minus, LShift)", "_",           "No", "WM(Comma, LShift)", "Equal", "WM(Dot, LShift)", "WM(Kc3, LShift)", "Backslash"]
     ],
 
-    #5 Mouse
+    #3 Hun mods of Numpad + Sym
     [
-        ["_", "_", "_", "_", "_", "_",    "_", "_", "_", "_", "_", "_"],
-        ["_", "_", "_", "_", "_", "_",    "_", "MouseLeft", "MouseUp", "MouseDown", "_", "_"],
-        ["_", "_", "_", "_", "_", "_",    "_", "MouseWheelLeft", "MouseWheelUp", "MouseWheelDown", "MouseRight", "_"],
-        ["_", "_", "_", "_", "_", "_",    "_", "MouseBtn3", "MouseBtn1", "MouseBtn2", "MouseWheelRight", "_"]
-    ]
+        ["No", "No", "Kc7", "Kc8", "Kc9", "KpMinus",                                          "WM(Kc1, RAlt)", "WM(C, RAlt)", "WM(B, RAlt)", "WM(N, RAlt)", "No", "No"],
+        ["KpSlash", "KpAsterisk", "Kc4", "Kc5", "Kc6", "KpPlus",                              "WM(Kc4, LShift)", "WM(W, RAlt)", "WM(Kc8, LShift)", "WM(Kc9, LShift)", "WM(V, RAlt)", "WM(Semicolon, RAlt)"],
+        ["WM(Dot, LShift)", "Kp0", "Kc1", "KC2", "Kc3", "WM(Kc7, RAlt)",                      "WM(Comma, LShift)", "WM(Kc3, RAlt)", "WM(F, RAlt)", "WM(G, RAlt)", "WM(Kc2, LShift)", "WM(Kc1,LShift)"],
+        ["WM(Kc5, LShift)", "KpDot", "_", "WM(Kc7, RShift)", "WM(Slash, RShift)", "_",        "No", "WM(NonusBackslash, RAlt)", "WM(Kc7, LShift)", "WM(Z, RAlt)", "WM(X, RAlt)", "WM(Q, RAlt)"]
+    ],
+
+    #4 Fn + Media
+    [
+        ["No", "No", "F7", "F8", "F9", "F10",                  "AudioVolUp", "MediaPrevTrack", "MediaPlayPause", "MediaStop", "No", "No"],
+        ["LCtrl", "Pause", "F4", "F5", "F6", "F11",            "AudioMute", "RCtrl", "RShift", "LAlt", "MediaNextTrack", "WwwForward"],
+        ["LShift", "PrintScreen", "F1", "F2", "F3", "F12",     "AudioVolDown", "MyComputer", "BrightnessUp", "BrightnessDown", "RGui", "WwwBack"],
+        ["LAlt", "CapsLock", "_", "_", "_", "_",               "No", "_", "_", "_", "Calculator", "LGui"]
+    ],
+
+    #5 Nav + Shortcuts
+    [
+        ["No", "No", "WM(F, LCtrl)", "WM(Z, LCtrl)", "WM(Y, LCtrl)", "WM(V, LCtrl)",          "WM(Insert, RShift)", "MouseWheelLeft", "MouseWheelUp", "MouseWheelDown", "No", "No"],
+        ["LCtrl", "WM(H, LCtrl)", "LAlt", "LShift", "LCtrl", "WM(C, LCtrl)",                  "WM(Insert, RCtrl)", "Left", "UP", "Down", "MouseWheelRight", "WwwForward"],
+        ["LShift", "LGui", "MouseDown", "MouseUp", "MouseRight", "WM(X, LCtrl)",              "WM(X, LCtrl)", "Home", "PageUp", "PageDown", "Right", "WwwBack"],
+        ["LAlt", "MouseLeft", "_", "_", "_", "_",                                             "No", "_", "_", "_", "End", "LGui"]
+    ],
+
+    #6 Layer locker
+    [
+        ["No", "No", "_", "_", "_", "_",     "_", "_", "_", "_", "No", "No"],
+        ["_", "_", "_", "_", "_", "_",       "_", "_", "_", "_", "_", "_"],
+        ["_", "_", "_", "_", "_", "_",       "_", "_", "_", "_", "_", "_"],        
+        ["_", "_", "TG(4)", "TG(2)", "TG(5)", "TO(0)",   "No", "TG(5)", "TG(2)", "TG(4)", "_", "_"]
+    ],
+
+    #7 HunMod Layer locker
+    [
+        ["No", "No", "_", "_", "_", "_",     "_", "_", "_", "_", "No", "No"],
+        ["_", "_", "_", "_", "_", "_",       "_", "_", "_", "_", "_", "_"],
+        ["_", "_", "_", "_", "_", "_",       "_", "_", "_", "_", "_", "_"],        
+        ["_", "_", "TG(4)", "TG(3)", "TG(5)", "TO(1)",   "No", "TG(5)", "TG(3)", "TG(4)", "_", "_"]
+    ],
+
+    #todo hun numpad + sym
+    #todo fork on layer states?
+
+    # #5 Mouse
+    # [
+    #     ["_", "_", "_", "_", "_", "_",    "_", "_", "_", "_", "_", "_"],
+    #     ["_", "_", "_", "_", "_", "_",    "_", "MouseLeft", "MouseUp", "MouseDown", "_", "_"],
+    #     ["_", "_", "_", "_", "_", "_",    "_", "MouseWheelLeft", "MouseWheelUp", "MouseWheelDown", "MouseRight", "_"],
+    #     ["_", "_", "_", "_", "_", "_",    "_", "MouseBtn3", "MouseBtn1", "MouseBtn2", "MouseWheelRight", "_"]
+    # ]
 
     # #0 QWERTY like layer
     # [
@@ -100,49 +127,73 @@ keymap = [
 [behavior.combo]
 timeout = "150ms"
 combos = [
-  { actions = ["O", "U"], output = "RightBracket" }, #ú
-  { actions = ["Y", "O"], output = "Backslash" }, #ű
-  { actions = ["W", "J"], output = "TG(1)" } #switch en/hun mode  
+  { actions = ["C", "O"], output = "F23" }, #ú
+  { actions = ["O", "U"], output = "F24" }, #ű  
+  { actions = ["F", "J"], output = "TG(1)" } #switch en/hun mode  
 ]
 
 [behavior.fork]
 forks = [
-  # Shift + '.' output ':' key
-  { trigger = "Dot", negative_output = "Dot", positive_output = "WM(Semicolon, LShift)", match_any = "LShift|RShift" },
+  # Shift + ' ' output '_' key
+  { trigger = "Space", negative_output = "Space", positive_output = "WM(Minus, LShift)", match_any = "LShift|RShift" },  
 
-  # Shift + ',' output ';' key but only if no Alt is pressed
-  { trigger = "Comma", negative_output = "Comma", positive_output = "Semicolon", match_any = "LShift|RShift", match_none = "LAlt|RAlt" },  
-  
-  # left bracket outputs by default '{', with shifts pressed outputs '['  
-  { trigger = "LeftBracket", negative_output = "WM(LeftBracket, LShift)", positive_output = "LeftBracket", match_any = "LShift|RShift" },
+  # 'F13' outputs '{', Shift + 'F13' output '[' key
+  { trigger = "F13", negative_output = "WM(LeftBracket, LShift)", positive_output = "LeftBracket", match_any = "LShift|RShift" }, 
+  # 'F14' outputs '}', Shift + 'F14' output ']' key
+  { trigger = "F14", negative_output = "WM(RightBracket, LShift)", positive_output = "RightBracket", match_any = "LShift|RShift" }, 
+  # 'F15' outputs '(', Shift + 'F15' output '<' key
+  { trigger = "F15", negative_output = "WM(Kc9, LShift)", positive_output = "WM(Comma, LShift)", match_any = "LShift|RShift" }, 
+  # 'F16' outputs ')', Shift + 'F16' output '>' key
+  { trigger = "F16", negative_output = "WM(Kc0, LShift)", positive_output = "WM(Dot, LShift)", match_any = "LShift|RShift" }, 
+  # 'F17' outputs '/', Shift + 'F17' output '*' key
+  { trigger = "F17", negative_output = "Slash", positive_output = "WM(Kc8, LShift)", match_any = "LShift|RShift" }, 
+  # 'F18' outputs '"', Shift + 'F18' output ''' key
+  { trigger = "F18", negative_output = "WM(Kc0, LShift)", positive_output = "WM(Dot, LShift)", match_any = "LShift|RShift" }, 
 
-  # flip the effect of shift on 'x'/'X'
-  { trigger = "X", negative_output = "WM(X, LShift)", positive_output = "X", match_any = "LShift|RShift" },
+  # 'F19' outputs '.', Shift + 'F19' output '!' key
+  { trigger = "F19", negative_output = "Dot", positive_output = "WM(Kc1, LShift)", match_any = "LShift|RShift" },
+  # 'F20' outputs ';', Shift + 'F20' output ':' key
+  { trigger = "F20", negative_output = "Semicolon", positive_output = "WM(Semicolon, LShift)", match_any = "LShift|RShift" },
+  # 'F21' outputs ',', Shift + 'F21' output '?' key
+  { trigger = "F21", negative_output = "Comma", positive_output = "WM(Slash, LShift)", match_any = "LShift|RShift" },
+  # 'F22' outputs '=', Shift + 'F22' output '-' key
+  { trigger = "F22", negative_output = "Equal", positive_output = "Minus", match_any = "LShift|RShift" },
 
-  # F24 usually outputs 'a', except when Left Shift or Ctrl pressed, in that case triggers a macro 
-  { trigger = "F24", negative_output = "A", positive_output = "Macro1", match_any = "LShift|LCtrl" },
+  # 'F23' outputs 'ú', Shift + 'F23' output 'Ú' key
+  { trigger = "F23", negative_output = "RightBracket", positive_output = "WM(RightBracket, LShift)", match_any = "LShift|RShift" }, #|CapsLock?
+  # 'F24' outputs 'ű', Shift + 'F24' output 'Ű' key
+  { trigger = "F24", negative_output = "Backslash", positive_output = "WM(Backslash, LShift)", match_any = "LShift|RShift" } #|CapsLock?
 
-  # swap Z and Y keys if MouseBtn1 is pressed (on the keyboard)  
-  { trigger = "Y", negative_output = "Y", positive_output = "Z", match_any = "CapsLock" },
-  { trigger = "Z", negative_output = "Z", positive_output = "Y", match_any = "CapsLock" },
+#   # left bracket outputs by default '{', with shifts pressed outputs '['  
+#   { trigger = "LeftBracket", negative_output = "WM(LeftBracket, LShift)", positive_output = "LeftBracket", match_any = "LShift|RShift" },
 
-  # Shift + Backspace output Delete key (inside a layer tap/hold)
-  { trigger = "LT(2,Backspace)", negative_output = "LT(2,Backspace)", positive_output = "LT(2,Delete)", match_any = "LShift|RShift" },
+#   # flip the effect of shift on 'x'/'X'
+#   { trigger = "X", negative_output = "WM(X, LShift)", positive_output = "X", match_any = "LShift|RShift" },
 
-  # Ctrl + play/pause will send next track. MediaPlayPause -> MediaNextTrack
-  # Ctrl + Shift + play/pause will send previous track. MediaPlayPause -> MediaPrevTrack
-  # Alt + play/pause will send volume up. MediaPlayPause -> AudioVolUp
-  # Alt + Shift + play/pause will send volume down. MediaPlayPause -> AudioVolDown
-  # Ctrl + Alt + play/pause will send brightness up. MediaPlayPause -> BrightnessUp
-  # Ctrl + Alt + Shift + play/pause will send brightness down. MediaPlayPause -> BrightnessDown
-  # ( Note that the trigger and immediate trigger keys of the fork chain could be 'virtual keys', 
-  #   which will never output, like F23 but here multiple overrides demonstrate.)
-  { trigger = "MediaPlayPause", negative_output = "MediaPlayPause", positive_output = "MediaNextTrack", match_any = "LCtrl|RCtrl", bindable = true },
-  { trigger = "MediaNextTrack", negative_output = "MediaNextTrack", positive_output = "BrightnessUp", match_any = "LAlt|RAlt", bindable = true },
-  { trigger = "BrightnessUp", negative_output = "BrightnessUp", positive_output = "BrightnessDown", match_any = "LShift|RShift", bindable = false },
-  { trigger = "MediaNextTrack", negative_output = "MediaNextTrack", positive_output = "MediaPrevTrack", match_any = "LShift|RShift", match_none = "LAlt|RAlt", bindable = false},
-  { trigger = "MediaPlayPause", negative_output = "MediaPlayPause", positive_output = "AudioVolUp", match_any = "LAlt|RAlt", match_none = "LCtrl|RCtrl", bindable = true },
-  { trigger = "AudioVolUp", negative_output = "AudioVolUp", positive_output = "AudioVolDown", match_any = "LShift|RShift", match_none = "LCtrl|RCtrl", bindable = false } 
+#   # F24 usually outputs 'a', except when Left Shift or Ctrl pressed, in that case triggers a macro 
+#   { trigger = "F24", negative_output = "A", positive_output = "Macro1", match_any = "LShift|LCtrl" },
+
+#   # swap Z and Y keys if MouseBtn1 is pressed (on the keyboard)  
+#   { trigger = "Y", negative_output = "Y", positive_output = "Z", match_any = "CapsLock" },
+#   { trigger = "Z", negative_output = "Z", positive_output = "Y", match_any = "CapsLock" },
+
+#   # Shift + Backspace output Delete key (inside a layer tap/hold)
+#   { trigger = "LT(2,Backspace)", negative_output = "LT(2,Backspace)", positive_output = "LT(2,Delete)", match_any = "LShift|RShift" },
+
+#   # Ctrl + play/pause will send next track. MediaPlayPause -> MediaNextTrack
+#   # Ctrl + Shift + play/pause will send previous track. MediaPlayPause -> MediaPrevTrack
+#   # Alt + play/pause will send volume up. MediaPlayPause -> AudioVolUp
+#   # Alt + Shift + play/pause will send volume down. MediaPlayPause -> AudioVolDown
+#   # Ctrl + Alt + play/pause will send brightness up. MediaPlayPause -> BrightnessUp
+#   # Ctrl + Alt + Shift + play/pause will send brightness down. MediaPlayPause -> BrightnessDown
+#   # ( Note that the trigger and immediate trigger keys of the fork chain could be 'virtual keys', 
+#   #   which will never output, like F23 but here multiple overrides demonstrate.)
+#   { trigger = "MediaPlayPause", negative_output = "MediaPlayPause", positive_output = "MediaNextTrack", match_any = "LCtrl|RCtrl", bindable = true },
+#   { trigger = "MediaNextTrack", negative_output = "MediaNextTrack", positive_output = "BrightnessUp", match_any = "LAlt|RAlt", bindable = true },
+#   { trigger = "BrightnessUp", negative_output = "BrightnessUp", positive_output = "BrightnessDown", match_any = "LShift|RShift", bindable = false },
+#   { trigger = "MediaNextTrack", negative_output = "MediaNextTrack", positive_output = "MediaPrevTrack", match_any = "LShift|RShift", match_none = "LAlt|RAlt", bindable = false},
+#   { trigger = "MediaPlayPause", negative_output = "MediaPlayPause", positive_output = "AudioVolUp", match_any = "LAlt|RAlt", match_none = "LCtrl|RCtrl", bindable = true },
+#   { trigger = "AudioVolUp", negative_output = "AudioVolUp", positive_output = "AudioVolDown", match_any = "LShift|RShift", match_none = "LCtrl|RCtrl", bindable = false } 
 
 #   { trigger = "P", negative_output = "P", positive_output = "F", match_any = "LCtrl|RCtrl", bindable = true },
 #   { trigger = "F", negative_output = "F", positive_output = "B", match_any = "LAlt|RAlt", bindable = true },
@@ -154,7 +205,7 @@ forks = [
 
 [storage]
 enabled = true
-#clear_storage = true
+# clear_storage = true
 # Storage feature is enabled by default
 # Start address of local storage, MUST BE start of a sector.
 # If start_addr is set to 0(this is the default value), the last `num_sectors` sectors will be used.
