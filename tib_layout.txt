@@ -1,6 +1,8 @@
 Tanulsagok:
 - felso sor nem kell, ú,ű jó lesz combon is
 
+- huvelykujjra pupos gomb kell, nem homoru, keskeny!
+- huvelykujjra konnyen! nyomva tarthato, lehetoleg low profile key kell.
 - gombok eleit lekerekiteni
 - gombokra oldalrol draftot, hogy vastagabb ujak is beferjenek
 - felulrol csak akkor ha dontve lenne a plate - egyebkent konnyiti a kombo nyomast egy ujjal, ha nincs...
@@ -20,25 +22,36 @@ ANGOL FINAL:
 
  gykrb fcou;
  mstlv jnaei'
- dpwhq xz.,/
+ dpwhq xz,=.
 
 /*789- ~&{}@$
 :0456+ !|()"'
 %.123` ?^[]#\
-   =_  <=>
+  ;=_  <=>
 
 MAGYAR FINAL:
         úű
 ügykrb fcouéö
 őmstlv jnaeiá
-ódpwhq xz.,-í
+ódpwhq xz,.-í
 
 /*789- ~&{}@$
 :0456+ !|()"'
 %,123` ?^[]#\
-    =_ <=>
+   ;=_ <=>
+	
+elfer-e minden magyar kombon?
+  űúí   éáö   
+ gykrb fcou;
+ mstlv jnaei'
+ dpwhq xz.,/	
+        óüő 
 	
 FINAL:
+
+}gykrb fcou;{
+)mstlv jnaei(
+"dpwhq xz,=./
 
 ügykrbfcouáöőmstlvjnaeiéódpwhqxz.;,í
 
@@ -49,10 +62,10 @@ FINAL:
             ┌───┐                         ┌───┐
         ┌───┤ k ├───┬───┐         ┌───┬───┤ o ├───┐
 ┌───┬───┤ y ├───┤ r │ b │         │ f │ c ├───┤ u ├───┬───┐
-│ ü │ g ├───┤ t ├───┼───┤         ├───┼───┤ a ├───┤ á │ ö │
+│ ü │ g ├───┤ t ├───┼───┤         ├───┼───┤ a ├───┤ á;│ ö │
 ├───┼───┤ s ├───┤ l │ v │         │ j │ n ├───┤ e ├───┼───┤
-│ ő │ m ├───┤ w ├───┼───┤         ├───┼───┤ . ├───┤ i │ é │
-├───┼───┤ p ├───┤ h │ q │         │ x │ z ├───┤ ; ├───┼───┤
+│ ő │ m ├───┤ w ├───┼───┤         ├───┼───┤ . ├───┤ i │ é'│
+├───┼───┤ p ├───┤ h │ q │         │ x │ z ├───┤ = ├───┼───┤
 │ ó │ d ├───┘   └───┴───┘         └───┴───┘   └───┤ , │ í │
 └───┴───┘       ┌───┬───┬───┐ ┌───┬───┬───┐       └───┴───┘
                 │ ↶ │ ␣ │ ⇥ │ │ ⏎ │ ⌫ │ ⌦ │
@@ -5565,3 +5578,93 @@ Trigram metrics:
     -9.25 Outward Rolls                       |
 
 Cost: 213.40 (optimization score: 468612)
+
+
+./target/release/optimize_genetic -c .\corpus_hunglish.txt -e config/evaluation/default_my.yml -l config/keyboard/draft_hun.yml -s "ügykrbfcoáuöőmstlvjnaeiéódpwhqxz.;,í" -f "staeiöüóőúűéíh"
+
+ügykrbfcoáuöőmstlvjnaeiéódpwhqxz.;,í
+
+ügykrb fcoáuö
+őmstlv jnaeié
+ódpwhq xz.;,í
+
+            ┌───┐                         ┌───┐
+        ┌───┤ k ├───┬───┐         ┌───┬───┤ o ├───┐
+┌───┬───┤ y ├───┤ r │ b │         │ f │ c ├───┤ á ├───┬───┐
+│ ü │ g ├───┤ t ├───┼───┤         ├───┼───┤ a ├───┤ u │ ö │
+├───┼───┤ s ├───┤ l │ v │         │ j │ n ├───┤ e ├───┼───┤
+│ ő │ m ├───┤ w ├───┼───┤         ├───┼───┤ . ├───┤ i │ é │
+├───┼───┤ p ├───┤ h │ q │         │ x │ z ├───┤ ; ├───┼───┤
+│ ó │ d ├───┘   └───┴───┘         └───┴───┘   └───┤ , │ í │
+└───┴───┘       ┌───┬───┬───┐ ┌───┬───┬───┐       └───┴───┘
+                │ ↶ │ ␣ │ ⇥ │ │ ⏎ │ ⌫ │ ⌦ │
+                └───┴───┴───┘ └───┴───┴───┘
+
+Unigram metrics:
+  Not found: 1.4507% of 519527.0000
+     7.20 Finger Balance                      | Finger loads % (no thumb): 11.1 8.4 12.6 16.2 - 11.6 15.2 12.7 12.1
+     0.65 Hand Disbalance                     | Hand loads % (no thumb): 48.37 - 51.63
+     0.00 Row Loads                           | Row 1: 26.7%; Row 2: 57.7%; Row 3: 15.6%
+     0.39 Modifier Usage                      |
+   127.89 Key Costs                           |
+
+Bigram metrics:
+  Not found: 2.5845% of 519526.0000
+    27.04 Finger Repeats                      |
+    24.73 Movement Pattern                    |
+     3.44 No Handswitch After Unbalancing Key |
+
+Trigram metrics:
+  Not found: 3.6435% of 519525.0000
+    29.20 No Handswitch in Trigram            |
+    10.50 Irregularity                        |
+    13.83 Secondary Bigrams                   |
+   -22.65 Inward Rolls                        |
+    -9.24 Outward Rolls                       |
+
+Cost: 212.99 (optimization score: 469513)
+
+
+./target/release/evaluate -c .\corpus_proghunglish_nohu.txt -e config/evaluation/default_my.yml -l config/keyboard/draft.yml "}gykrbfco=u{)mstlvjnaei(\`"dpwhqxz.;,/"
+./target/release/optimize_genetic -c .\corpus_proghunglish_nohu.txt -e config/evaluation/default_my.yml -l config/keyboard/draft.yml -s "}gykrbfco=u{)mstlvjnaei(\`"dpwhqxz.;,/" -f "{}()/\`""
+}gykrbfcou;{)mstlvjnaei("dpwhqxz,=./
+
+}gykrb fcou;{
+)mstlv jnaei(
+"dpwhq xz,=./
+
+            ┌───┐                         ┌───┐
+        ┌───┤ k ├───┬───┐         ┌───┬───┤ o ├───┐
+┌───┬───┤ y ├───┤ r │ b │         │ f │ c ├───┤ u ├───┬───┐
+│ } │ g ├───┤ t ├───┼───┤         ├───┼───┤ a ├───┤ ; │ { │
+├───┼───┤ s ├───┤ l │ v │         │ j │ n ├───┤ e ├───┼───┤
+│ ) │ m ├───┤ w ├───┼───┤         ├───┼───┤ , ├───┤ i │ ( │
+├───┼───┤ p ├───┤ h │ q │         │ x │ z ├───┤ = ├───┼───┤
+│ " │ d ├───┘   └───┴───┘         └───┴───┘   └───┤ . │ / │
+└───┴───┘       ┌───┬───┬───┐ ┌───┬───┬───┐       └───┴───┘
+                │ ↶ │ ␣ │ ⇥ │ │ ⏎ │ ⌫ │ ⌦ │
+                └───┴───┴───┘ └───┴───┴───┘
+
+Unigram metrics:
+  Not found: 0.8171% of 2058604.0000
+     9.88 Finger Balance                      | Finger loads % (no thumb): 11.0 8.2 10.5 14.8 - 12.7 15.2 15.0 12.7
+     2.22 Hand Disbalance                     | Hand loads % (no thumb): 44.45 - 55.55
+     0.00 Row Loads                           | Row 1: 27.3%; Row 2: 57.3%; Row 3: 15.4%
+     1.39 Modifier Usage                      |
+   122.27 Key Costs                           |
+
+Bigram metrics:
+  Not found: 1.3984% of 2058603.0000
+    87.36 Finger Repeats                      |
+    27.25 Movement Pattern                    |
+     3.15 No Handswitch After Unbalancing Key |
+
+Trigram metrics:
+  Not found: 1.8604% of 2058602.0000
+    37.26 No Handswitch in Trigram            |
+   415.40 Irregularity                        |
+    16.15 Secondary Bigrams                   |
+   -23.54 Inward Rolls                        |
+    -8.25 Outward Rolls                       |
+
+Cost: 690.55 (optimization score: 144811)

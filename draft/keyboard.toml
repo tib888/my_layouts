@@ -11,118 +11,199 @@ chip = "nrf52840"
 # Set to false if you don't want USB
 #usb_enable = true
 
+[aliases]
+"~"="WM(Grave, LShift)"
+"`"="Grave"
+"!"="WM(Kc1, LShift)"
+"@"="WM(Kc2, LShift)"
+"#"="WM(Kc3, LShift)"
+"$"="WM(Kc4, LShift)"
+"%"="WM(Kc5, LShift)"
+"^"="WM(Kc6, LShift)"
+"&"="WM(Kc7, LShift)"
+"*"="WM(Kc8, LShift)"
+"("="WM(Kc9, LShift)"
+")"="WM(Kc0, LShift)"
+"-"="Minus"
+"_"="WM(Minus, LShift)"
+"="="Equal"
+"+"="WM(Equal, LShift)"
+"["="LeftBracket"
+"{"="WM(LeftBracket, LShift)"
+"]"="RightBracket"
+"}"="WM(RightBracket, LShift)"
+"\\"="Backslash"
+"|"="WM(Backslash, LShift)"
+";"="Semicolon"
+":"="WM(Semicolon, LShift)"
+"'"="WM(Quote, LShift)"
+"\""="WM(Quote, LShift)"
+","="Comma"
+"<"="WM(Comma, LShift)"
+"."="Dot"
+">"="WM(Dot, LShift)"
+"/"="Slash"
+"?"="WM(Slash, LShift)"
+cut="WM(X, LCtrl)"
+copy="WM(C, LCtrl)"
+paste="WM(V, LCtrl)"
+paste_noformat="WM(V, LCtrl|LShift)"
+find="WM(F, LCtrl)"
+replace="WM(H, LCtrl)"
+undo="WM(Z, LCtrl)"
+redo="WM(Y, LCtrl)"
+m="LT(navigation, M)"
+s="MT(S, LAlt)"
+t="MT(T, LShift)"
+l="MT(L, LCtrl)"
+n="MT(N, RCtrl)"
+a="MT(A, RShift)"
+e="MT(E, LAlt)"
+i="LT(symbols, I)"
+
 [layout]
 rows = 4
 cols = 12
 layers = 10
-keymap = [
-    #0 default: Hunglish layer
-    [
-        ["No", "No", "Y", "K", "R", "B",                                        "F", "C", "O", "U", "No", "No"],
-        ["LCtrl",  "G", "MT(S, LAlt)", "MT(T,LShift)", "MT(L, LCtrl)", "V",     "J", "MT(N, RCtrl)", "MT(A, RShift)", "MT(E, LAlt)", "Semicolon", "Insert"],
-        ["LShift", "MT(M, LGui)", "P", "W", "H", "Q",                           "X", "Z", "Dot", "Comma", "MT(I, RGui)", "Quote"],
-        ["LAlt", "D", "LT(4, Escape)", "LT(2, Space)", "LT(5, Tab)", "OSL(6)",  "No", "LT(5, Enter)", "LT(2, Backspace)", "LT(4, Delete)", "Slash", "LGui"]
-    ],
-    
-    #1 Hun mods of default
-    [
-        ["No", "No", "_", "_", "_", "_",                    "_", "_", "_", "_", "No", "No"],
-        ["Minus", "_", "_", "_", "_", "_",                  "_", "_", "_", "_", "_", "Kc0"],
-        ["LeftBracket", "_", "_", "_", "_", "_",            "_", "_", "_", "_", "_", "Quote"],
-        ["Equal", "_", "_", "LT(3, Space)", "_", "OSL(7)",  "No", "_", "LT(3,Backspace)", "_", "_", "Grave"]
-    ],
+matrix_map = """
+(1, 0) (1, 1) (0, 2) (0, 3) (0, 4) (0, 5)              (0, 6) (0, 7) (0, 8) (0, 9) (1, 10) (1, 11)
+(2, 0) (2, 1) (1, 2) (1, 3) (1, 4) (1, 5)              (1, 6) (1, 7) (1, 8) (1, 9) (2, 10) (2, 11)
+(3, 0) (3, 1) (2, 2) (2, 3) (2, 4) (2, 5)              (2, 6) (2, 7) (2, 8) (2, 9) (3, 10) (3, 11)
+                           (3, 2) (3, 3) (3, 4)  (3, 7) (3, 8) (3, 9)
+(3, 5)
+""" 
 
-    #2 Numpad + Sym
-    [
-        ["No", "No", "Kc7", "Kc8", "Kc9", "KpMinus",                                   "WM(Grave, LShift)", "WM(Kc7, LShift)", "WM(LeftBracket, LShift)", "WM(RightBracket, LShift)", "No", "No"],
-        ["KpSlash", "KpAsterisk", "Kc4", "Kc5", "Kc6", "KpPlus",                       "WM(Kc1, LShift)", "WM(Backslash, LShift)", "WM(Kc9, LShift)", "WM(Kc0, LShift)", "WM(Kc2, LShift)", "WM(Kc4, LShift)"],
-        ["WM(Semicolon, LShift)", "Kp0", "Kc1", "KC2", "Kc3", "Grave",                 "WM(Slash, LShift)", "WM(Kc6, LShift)", "LeftBracket", "RightBracket", "WM(Quote, LShift)", "Quote"],
-        ["WM(Kc5, LShift)", "KpDot", "_", "Equal", "WM(Minus, LShift)", "_",           "No", "WM(Comma, LShift)", "Equal", "WM(Dot, LShift)", "WM(Kc3, LShift)", "Backslash"]
-    ],
+[[layer]]
+name = "default" #0 (Hunglish)
+keys ="""
+LCtrl   G  Y  K  R  B                  F  C  O  U @; Insert
+LShift @m @s @t @l  V                  J @n @a @e @i Quote
+LAlt    D  P  W  H  Q                  X  Z @, @= @. LGui
+LT(functions, Escape) LT(symbols, Space) LT(navigation, Tab)  LT(symbols, Enter) LT(navigation, Backspace) LT(functions, Delete) 
+OSL(locker)
+"""
 
-    #3 Hun mods of Numpad + Sym
-    [
-        ["No", "No", "Kc7", "Kc8", "Kc9", "KpMinus",                                          "WM(Kc1, RAlt)", "WM(C, RAlt)", "WM(B, RAlt)", "WM(N, RAlt)", "No", "No"],
-        ["KpSlash", "KpAsterisk", "Kc4", "Kc5", "Kc6", "KpPlus",                              "WM(Kc4, LShift)", "WM(W, RAlt)", "WM(Kc8, LShift)", "WM(Kc9, LShift)", "WM(V, RAlt)", "WM(Semicolon, RAlt)"],
-        ["WM(Dot, LShift)", "Kp0", "Kc1", "KC2", "Kc3", "WM(Kc7, RAlt)",                      "WM(Comma, LShift)", "WM(Kc3, RAlt)", "WM(F, RAlt)", "WM(G, RAlt)", "WM(Kc2, LShift)", "WM(Kc1,LShift)"],
-        ["WM(Kc5, LShift)", "KpDot", "_", "WM(Kc7, RShift)", "WM(Slash, RShift)", "_",        "No", "WM(NonusBackslash, RAlt)", "WM(Kc7, LShift)", "WM(Z, RAlt)", "WM(X, RAlt)", "WM(Q, RAlt)"]
-    ],
+[[layer]]
+name = "symbols" #1 
+keys ="""
+@~ @@  @{ @} @! @|    @! Kp7 Kp8 Kp9 KpSlash KpAsterisk
+@` @\\ @( @) @" @&    @: Kp4 Kp5 Kp6 KpMinus KpPlus
+@$ @#  @[ @] @' @^    @? Kp1 Kp2 Kp3 Equal   @%
+@< @_ @>              @; Kp0 KpDot 
+_
+"""
 
-    #4 Fn + Media
-    [
-        ["No", "No", "F7", "F8", "F9", "F10",                  "AudioVolUp", "MediaPrevTrack", "MediaPlayPause", "MediaStop", "No", "No"],
-        ["LCtrl", "Pause", "F4", "F5", "F6", "F11",            "AudioMute", "RCtrl", "RShift", "LAlt", "MediaNextTrack", "WwwForward"],
-        ["LShift", "PrintScreen", "F1", "F2", "F3", "F12",     "AudioVolDown", "MyComputer", "BrightnessUp", "BrightnessDown", "RGui", "WwwBack"],
-        ["LAlt", "CapsLock", "_", "_", "_", "_",               "No", "_", "_", "_", "Calculator", "LGui"]
-    ],
+[[layer]]
+name = "functions" #2 fn, media, bluetooth
+keys ="""
+NumLock    Insert       F7 F8 F9 F12     AudioVolUp MediaPrevTrack MediaPlayPause MediaStop MediaNextTrack _
+CapsLock   PrintScreen  F4 F5 F6 F11     AudioMute RCtrl RShift LAlt RGui BrightnessUp
+ScrollLock Pause        F1 F2 F3 F10     AudioVolDown MyComputer Calculator _ _ BrightnessDown
+_ _ _                                   _ _ _
+_
+"""
 
-    #5 Nav + Shortcuts
-    [
-        ["No", "No", "WM(F, LCtrl)", "WM(Z, LCtrl)", "WM(Y, LCtrl)", "WM(V, LCtrl)",          "WM(Insert, RShift)", "MouseWheelLeft", "MouseWheelUp", "MouseWheelDown", "No", "No"],
-        ["LCtrl", "WM(H, LCtrl)", "LAlt", "LShift", "LCtrl", "WM(C, LCtrl)",                  "WM(Insert, RCtrl)", "Left", "UP", "Down", "MouseWheelRight", "WwwForward"],
-        ["LShift", "LGui", "MouseDown", "MouseUp", "MouseRight", "WM(X, LCtrl)",              "WM(X, LCtrl)", "Home", "PageUp", "PageDown", "Right", "WwwBack"],
-        ["LAlt", "MouseLeft", "_", "_", "_", "_",                                             "No", "_", "_", "_", "End", "LGui"]
-    ],
+[[layer]]
+name = "navigation" #3
+keys ="""
+@undo @redo @paste_noformat @paste @copy @cut                           @cut @copy @paste @paste_noformat @undo @redo
+@find LGui LAlt LShift LCtrl WwwForward                                 WwwForward Left UP Down Right @find
+@replace MouseWheelLeft MouseWheelUp MouseWheelDown MouseWheelRight     WwwBack WwwBack Home PageUp PageDown  End @replace
+Esc Space Enter                                                         Enter BackSpace Delete
+_
+"""
 
-    #6 Layer locker
-    [
-        ["No", "No", "_", "_", "_", "_",     "_", "_", "_", "_", "No", "No"],
-        ["_", "_", "_", "_", "_", "_",       "_", "_", "_", "_", "_", "_"],
-        ["_", "_", "_", "_", "_", "_",       "_", "_", "_", "_", "_", "_"],        
-        ["_", "_", "TG(4)", "TG(2)", "TG(5)", "TO(0)",   "No", "TG(5)", "TG(2)", "TG(4)", "_", "_"]
-    ],
+[[layer]]
+name = "locker" #4 layer locker
+keys ="""
+_ _ _ _ _ _          _ _ _ _ _ _
+_ _ _ _ _ _          _ _ _ _ _ _
+_ _ _ _ _ _          _ _ _ _ _ _        
+TG(functions) TG(symbols) TG(navigation)    TG(symbols) TG(navigation) TG(functions)
+TO(default)
+"""      
 
-    #7 HunMod Layer locker
-    [
-        ["No", "No", "_", "_", "_", "_",     "_", "_", "_", "_", "No", "No"],
-        ["_", "_", "_", "_", "_", "_",       "_", "_", "_", "_", "_", "_"],
-        ["_", "_", "_", "_", "_", "_",       "_", "_", "_", "_", "_", "_"],        
-        ["_", "_", "TG(4)", "TG(3)", "TG(5)", "TO(1)",   "No", "TG(5)", "TG(3)", "TG(4)", "_", "_"]
-    ],
+# [[layer]]
+# name = "numbers" #2
+# keys ="""
+# KpSlash KpAsterisk Kc7 Kc8 Kc9 KpMinus   _ _ _ _ _ _
+# @: Kp0 Kc4 Kc5 Kc6 KpPlus                _ RCtrl RShift LAlt RGui _
+# Grave KpDot Kc1 KC2 Kc3 @%               _ _ _ _ _ _
+# Semicolon Space Equal                    _ _ _
+# _
+# """
 
-    #todo hun numpad + sym
-    #todo fork on layer states?
+# Mouse Nav + Shortcuts
+# No No _ _ _ _            @cut @copy @paste WM(V, LCtrl|LShift) No No
+# _ _ LAlt LShift LCtrl _  WwwForward MouseWheelLeft MouseWheelUp MouseWheelDown WM(Z, LCtrl) WM(Y, LCtrl)
+# _ LGui _ _ _ _           WwwBack MouseLeft MouseUp MouseDown MouseWheelRight @find
+# _ _ _ _ _ _              No MouseBtn2 MouseBtn1 MouseBtn3 MouseRight @replace
 
-    # #5 Mouse
-    # [
-    #     ["_", "_", "_", "_", "_", "_",    "_", "_", "_", "_", "_", "_"],
-    #     ["_", "_", "_", "_", "_", "_",    "_", "MouseLeft", "MouseUp", "MouseDown", "_", "_"],
-    #     ["_", "_", "_", "_", "_", "_",    "_", "MouseWheelLeft", "MouseWheelUp", "MouseWheelDown", "MouseRight", "_"],
-    #     ["_", "_", "_", "_", "_", "_",    "_", "MouseBtn3", "MouseBtn1", "MouseBtn2", "MouseWheelRight", "_"]
-    # ]
+# #1 Hun mods of default
+# [
+#     ["No", "No", "_", "_", "_", "_",                    "_", "_", "_", "_", "No", "No"],
+#     ["Minus", "_", "_", "_", "_", "_",                  "_", "_", "_", "_", "_", "Kc0"],
+#     ["LeftBracket", "LT(3, M)", "_", "_", "_", "_",     "_", "_", "_", "_", "LT(3, I)", "Quote"],
+#     ["Equal", "_", "_", "_", "_", "OSL(8)",             "No", "_", "LT(3,Backspace)", "_", "_", "Grave"]
+# ],
+# #3 Hun mods of Sym
+# [
+#     ["No", "No", "Kc7", "Kc8", "Kc9", "KpMinus",                                          "WM(Kc1, RAlt)", "WM(C, RAlt)", "WM(B, RAlt)", "WM(N, RAlt)", "No", "No"],
+#     ["KpSlash", "KpAsterisk", "Kc4", "Kc5", "Kc6", "KpPlus",                              "WM(Kc4, LShift)", "WM(W, RAlt)", "WM(Kc8, LShift)", "WM(Kc9, LShift)", "WM(V, RAlt)", "WM(Semicolon, RAlt)"],
+#     ["WM(Dot, LShift)", "Kp0", "Kc1", "KC2", "Kc3", "WM(Kc7, RAlt)",                      "WM(Comma, LShift)", "WM(Kc3, RAlt)", "WM(F, RAlt)", "WM(G, RAlt)", "WM(Kc2, LShift)", "WM(Kc1,LShift)"],
+#     ["WM(Kc5, LShift)", "KpDot", "_", "WM(Kc7, RShift)", "WM(Slash, RShift)", "_",        "No", "WM(NonusBackslash, RAlt)", "WM(Kc7, LShift)", "WM(Z, RAlt)", "WM(X, RAlt)", "WM(Q, RAlt)"]
+# ],
+# #9 HunMod Layer locker
+# [
+#     ["No", "No", "_", "_", "_", "_",     "_", "_", "_", "_", "No", "No"],
+#     ["_", "_", "_", "_", "_", "_",       "_", "_", "_", "_", "_", "_"],
+#     ["_", "_", "_", "_", "_", "_",       "_", "_", "_", "_", "_", "_"],        
+#     ["_", "_", "TG(4)", "TG(3)", "TG(5)", "TO(1)",   "No", "TG(5)", "TG(3)", "TG(4)", "_", "_"]
+# ],
 
-    # #0 QWERTY like layer
-    # [
-    #     ["__", "__", "W", "E", "R", "T",                                   "Y", "U", "I", "O", "__", "__"],
-    #     ["Escape", "Q", "MT(S,LAlt)", "MT(D,LShift)", "MT(F,LCtrl)", "G",  "H", "MT(J,RCtrl)", "MT(K,RShift)", "MT(L,LAlt)", "P", "Backspace"],
-    #     ["LCtrl", "MT(A,LGui)", "X", "C", "V", "B",                        "N", "M", "Comma", "Dot", "MT(Semicolon,RGui)", "Enter"],
-    #     ["LShift", "Z", "__", "LT(7,Escape)", "LT(5,Space)", "LT(6,Tab)",  "__", "LT(3,Enter)", "LT(2,Backspace)", "LT(4,Delete)", "Slash", "LAlt"]
-    # ],
+#todo hun numpad + sym
+#todo fork on layer states?
 
-    # #1 homrow mods
-    # [
-    #     ["_", "_", "_", "_", "_", "_",                                   "_", "_", "_", "_", "_", "_"],
-    #     ["_", "_", "MT(S,LAlt)", "MT(T,LShift)", "MT(R,LCtrl)", "_",     "_", "MT(N,RCtrl)", "MT(A,RShift)", "MT(E,LAlt)", "_", "_"],
-    #     ["_", "MT(C,LGui)", "_", "_", "_", "_",                          "_", "_", "_", "_", "MT(I,RGui)", "_"],
-    #     ["_", "_", "_", "_", "_", "_",                                   "_", "_", "_", "_", "_", "_"]
-    # ],
+# #5 Mouse
+# [
+#     ["_", "_", "_", "_", "_", "_",    "_", "_", "_", "_", "_", "_"],
+#     ["_", "_", "_", "_", "_", "_",    "_", "MouseLeft", "MouseUp", "MouseDown", "_", "_"],
+#     ["_", "_", "_", "_", "_", "_",    "_", "MouseWheelLeft", "MouseWheelUp", "MouseWheelDown", "MouseRight", "_"],
+#     ["_", "_", "_", "_", "_", "_",    "_", "MouseBtn3", "MouseBtn1", "MouseBtn2", "MouseWheelRight", "_"]
+# ]
 
-    # #2 Numpad
-    # [
-    #     ["_", "_", "Kp7", "Kp8", "Kp9", "KpMinus",                       "_", "_", "_", "_", "_", "_"],
-    #     ["WM(Comma, LShift)", "KpPlus", "Kp4", "Kp5", "Kp6", "Kp0",      "_", "_", "_", "_", "_", "_"], 
-    #     ["Equal", "KpAsterisk", "Kp1", "Kp2", "Kp3", "KpDot",            "_", "_", "_", "_", "_", "_"],
-    #     ["WM(Dot, LShift)", "KpSlash", "_", "_", "_", "_",               "_", "_", "_", "_", "_", "_"]
-    # ],
+# #0 QWERTY like layer
+# [
+#     ["__", "__", "W", "E", "R", "T",                                   "Y", "U", "I", "O", "__", "__"],
+#     ["Escape", "Q", "MT(S,LAlt)", "MT(D,LShift)", "MT(F,LCtrl)", "G",  "H", "MT(J,RCtrl)", "MT(K,RShift)", "MT(L,LAlt)", "P", "Backspace"],
+#     ["LCtrl", "MT(A,LGui)", "X", "C", "V", "B",                        "N", "M", "Comma", "Dot", "MT(Semicolon,RGui)", "Enter"],
+#     ["LShift", "Z", "__", "LT(7,Escape)", "LT(5,Space)", "LT(6,Tab)",  "__", "LT(3,Enter)", "LT(2,Backspace)", "LT(4,Delete)", "Slash", "LAlt"]
+# ],
 
-    # #7 Media
-    # [
-    #     ["_", "_", "_", "_", "_", "_",    "WwwRefresh", "MediaPrevTrack", "MediaNextTrack", "Bootloader", "_", "_"],
-    #     ["_", "_", "_", "_", "_", "_",    "_", "MediaPlayPause", "MediaStop", "TG(1)", "BrightnessUp", "AudioVolUp"],
-    #     ["_", "_", "_", "_", "_", "_",    "_", "MyComputer", "Calculator", "WM(R,LGui)", "WM(L,LGui)", "AudioMute"],
-    #     ["_", "_", "_", "_", "_", "_",    "_", "_", "_", "_", "BrightnessDown", "AudioVolDown"]
-    # ]
-]
+# #1 homrow mods
+# [
+#     ["_", "_", "_", "_", "_", "_",                                   "_", "_", "_", "_", "_", "_"],
+#     ["_", "_", "MT(S,LAlt)", "MT(T,LShift)", "MT(R,LCtrl)", "_",     "_", "MT(N,RCtrl)", "MT(A,RShift)", "MT(E,LAlt)", "_", "_"],
+#     ["_", "MT(C,LGui)", "_", "_", "_", "_",                          "_", "_", "_", "_", "MT(I,RGui)", "_"],
+#     ["_", "_", "_", "_", "_", "_",                                   "_", "_", "_", "_", "_", "_"]
+# ],
+
+# #2 Numpad
+# [
+#     ["_", "_", "Kp7", "Kp8", "Kp9", "KpMinus",                       "_", "_", "_", "_", "_", "_"],
+#     ["WM(Comma, LShift)", "KpPlus", "Kp4", "Kp5", "Kp6", "Kp0",      "_", "_", "_", "_", "_", "_"], 
+#     ["Equal", "KpAsterisk", "Kp1", "Kp2", "Kp3", "KpDot",            "_", "_", "_", "_", "_", "_"],
+#     ["WM(Dot, LShift)", "KpSlash", "_", "_", "_", "_",               "_", "_", "_", "_", "_", "_"]
+# ],
+
+# #7 Media
+# [
+#     ["_", "_", "_", "_", "_", "_",    "WwwRefresh", "MediaPrevTrack", "MediaNextTrack", "Bootloader", "_", "_"],
+#     ["_", "_", "_", "_", "_", "_",    "_", "MediaPlayPause", "MediaStop", "TG(1)", "BrightnessUp", "AudioVolUp"],
+#     ["_", "_", "_", "_", "_", "_",    "_", "MyComputer", "Calculator", "WM(R,LGui)", "WM(L,LGui)", "AudioMute"],
+#     ["_", "_", "_", "_", "_", "_",    "_", "_", "_", "_", "BrightnessDown", "AudioVolDown"]
+# ]
+
 
 [behavior.combo]
 timeout = "150ms"
