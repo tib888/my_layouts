@@ -12,48 +12,107 @@ input_pins = ["PIN_17", "PIN_18", "PIN_19", "PIN_20", "PIN_21", "PIN_22", "PIN_2
 output_pins = ["PIN_0", "PIN_1", "PIN_2", "PIN_3", "PIN_4", "PIN_5", "PIN_6", "PIN_7", "PIN_8", "PIN_9", "PIN_10", "PIN_11", "PIN_12", "PIN_13", "PIN_14", "PIN_15", "PIN_16"]
 # row2col = false
 
+[aliases]
+cut = "WM(X, LCtrl)"
+copy = "WM(C, LCtrl)"
+paste = "WM(V, LCtrl)"
+
 [layout]
 rows = 7
 cols = 17
-layers = 4
-keymap = [
-    [
-        ["Escape", "No", "F1", "F2", "F3", "F4", "F5", "F6", "F7", "F8", "F9", "F10", "F11", "F12", "PrintScreen", "ScrollLock", "Pause"],
-        ["Grave", "Kc1", "Kc2", "Kc3", "Kc4", "Kc5", "Kc6", "Kc7", "Kc8", "Kc9", "Kc0", "Minus", "Equal", "Backspace", "Insert", "Home", "PageUp"],
-        ["Tab", "Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P", "LeftBracket", "RightBracket", "Backslash", "Delete", "End", "PageDown"],
-        ["MO(3)", "A", "S", "D", "F", "G", "H", "J", "K", "L", "Semicolon", "Quote", "No", "Enter", "No", "No", "No"],
-        ["LShift", "No", "Z", "X", "C", "V", "B", "N", "M", "Comma", "Dot", "Slash", "No", "RShift", "No", "UP", "No"],
-        ["LCtrl", "LGui", "LAlt",  "No", "No", "No", "Space", "No", "No", "No","RAlt", "MO(3)", "Application", "RCtrl", "Left", "Down", "Right"],
-        ["KpDot", "Kp1", "Kp2", "Kp3", "Kp4", "Kp5", "Kp6", "Kp7", "Kp8", "Kp9", "Kp0", "KpMinus", "KpPlus", "KpEnter", "KpAsterisk", "KpSlash", "NumLock"],
-    ],
-    [
-        ["_","No","_","_","_","_","_","_","_","_","_","_","_","_","_","_","_"],
-        ["_","_","_","_","_","_","_","_","_","_","_","_","_","_","_","_","_"],
-        ["_","_","_","_","_","_","_","_","_","_","_","_","_","_","_","_","_"],
-        ["_","_","_","_","_","_","_","_","_","_","_","_","No","_","No","No","No"],
-        ["_","No","_","_","_","_","_","_","_","_","_","_","No","_","No","_","No"],
-        ["_","_","_","No","No","No","_","No","No","No","_","_","_","_","_","_","_"],
-        ["_","_","_","_","_","_","_","_","_","_","_","_","_","_","_","_","_"],
-    ],
-    [
-        ["_","No","_","_","_","_","_","_","_","_","_","_","_","_","_","_","_"],
-        ["_","_","_","_","_","_","_","_","_","_","_","_","_","_","_","_","_"],
-        ["_","_","_","_","_","_","_","_","_","_","_","_","_","_","_","_","_"],
-        ["_","_","_","_","_","_","_","_","_","_","_","_","No","_","No","No","No"],
-        ["_","No","_","_","_","_","_","_","_","_","_","_","No","_","No","_","No"],
-        ["_","_","_","No","No","No","_","No","No","No","_","_","_","_","_","_","_"],
-        ["_","_","_","_","_","_","_","_","_","_","_","_","_","_","_","_","_"],
-    ],
-    [
-        ["_","No","_","AudioVolDown","AudioVolUp","AudioMute","MediaStop","MediaPrevTrack","MediaPlayPause","MediaNextTrack","Mail","WwwHome","MyComputer","Calculator","TG(1)","TG(2)","TG(3)"],
-        ["_","_","_","_","_","_","_","_","_","_","_","_","_","_","WwwForward","BrightnessUp","AudioVolUp"],
-        ["_","_","_","_","_","_","_","_","_","_","_","_","_","_","WwwBack","BrightnessDown","AudioVolDown"],
-        ["CapsLock","_","_","_","_","_","_","_","_","_","_","_","No","_","No","No","No"],
-        ["_","No","_","_","_","_","_","_","_","_","_","_","No","_","No","MouseWheelUp","No"],
-        ["_","_","_","No","No","No","_","No","No","No","_","_","_","_","MouseWheelLeft","MouseWheelDown","MouseWheelRight"],
-        ["MouseBtn2","MouseWheelLeft","MouseDown","MouseWheelRight","MouseLeft","MouseBtn3","MouseRight","MouseBtn1","MouseUp","MouseBtn2","MouseBtn1","_","MouseWheelUp","MouseWheelDown","_","_","_"],
-    ]
-]
+layers = 5
+matrix_map = """
+(0, 0)          (0, 2)  (0, 3)  (0, 4)  (0, 5)     (0, 6)  (0, 7)  (0, 8)  (0, 9)     (0, 10)  (0, 11)  (0, 12)  (0, 13)   (0, 14)  (0, 15)  (0, 16) 
+
+(1, 0)  (1, 1)  (1, 2)  (1, 3)  (1, 4)  (1, 5)  (1, 6)  (1, 7)  (1, 8)  (1, 9)  (1, 10)  (1, 11)  (1, 12)        (1, 13)   (1, 14)  (1, 15)  (1, 16)   (6, 16)  (6, 15)  (6, 14)  (6, 11)
+(2, 0)     (2, 1)  (2, 2)  (2, 3)  (2, 4)  (2, 5)  (2, 6)  (2, 7)  (2, 8)  (2, 9)  (2, 10)  (2, 11)  (2, 12)     (2, 13)   (2, 14)  (2, 15)  (2, 16)   (6, 7)   (6, 8)   (6, 9)   (6, 12)
+(3, 0)       (3, 1)  (3, 2)  (3, 3)  (3, 4)  (3, 5)  (3, 6)  (3, 7)  (3, 8)  (3, 9)  (3, 10)  (3, 11)            (3, 13)                               (6, 4)   (6, 5)   (6, 6) 
+(4, 0)          (4, 2)  (4, 3)  (4, 4)  (4, 5)  (4, 6)  (4, 7)  (4, 8)  (4, 9)  (4, 10)  (4, 11)                 (4, 13)            (4, 15)            (6, 1)   (6, 2)   (6, 3)   (6, 13)
+(5, 0)   (5, 1)   (5, 2)                      (5, 6)                               (5, 10)   (5, 11)   (5, 12)   (5, 13)   (5, 14)  (5, 15)  (5, 16)       (6, 10)       (6, 0)  
+"""
+
+[[layer]]
+name = "default" #0
+keys = """
+Escape    F1  F2  F3  F4      F5  F6  F7  F8        F9  F10 F11 F12   PrintScreen ScrollLock Pause
+Grave Kc1 Kc2 Kc3 Kc4 Kc5 Kc6 Kc7 Kc8 Kc9 Kc0 Minus Equal Backspace   Insert      Home       PageUp    NumLock KpSlash  KpAsterisk  KpMinus 
+Tab     Q   W   E   R   T   Y   U   I   O   P LeftBracket RightBracket Backslash  Delete End PageDown  Kp7 Kp8 Kp9 KpPlus
+MO(media) A   S   D   F   G   H   J   K   L Semicolon Quote   Enter                                    Kp4 Kp5 Kp6
+LShift     Z   X   C   V   B   N   M   Comma Dot Slash       RShift                      UP            Kp1 Kp2 Kp3 KpEnter
+LCtrl  LGui  LAlt    Space      RAlt  MO(media)  Application  RCtrl               Left Down Right      Kp0 KpDot  
+"""
+
+[[layer]]
+name = "hun" #1
+keys = """
+_   _ _ _ _   _ _ _ _    _ _ _ _              _ _ _
+_ F14 F15 F16 F17 F18 F19 F20 F21 _ _ _ _ _   _ _ _    _  _  _  _ 
+_  _ _ _ _ _ _ _ _ _ _ _ _ _                  _ _ _    _  _  _  _
+_   _ _ _ _ _ _ _ _ _ _ _ _                            _  _  _ 
+_    _ _ _ _ _ _ _ F22 F23 F24 _                _      _  _  _  _  
+_ _ _        _     _ _ _ _                    _ _ _     _   _ 
+"""
+
+[[layer]]
+name = "media" #2
+keys = """
+_ _ AudioVolDown AudioVolUp AudioMute MediaStop MediaPrevTrack MediaPlayPause MediaNextTrack Mail WwwHome MyComputer Calculator TG(hun)   TG(empty)      TG(media)
+User1 _ _ _ _ _ _ _ _ _ F13 _ _ _                                                                                               WwwForward BrightnessUp   AudioVolUp       _              @cut      @copy           @paste
+_ _ _ _ _ _ _ _ _ _ _ _ _ _                                                                                                     WwwBack    BrightnessDown AudioVolDown     MouseBtn1      MouseUp   MouseBtn2       MouseWheelUp
+CapsLock _ _ _ _ _ _ _ _ _ _ _ _                                                                                                                                           MouseLeft      MouseBtn3 MouseRight
+_   _ _ _ _ _ _ _  _ _  _ _                                                                                                                MouseWheelUp                    MouseWheelLeft MouseDown MouseWheelRight MouseWheelDown
+_ _ _     _     _ _ _ _                                                                                                     MouseWheelLeft MouseWheelDown MouseWheelRight           MouseBtn1       MouseBtn2 
+"""
+
+[[layer]]
+name = "empty" #2
+keys = """
+_  _ _ _ _  _ _ _ _  _ _ _ _   _ _ _
+_ _ _ _ _ _ _ _ _ _ _ _ _  _   _ _ _    _  _  _  _ 
+_  _ _ _ _ _ _ _ _ _ _ _ _ _   _ _ _    _  _  _  _
+_   _ _ _ _ _ _ _ _ _ _ _  _            _  _  _ 
+_    _ _ _ _ _ _ _ _ _ _   _     _      _  _  _  _  
+_ _ _        _       _ _ _ _   _ _ _     _   _ 
+"""
+
+# keymap = [
+#     [
+#         ["Escape", "No", "F1", "F2", "F3", "F4", "F5", "F6", "F7", "F8", "F9", "F10", "F11", "F12", "PrintScreen", "ScrollLock", "Pause"],
+#         ["Grave", "Kc1", "Kc2", "Kc3", "Kc4", "Kc5", "Kc6", "Kc7", "Kc8", "Kc9", "Kc0", "Minus", "Equal", "Backspace", "Insert", "Home", "PageUp"],
+#         ["Tab", "Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P", "LeftBracket", "RightBracket", "Backslash", "Delete", "End", "PageDown"],
+#         ["MO(3)", "A", "S", "D", "F", "G", "H", "J", "K", "L", "Semicolon", "Quote", "No", "Enter", "No", "No", "No"],
+#         ["LShift", "No", "Z", "X", "C", "V", "B", "N", "M", "Comma", "Dot", "Slash", "No", "RShift", "No", "UP", "No"],
+#         ["LCtrl", "LGui", "LAlt",  "No", "No", "No", "Space", "No", "No", "No","RAlt", "MO(3)", "Application", "RCtrl", "Left", "Down", "Right"],
+#         ["KpDot", "Kp1", "Kp2", "Kp3", "Kp4", "Kp5", "Kp6", "Kp7", "Kp8", "Kp9", "Kp0", "KpMinus", "KpPlus", "KpEnter", "KpAsterisk", "KpSlash", "NumLock"],
+#     ],
+#     [
+#         ["_","No","_","_","_","_","_","_","_","_","_","_","_","_","_","_","_"],
+#         ["_","F14","F15","F16","F17","_","F18","F19","F20","F21","_","_","_","_","_","_","_"],
+#         ["_","_","_","_","_","_","_","_","_","_","_","_","_","_","_","_","_"],
+#         ["_","_","_","_","_","_","_","_","_","_","_","_","No","_","No","No","No"],
+#         ["_","No","_","_","_","_","_","_","_","F22","F23","F24","No","_","No","_","No"],
+#         ["_","_","_","No","No","No","_","No","No","No","_","_","_","_","_","_","_"],
+#         ["_","_","_","_","_","_","_","_","_","_","_","_","_","_","_","_","_"],
+#     ],
+#     [
+#         ["_","No","_","_","_","_","_","_","_","_","_","_","_","_","_","_","_"],
+#         ["_","_","_","_","_","_","_","_","_","_","_","_","_","_","_","_","_"],
+#         ["_","_","_","_","_","_","_","_","_","_","_","_","_","_","_","_","_"],
+#         ["_","_","_","_","_","_","_","_","_","_","_","_","No","_","No","No","No"],
+#         ["_","No","_","_","_","_","_","_","_","_","_","_","No","_","No","_","No"],
+#         ["_","_","_","No","No","No","_","No","No","No","_","_","_","_","_","_","_"],
+#         ["_","_","_","_","_","_","_","_","_","_","_","_","_","_","_","_","_"],
+#     ],
+#     [
+#         ["_","No","_","AudioVolDown","AudioVolUp","AudioMute","MediaStop","MediaPrevTrack","MediaPlayPause","MediaNextTrack","Mail","WwwHome","MyComputer","Calculator","TG(1)","TG(2)","TG(3)"],
+#         ["User1","_","_","_","_","_","_","_","_","_","F13","_","_","_","WwwForward","BrightnessUp","AudioVolUp"],
+#         ["_","_","_","_","_","_","_","_","_","_","_","_","_","_","WwwBack","BrightnessDown","AudioVolDown"],
+#         ["CapsLock","_","_","_","_","_","_","_","_","_","_","_","No","_","No","No","No"],
+#         ["_","No","_","_","_","_","_","_","_","_","_","_","No","_","No","MouseWheelUp","No"],
+#         ["_","_","_","No","No","No","_","No","No","No","_","_","_","_","MouseWheelLeft","MouseWheelDown","MouseWheelRight"],
+#         ["MouseBtn2","MouseWheelLeft","MouseDown","MouseWheelRight","MouseLeft","MouseBtn3","MouseRight","MouseBtn1","MouseUp","MouseBtn2","MouseBtn1","_","MouseWheelUp","MouseWheelDown","_","_","_"],
+#     ]
+# ]
 
 [light]
 # All light pins are high-active by default, uncomment if you want it to be low-active
@@ -68,7 +127,6 @@ scrolllock.low_active = false
 # Storage feature is enabled by default
 # enabled = true
 
-
 [behavior.combo]
 timeout = "150ms"
 combos = [
@@ -77,3 +135,44 @@ combos = [
 
 [behavior]
 tap_hold = { enable_hrm = true, prior_idle_time = "120ms", hold_timeout = "250ms", post_wait_time = "50ms"}
+
+[behavior.fork]
+forks = [
+#   { trigger = "V", negative_output = "V", positive_output = "X", match_any = "NumLock|CapsLock|ScrollLock", bind = "false" },#does not work
+#   { trigger = "X", negative_output = "X", positive_output = "V", match_any = "NumLock|CapsLock|ScrollLock", bind = "false" },#does not work
+#   { trigger = "M", negative_output = "M", positive_output = "N", match_any = "MouseBtn5", bind = "false" },
+#   { trigger = "N", negative_output = "N", positive_output = "M", match_any = "MouseBtn5", bind = "false" },
+  
+  # hun fixers:
+  
+  # F14 1! on hun
+  { trigger = "F14", negative_output = "Kc1", positive_output = "WM(Kc4, LShift)", match_any = "LShift|RShift" },#does not work
+  # F15 2@ on hun
+  { trigger = "F15", negative_output = "Kc2", positive_output = "WM(V, RAlt)", match_any = "LShift|RShift" },
+  # F16 3# on hun  
+  { trigger = "F16", negative_output = "Kc3", positive_output = "WM(X, RAlt)", match_any = "LShift|RShift" },
+  # F17 4$ on hun
+  { trigger = "F17", negative_output = "Kc4", positive_output = "WM(Semicolon, RAlt)", match_any = "LShift|RShift" },
+  # F18 6^ on hun
+  { trigger = "F18", negative_output = "Kc6", positive_output = "WM(Kc3, RAlt)", match_any = "LShift|RShift" },
+  # F19 7& on hun
+  { trigger = "F19", negative_output = "Kc7", positive_output = "WM(C, RAlt)", match_any = "LShift|RShift" },
+  # F20 8* on hun
+  { trigger = "F20", negative_output = "Kc8", positive_output = "WM(Slash, RAlt)", match_any = "LShift|RShift" },
+  # F21 9( on hun
+  { trigger = "F21", negative_output = "Kc9", positive_output = "WM(Kc8, LShift)", match_any = "LShift|RShift" },
+  # F22 ,< on hun
+  { trigger = "F22", negative_output = "Comma", positive_output = "WM(NonusBackslash, RAlt)", match_any = "LShift|RShift" },
+  # F23 .> on hun
+  { trigger = "F23", negative_output = "Dot", positive_output = "WM(Y, RAlt)", match_any = "LShift|RShift" },
+  # F24 /? on hun
+  { trigger = "F24", negative_output = "WM(Kc6, LShift)", positive_output = "WM(Comma, LShift)", match_any = "LShift|RShift" },
+
+  # F13 0) on hun (FnLayer)
+  { trigger = "F13", negative_output = "Grave", positive_output = "WM(Kc9, LShift)", match_any = "LShift|RShift" },
+
+  # F13 `~ on hun
+  { trigger = "User1", negative_output = "WM(Kc7, RAlt)", positive_output = "WM(Kc1, RAlt)", match_any = "LShift|RShift" },
+
+  #...
+]
