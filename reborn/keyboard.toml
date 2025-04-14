@@ -20,7 +20,7 @@ paste = "WM(V, LCtrl)"
 [layout]
 rows = 7
 cols = 17
-layers = 5
+layers = 4
 matrix_map = """
 (0, 0)          (0, 2)  (0, 3)  (0, 4)  (0, 5)     (0, 6)  (0, 7)  (0, 8)  (0, 9)     (0, 10)  (0, 11)  (0, 12)  (0, 13)   (0, 14)  (0, 15)  (0, 16) 
 
@@ -30,51 +30,6 @@ matrix_map = """
 (4, 0)          (4, 2)  (4, 3)  (4, 4)  (4, 5)  (4, 6)  (4, 7)  (4, 8)  (4, 9)  (4, 10)  (4, 11)                 (4, 13)            (4, 15)            (6, 1)   (6, 2)   (6, 3)   (6, 13)
 (5, 0)   (5, 1)   (5, 2)                      (5, 6)                               (5, 10)   (5, 11)   (5, 12)   (5, 13)   (5, 14)  (5, 15)  (5, 16)       (6, 10)       (6, 0)  
 """
-
-[[layer]]
-name = "default" #0
-keys = """
-Escape    F1  F2  F3  F4      F5  F6  F7  F8        F9  F10 F11 F12   PrintScreen ScrollLock Pause
-Grave Kc1 Kc2 Kc3 Kc4 Kc5 Kc6 Kc7 Kc8 Kc9 Kc0 Minus Equal Backspace   Insert      Home       PageUp    NumLock KpSlash  KpAsterisk  KpMinus 
-Tab     Q   W   E   R   T   Y   U   I   O   P LeftBracket RightBracket Backslash  Delete End PageDown  Kp7 Kp8 Kp9 KpPlus
-MO(media) A   S   D   F   G   H   J   K   L Semicolon Quote   Enter                                    Kp4 Kp5 Kp6
-LShift     Z   X   C   V   B   N   M   Comma Dot Slash       RShift                      UP            Kp1 Kp2 Kp3 KpEnter
-LCtrl  LGui  LAlt    Space      RAlt  MO(media)  Application  RCtrl               Left Down Right      Kp0 KpDot  
-"""
-
-[[layer]]
-name = "hun" #1
-keys = """
-_   _ _ _ _   _ _ _ _    _ _ _ _              _ _ _
-_ F14 F15 F16 F17 F18 F19 F20 F21 _ _ _ _ _   _ _ _    _  _  _  _ 
-_  _ _ _ _ _ _ _ _ _ _ _ _ _                  _ _ _    _  _  _  _
-_   _ _ _ _ _ _ _ _ _ _ _ _                            _  _  _ 
-_    _ _ _ _ _ _ _ F22 F23 F24 _                _      _  _  _  _  
-_ _ _        _     _ _ _ _                    _ _ _     _   _ 
-"""
-
-[[layer]]
-name = "media" #2
-keys = """
-_ _ AudioVolDown AudioVolUp AudioMute MediaStop MediaPrevTrack MediaPlayPause MediaNextTrack Mail WwwHome MyComputer Calculator TG(hun)   TG(empty)      TG(media)
-User1 _ _ _ _ _ _ _ _ _ F13 _ _ _                                                                                               WwwForward BrightnessUp   AudioVolUp       _              @cut      @copy           @paste
-_ _ _ _ _ _ _ _ _ _ _ _ _ _                                                                                                     WwwBack    BrightnessDown AudioVolDown     MouseBtn1      MouseUp   MouseBtn2       MouseWheelUp
-CapsLock _ _ _ _ _ _ _ _ _ _ _ _                                                                                                                                           MouseLeft      MouseBtn3 MouseRight
-_   _ _ _ _ _ _ _  _ _  _ _                                                                                                                MouseWheelUp                    MouseWheelLeft MouseDown MouseWheelRight MouseWheelDown
-_ _ _     _     _ _ _ _                                                                                                     MouseWheelLeft MouseWheelDown MouseWheelRight           MouseBtn1       MouseBtn2 
-"""
-
-[[layer]]
-name = "empty" #2
-keys = """
-_  _ _ _ _  _ _ _ _  _ _ _ _   _ _ _
-_ _ _ _ _ _ _ _ _ _ _ _ _  _   _ _ _    _  _  _  _ 
-_  _ _ _ _ _ _ _ _ _ _ _ _ _   _ _ _    _  _  _  _
-_   _ _ _ _ _ _ _ _ _ _ _  _            _  _  _ 
-_    _ _ _ _ _ _ _ _ _ _   _     _      _  _  _  _  
-_ _ _        _       _ _ _ _   _ _ _     _   _ 
-"""
-
 # keymap = [
 #     [
 #         ["Escape", "No", "F1", "F2", "F3", "F4", "F5", "F6", "F7", "F8", "F9", "F10", "F11", "F12", "PrintScreen", "ScrollLock", "Pause"],
@@ -114,6 +69,50 @@ _ _ _        _       _ _ _ _   _ _ _     _   _
 #     ]
 # ]
 
+[[layer]]
+name = "default" #0
+keys = """
+Escape    F1  F2  F3  F4      F5  F6  F7  F8        F9  F10 F11 F12   PrintScreen ScrollLock Pause
+Grave Kc1 Kc2 Kc3 Kc4 Kc5 Kc6 Kc7 Kc8 Kc9 Kc0 Minus Equal Backspace   Insert      Home       PageUp    NumLock KpSlash  KpAsterisk  KpMinus 
+Tab     Q   W   E   R   T   Y   U   I   O   P LeftBracket RightBracket Backslash  Delete End PageDown  Kp7 Kp8 Kp9 KpPlus
+MO(media) A   S   D   F   G   H   J   K   L Semicolon Quote   Enter                                    Kp4 Kp5 Kp6
+LShift     Z   X   C   V   B   N   M   Comma Dot Slash       RShift                      UP            Kp1 Kp2 Kp3 KpEnter
+LCtrl  LGui  LAlt    Space      RAlt  MO(media)  Application  RCtrl               Left Down Right      Kp0 KpDot  
+"""
+
+[[layer]]
+name = "hun" #1
+keys = """
+_   _ _ _ _   _ _ _ _    _ _ _ _              _ _ _
+_ F14 F15 F16 F17 _ F18 F19 F20 F21 _ _ _ _   _ _ _    _  _  _  _ 
+_  _ _ _ _ _ _ _ _ _ _ _ _ _                  _ _ _    _  _  _  _
+_   _ _ _ _ _ _ _ _ _ _ _ _                            _  _  _ 
+_    _ _ _ _ _ _ _ F22 F23 F24 _                _      _  _  _  _
+_ _ _      _     LAlt _ _ _                   _ _ _     _    _ 
+"""
+
+[[layer]]
+name = "media" #2
+keys = """
+_ _ AudioVolDown AudioVolUp AudioMute MediaStop MediaPrevTrack MediaPlayPause MediaNextTrack Mail WwwHome MyComputer Calculator     TG(hun) TG(media) TG(empty)
+User0 _ _ _ _ _ _ _ _ _ User1 User2 User3 _      WwwForward BrightnessUp   AudioVolUp           MouseBtn1      MouseBtn3 MouseBtn2       WwwHome
+_ _ _ _ _ _ _ _ _ _ _ User4 User5 User6          WwwBack    BrightnessDown AudioVolDown         WwwBack        MouseUp   WwwForward      MouseWheelUp
+CapsLock _ _ _ _ _ _ _ _ _ User7 User8 _                                                        MouseLeft      MouseDown MouseRight
+_   _ _ _ _ _ _ _ _ _ _   _                                 MouseWheelUp                        MouseWheelLeft MouseDown MouseWheelRight MouseWheelDown
+_ _ _     _     LAlt _ _ _                   MouseWheelLeft MouseWheelDown MouseWheelRight           MouseBtn1       MouseBtn2 
+"""
+
+[[layer]]
+name = "empty" #2
+keys = """
+_  _ _ _ _  _ _ _ _  _ _ _ _   _ _ _
+_ _ _ _ _ _ _ _ _ _ _ _ _  _   _ _ _    _  _  _  _ 
+_  _ _ _ _ _ _ _ _ _ _ _ _ _   _ _ _    _  _  _  _
+_   _ _ _ _ _ _ _ _ _ _ _  _            _  _  _ 
+_    _ _ _ _ _ _ _ _ _ _   _     _      _  _  _  _  
+_ _ _        _       _ _ _ _   _ _ _     _   _ 
+"""
+
 [light]
 # All light pins are high-active by default, uncomment if you want it to be low-active
 numslock.pin = "PIN_27"
@@ -144,9 +143,11 @@ forks = [
 #   { trigger = "N", negative_output = "N", positive_output = "M", match_any = "MouseBtn5", bind = "false" },
   
   # hun fixers:
+
+  #F13
   
   # F14 1! on hun
-  { trigger = "F14", negative_output = "Kc1", positive_output = "WM(Kc4, LShift)", match_any = "LShift|RShift" },#does not work
+  { trigger = "F14", negative_output = "Kc1", positive_output = "WM(Kc4, LShift)", match_any = "LShift|RShift" },
   # F15 2@ on hun
   { trigger = "F15", negative_output = "Kc2", positive_output = "WM(V, RAlt)", match_any = "LShift|RShift" },
   # F16 3# on hun  
@@ -161,18 +162,31 @@ forks = [
   { trigger = "F20", negative_output = "Kc8", positive_output = "WM(Slash, RAlt)", match_any = "LShift|RShift" },
   # F21 9( on hun
   { trigger = "F21", negative_output = "Kc9", positive_output = "WM(Kc8, LShift)", match_any = "LShift|RShift" },
-  # F22 ,< on hun
+  # F22 ,< on hun  
   { trigger = "F22", negative_output = "Comma", positive_output = "WM(NonusBackslash, RAlt)", match_any = "LShift|RShift" },
-  # F23 .> on hun
-  { trigger = "F23", negative_output = "Dot", positive_output = "WM(Y, RAlt)", match_any = "LShift|RShift" },
+  # F23 .> on hun 
+  { trigger = "F23", negative_output = "Dot", positive_output = "WM(Z, RAlt)", match_any = "LShift|RShift" },
   # F24 /? on hun
   { trigger = "F24", negative_output = "WM(Kc6, LShift)", positive_output = "WM(Comma, LShift)", match_any = "LShift|RShift" },
 
-  # F13 0) on hun (FnLayer)
-  { trigger = "F13", negative_output = "Grave", positive_output = "WM(Kc9, LShift)", match_any = "LShift|RShift" },
+  # User0 `~ on hun
+  { trigger = "User0", negative_output = "WM(Kc7, RAlt)", positive_output = "WM(Kc1, RAlt)", match_any = "LShift|RShift" },
+  # User1 0) on hun (FnLayer)
+  { trigger = "User1", negative_output = "Kp0", positive_output = "WM(Kc9, LShift)", match_any = "LShift|RShift" },
+  # User2 -_ on hun
+  { trigger = "User2", negative_output = "Slash", positive_output = "WM(Slash, RShift)", match_any = "LShift|RShift" },
+  # User3 =+ on hun
+  { trigger = "User3", negative_output = "WM(Kc7, RShift)", positive_output = "WM(Kc3, RShift)", match_any = "LShift|RShift" },
 
-  # F13 `~ on hun
-  { trigger = "User1", negative_output = "WM(Kc7, RAlt)", positive_output = "WM(Kc1, RAlt)", match_any = "LShift|RShift" },
+  # User4 [{ on hun
+  { trigger = "User4", negative_output = "WM(F, RAlt)", positive_output = "WM(B, RAlt)", match_any = "LShift|RShift" },
+  # User5 ]} on hun
+  { trigger = "User5", negative_output = "WM(G, RAlt)", positive_output = "WM(N, RAlt)", match_any = "LShift|RShift" },
+  # User6 \| on hun
+  { trigger = "User6", negative_output = "WM(Q, RAlt)", positive_output = "WM(W, RAlt)", match_any = "LShift|RShift" },
 
-  #...
+  # User7 ;: on hun
+  { trigger = "User7", negative_output = "WM(Comma, RAlt)", positive_output = "WM(Dot, RShift)", match_any = "LShift|RShift" },
+  # User8 '" on hun
+  { trigger = "User8", negative_output = "WM(Kc1, RShift)", positive_output = "WM(Kc2, RShift)", match_any = "LShift|RShift" },
 ]

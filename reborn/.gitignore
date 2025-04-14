@@ -8,3 +8,5 @@ target
 .embuild
 
 .DS_Store
+
+Cargo.lock
