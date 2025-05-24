@@ -7,6 +7,8 @@ target = "thumbv7em-none-eabihf"
 # thumbv7em-none-eabihf is good for nrf52840 (nice!nano) and STM32F411CEU6 (black-pill)
 # thumbv7m-none-eabi is good for STM32F103C8T6 (blue-pill)
 # thumbv6m-none-eabi is good for rp2040
+# rustflags = ["-Z", "macro-backtrace"]
 
 [env]
-DEFMT_LOG = "info"
+DEFMT_LOG = "info" #"debug"
+KEYBOARD_TOML_PATH =  { value = "keyboard.toml", relative = true }
