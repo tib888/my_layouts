@@ -460,7 +460,7 @@ forks = [
 
 [storage]
 enabled = true
-#clear_storage = true
+# clear_storage = true
 # Storage feature is enabled by default
 # Start address of local storage, MUST BE start of a sector.
 # If start_addr is set to 0(this is the default value), the last `num_sectors` sectors will be used.
@@ -521,7 +521,7 @@ ble_addr = [0x18, 0xe2, 0x21, 0x80, 0xc0, 0xc7]
 matrix_type = "normal"
 row2col = true
 output_pins = ["P0_29", "P0_02", "P1_15", "P1_13"]
-input_pins = ["P1_11", "P0_10", "P0_09", "P1_06", "P1_04", "P0_11"]
+input_pins = ["P0_11", "P1_04", "P1_06", "P0_09", "P0_10", "P1_11"]
 
 [[split.peripheral]]
 rows = 4 #5
@@ -534,4 +534,5 @@ ble_addr = [0x7e, 0xfe, 0x73, 0x9e, 0x66, 0xe3]
 matrix_type = "normal"
 row2col = true
 output_pins = ["P0_29", "P0_02", "P1_15", "P1_13"]
-input_pins = ["P0_11", "P1_04", "P1_06", "P0_09", "P0_10", "P1_11"]
+input_pins = ["P1_11", "P0_10", "P0_09", "P1_06", "P1_04", "P0_11"]
+
