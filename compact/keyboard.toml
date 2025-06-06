@@ -37,7 +37,7 @@ output_pins = ["PIN_16", "PIN_17", "PIN_18", "PIN_19", "PIN_20", "PIN_21", "PIN_
 "|"="WM(Backslash, LShift)"
 ";"="Semicolon"
 ":"="WM(Semicolon, LShift)"
-"'"="WM(Quote, LShift)"
+"'"="Quote"
 "\""="WM(Quote, LShift)"
 ","="Comma"
 "<"="WM(Comma, LShift)"
@@ -92,11 +92,22 @@ output_pins = ["PIN_16", "PIN_17", "PIN_18", "PIN_19", "PIN_20", "PIN_21", "PIN_
 cut="WM(X, LCtrl)"
 copy="WM(C, LCtrl)"
 paste="WM(V, LCtrl)"
-paste_noformat="WM(V, LCtrl|LShift)"
+paste_="WM(V, LCtrl|LShift)"
 find="WM(F, LCtrl)"
+find_="WM(F, LCtrl|LShift)"
 replace="WM(H, LCtrl)"
+replace_="WM(H, LCtrl|LShift)"
 undo="WM(Z, LCtrl)"
 redo="WM(Y, LCtrl)"
+all="WM(A, LCtrl)"
+lock="WM(L, LGui)"
+pair="WM(RightBracket, LCtrl)"
+save="WM(S, LCtrl)"
+ctab="WM(Tab, LCtrl)"
+cbsp="WM(Backspace, LCtrl)"
+cent="WM(Enter, LCtrl)"
+ck="WM(K, LCtrl)"
+comment="WM(Slash, LCtrl)"
 
 [layout]
 rows = 5
@@ -109,126 +120,66 @@ matrix_map = """
 (3, 0)   (3, 1)  (3, 2)  (3, 3)  (3, 4)  (3, 5)          (3, 6)  (3, 7)  (3, 8)  (3, 9)  (3, 10)   (3, 11)             (3, 13)
 (4, 0)  (4, 1)  (4, 2)  (4, 3)  (4, 4)  (4, 5)            (4, 6)  (4, 7)  (4, 8)  (4, 9)  (4, 10)  (4, 11)    (4, 12)  (4, 13)  (4, 14)
 """
-# keymap = [
-#     [
-#         ["Escape", "No", "F1", "F2", "F3", "F4", "F5", "F6", "F7", "F8", "F9", "F10", "F11", "F12", "PrintScreen", "ScrollLock", "Pause"],
-#         ["Grave", "Kc1", "Kc2", "Kc3", "Kc4", "Kc5", "Kc6", "Kc7", "Kc8", "Kc9", "Kc0", "Minus", "Equal", "Backspace", "Insert", "Home", "PageUp"],
-#         ["Tab", "Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P", "LeftBracket", "RightBracket", "Backslash", "Delete", "End", "PageDown"],
-#         ["MO(3)", "A", "S", "D", "F", "G", "H", "J", "K", "L", "Semicolon", "Quote", "No", "Enter", "No", "No", "No"],
-#         ["LShift", "No", "Z", "X", "C", "V", "B", "N", "M", "Comma", "Dot", "Slash", "No", "RShift", "No", "UP", "No"],
-#         ["LCtrl", "LGui", "LAlt",  "No", "No", "No", "Space", "No", "No", "No","RAlt", "MO(3)", "Application", "RCtrl", "Left", "Down", "Right"],
-#         ["KpDot", "Kp1", "Kp2", "Kp3", "Kp4", "Kp5", "Kp6", "Kp7", "Kp8", "Kp9", "Kp0", "KpMinus", "KpPlus", "KpEnter", "KpAsterisk", "KpSlash", "NumLock"],
-#     ],
-#     [
-#         ["_","No","_","_","_","_","_","_","_","_","_","_","_","_","_","_","_"],
-#         ["_","F14","F15","F16","F17","_","F18","F19","F20","F21","_","_","_","_","_","_","_"],
-#         ["_","_","_","_","_","_","_","_","_","_","_","_","_","_","_","_","_"],
-#         ["_","_","_","_","_","_","_","_","_","_","_","_","No","_","No","No","No"],
-#         ["_","No","_","_","_","_","_","_","_","F22","F23","F24","No","_","No","_","No"],
-#         ["_","_","_","No","No","No","_","No","No","No","_","_","_","_","_","_","_"],
-#         ["_","_","_","_","_","_","_","_","_","_","_","_","_","_","_","_","_"],
-#     ],
-#     [
-#         ["_","No","_","_","_","_","_","_","_","_","_","_","_","_","_","_","_"],
-#         ["_","_","_","_","_","_","_","_","_","_","_","_","_","_","_","_","_"],
-#         ["_","_","_","_","_","_","_","_","_","_","_","_","_","_","_","_","_"],
-#         ["_","_","_","_","_","_","_","_","_","_","_","_","No","_","No","No","No"],
-#         ["_","No","_","_","_","_","_","_","_","_","_","_","No","_","No","_","No"],
-#         ["_","_","_","No","No","No","_","No","No","No","_","_","_","_","_","_","_"],
-#         ["_","_","_","_","_","_","_","_","_","_","_","_","_","_","_","_","_"],
-#     ],
-#     [
-#         ["_","No","_","AudioVolDown","AudioVolUp","AudioMute","MediaStop","MediaPrevTrack","MediaPlayPause","MediaNextTrack","Mail","WwwHome","MyComputer","Calculator","TG(1)","TG(2)","TG(3)"],
-#         ["User1","_","_","_","_","_","_","_","_","_","F13","_","_","_","WwwForward","BrightnessUp","AudioVolUp"],
-#         ["_","_","_","_","_","_","_","_","_","_","_","_","_","_","WwwBack","BrightnessDown","AudioVolDown"],
-#         ["CapsLock","_","_","_","_","_","_","_","_","_","_","_","No","_","No","No","No"],
-#         ["_","No","_","_","_","_","_","_","_","_","_","_","No","_","No","MouseWheelUp","No"],
-#         ["_","_","_","No","No","No","_","No","No","No","_","_","_","_","MouseWheelLeft","MouseWheelDown","MouseWheelRight"],
-#         ["MouseBtn2","MouseWheelLeft","MouseDown","MouseWheelRight","MouseLeft","MouseBtn3","MouseRight","MouseBtn1","MouseUp","MouseBtn2","MouseBtn1","_","MouseWheelUp","MouseWheelDown","_","_","_"],
-#     ]
-# ]
 
 [[layer]]
-name = "default" #0
+name = "qwerty" #0
 keys = """
-         F1  F2  F3  F4  F5  F6         F7  F8  F9  F10 F11 F12                Insert   Home   PageUp
-Tab          Q   W   E   R   T            Y   U   I   O   P  Backspace         Delete   End    PageDown
-MO(sym)     A   S   D   F   G              H   J   K   L  @; Enter
-LShift     Z   X   C   V   B                N   M  @,  @. @/ RShift                     UP
-LCtrl LGui LAlt Esc Space Tab   Enter Backspace Delete RAlt MO(scroll) RCtrl   Left     Down   Right
+     F1  F2  F3  F4  F5  F6            F7  F8  F9  F10 F11 F12            Insert   Home   PageUp
+Tab       Q   W   E   R   T             Y   U   I   O   P  Backspace      Delete   End    PageDown
+MO(sym)   A   S   D   F   G             H   J   K   L   @;     Enter
+LShift    Z   X   C   V   B             N   M   @,  @.  @/    RShift               UP
+MO(nav) LGui LAlt Esc Space Tab  Enter Space Delete RAlt MO(sym) RCtrl    Left     Down   Right
 """
 
 [[layer]]
-name = "my" #0
+name = "my" #1
 keys = """
-         F1  F2  F3  F4  F5  F6         F7  F8  F9  F10 F11 F12                Insert   Home   PageUp
-Tab          G   Y   M   R   B            F   Z   O   U  @;   Backspace        Delete   End    PageDown
-MO(sym)     K   S   T   L   V              J   N   A   E   I  Enter
-LShift     W   D   P   H   Q                X   C  @,  @=  @. RShift                     UP
-LCtrl LGui LAlt Esc Space Tab   Enter Backspace Delete RAlt MO(scroll) RCtrl   Left     Down   Right
+      F1  F2  F3  F4  F5  F6           F7  F8  F9  F10 F11 F12              Insert   Home   PageUp
+Tab        G   Y   M   R   B            F   Z   O   U   @; Backspace        Delete   End    PageDown
+MO(sym)    K   S   T   L   V            J   N   A   E   I      Enter
+LShift     W   D   P   H   Q            X   C   @,  @=  @.    RShift                 UP
+MO(nav) LGui LAlt Esc Space Tab  Enter Backspace Delete RAlt MO(sym) RCtrl  Left     Down   Right
 """
 
 [[layer]]
-name = "hun" #0
+name = "hun" #2
 keys = """
-         Esc  @ű  @ú  @í  @ó  _          _  @á  @ö  @ü  @ő  _                 Insert   Home   PageUp
-Tab          G   Y   M   R   B            F   Z   O   U  @h;  Backspace       Delete   End    PageDown
-MO(hsym)    K   S   T   L   V              J   N   A   E   I  Enter
-LShift     W   D   P   H   Q                X   C  @h,  @é  @h. RShift                  UP
-LCtrl LGui LAlt Esc Space Tab   Enter Backspace Delete RAlt MO(hscroll) RCtrl  Left     Down   Right
+      Esc  @ű  @ú  @í  @ó  @undo    @redo   @á  @ö  @ü  @ő  Backspace        Insert   Home   PageUp
+Tab        G   Y   M   R   B            F   Z   O   U   @h; Backspace        Delete   End    PageDown
+MO(hsym)   K   S   T   L   V            J   N   A   E   I       Enter
+LShift     W   D   P   H   Q            X   C   @h, @é  @h.    RShift                 UP
+MO(nav) LGui LAlt Esc Space Tab  Enter Backspace Delete RAlt MO(hsym) RCtrl  Left     Down   Right
 """
 
 [[layer]]
-name = "sym" #1
+name = "sym" #3
 keys = """
-  CapsLock NumLock ScrollLock AudioMute AudioVolDown AudioVolUp         BrightnessDown BrightnessUp WwwBack WwwForward PrintScreen Pause     Kp7   Kp8   Kp9
-Tab          @`  @^  @&  @|  @~           @!  @'  @{  @}   @/  Backspace       Kp4   Kp5   Kp6
-MO(default) @_  @<  @=  @>  @\\            @-  @"  @(  @)   @*     Enter
-LShift     @@  @#  @$  @%  @*               @?  @:  @[  @]   @+    RShift            Kp0
-LCtrl LGui LAlt Esc Space Tab   Enter Backspace Delete RAlt MO(default) RCtrl  Kp1   Kp2   Kp3
+       Kc1 Kc2 Kc3 Kc4 Kc5 Kc6          Kc7 Kc8 Kc9 Kc0 Tab  Backspace      Kp7   Kp8   Kp9
+Tab        @`  @^  @&  @|  @~           @!  @'  @{  @}   @/  Backspace      Kp4   Kp5   Kp6
+_          @_  @<  @=  @>  @\\          @-  @"  @(  @)   @*      Enter
+LShift     @@  @#  @$  @%  @*           @?  @:  @[  @]   @+     RShift            Kp0
+LCtrl LGui LAlt Esc Space Tab      Enter Backspace Delete RAlt _ RCtrl      Kp1   Kp2   Kp3
 """
 
 [[layer]]
-name = "scroll" #2
+name = "hsym" #5
 keys = """
-         Kc1 Kc2 Kc3 Kc4 Kc5 Kc6         Kc7 Kc8 Kc9 Kc0 PrintScreen Pause     WwwForward   @redo   TG(my)
-Tab          @`  @^  @&  @|  @~           @!  @'  @{  @}   @/  Backspace       WwwBack      @undo   TG(hun)
-MO(default) @_  @<  @=  @>  @\\            @-  @"  @(  @)   @*     Enter
-LShift     @@  @#  @$  @%  @*               @?  @:  @[  @]   @+    RShift                     MouseWheelUp
-LCtrl LGui LAlt Esc Space Tab   Enter Backspace Delete RAlt MO(default) RCtrl  MouseWheelLeft MouseWheelDown MouseWheelRight
+        Kc1 Kc2 Kc3 Kc4 Kc5 Kc6         Kc7 Kc8 Kc9 Kc0      Tab Backspace  Kp7   Kp8   Kp9
+Tab     @h`  @h^  @h&  @h|  @h~         @h!  @h'  @h{  @h}   @h/ Backspace  Kp4   Kp5   Kp6
+_       @h_  @h<  @h=  @h>  @h\\        @h-  @h"  @h(  @h)   @h*     Enter
+LShift  @h@  @h#  @h$  @h%  @h*         @h?  @h:  @h[  @h]   @h+    RShift        Kp0
+LCtrl LGui LAlt Esc Space Tab         Enter Backspace Delete RAlt _  RCtrl  Kp1   Kp2   Kp3
 """
 
 [[layer]]
-name = "hsym" #1
+name = "nav" #4
 keys = """
-  CapsLock NumLock ScrollLock AudioMute AudioVolDown AudioVolUp         BrightnessDown BrightnessUp WwwBack WwwForward PrintScreen Pause     Kp7   Kp8   Kp9
-Tab          @h`  @h^  @h&  @h|  @h~           @h!  @h'  @h{  @h}   @h/  Backspace       Kp4   Kp5   Kp6
-MO(default) @h_  @h<  @h=  @h>  @h\\            @h-  @h"  @h(  @h)   @h*     Enter
-LShift     @h@  @h#  @h$  @h%  @h*               @h?  @h:  @h[  @h]   @h+   RShift             Kp0
-LCtrl LGui LAlt Esc Space Tab   Enter Backspace Delete RAlt MO(default) RCtrl            Kp1   Kp2   Kp3
+Esc NumLock ScrollLock AudioMute AudioVolDown AudioVolUp  BrightnessDown BrightnessUp @undo @redo WwwBack WwwForward  PrintScreen ScrollLock Pause
+@ctab      @`    @^    @&    @|     @~           @redo    @'         @{  @}    @/        @cbsp    DF(qwerty)     DF(my)         DF(hun)
+CapsLock   @all  @save @=    @find  @find_       @replace @replace_  @ck @lock @pair     @cent
+LShift     @undo @cut  @copy @paste @paste_      @?       @:         @[  @]    @comment RShift                   MouseWheelUp
+LCtrl LGui LAlt Esc Space Tab                    Enter Backspace Delete RAlt RGui RCtrl    MouseWheelLeft MouseWheelDown MouseWheelRight
 """
-
-[[layer]]
-name = "hscroll" #2
-keys = """
-         Kc1 Kc2 Kc3 Kc4 Kc5 Kc6         Kc7 Kc8 Kc9 Kc0 PrintScreen Pause              WwwForward   @redo   TG(my)
-Tab          @h`  @h^  @h&  @h|  @h~           @h!  @h'  @h{  @h}   @h/  Backspace      WwwBack      @undo   TG(default)
-MO(default) @h_  @h<  @h=  @h>  @h\\            @h-  @h"  @h(  @h)   @h*     Enter
-LShift     @h@  @h#  @h$  @h%  @h*               @h?  @h:  @h[  @h]   @h+    RShift                     MouseWheelUp
-LCtrl LGui LAlt Esc Space Tab   Enter Backspace Delete RAlt MO(default) RCtrl           MouseWheelLeft MouseWheelDown MouseWheelRight
-"""
-
-
-# [[layer]]
-# name = "hun" #1
-# keys = """
-# _   _ _ _ _   _ _ _ _    _ _ _ _              _ _ _
-# _ F14 F15 F16 F17 _ F18 F19 F20 F21 _ _ _ _   _ _ _    _  _  _  _ 
-# _  _ _ _ _ _ _ _ _ _ _ _ _ _                  _ _ _    _  _  _  _
-# _   _ _ _ _ _ _ _ _ _ _ _ _                            _  _  _ 
-# _    _ _ _ _ _ _ _ F22 F23 F24 _                _      _  _  _  _
-# _ _ _      _     LAlt _ _ _                   _ _ _     _    _ 
-# """
 
 # [[layer]]
 # name = "media" #2
@@ -239,17 +190,6 @@ LCtrl LGui LAlt Esc Space Tab   Enter Backspace Delete RAlt MO(default) RCtrl   
 # CapsLock _ _ _ _ _ _ _ _ _ User7 User8 _                                                        MouseLeft      MouseDown MouseRight
 # _   _ _ _ _ _ _ _ _ _ _   _                                 MouseWheelUp                        MouseWheelLeft MouseDown MouseWheelRight MouseWheelDown
 # _ _ _     _     LAlt _ _ _                   MouseWheelLeft MouseWheelDown MouseWheelRight           MouseBtn1       MouseBtn2 
-# """
-
-# [[layer]]
-# name = "empty" #2
-# keys = """
-# _  _ _ _ _  _ _ _ _  _ _ _ _   _ _ _
-# _ _ _ _ _ _ _ _ _ _ _ _ _  _   _ _ _    _  _  _  _ 
-# _  _ _ _ _ _ _ _ _ _ _ _ _ _   _ _ _    _  _  _  _
-# _   _ _ _ _ _ _ _ _ _ _ _  _            _  _  _ 
-# _    _ _ _ _ _ _ _ _ _ _   _     _      _  _  _  _  
-# _ _ _        _       _ _ _ _   _ _ _     _   _ 
 # """
 
 [rmk]
@@ -265,7 +205,7 @@ combo_max_length = 4
 fork_max_num = 32
 # Macro space size in bytes for storing sequences. The maximum number of Macros depends on the size of each sequence: All sequences combined need to fit into macro_space_size, the number of macro sequences doesn't matter.
 macro_space_size = 256
-# Default debounce time in ms
+# qwerty debounce time in ms
 debounce_time = 20
 # Event channel size
 event_channel_size = 16
@@ -277,7 +217,7 @@ vial_channel_size = 4
 flash_channel_size = 4
 
 [light]
-# All light pins are high-active by default, uncomment if you want it to be low-active
+# All light pins are high-active by qwerty, uncomment if you want it to be low-active
 numslock.pin = "PIN_27"
 numslock.low_active = true
 capslock.pin = "PIN_28"
@@ -286,7 +226,7 @@ scrolllock.pin = "PIN_25"
 scrolllock.low_active = false
 
 [storage]
-# Storage feature is enabled by default
+# Storage feature is enabled by qwerty
 #enabled = true
 
 [behavior.combo]
@@ -309,47 +249,47 @@ forks = [
 
   #F13
   
-  # F14 1! on hun
-  { trigger = "F14", negative_output = "Kc1", positive_output = "WM(Kc4, LShift)", match_any = "LShift|RShift" },
-  # F15 2@ on hun
-  { trigger = "F15", negative_output = "Kc2", positive_output = "WM(V, RAlt)", match_any = "LShift|RShift" },
-  # F16 3# on hun  
-  { trigger = "F16", negative_output = "Kc3", positive_output = "WM(X, RAlt)", match_any = "LShift|RShift" },
-  # F17 4$ on hun
-  { trigger = "F17", negative_output = "Kc4", positive_output = "WM(Semicolon, RAlt)", match_any = "LShift|RShift" },
-  # F18 6^ on hun
-  { trigger = "F18", negative_output = "Kc6", positive_output = "WM(Kc3, RAlt)", match_any = "LShift|RShift" },
-  # F19 7& on hun
-  { trigger = "F19", negative_output = "Kc7", positive_output = "WM(C, RAlt)", match_any = "LShift|RShift" },
-  # F20 8* on hun
-  { trigger = "F20", negative_output = "Kc8", positive_output = "WM(Slash, RAlt)", match_any = "LShift|RShift" },
-  # F21 9( on hun
-  { trigger = "F21", negative_output = "Kc9", positive_output = "WM(Kc8, LShift)", match_any = "LShift|RShift" },
-  # F22 ,< on hun  
-  { trigger = "F22", negative_output = "Comma", positive_output = "WM(NonusBackslash, RAlt)", match_any = "LShift|RShift" },
-  # F23 .> on hun 
-  { trigger = "F23", negative_output = "Dot", positive_output = "WM(Z, RAlt)", match_any = "LShift|RShift" },
-  # F24 /? on hun
-  { trigger = "F24", negative_output = "WM(Kc6, LShift)", positive_output = "WM(Comma, LShift)", match_any = "LShift|RShift" },
+  # # F14 1! on hun
+  # { trigger = "F14", negative_output = "Kc1", positive_output = "WM(Kc4, LShift)", match_any = "LShift|RShift" },
+  # # F15 2@ on hun
+  # { trigger = "F15", negative_output = "Kc2", positive_output = "WM(V, RAlt)", match_any = "LShift|RShift" },
+  # # F16 3# on hun  
+  # { trigger = "F16", negative_output = "Kc3", positive_output = "WM(X, RAlt)", match_any = "LShift|RShift" },
+  # # F17 4$ on hun
+  # { trigger = "F17", negative_output = "Kc4", positive_output = "WM(Semicolon, RAlt)", match_any = "LShift|RShift" },
+  # # F18 6^ on hun
+  # { trigger = "F18", negative_output = "Kc6", positive_output = "WM(Kc3, RAlt)", match_any = "LShift|RShift" },
+  # # F19 7& on hun
+  # { trigger = "F19", negative_output = "Kc7", positive_output = "WM(C, RAlt)", match_any = "LShift|RShift" },
+  # # F20 8* on hun
+  # { trigger = "F20", negative_output = "Kc8", positive_output = "WM(Slash, RAlt)", match_any = "LShift|RShift" },
+  # # F21 9( on hun
+  # { trigger = "F21", negative_output = "Kc9", positive_output = "WM(Kc8, LShift)", match_any = "LShift|RShift" },
+  # # F22 ,< on hun  
+  # { trigger = "F22", negative_output = "Comma", positive_output = "WM(NonusBackslash, RAlt)", match_any = "LShift|RShift" },
+  # # F23 .> on hun 
+  # { trigger = "F23", negative_output = "Dot", positive_output = "WM(Z, RAlt)", match_any = "LShift|RShift" },
+  # # F24 /? on hun
+  # { trigger = "F24", negative_output = "WM(Kc6, LShift)", positive_output = "WM(Comma, LShift)", match_any = "LShift|RShift" },
 
-  # User0 `~ on hun
-  { trigger = "User0", negative_output = "WM(Kc7, RAlt)", positive_output = "WM(Kc1, RAlt)", match_any = "LShift|RShift" },
-  # User1 0) on hun (FnLayer)
-  { trigger = "User1", negative_output = "Kp0", positive_output = "WM(Kc9, LShift)", match_any = "LShift|RShift" },
-  # User2 -_ on hun
-  { trigger = "User2", negative_output = "Slash", positive_output = "WM(Slash, RShift)", match_any = "LShift|RShift" },
-  # User3 =+ on hun
-  { trigger = "User3", negative_output = "WM(Kc7, RShift)", positive_output = "WM(Kc3, RShift)", match_any = "LShift|RShift" },
+  # # User0 `~ on hun
+  # { trigger = "User0", negative_output = "WM(Kc7, RAlt)", positive_output = "WM(Kc1, RAlt)", match_any = "LShift|RShift" },
+  # # User1 0) on hun (FnLayer)
+  # { trigger = "User1", negative_output = "Kp0", positive_output = "WM(Kc9, LShift)", match_any = "LShift|RShift" },
+  # # User2 -_ on hun
+  # { trigger = "User2", negative_output = "Slash", positive_output = "WM(Slash, RShift)", match_any = "LShift|RShift" },
+  # # User3 =+ on hun
+  # { trigger = "User3", negative_output = "WM(Kc7, RShift)", positive_output = "WM(Kc3, RShift)", match_any = "LShift|RShift" },
 
-  # User4 [{ on hun
-  { trigger = "User4", negative_output = "WM(F, RAlt)", positive_output = "WM(B, RAlt)", match_any = "LShift|RShift" },
-  # User5 ]} on hun
-  { trigger = "User5", negative_output = "WM(G, RAlt)", positive_output = "WM(N, RAlt)", match_any = "LShift|RShift" },
-  # User6 \| on hun
-  { trigger = "User6", negative_output = "WM(Q, RAlt)", positive_output = "WM(W, RAlt)", match_any = "LShift|RShift" },
+  # # User4 [{ on hun
+  # { trigger = "User4", negative_output = "WM(F, RAlt)", positive_output = "WM(B, RAlt)", match_any = "LShift|RShift" },
+  # # User5 ]} on hun
+  # { trigger = "User5", negative_output = "WM(G, RAlt)", positive_output = "WM(N, RAlt)", match_any = "LShift|RShift" },
+  # # User6 \| on hun
+  # { trigger = "User6", negative_output = "WM(Q, RAlt)", positive_output = "WM(W, RAlt)", match_any = "LShift|RShift" },
 
-  # User7 ;: on hun
-  { trigger = "User7", negative_output = "WM(Comma, RAlt)", positive_output = "WM(Dot, RShift)", match_any = "LShift|RShift" },
-  # User8 '" on hun
-  { trigger = "User8", negative_output = "WM(Kc1, RShift)", positive_output = "WM(Kc2, RShift)", match_any = "LShift|RShift" },
+  # # User7 ;: on hun
+  # { trigger = "User7", negative_output = "WM(Comma, RAlt)", positive_output = "WM(Dot, RShift)", match_any = "LShift|RShift" },
+  # # User8 '" on hun
+  # { trigger = "User8", negative_output = "WM(Kc1, RShift)", positive_output = "WM(Kc2, RShift)", match_any = "LShift|RShift" },
 ]

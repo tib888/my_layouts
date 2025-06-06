@@ -66,7 +66,7 @@ ble_profiles_num = 3
 "|"="WM(Backslash, LShift)"
 ";"="Semicolon"
 ":"="WM(Semicolon, LShift)"
-"'"="WM(Quote, LShift)"
+"'"="Quote"
 "\""="WM(Quote, LShift)"
 ","="Comma"
 "<"="WM(Comma, LShift)"
@@ -187,7 +187,7 @@ keys ="""
 LAlt    G  Y  M  R  B                  F  C  O  U @; RAlt
 LShift @K  S  T  L  V                  J  N  A  E @I RShift
 LCtrl   D  P  W  H  Q                  X  Z @, @= @. LGui
-LT(media, Escape) LT(sym, Space) WM(Tab, LShift)   WM(Enter, RShift) LT(nav, Backspace) LT(num, Delete) 
+LT(media, Escape) LT(sym, Space) LT(LShift, Tab)   LT(RShift, Enter) LT(nav, Backspace) LT(num, Delete) 
 OSL(lock)
 """
 
@@ -197,7 +197,7 @@ keys ="""
 @ü      G  Y  M  R  B                  F  C  O  U @é  @ö
 LShift @K  S  T  L  V                  J  N  A  E @hI RShift
 LCtrl   D  P  W  H  Q                  X  Z @, @= @.  LGui
-LT(media, Escape) LT(sym_hun, Space) WM(Tab, LShift)   WM(Enter, RShift) LT(nav, Backspace) LT(num, Delete) 
+LT(media, Escape) LT(sym_hun, Space) LT(LShift, Tab)   LT(RShift, Enter) LT(nav, Backspace) LT(num, Delete) 
 OSL(lock_hun)
 """
 
@@ -207,7 +207,7 @@ keys ="""
 LAlt    K  D  M  Z  B                  F  H  O  U  Q  RAlt
 LShift @R  S  T  L  C                  J  N  A  E @I  RShift
 LCtrl   P  Y  V  G  W                  X @, @; @= @.  LGui
-LT(media, Escape) LT(sym, Space) WM(Tab, LShift)   WM(Enter, RShift) LT(nav, Backspace) LT(num, Delete) 
+LT(media, Escape) LT(sym, Space) LT(LShift, Tab)   LT(RShift, Enter) LT(nav, Backspace) LT(num, Delete) 
 OSL(lock)
 """
 
@@ -217,7 +217,7 @@ keys ="""
 LAlt    Q  W  E  R  T                  Y  U  I  O  P  RAlt
 LShift  A  S  D  F  G                  H  J  K  L @;  RShift
 LCtrl   Z  X  C  V  B                  N  M @, @. @/  LGui
-LT(media, Escape) LT(sym, Space) WM(Tab, LShift)   WM(Enter, RShift) LT(nav, Backspace) LT(num, Delete) 
+LT(media, Escape) LT(sym, Space) LT(LShift, Tab)   LT(RShift, Enter) LT(nav, Backspace) LT(num, Delete) 
 OSL(lock)
 """
 
