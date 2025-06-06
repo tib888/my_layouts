@@ -1,5 +1,5 @@
 # my_layouts
-Keyboard layout configs for my "Draft" and "Reborn" keyboards.
+Keyboard layout configs for my "Draft", "Reborn" and "Compact" keyboards.
 
 To build and flash:
 https://haobogu.github.io/rmk/user_guide/1_guide_overview.html
@@ -21,3 +21,10 @@ cd reborn
 cargo make uf2  --release
 There is a black/white wire pair under the space-bar, short those and reconnect usb cable to enter bootloader mode (then separate black/white).
 copy the reborn.uf2 to the mounted drive (rp2040)
+
+## COMPACT:
+(rustup target add thumbv6m-none-eabi)
+cd compact
+cargo make uf2  --release
+There is a black/white wire pair under the space-bar, short those and reconnect usb cable to enter bootloader mode (then separate black/white).
+copy the compact.uf2 to the mounted drive (rp2040)
