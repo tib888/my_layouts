@@ -127,9 +127,7 @@ replace="WM(H, LCtrl)"
 undo="WM(Z, LCtrl)"
 redo="WM(Y, LCtrl)"
 
-R="LT(nav, R)"
 K="LT(nav, K)"
-M="LT(nav, M)"
 I="LT(sym, I)"
 hI="LT(sym_hun, I)"
 # S="MT(S, LAlt)"
@@ -140,15 +138,16 @@ hI="LT(sym_hun, I)"
 # E="MT(E, LAlt)"
 
 [layout]
-rows = 4
+rows = 5
 cols = 12
 layers = 11
 matrix_map = """
-(1, 0) (1, 1) (0, 2) (0, 3) (0, 4) (0, 5)              (0, 6) (0, 7) (0, 8) (0, 9) (1, 10) (1, 11)
+       (1, 1) (0, 2) (0, 3) (0, 4)                            (0, 7) (0, 8) (0, 9) (1, 10) 
 (2, 0) (2, 1) (1, 2) (1, 3) (1, 4) (1, 5)              (1, 6) (1, 7) (1, 8) (1, 9) (2, 10) (2, 11)
 (3, 0) (3, 1) (2, 2) (2, 3) (2, 4) (2, 5)              (2, 6) (2, 7) (2, 8) (2, 9) (3, 10) (3, 11)
-                           (3, 2) (3, 3) (3, 4)  (3, 7) (3, 8) (3, 9)
-(3, 5)
+(4, 0) (4, 1) (3, 2) (3, 3) (3, 4) (3, 5)              (3, 6) (3, 7) (3, 8) (3, 9) (4, 10) (4, 11)
+                           (4, 2) (4, 3) (4, 4)  (4, 7) (4, 8) (4, 9)
+(4, 5)
 """
 
 # [[layer]]
@@ -184,49 +183,55 @@ matrix_map = """
 [[layer]]
 name = "eng"
 keys ="""
-LAlt    G  Y  M  R  B                  F  C  O  U @; RAlt
+      Kc1 Kc2 Kc3 Kc4                  Kc7 Kc8 Kc9 Kc0 
+LAlt    G  Y  M  R  B                  W  C  O  U @; RAlt
 LShift @K  S  T  L  V                  J  N  A  E @I RShift
-LCtrl   D  P  W  H  Q                  X  Z @, @= @. LGui
-LT(media, Escape) LT(sym, Space) LT(LShift, Tab)   LT(RShift, Enter) LT(nav, Backspace) LT(num, Delete) 
+LCtrl   F  D  P  H  Q                  X  Z @, @/ @. LGui
+LT(media, Escape) LT(sym, Space) MT(Tab, LShift)   MT(Enter, RShift) LT(nav, Backspace) LT(num, Delete) 
 OSL(lock)
 """
 
 [[layer]]
 name = "hun"
 keys ="""
-@ü      G  Y  M  R  B                  F  C  O  U @é  @ö
+        @ű @ü @ö @ő                      @á @ó @ú @í
+LAlt    G  Y  M  R  B                  W  C  O  U @é  RAlt
 LShift @K  S  T  L  V                  J  N  A  E @hI RShift
-LCtrl   D  P  W  H  Q                  X  Z @, @= @.  LGui
-LT(media, Escape) LT(sym_hun, Space) LT(LShift, Tab)   LT(RShift, Enter) LT(nav, Backspace) LT(num, Delete) 
+LCtrl   F  D  P  H  Q                  X  Z @, @á @.  LGui
+LT(media, Escape) LT(hun_ch, Space) MT(Tab, LShift)   MT(Enter, RShift) LT(nav, Backspace) LT(num, Delete) 
 OSL(lock_hun)
-"""
-
-[[layer]]
-name = "new"
-keys ="""
-LAlt    K  D  M  Z  B                  F  H  O  U  Q  RAlt
-LShift @R  S  T  L  C                  J  N  A  E @I  RShift
-LCtrl   P  Y  V  G  W                  X @, @; @= @.  LGui
-LT(media, Escape) LT(sym, Space) LT(LShift, Tab)   LT(RShift, Enter) LT(nav, Backspace) LT(num, Delete) 
-OSL(lock)
 """
 
 [[layer]]
 name = "qwerty"
 keys ="""
+      Kc1 Kc2 Kc3 Kc4                  Kc7 Kc8 Kc9 Kc0 
 LAlt    Q  W  E  R  T                  Y  U  I  O  P  RAlt
 LShift  A  S  D  F  G                  H  J  K  L @;  RShift
 LCtrl   Z  X  C  V  B                  N  M @, @. @/  LGui
-LT(media, Escape) LT(sym, Space) LT(LShift, Tab)   LT(RShift, Enter) LT(nav, Backspace) LT(num, Delete) 
+LT(media, Escape) LT(sym, Space) MT(Tab, LShift)   MT(Enter, RShift) LT(nav, Backspace) LT(num, Delete) 
 OSL(lock)
 """
 
 [[layer]]
+name = "hun_ch" 
+keys ="""
+                   _ _ _ _     _ _ _ _
+LAlt   @h` @h^ @h& @h| @h~     @ű  @ő  @ó  @ú  @h; RAlt
+LShift @h_ @h< @h> @h= @h\\    @ü  @ö  @á  @é  @í  RShift
+LCtrl  @h$ @h# @h@ @h% @h;     @h? @h: @h[ @h/ @h+ LGui
+                     _ _ _     _ _ _
+
+"""
+
+
+[[layer]]
 name = "sym" 
 keys ="""
-LAlt   @` @^ @& @| @~          @! @" @{ @} @/ RAlt
-LShift @_ @< @= @> @\\         @- @' @( @) @* RShift
-LCtrl  @$ @# @@ @% @*          @? @: @[ @] @+ LGui
+          _ _ _ _                 _ _ _ _
+LAlt   @` @^ @& @| @~          @! @' @{ @} @* RAlt
+LShift @_ @< @= @> @\\         @- @" @( @) @/ RShift
+LCtrl  @$ @# @@ @% @;          @? @: @[ @] @+ LGui
                   _ _ _      _ _ _
 _
 """
@@ -234,9 +239,10 @@ _
 [[layer]]
 name = "sym_hun" 
 keys ="""
-LAlt   @h` @h^ @h& @h| @h~     @h! @h" @h{ @h} @h/ RAlt
-LShift @h_ @h< @h> @h= @h\\    @h- @h' @h( @h) @h* RShift
-LCtrl  @h$ @h# @h@ @h% @h*     @h? @h: @h[ @h] @h+ LGui
+               _ _ _ _             _ _ _ _
+LAlt   @h` @h^ @h& @h| @h~     @h! @h' @h{ @h} @h* RAlt
+LShift @h_ @h< @h> @h= @h\\    @h- @h" @h( @h) @h/ RShift
+LCtrl  @h$ @h# @h@ @h% @h;     @h? @h: @h[ @h] @h+ LGui
                      _ _ _    _ _ _
 _
 """
@@ -244,6 +250,7 @@ _
 [[layer]]
 name = "num" 
 keys ="""
+                     _ _ _ _                _ _ _ _
 LAlt   PrintScreen  F7 F8 F9 F12    KpPlus  Kp7 Kp8 Kp9 KpSlash    RAlt
 LShift Insert       F4 F5 F6 F11    KpMinus Kp4 Kp5 Kp6 KpAsterisk RShift
 LCtrl  Pause        F1 F2 F3 F10    Kp0     Kp1 Kp2 Kp3 KpDot      LGui
@@ -254,6 +261,7 @@ _
 [[layer]]
 name = "nav"
 keys ="""
+                                                                     _ _ _ _        _ _ _ _
 LAlt   @undo          @paste_noformat @paste         @copy           @cut           @cut       @copy @paste @paste_noformat @undo RAlt
 LShift @redo          MouseBtn2       MouseBtn3      MouseBtn1       MouseBtn4      WwwForward Left  UP     Down            Right RShift
 LCtrl  MouseLeft      MouseDown       MouseUp        MouseRight      MouseBtn5      WwwBack    Home  PageUp PageDown        End   LGui
@@ -264,6 +272,7 @@ _
 [[layer]]
 name = "media" #media, bluetooth, mouse scroll
 keys ="""
+                       _ _ _ _     _ _ _ _
 LAlt   NumLock    F7 F8 F9 F12     AudioVolUp   MediaPrevTrack MediaPlayPause MediaStop      MediaNextTrack  RAlt
 LShift CapsLock   F4 F5 F6 F11     AudioMute    MouseWheelLeft MouseWheelUp   MouseWheelDown MouseWheelRight RShift
 LCtrl  ScrollLock F1 F2 F3 F10     AudioVolDown MyComputer     BrightnessUp   BrightnessDown Calculator      LGui                         
@@ -274,9 +283,10 @@ _
 [[layer]]
 name = "lock"
 keys ="""
-TG(eng)     _ _ _ _ _          _ _ _ _ _ TG(new)
-TG(hun)     _ _ _ _ _          _ _ _ _ _ _
-TG(qwerty)  _ _ _ _ _          _ _ _ _ _ _        
+            _ _ _ _              _ _ _ _
+DF(eng)     _ _ _ _ _          _ _ _ _ _ _
+DF(hun)     _ _ _ _ _          _ _ _ _ _ _
+DF(qwerty)  _ _ _ _ _          _ _ _ _ _ _        
 TG(media) TG(sym) TG(nav)      TG(sym) TG(nav) TG(num)
 TO(eng)
 """
@@ -284,12 +294,24 @@ TO(eng)
 [[layer]]
 name = "lock_hun"
 keys ="""
-TG(eng)     _ _ _ _ _          _ _ _ _ _ TG(new)
-TG(hun)     _ _ _ _ _          _ _ _ _ _ _
-TG(qwerty)  _ _ _ _ _          _ _ _ _ _ _        
+            _ _ _ _              _ _ _ _
+DF(eng)     _ _ _ _ _          _ _ _ _ _ _
+DF(hun)     _ _ _ _ _          _ _ _ _ _ _
+DF(qwerty)  _ _ _ _ _          _ _ _ _ _ _        
 TG(media) TG(sym_hun) TG(nav)    TG(sym_hun) TG(nav) TG(num)
 TO(hun)
 """
+
+# [[layer]]
+# name = "new"
+# keys ="""
+#       Kc1 Kc2 Kc3 Kc4                  Kc7 Kc8 Kc9 Kc0 
+# LAlt    K  D  M  Z  B                  F  H  O  U  Q  RAlt
+# LShift @R  S  T  L  C                  J  N  A  E @I  RShift
+# LCtrl   P  Y  V  G  W                  X @, @; @= @.  LGui
+# LT(media, Escape) LT(sym, Space) MT(Tab, LShift)   MT(Enter, RShift) LT(nav, Backspace) LT(num, Delete) 
+# OSL(lock)
+# """
 
 # [[layer]]
 # name = "numbers" #2
@@ -375,44 +397,47 @@ TO(hun)
 [behavior.combo]
 timeout = "150ms"
 combos = [
-  { actions = ["F", "J"], output = "TG(1)" }, #switch en/hun mode  
-  { actions = ["C", "O"], output = "[" }, #ő
-  { actions = ["H", "O"], output = "[" }, #ő
-  { actions = ["O", "U"], output = "\\" }, #ű  
-  #{ actions = ["M", "K"], output = "`" }, #í
-  { actions = ["M", "R"], output = "`" }, #í
-  { actions = ["M", "Z"], output = "`" }, #í
-  #{ actions = ["Y", "K"], output = "]" }, #ú
-  { actions = ["Y", "M"], output = "]" }, #ú
-  { actions = ["D", "M"], output = "]" }, #ú
+  # { actions = ["C", "O"], output = "Equal" }, #ó
+  # { actions = ["O", "U"], output = "RightBracket" }, #ú 
+  # { actions = ["U", "Semicolon"], output = "Grave" }, #í  
+
+  # { actions = ["Z", "Comma"], output = "LeftBracket" }, #ő
+  # { actions = ["Comma", "Slash"], output = "Kc0" }, #ö
+  # { actions = ["Slash", "Dot"], output = "Minus" }, #ü
+  # { actions = ["N", "J"], output = "Backslash" }, #ű
+
+  # { actions = ["M", "R"], output = "LeftBracket" }, #ő
+  # { actions = ["Y", "M"], output = "Kc0" }, #ö
+  # { actions = ["G", "Y"], output = "Minus" }, #ü
+  # { actions = ["R", "B"], output = "Backslash" }, #ű
 ]
 
 [behavior.fork]
 forks = [
   # Shift + ' ' output '_' key
-  { trigger = "Space", negative_output = "Space", positive_output = "WM(Minus, LShift)", match_any = "LShift|RShift" },  
+  # { trigger = "Space", negative_output = "Space", positive_output = "WM(Minus, LShift)", match_any = "LShift|RShift" },  
 
-  # 'F13' outputs '{', Shift + 'F13' output '[' key
-  { trigger = "F13", negative_output = "WM(LeftBracket, LShift)", positive_output = "LeftBracket", match_any = "LShift|RShift" }, 
-  # 'F14' outputs '}', Shift + 'F14' output ']' key
-  { trigger = "F14", negative_output = "WM(RightBracket, LShift)", positive_output = "RightBracket", match_any = "LShift|RShift" }, 
-  # 'F15' outputs '(', Shift + 'F15' output '<' key
-  { trigger = "F15", negative_output = "WM(Kc9, LShift)", positive_output = "WM(Comma, LShift)", match_any = "LShift|RShift" }, 
-  # 'F16' outputs ')', Shift + 'F16' output '>' key
-  { trigger = "F16", negative_output = "WM(Kc0, LShift)", positive_output = "WM(Dot, LShift)", match_any = "LShift|RShift" }, 
-  # 'F17' outputs '/', Shift + 'F17' output '*' key
-  { trigger = "F17", negative_output = "Slash", positive_output = "WM(Kc8, LShift)", match_any = "LShift|RShift" }, 
-  # 'F18' outputs '"', Shift + 'F18' output ''' key
-  { trigger = "F18", negative_output = "WM(Kc0, LShift)", positive_output = "WM(Dot, LShift)", match_any = "LShift|RShift" }, 
+  # # 'F13' outputs '{', Shift + 'F13' output '[' key
+  # { trigger = "F13", negative_output = "WM(LeftBracket, LShift)", positive_output = "LeftBracket", match_any = "LShift|RShift" }, 
+  # # 'F14' outputs '}', Shift + 'F14' output ']' key
+  # { trigger = "F14", negative_output = "WM(RightBracket, LShift)", positive_output = "RightBracket", match_any = "LShift|RShift" }, 
+  # # 'F15' outputs '(', Shift + 'F15' output '<' key
+  # { trigger = "F15", negative_output = "WM(Kc9, LShift)", positive_output = "WM(Comma, LShift)", match_any = "LShift|RShift" }, 
+  # # 'F16' outputs ')', Shift + 'F16' output '>' key
+  # { trigger = "F16", negative_output = "WM(Kc0, LShift)", positive_output = "WM(Dot, LShift)", match_any = "LShift|RShift" }, 
+  # # 'F17' outputs '/', Shift + 'F17' output '*' key
+  # { trigger = "F17", negative_output = "Slash", positive_output = "WM(Kc8, LShift)", match_any = "LShift|RShift" }, 
+  # # 'F18' outputs '"', Shift + 'F18' output ''' key
+  # { trigger = "F18", negative_output = "WM(Kc0, LShift)", positive_output = "WM(Dot, LShift)", match_any = "LShift|RShift" }, 
 
-  # 'F19' outputs '.', Shift + 'F19' output '!' key
-  { trigger = "F19", negative_output = "Dot", positive_output = "WM(Kc1, LShift)", match_any = "LShift|RShift" },
-  # 'F20' outputs ';', Shift + 'F20' output ':' key
-  { trigger = "F20", negative_output = "Semicolon", positive_output = "WM(Semicolon, LShift)", match_any = "LShift|RShift" },
-  # 'F21' outputs ',', Shift + 'F21' output '?' key
-  { trigger = "F21", negative_output = "Comma", positive_output = "WM(Slash, LShift)", match_any = "LShift|RShift" },
-  # 'F22' outputs '=', Shift + 'F22' output '-' key
-  { trigger = "F22", negative_output = "Equal", positive_output = "Minus", match_any = "LShift|RShift" },
+  # # 'F19' outputs '.', Shift + 'F19' output '!' key
+  # { trigger = "F19", negative_output = "Dot", positive_output = "WM(Kc1, LShift)", match_any = "LShift|RShift" },
+  # # 'F20' outputs ';', Shift + 'F20' output ':' key
+  # { trigger = "F20", negative_output = "Semicolon", positive_output = "WM(Semicolon, LShift)", match_any = "LShift|RShift" },
+  # # 'F21' outputs ',', Shift + 'F21' output '?' key
+  # { trigger = "F21", negative_output = "Comma", positive_output = "WM(Slash, LShift)", match_any = "LShift|RShift" },
+  # # 'F22' outputs '=', Shift + 'F22' output '-' key
+  # { trigger = "F22", negative_output = "Equal", positive_output = "Minus", match_any = "LShift|RShift" },
 
   # # 'F23' outputs 'ú', Shift + 'F23' output 'Ú' key
   # { trigger = "F23", negative_output = "RightBracket", positive_output = "WM(RightBracket, LShift)", match_any = "LShift|RShift" }, #|CapsLock?
@@ -498,9 +523,9 @@ tap_hold = { enable_hrm = true, prior_idle_time = "120ms", hold_timeout = "250ms
 # timeout = "5s"
 
 [light]
-capslock = { pin = "P1_00", low_active = true }
-scrolllock = { pin = "P0_22", low_active = true }
-numslock = { pin = "P0_24", low_active = true }
+# capslock = { pin = "P1_00", low_active = true }
+# scrolllock = { pin = "P0_22", low_active = true }
+# numslock = { pin = "P0_24", low_active = true }
 
 # Dependency config
 # [dependency]
@@ -511,7 +536,7 @@ numslock = { pin = "P0_24", low_active = true }
 connection = "ble" # "serial"
 
 [split.central]
-rows = 4 #5
+rows = 5
 cols = 6
 row_offset = 0
 col_offset = 0
@@ -520,11 +545,11 @@ ble_addr = [0x18, 0xe2, 0x21, 0x80, 0xc0, 0xc7]
 [split.central.matrix]
 matrix_type = "normal"
 row2col = true
-output_pins = ["P0_29", "P0_02", "P1_15", "P1_13"]
+output_pins = ["P1_00","P0_29", "P0_02", "P1_15", "P1_13"]
 input_pins = ["P0_11", "P1_04", "P1_06", "P0_09", "P0_10", "P1_11"]
 
 [[split.peripheral]]
-rows = 4 #5
+rows = 5
 cols = 6
 row_offset = 0
 col_offset = 6
@@ -533,6 +558,6 @@ ble_addr = [0x7e, 0xfe, 0x73, 0x9e, 0x66, 0xe3]
 [split.peripheral.matrix]
 matrix_type = "normal"
 row2col = true
-output_pins = ["P0_29", "P0_02", "P1_15", "P1_13"]
+output_pins = ["P1_00","P0_29", "P0_02", "P1_15", "P1_13"]
 input_pins = ["P1_11", "P0_10", "P0_09", "P1_06", "P1_04", "P0_11"]
 
