@@ -89,6 +89,11 @@ output_pins = ["PIN_16", "PIN_17", "PIN_18", "PIN_19", "PIN_20", "PIN_21", "PIN_
 "é"="Semicolon"
 "á"="Quote"
 
+Kk="LT(sym,K)"
+Ii="LT(sym,I)"
+Kkh="LT(hsym,K)"
+Iih="LT(hsym,I)"
+
 cut="WM(X, LCtrl)"
 copy="WM(C, LCtrl)"
 paste="WM(V, LCtrl)"
@@ -123,59 +128,69 @@ matrix_map = """
 """
 
 [[layer]]
-name = "qwerty" #0
+name = "my" #0
 keys = """
-     Esc F2  F3  F4  F5  F6            F7  F8  F9  F10 F11 F12 Backspace  Insert   Home   PageUp
-Tab       Q   W   E   R   T             Y   U   I   O   P      Backspace  Delete   End    PageDown
-MO(sym)   A   S   D   F   G             H   J   K   L   @;         Enter
-LShift    Z   X   C   V   B             N   M   @,  @.  @/        RShift            UP
-MO(scuts) LGui LAlt Esc Space Tab  Enter Space Delete RAlt MO(sym) RCtrl  Left     Down   Right
+      Esc F2  F3  F4  F5  F6           F7  F8  F9  F10 F11 OSL(scuts) Backspace  Insert   Home   PageUp
+Tab       F1  Y   M   R   B            W   C   O   U   F12     Backspace         Delete   End    PageDown
+OSL(sym)  G   S   T   L   V            J   N   A   E   @;      Enter
+LShift    @Kk D   P   H   Q            X   Z   @,  @/  @Ii     RShift                     UP
+LCtrl     F LAlt OSL(med) Space Tab  Enter Backspace OSL(med) RAlt @. RCtrl      Left     Down   Right
 """
 
 [[layer]]
-name = "my" #1
+name = "hun" #1  Esc @ű  @ú  @í  @ó  @á  @ö  @ü  @ő 
 keys = """
-  Esc F2  F3  F4  F5  F6           F7  F8  F9  F10 F11 F12 Backspace  Insert   Home   PageUp
-Tab       B   Y   M   R   B            F   Z   O   U   F   Backspace  Delete   End    PageDown
-MO(sym)   G   S   T   L   V            J   N   A   E   @;      Enter
-LShift    K   D   P   H   Q            X   C   @,  @=  I      RShift            UP
-MO(scuts) W LAlt Esc Space Tab  Enter Backspace Delete RAlt @. RCtrl  Left     Down   Right
+      Esc F2  F3  F4  F5  F6           F7  F8  F9  F10 F11 OSL(scuts) Backspace  Insert   Home   PageUp
+Tab       F1  Y   M   R   B            W   C   O   U   F12     Backspace         Delete   End    PageDown
+OSL(hsym) G   S   T   L   V            J   N   A   E   @é      Enter
+LShift   @Kkh D   P   H   Q            X   Z   @,  @á  @Iih    RShift                     UP
+LCtrl     F LAlt OSL(med) Space Tab  Enter Backspace OSL(med) RAlt @. RCtrl      Left     Down   Right
 """
 
 [[layer]]
-name = "hun" #2
+name = "qwerty" #2
 keys = """
-      Esc @ű  @ú  @í  @ó  @undo    @redo   @á  @ö  @ü  @ő _ Backspace Insert   Home   PageUp
-Tab       B   Y   M   R   B            F   Z   O   U   F   Backspace  Delete   End    PageDown
-MO(hsym)  G   S   T   L   V            J   N   A   E   @h;     Enter
-LShift    K   D   P   H   Q            X   C   @h, @é  I      RShift            UP
-MO(scuts) W LAlt Esc Space Tab  Enter Backspace Delete RAlt @. RCtrl  Left     Down   Right
+     Esc F2  F3  F4  F5  F6                   F7  F8  F9  F10 F11 F12 Backspace  Insert   Home   PageUp
+Tab       Q   W   E   R   T                    Y   U   I   O   P      Backspace  Delete   End    PageDown
+OSL(sym)  A   S   D   F   G                    H   J   K   L   @;         Enter
+LShift    Z   X   C   V   B                    N   M   @,  @.  @/        RShift           UP
+LCtrl  LGui LAlt OSL(med) Space Tab  Enter Space OSL(med) RAlt OSL(scuts) RCtrl  Left     Down   Right
 """
 
 [[layer]]
 name = "sym" #3
 keys = """
        Kc1 Kc2 Kc3 Kc4 Kc5 Kc6          Kc7 Kc8 Kc9 Kc0 @- @= Backspace     Kp7   Kp8   Kp9
-Tab        @`  @^  @&  @|  @~           @!  @'  @{  @}   @/   Backspace     Kp4   Kp5   Kp6
-_          @_  @<  @=  @>  @\\          @-  @"  @(  @)   @*       Enter
-LShift     @@  @#  @$  @%  @*           @?  @:  @[  @]   @+      RShift           Kp0
-LCtrl LGui LAlt Esc Space Tab      Enter Backspace Delete RAlt _  RCtrl     Kp1   Kp2   Kp3
+Tab        Kc1 @^  @&  @|  @~           @!  @'  @{  @}   @-   Backspace     Kp4   Kp5   Kp6
+DF(my)     @`  @<  @=  @>  @\\          @-  @"  @(  @)   @*       Enter
+LShift     @_  @#  @$  @%  @*           @?  @:  @[  @]   @/      RShift           Kp0
+LCtrl      @@ LAlt Esc Space Tab  Enter Backspace Delete RAlt @+  RCtrl     Kp1   Kp2   Kp3
 """
 
 [[layer]]
-name = "hsym" #5
+name = "hsym" #4
 keys = """
-        Kc1 Kc2 Kc3 Kc4 Kc5 Kc6         Kc7 Kc8 Kc9 Kc0 @h- @h=  Backspace  Kp7   Kp8   Kp9
-Tab     @h`  @h^  @h&  @h|  @h~         @h!  @h'  @h{  @h}   @h/ Backspace  Kp4   Kp5   Kp6
-_       @h_  @h<  @h=  @h>  @h\\        @h-  @h"  @h(  @h)   @h*     Enter
-LShift  @h@  @h#  @h$  @h%  @h*         @h?  @h:  @h[  @h]   @h+    RShift        Kp0
-LCtrl LGui LAlt Esc Space Tab         Enter Backspace Delete RAlt _  RCtrl  Kp1   Kp2   Kp3
+        Kc1 Kc2 Kc3 Kc4 Kc5 Kc6         Kc7 Kc8 Kc9 Kp0 @h-  @h= Backspace  Kp7   Kp8   Kp9
+Tab     Kc1  @h^  @h&  @h|  @h~         @h!  @h'  @h{  @h}   @h- Backspace  Kp4   Kp5   Kp6
+DF(hun) @h`  @h<  @h=  @h>  @h\\        @h-  @h"  @h(  @h)   @h*     Enter
+LShift  @h_  @h#  @h$  @h%  @h*         @h?  @h:  @h[  @h]   @h/    RShift        Kp0
+LCtrl   @h@  LAlt Esc Space Tab  Enter Backspace Delete RAlt @h+     RCtrl  Kp1   Kp2   Kp3
 """
 
 [[layer]]
-name = "scuts" #4
+name = "med" #5
 keys = """
-WM(Esc, LCtrl) F1           NumLock      AudioMute      AudioVolDown     AudioVolUp          BrightnessDown   BrightnessUp  DF(qwerty) DF(my) DF(hun) WM(PrintScreen, LCtrl) WM(Pause, LCtrl)      WM(Insert, LCtrl) WM(Home, LCtrl) WM(PageUp, LCtrl)  
+        Kc1 Kc2 Kc3 Kc4 Kc5 Kc6                       Kc7 Kc8 Kc9 Kp0 @h-  @h= Backspace  WwwForward      BrightnessUp    AudioVolUp
+Tab     Kc1   DF(my) DF(hun) DF(qwerty) AudioMute     @ű   @ő   @ó   @ú    @h- Backspace  WwwBack         BrightnessDown  AudioVolDown
+LGui    @all  @save @lock @find  @replace             @ü   @ö   @á   @é    @h*     Enter
+LShift  @undo @cut  @copy @paste @redo                @h?  @h:  @h[  @h]   @í     RShift                  MouseWheelUp
+LCtrl   @undo LAlt Esc Space Tab               Enter Backspace Delete RAlt @h+     RCtrl  MouseWheelLeft  MouseWheelDown  MouseWheelRight
+"""
+
+[[layer]]
+name = "scuts" #6
+keys = """
+WM(Esc, LCtrl) F1           NumLock      AudioMute      AudioVolDown     AudioVolUp          BrightnessUp   BrightnessUp  DF(my) DF(hun) DF(qwerty) WM(PrintScreen, LCtrl) WM(Pause, LCtrl)      WM(Insert, LCtrl) WM(Home, LCtrl) WM(PageUp, LCtrl)  
 WM(Tab, LCtrl) WM(Q, LCtrl) WM(W, LCtrl) WM(E, LCtrl)   @run             WM(T, LCtrl)        WM(Y, LCtrl)     WM(U, LCtrl)     WM(I, LCtrl)      WM(O, LCtrl)  WM(P, LCtrl)  WM(Backspace, LCtrl)  WM(Delete, LCtrl) WM(End, LCtrl)  WM(PageDown, LCtrl)
 CapsLock       WM(A, LCtrl) WM(S, LCtrl) WM(D, LCtrl)   WM(F, LCtrl)     WM(G, LCtrl)        WM(H, LCtrl)     WM(J, LCtrl)     WM(K, LCtrl)      @lock         @pair         WM(Enter, LCtrl)
 LShift         WM(Z, LCtrl) WM(X, LCtrl) WM(C, LCtrl)   WM(V, LCtrl)     WM(B, LCtrl)        WM(N, LCtrl)     WM(M, LCtrl)     WwwBack           WwwForward    @comment      RShift                                  MouseWheelUp
@@ -229,6 +244,7 @@ scrolllock.low_active = false
 [storage]
 # Storage feature is enabled by default
 #enabled = true
+#clear_storage = true
 
 [behavior.combo]
 timeout = "150ms"
