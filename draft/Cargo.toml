@@ -12,8 +12,8 @@ license = "MIT OR Apache-2.0"
 [dependencies]
 #rmk = { default-features = false, git = "https://github.com/HaoboGu/rmk", rev = "111461052b421ce94ccd4731f94fdc35487d8ebf", features = ["nrf52840_ble", "split", "async_matrix", "adafruit_bl"] } 
 #path = "../../rmk.rust/rmk",
-#version = "0.7.2"
-rmk = { path = "../../rmk.rust/rmk", default-features = false, features = [
+#version = "0.7.8"
+rmk = { version = "0.7.8", default-features = false, features = [
     "nrf52840_ble",
     "split", 
     "async_matrix", 
