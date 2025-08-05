@@ -160,7 +160,7 @@ name = "eng"
 keys ="""
 Home PageDown PageUp End                   Left UP Down Right
 Escape     G  Y  M  R  B                  W  C  O  U @; LAlt
-LShift    @K  S  T @L  V                  J @N  A  E @I LShift
+LShift    @K  S @T @L  V                  J @N @A  E @I LShift
 LCtrl      F  D  P  H  Q                  X  Z @/ @, @. LGui
 OSL(media) LT(nav, Space) LT(num, Tab)    MT(Enter, RShift) LT(nav, Backspace) LT(num, Delete)
 """
@@ -508,7 +508,7 @@ tap_dances = [
 
 [storage]
 enabled = true
-# clear_storage = true
+#clear_storage = true
 # Storage feature is enabled by default
 # Start address of local storage, MUST BE start of a sector.
 # If start_addr is set to 0(this is the default value), the last `num_sectors` sectors will be used.
@@ -533,8 +533,8 @@ enabled = true
 # timeout = "2s"
 
 [behavior]
-# tap_hold = { enable_hrm = true, permissive_hold = true, chordal_hold = true }
-tap_hold = { enable_hrm = true, prior_idle_time = "120ms", hold_timeout = "250ms", post_wait_time = "50ms"}
+tap_hold = { enable_hrm = true, prior_idle_time = "120ms", hold_timeout = "250ms" }
+# tap_hold = { enable_hrm = true, prior_idle_time = "120ms", hold_timeout = "250ms", post_wait_time = "50ms"}
 # enable_hrm = true
 
 # tri_layer = { upper = 1, lower = 2, adjust = 3 }
