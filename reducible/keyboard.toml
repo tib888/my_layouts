@@ -1,0 +1,466 @@
+[keyboard]
+name = "reducible keyboard"
+product_name = "reducible kbd"
+vendor_id = 0x4c4b
+product_id = 0x4643
+manufacturer = "tib"
+chip = "nrf52840"
+# serial_number = "vial:f64c2b3c:000001"
+#board = "nice!nano_v2"
+# USB is enabled by default for most chips
+# Set to false if you don't want USB
+#usb_enable = true
+
+[rmk]
+# Mouse key interval (ms) - controls mouse movement speed
+mouse_key_interval = 20
+# Mouse wheel interval (ms) - controls scrolling speed
+mouse_wheel_interval = 80
+# Maximum number of combos keyboard can store
+combo_max_num = 8
+# Maximum number of keys pressed simultaneously in a combo
+combo_max_length = 3
+# Maximum number of forks for conditional key actions
+fork_max_num = 4
+# Maximum number of tap dances
+morse_max_num = 12
+# Maximum number of morse patterns a morse key can handle (min 4 due to tap dance, max 255)
+max_patterns_per_key = 4
+# Macro space size in bytes for storing sequences. The maximum number of Macros depends on the size of each sequence: All sequences combined need to fit into macro_space_size, the number of macro sequences doesn't matter.
+macro_space_size = 256
+# Default debounce time in ms
+debounce_time = 20
+# Event channel size
+event_channel_size = 20
+# Report channel size
+report_channel_size = 20
+# Vial channel size
+vial_channel_size = 8
+# Flash channel size
+flash_channel_size = 8
+# The number of the split peripherals
+split_peripherals_num = 1
+# The size of the split message channel
+split_message_channel_size = 6
+# The number of available BLE profiles
+ble_profiles_num = 3
+
+[aliases]
+"~"="WM(Grave, LShift)"
+"`"="Grave"
+"!"="WM(Kc1, LShift)"
+"@"="WM(Kc2, LShift)"
+"#"="WM(Kc3, LShift)"
+"$"="WM(Kc4, LShift)"
+"%"="WM(Kc5, LShift)"
+"^"="WM(Kc6, LShift)"
+"&"="WM(Kc7, LShift)"
+"*"="WM(Kc8, LShift)"
+"("="WM(Kc9, LShift)"
+")"="WM(Kc0, LShift)"
+"-"="Minus"
+"_"="WM(Minus, LShift)"
+"="="Equal"
+"+"="WM(Equal, LShift)"
+"["="LeftBracket"
+"{"="WM(LeftBracket, LShift)"
+"]"="RightBracket"
+"}"="WM(RightBracket, LShift)"
+"\\"="Backslash"
+"|"="WM(Backslash, LShift)"
+";"="Semicolon"
+":"="WM(Semicolon, LShift)"
+"'"="Quote"
+"\""="WM(Quote, LShift)"
+","="Comma"
+"<"="WM(Comma, LShift)"
+"."="Dot"
+">"="WM(Dot, LShift)"
+"/"="Slash"
+"?"="WM(Slash, LShift)"
+
+"h~"="WM(Kc1, RAlt)"
+"h`"="WM(Kc7, RAlt)"
+"h!"="WM(Kc4, LShift)"
+"h@"="WM(V, RAlt)"
+"h#"="WM(X, RAlt)"
+"h$"="WM(Semicolon, RAlt)"
+"h%"="WM(Kc5, LShift)"
+"h^"="WM(Kc3, RAlt)"
+"h&"="WM(C, RAlt)"
+"h*"="WM(Slash, RAlt)"
+"h("="WM(Kc8, LShift)"
+"h)"="WM(Kc9, LShift)"
+"h-"="Slash"
+"h_"="WM(Slash, LShift)"
+"h="="WM(Kc7, LShift)"
+"h+"="WM(Kc3, LShift)"
+"h["="WM(F, RAlt)"
+"h{"="WM(B, RAlt)"
+"h]"="WM(G, RAlt)"
+"h}"="WM(N, RAlt)"
+"h\\"="WM(Q, RAlt)"
+"h|"="WM(W, RAlt)"
+"h;"="WM(Comma, RAlt)"
+"h:"="WM(Dot, LShift)"
+"h'"="WM(Kc1, LShift)"
+"h\""="WM(Kc2, LShift)"
+"h,"="Comma"
+"h<"="WM(NonusBackslash, RAlt)"
+"h."="Dot"
+"h>"="WM(Y, RAlt)"
+"h/"="WM(Kc6, LShift)"
+"h?"="WM(Comma, LShift)"
+
+"í"="Grave"
+"ö"="Kc0"
+"ü"="Minus"
+"ó"="Equal" 
+"ő"="LeftBracket"
+"ú"="RightBracket"
+"ű"="Backslash"
+"é"="Semicolon"
+"á"="Quote"
+
+cut="WM(X, LCtrl)"
+copy="WM(C, LCtrl)"
+paste="WM(V, LCtrl)"
+paste_noformat="WM(V, LCtrl|LShift)"
+find="WM(F, LCtrl)"
+find_global="WM(F, LCtrl|LShift)"
+replace="WM(H, LCtrl)"
+replace_global="WM(H, LCtrl|LShift)"
+undo="WM(Z, LCtrl)"
+redo="WM(Y, LCtrl)"
+lock="WM(L, LGui)"
+comment="WM(Slash, LCtrl)"
+
+hK="LT(sym_hun, K)"
+K="LT(sym, K)"
+S="MT(S, LAlt)"
+T="MT(T, LCtrl)"
+L="MT(L, LShift)"
+V="TD(7)" #toggle num layer
+J="TD(8)" #toggle nav layer
+N="MT(N, RShift)"
+A="MT(A, RCtrl)"
+E="MT(E, RAlt)"
+I="LT(sym, I)"
+hI="LT(sym_hun, I)"
+
+[layout]
+rows = 5
+cols = 18
+layers = 9
+
+matrix_map = """
+ (0, 5, L) (0, 4, L)    (0, 3, L)    (0, 2, L)    (0, 1, L)    (0, 0, L)                         (0, 9, R) (0, 10, R)    (0, 11, R)    (0, 12, R)    (0, 13, R)    (1, 14, R) 
+ (2, 5, L) (2, 4, L)    (1, 3, L)    (1, 2, L)    (1, 1, L)    (1, 0, L)                         (1, 9, R) (1, 10, R)    (1, 11, R)    (1, 12, R)    (2, 13, R)    (2, 14, R)
+ (3, 5, L) (3, 4, L :H) (2, 3, L :H) (2, 2, L :H) (2, 1, L :H) (2, 0, L)                         (2, 9, R) (2, 10, R :H) (2, 11, R :H) (2, 12, R :H) (3, 13, R :H) (3, 14, R)
+ (4, 5, L) (4, 4, L)    (3, 3, L)    (3, 2, L)    (3, 1, L)    (3, 0, L)                         (3, 9, R) (3, 10, R)    (3, 11, R)    (3, 12, R)    (4, 13, R)    (4, 14, R)
+                        (4, 3, L)                 (4, 1, L)    (4, 0, L) (4, 2, L)    (4, 11, R) (4, 9, R) (4, 10, R)                  (4, 12, R)
+ (0, 8, L) (0, 7, L) (0, 6, L)                                                                                                               (0, 15, R) (0, 16, R) (0, 17, R)
+ (1, 8, L) (1, 7, L) (1, 6, L)                                                                                                               (1, 15, R) (1, 16, R) (1, 17, R)
+ (2, 8, L) (2, 7, L) (2, 6, L)                                                                                                                                               
+ (3, 8, L) (3, 7, L) (3, 6, L)                                                                                                                          (3, 16, R)
+ (4, 8, L) (4, 7, L) (4, 6, L)                                                                                                               (4, 15, R) (4, 16, R) (4, 17, R)
+"""
+
+# matrix_map = """
+# (2, 5, L) (2, 4, L)    (1, 3, L)    (1, 2, L)    (1, 1, L)    (1, 0, L)                         (1, 9, R) (1, 10, R)    (1, 11, R)    (1, 12, R)    (2, 13, R)    (2, 14, R)
+# (3, 5, L) (3, 4, L :H) (2, 3, L :H) (2, 2, L :H) (2, 1, L :H) (2, 0, L)                         (2, 9, R) (2, 10, R :H) (2, 11, R :H) (2, 12, R :H) (3, 13, R :H) (3, 14, R)
+# (4, 5, L) (4, 4, L)    (3, 3, L)    (3, 2, L)    (3, 1, L)    (3, 0, L)                         (3, 9, R) (3, 10, R)    (3, 11, R)    (3, 12, R)    (4, 13, R)    (4, 14, R)
+#                                                  (4, 1, L)    (4, 0, L) (4, 2, L)    (4, 11, R) (4, 9, R) (4, 10, R)
+# """
+# """
+# (0, 8, L) (0, 7, L) (0, 6, L)  (0, 5, L)  (0, 4, L) (0, 3, L) (0, 2, L) (0, 1, L) (0, 0, L)    (0, 9, R) (0, 10, R) (0, 11, R) (0, 12, R) (0, 13, R) (0, 14, R) (0, 15, R) (0, 16, R) (0, 17, R)
+# (1, 8, L) (1, 7, L) (1, 6, L)  (1, 5, L)  (1, 4, L)                                                                                       (1, 13, R) (1, 14, R) (1, 15, R) (1, 16, R) (1, 17, R)
+# (2, 8, L) (2, 7, L) (2, 6, L)                                                                                                                                   (2, 15, R) (2, 16, R) (2, 17, R)
+# (3, 8, L) (3, 7, L) (3, 6, L)                                                                                                                                   (3, 15, R) (3, 16, R) (3, 17, R)
+# (4, 8, L) (4, 7, L) (4, 6, L)                                                                                                                                   (4, 15, R) (4, 16, R) (4, 17, R)
+# """
+
+# """
+# (0, 8, L) (0, 7, L) (0, 6, L)       (0, 15, R) (0, 16, R) (0, 17, R)
+# (1, 8, L) (1, 7, L) (1, 6, L)       (1, 15, R) (1, 16, R) (1, 17, R)
+# (2, 8, L) (2, 7, L) (2, 6, L)       (2, 15, R) (2, 16, R) (2, 17, R)
+# (3, 8, L) (3, 7, L) (3, 6, L)       (3, 15, R) (3, 16, R) (3, 17, R)
+# (4, 8, L) (4, 7, L) (4, 6, L)       (4, 15, R) (4, 16, R) (4, 17, R)
+# (1, 4, L) (0, 4, L) (0, 3, L) (0, 2, L)   (0, 1, L) (0, 0, L)       (0, 9, R) (0, 10, R)   (0, 11, R) (0, 12, R) (0, 13, R) (1, 13, R) 
+# """
+
+
+
+[[layer]]
+name = "eng" #0
+keys ="""
+F1         F2 F3 F4           F5             F6     F7 F8            F9            F10  F11 F12
+Escape     G  Y  M            R              B      W  C             O             U   @;   Enter
+LShift    @K  S  MT(T, LCtrl) MT(L, LShift)  @V     @J MT(N, RShift) MT(A, RCtrl)  E   @I   RShift
+LCtrl      F  D  P            H              Q      X  Z             @,           @'   @.   RCtrL
+LAlt LT(mouse, Esc) LT(nav, Space) Tab              LT(sym, Enter) LT(nav, Backspace) Delete LGui
+Escape Minus Equal                                                              Insert Home PageUp
+Kc7    Kc8   Kc9                                                                Delete End  PageDown
+Kc4    Kc5   Kc6                                                                
+Kc1    Kc2   Kc3                                                                       Up
+Kp0    KpDot KpSlash                                                            Left   Down Right
+"""
+
+[[layer]]
+name = "hun" #1
+keys ="""
+F1         F2 F3 F4           F5             F6     F7 F8            F9            F10  F11 F12
+Escape     G  Y  M            R             B       W  TD(5)         TD(3)        TD(4) TD(6) Enter
+LShift    @hK S  MT(T, LCtrl) MT(L, LShift) @V      @J MT(N, RShift) MT(A, RCtrl) TD(1) TD(2) RShift
+LCtrl      F  D  P            H             Q       X  Z             @,           @á    @.    RCtrl
+LAlt LT(mouse, Esc) LT(nav, Space) Tab              LT(sym_hun, Enter) LT(nav, Backspace) Delete LGui
+Escape Minus Equal                                                              Insert Home PageUp
+Kc7    Kc8   Kc9                                                                Delete End  PageDown
+Kc4    Kc5   Kc6                                                                
+Kc1    Kc2   Kc3                                                                       Up
+Kp0    KpDot KpSlash                                                            Left   Down Right
+"""
+
+[[layer]]
+name = "qwerty" #2
+keys ="""
+F1         F2 F3 F4           F5             F6     F7 F8            F9            F10 F11 F12
+Escape     Q  W  E             R             T      Y  U             I             O   P   Enter
+LShift     A  S  MT(D, LCtrl)  MT(F, LShift) G      H  MT(j, RShift) MT(K, RCtrl)  L  @;   RShift
+LCtrl      Z  X  C             V             B      N  M            @,            @.  @/   RCtrl
+LAlt LT(mouse, Esc) LT(nav, Space) Tab              LT(sym, Enter) LT(nav, Backspace) Delete LGui
+Escape Minus Equal                                                              Insert Home PageUp
+Kc7    Kc8   Kc9                                                                Delete End  PageDown
+Kc4    Kc5   Kc6                                                                
+Kc1    Kc2   Kc3                                                                       Up
+Kp0    KpDot KpSlash                                                            Left   Down Right
+"""
+
+[[layer]]
+name = "nav" #4
+keys ="""
+F1     F2     F3     F4            F5        F6                            F7         F8    F9     F10             F11   F12
+Escape @redo  @find  @find_global  @replace  @replace_global               @cut       @copy @paste @paste_noformat @undo Enter
+LShift LGui   LAlt   LCtrl         LShift    @comment                      WwwForward Left  UP     Down            Right RShift
+LCtrl  @undo  @cut   @copy         @paste    @lock                         WwwBack    Home  PageUp PageDown        End   RCtrl
+LAlt LT(mouse, Esc) LT(nav, Space) Tab                                     LT(sym, Enter) LT(nav, Backspace) Delete LGui
+Escape Minus Equal                                                              Insert Home PageUp
+Kc7    Kc8   Kc9                                                                Delete End  PageDown
+Kc4    Kc5   Kc6                                                                
+Kc1    Kc2   Kc3                                                                       Up
+Kp0    KpDot KpSlash                                                            Left   Down Right
+"""
+
+[[layer]]
+name = "mouse" #+media #5
+keys ="""
+F1          F2       F3      F4         F5          F6                     F7              F8             F9             F10              F11              F12
+TO(eng)     CapsLock NumLock ScrollLock MyComputer  AudioVolUp             @cut            @copy          @paste         @paste_noformat  @undo            Enter
+TO(hun)     LGui     LAlt    LCtrl      LShift      AudioMute              BrightnessUp    MouseWheelLeft MouseWheelUp   MouseWheelDown   MouseWheelRight  RShift
+TO(qwerty)  @undo    @cut    @copy      @paste      AudioVolDown           BrightnessDown  MouseLeft      MouseUp        MouseDown        MouseRight       RCtrl
+LAlt LT(mouse, Esc) LT(nav, Space) Tab                                     LT(sym, Enter) LT(nav, Backspace) Delete LGui
+Escape Minus Equal                                                              Insert Home PageUp
+Kc7    Kc8   Kc9                                                                Delete End  PageDown
+Kc4    Kc5   Kc6                                                                
+Kc1    Kc2   Kc3                                                                       Up
+Kp0    KpDot KpSlash                                                            Left   Down Right
+"""
+
+[[layer]]
+name = "sym" #6
+keys ="""
+F1     F2 F3 F4 F5 F6                                    F7 F8 F9 F10 F11 F12
+Escape @~ @` @? @! @#                                    @+ @{ @< @} @* Enter
+LShift @' @" @: @; @_                                    @- @( @= @) @/ RShift
+LCtrl  @$ @@ @& @| @\\                                   @^ @[ @> @] @% RCtrl
+LAlt LT(mouse, Esc) LT(nav, Space) Tab                   LT(sym, Enter) LT(nav, Backspace) Delete LGui
+Escape Minus Equal                                                              Insert Home PageUp
+Kc7    Kc8   Kc9                                                                Delete End  PageDown
+Kc4    Kc5   Kc6                                                                
+Kc1    Kc2   Kc3                                                                       Up
+Kp0    KpDot KpSlash                                                            Left   Down Right
+"""
+
+
+[[layer]]
+name = "sym_hun" #7
+keys ="""
+F1     F2  F3  F4  F5  F6                                F7  F8  F9  F10 F11 F12
+Escape @h~ @h` @h? @h! @h#                               @h+ @h{ @h< @h} @h* Enter
+LShift @h' @h" @h: @h; @h_                               @h- @h( @h= @h) @h/ RShift
+LCtrl  @h$ @h@ @h& @h| @h\\                              @h^ @h[ @h> @h] @h% RCtrl
+LAlt LT(mouse, Esc) LT(nav, Space) Tab                   LT(sym, Enter) LT(nav, Backspace) Delete LGui
+Escape Minus Equal                                                              Insert Home PageUp
+Kc7    Kc8   Kc9                                                                Delete End  PageDown
+Kc4    Kc5   Kc6                                                                
+Kc1    Kc2   Kc3                                                                       Up
+Kp0    KpDot KpSlash                                                            Left   Down Right
+"""
+
+[behavior.combo]
+timeout = "150ms"
+combos = [
+  { actions = ["Space", "Backspace"], output = "TG(4)" }, #toggle nav layer
+  { actions = ["Tab", "Enter"], output = "TG(3)" }, #toggle num layer
+]
+
+[behavior.fork]
+forks = [
+  # Shift + ' ' output '_' key
+  { trigger = "Space", negative_output = "Space", positive_output = "WM(Minus, LShift)", match_any = "LShift|RShift" },  
+]
+
+[behavior.morse.profiles]
+H = { permissive_hold = true, unilateral_tap = true, hold_timeout = "250ms", gap_timeout = "250ms" }
+MRZ = { normal_mode = true, unilateral_tap = false, hold_timeout = "250ms", gap_timeout = "250ms" }
+
+[behavior.morse]
+enable_flow_tap = true
+prior_idle_time = "120ms"
+
+hold_on_other_press = true
+hold_timeout = "250ms"
+gap_timeout = "250ms"
+
+morses = [
+  # TD(0):
+  { tap = "A", hold = "Quote"}, #a á
+  # TD(1):
+  { tap = "E", hold = "Semicolon"}, #e é
+  # TD(2):
+  { tap = "I", hold = "Grave"}, #i í
+  # TD(3):
+  { tap = "O", hold = "Equal", double_tap = "Kc0", hold_after_tap = "LeftBracket"}, #o ó ö ő
+  # TD(4):
+  { tap = "U", hold = "RightBracket", double_tap = "Minus", hold_after_tap = "BackSlash"},#u ú ü ű
+  # TD(5):
+  { tap = "C", hold = "LeftBracket" }, #c ő        # , double_tap = "Kc0", hold_after_tap = "LeftBracket"}, #c ő ö ő
+  # TD(6):
+  { tap = "Semicolon", hold = "Backslash"}, #é ű   # , double_tap = "Minus", hold_after_tap = "Backslash"}, #é ű ü ű
+  # TD(7):
+  { tap = "V", hold = "TG(3)"},
+  # TD(8):
+  { tap = "J", hold = "TG(4)"},
+
+  # TD(9):
+  { morse_actions = [
+      {pattern = ".-", action = "A"}, 
+      {pattern = "-...", action = "B"}, 
+      {pattern = "-.-.", action = "C"}, 
+      {pattern = "-..", action = "D"}, 
+      {pattern = ".", action = "E"}, 
+      {pattern = "..-.", action = "F"}, 
+      {pattern = "--.", action = "G"}, 
+      {pattern = "....", action = "H"}, 
+      {pattern = "..", action = "I"}, 
+      {pattern = ".---", action = "J"}, 
+      {pattern = "-.-", action = "K"}, 
+      {pattern = ".-..", action = "L"}, 
+      {pattern = "--", action = "M"}, 
+      {pattern = "-.", action = "N"}, 
+      {pattern = "---", action = "O"}, 
+      {pattern = ".--.", action = "P"}, 
+      {pattern = "--.-", action = "Q"}, 
+      {pattern = ".-.", action = "R"}, 
+      {pattern = "...", action = "S"}, 
+      {pattern = "-", action = "T"}, 
+      {pattern = "..-", action = "U"}, 
+      {pattern = "...-", action = "V"}, 
+      {pattern = ".--", action = "W"}, 
+      {pattern = "-..-", action = "X"}, 
+      {pattern = "-.--", action = "Y"}, 
+      {pattern = "--..", action = "Z"}, 
+      {pattern = ".----", action = "Kc1"}, 
+      {pattern = "..---", action = "Kc2"}, 
+      {pattern = "...--", action = "Kc3"}, 
+      {pattern = "....-", action = "Kc4"}, 
+      {pattern = ".....", action = "Kc5"}, 
+      {pattern = "-....", action = "Kc6"}, 
+      {pattern = "--...", action = "Kc7"}, 
+      {pattern = "---..", action = "Kc8"}, 
+      {pattern = "----.", action = "Kc9"}, 
+      {pattern = "-----", action = "Kc0"}
+    ], profile = "MRZ" },
+]
+
+[storage]
+# Storage feature is enabled by default
+enabled = true
+# Clear storage at keyboard boot.
+# Set it to true will reset the storage(including keymap, BLE bond info, etc.) at each reboot.
+# This option is useful when testing the firmware.
+clear_storage = false
+# Clear layout at keyboard boot.
+# Set it to true will reset the layout(including keymap, encoder map, behavior config, etc.) at each reboot.
+# This option is useful when testing the firmware without losing bluetooth pairing informations.
+clear_layout = true
+
+# Start address of local storage, MUST BE start of a sector.
+# If start_addr is set to 0(this is the default value), the last `num_sectors` sectors will be used.
+# start_addr = 0x00000000
+# How many sectors are used for storage, the default value is 2
+# num_sectors = 2
+
+[ble]
+enabled = true
+# nRF52840's saadc pin for reading battery level, you can use a pin number or "vddh"
+#battery_adc_pin = "vddh"
+# The voltage divider setting for saadc. 
+# For example, nice!nano have 806 + 2M resistors, the saadc measures voltage on 2M resistor, so the two values should be set to 2000 and 2806
+#adc_divider_measured = 2000
+#adc_divider_total = 2806
+# Pin that reads battery's charging state, `low-active` means the battery is charging when `charge_state.pin` is low
+#charge_state = { pin = "PIN_1", low_active = true }
+# Output LED pin that blinks when the battery is low
+#charge_led= { pin = "PIN_2", low_active = true }
+
+# [behavior.one_shot]
+# timeout = "2s"
+
+# tri_layer = { upper = 1, lower = 2, adjust = 3 }
+# one_shot = { timeout = "1s" }
+# # Enable HRM 
+# tap_hold = { enable_hrm = true, prior_idle_time = "120ms", hold_timeout = "250ms", post_wait_time = "50ms"}
+# # Disable HRM, you can safely ignore any fields if you don't want to change them
+# tap_hold = { enable_hrm = false, hold_timeout = "200ms" }
+# [behavior.one_shot]
+# timeout = "5s"
+
+[light]
+# capslock = { pin = "P1_00", low_active = true }
+# scrolllock = { pin = "P0_22", low_active = true }
+# numslock = { pin = "P0_24", low_active = true }
+
+# Dependency config
+# [dependency]
+# Whether to enable defmt, set to false for reducing binary size 
+# defmt_log = true
+
+[split]
+connection = "ble" # "serial"
+
+[split.central]
+rows = 5
+cols = 9
+row_offset = 0
+col_offset = 0
+ble_addr = [0x18, 0xe2, 0x21, 0x80, 0xc0, 0xc7]
+
+[split.central.matrix]
+matrix_type = "normal"
+row2col = false
+output_pins = ["P0_24","P1_15", "P0_22", "P0_02", "P0_09", "P1_04", "P0_10", "P0_11", "P1_11"]
+input_pins = ["P0_29", "P0_31", "P1_13", "P1_00", "P1_06"]
+
+[[split.peripheral]]
+rows = 5
+cols = 9
+row_offset = 0
+col_offset = 9
+ble_addr = [0x7e, 0xfe, 0x73, 0x9e, 0x66, 0xe3]
+
+[split.peripheral.matrix]
+matrix_type = "normal"
+row2col = false
+output_pins = ["P0_24","P1_15", "P0_22", "P0_02", "P0_09", "P1_04", "P0_10", "P0_11", "P1_11"]
+input_pins = ["P0_29", "P0_31", "P1_13", "P1_00", "P1_06"]
