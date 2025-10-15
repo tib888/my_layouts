@@ -449,7 +449,7 @@ ble_addr = [0x18, 0xe2, 0x21, 0x80, 0xc0, 0xc7]
 [split.central.matrix]
 matrix_type = "normal"
 row2col = false
-output_pins = ["P0_24","P1_15", "P0_22", "P0_02", "P0_09", "P1_04", "P0_10", "P0_11", "P1_11"]
+output_pins = ["P0_24","P1_15", "P0_20", "P0_02", "P0_09", "P1_04", "P0_10", "P0_11", "P1_11"] #"P0_22" -> "P0_20" due to the bad module
 input_pins = ["P0_29", "P0_31", "P1_13", "P1_00", "P1_06"]
 
 [[split.peripheral]]
