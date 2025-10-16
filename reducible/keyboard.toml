@@ -41,7 +41,7 @@ flash_channel_size = 8
 # The number of the split peripherals
 split_peripherals_num = 1
 # The size of the split message channel
-split_message_channel_size = 6
+#split_message_channel_size = 6
 # The number of available BLE profiles
 ble_profiles_num = 3
 
@@ -155,8 +155,9 @@ layers = 9
 
 matrix_map = """
  (0, 5, L) (0, 4, L)    (0, 3, L)    (0, 2, L)    (0, 1, L)    (0, 0, L)                         (0, 9, R) (0, 10, R)    (0, 11, R)    (0, 12, R)    (0, 13, R)    (1, 14, R) 
+           (1, 4, L)                                                                                                                                 (1, 13, R)
  (2, 5, L) (2, 4, L)    (1, 3, L)    (1, 2, L)    (1, 1, L)    (1, 0, L)                         (1, 9, R) (1, 10, R)    (1, 11, R)    (1, 12, R)    (2, 13, R)    (2, 14, R)
- (3, 5, L) (3, 4, L :H) (2, 3, L :H) (2, 2, L :H) (2, 1, L :H) (2, 0, L)                         (2, 9, R) (2, 10, R :H) (2, 11, R :H) (2, 12, R :H) (3, 13, R :H) (3, 14, R)
+ (3, 5, L) (3, 4, L)    (2, 3, L)    (2, 2, L)    (2, 1, L)    (2, 0, L)                         (2, 9, R) (2, 10, R)    (2, 11, R)    (2, 12, R)    (3, 13, R)    (3, 14, R)
  (4, 5, L) (4, 4, L)    (3, 3, L)    (3, 2, L)    (3, 1, L)    (3, 0, L)                         (3, 9, R) (3, 10, R)    (3, 11, R)    (3, 12, R)    (4, 13, R)    (4, 14, R)
                         (4, 3, L)                 (4, 1, L)    (4, 0, L) (4, 2, L)    (4, 11, R) (4, 9, R) (4, 10, R)                  (4, 12, R)
  (0, 8, L) (0, 7, L) (0, 6, L)                                                                                                               (0, 15, R) (0, 16, R) (0, 17, R)
@@ -194,8 +195,9 @@ matrix_map = """
 [[layer]]
 name = "eng" #0
 keys ="""
-F1         F2 F3 F4           F5             F6     F7 F8            F9            F10  F11 F12
-Escape     G  Y  M            R              B      W  C             O             U   @;   Enter
+Escape     F2 F3 F4           F5             F6     F7 F8            F9            F10 F11 Backspace
+           F1                                                                          F12   
+Tab        G  Y  M            R              B      W  C             O             U   @;   Enter
 LShift    @K  S  MT(T, LCtrl) MT(L, LShift)  @V     @J MT(N, RShift) MT(A, RCtrl)  E   @I   RShift
 LCtrl      F  D  P            H              Q      X  Z             @,           @'   @.   RCtrL
 LAlt LT(mouse, Esc) LT(nav, Space) Tab              LT(sym, Enter) LT(nav, Backspace) Delete LGui
@@ -209,8 +211,9 @@ Kp0    KpDot KpSlash                                                            
 [[layer]]
 name = "hun" #1
 keys ="""
-F1         F2 F3 F4           F5             F6     F7 F8            F9            F10  F11 F12
-Escape     G  Y  M            R             B       W  TD(5)         TD(3)        TD(4) TD(6) Enter
+Escape     F2 F3 F4           F5            F6      F7 F8            F9           F10   F11   Backspace
+           F1                                                                           F12
+Tab        G  Y  M            R             B       W  TD(5)         TD(3)        TD(4) TD(6) Enter
 LShift    @hK S  MT(T, LCtrl) MT(L, LShift) @V      @J MT(N, RShift) MT(A, RCtrl) TD(1) TD(2) RShift
 LCtrl      F  D  P            H             Q       X  Z             @,           @á    @.    RCtrl
 LAlt LT(mouse, Esc) LT(nav, Space) Tab              LT(sym_hun, Enter) LT(nav, Backspace) Delete LGui
@@ -224,8 +227,9 @@ Kp0    KpDot KpSlash                                                            
 [[layer]]
 name = "qwerty" #2
 keys ="""
-F1         F2 F3 F4           F5             F6     F7 F8            F9            F10 F11 F12
-Escape     Q  W  E             R             T      Y  U             I             O   P   Enter
+Escape     F2 F3 F4           F5             F6     F7 F8            F9            F10 F11 Backspace
+           F1                                                                          F12
+Tab        Q  W  E             R             T      Y  U             I             O   P   Enter
 LShift     A  S  MT(D, LCtrl)  MT(F, LShift) G      H  MT(j, RShift) MT(K, RCtrl)  L  @;   RShift
 LCtrl      Z  X  C             V             B      N  M            @,            @.  @/   RCtrl
 LAlt LT(mouse, Esc) LT(nav, Space) Tab              LT(sym, Enter) LT(nav, Backspace) Delete LGui
@@ -239,8 +243,9 @@ Kp0    KpDot KpSlash                                                            
 [[layer]]
 name = "nav" #4
 keys ="""
-F1     F2     F3     F4            F5        F6                            F7         F8    F9     F10             F11   F12
-Escape @redo  @find  @find_global  @replace  @replace_global               @cut       @copy @paste @paste_noformat @undo Enter
+Escape F2     F3     F4            F5        F6                            F7         F8    F9     F10             F11   Backspace
+       F1                                                                                                          F12
+Tab    @redo  @find  @find_global  @replace  @replace_global               @cut       @copy @paste @paste_noformat @undo Enter
 LShift LGui   LAlt   LCtrl         LShift    @comment                      WwwForward Left  UP     Down            Right RShift
 LCtrl  @undo  @cut   @copy         @paste    @lock                         WwwBack    Home  PageUp PageDown        End   RCtrl
 LAlt LT(mouse, Esc) LT(nav, Space) Tab                                     LT(sym, Enter) LT(nav, Backspace) Delete LGui
@@ -254,7 +259,8 @@ Kp0    KpDot KpSlash                                                            
 [[layer]]
 name = "mouse" #+media #5
 keys ="""
-F1          F2       F3      F4         F5          F6                     F7              F8             F9             F10              F11              F12
+Escape      F2       F3      F4         F5          F6                     F7              F8             F9             F10              F11              Backspace
+            F1                                                                                                                            F12
 TO(eng)     CapsLock NumLock ScrollLock MyComputer  AudioVolUp             @cut            @copy          @paste         @paste_noformat  @undo            Enter
 TO(hun)     LGui     LAlt    LCtrl      LShift      AudioMute              BrightnessUp    MouseWheelLeft MouseWheelUp   MouseWheelDown   MouseWheelRight  RShift
 TO(qwerty)  @undo    @cut    @copy      @paste      AudioVolDown           BrightnessDown  MouseLeft      MouseUp        MouseDown        MouseRight       RCtrl
@@ -269,8 +275,9 @@ Kp0    KpDot KpSlash                                                            
 [[layer]]
 name = "sym" #6
 keys ="""
-F1     F2 F3 F4 F5 F6                                    F7 F8 F9 F10 F11 F12
-Escape @~ @` @? @! @#                                    @+ @{ @< @} @* Enter
+Escape F2 F3 F4 F5 F6                                    F7 F8 F9 F10 F11 Backspace
+       F1                                                             F12
+Tab    @~ @` @? @! @#                                    @+ @{ @< @} @* Enter
 LShift @' @" @: @; @_                                    @- @( @= @) @/ RShift
 LCtrl  @$ @@ @& @| @\\                                   @^ @[ @> @] @% RCtrl
 LAlt LT(mouse, Esc) LT(nav, Space) Tab                   LT(sym, Enter) LT(nav, Backspace) Delete LGui
@@ -285,8 +292,9 @@ Kp0    KpDot KpSlash                                                            
 [[layer]]
 name = "sym_hun" #7
 keys ="""
-F1     F2  F3  F4  F5  F6                                F7  F8  F9  F10 F11 F12
-Escape @h~ @h` @h? @h! @h#                               @h+ @h{ @h< @h} @h* Enter
+Escape F2  F3  F4  F5  F6                                F7  F8  F9  F10 F11 Backspace
+       F1                                                                F12
+Tab    @h~ @h` @h? @h! @h#                               @h+ @h{ @h< @h} @h* Enter
 LShift @h' @h" @h: @h; @h_                               @h- @h( @h= @h) @h/ RShift
 LCtrl  @h$ @h@ @h& @h| @h\\                              @h^ @h[ @h> @h] @h% RCtrl
 LAlt LT(mouse, Esc) LT(nav, Space) Tab                   LT(sym, Enter) LT(nav, Backspace) Delete LGui

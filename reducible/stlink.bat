@@ -1,0 +1,1 @@
+C:\Downloads\openocd-20240916\OpenOCD-20240916-0.12.0\bin\openocd.exe -f C:\Downloads\openocd-20240916\OpenOCD-20240916-0.12.0\share\openocd\scripts\interface\stlink-v2.cfg -f C:\Downloads\openocd-20240916\OpenOCD-20240916-0.12.0\share\openocd\scripts\target\nrf52.cfg -c "program rmk-central.hex verify reset exit"
