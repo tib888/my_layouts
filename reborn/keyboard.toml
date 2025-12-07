@@ -7,9 +7,8 @@ manufacturer = "rmk"
 chip = "rp2040"
 
 [matrix]
-# Input and output pins are mandatory
-input_pins = ["PIN_17", "PIN_18", "PIN_19", "PIN_20", "PIN_21", "PIN_22", "PIN_26"]
-output_pins = ["PIN_0", "PIN_1", "PIN_2", "PIN_3", "PIN_4", "PIN_5", "PIN_6", "PIN_7", "PIN_8", "PIN_9", "PIN_10", "PIN_11", "PIN_12", "PIN_13", "PIN_14", "PIN_15", "PIN_16"]
+row_pins = ["PIN_17", "PIN_18", "PIN_19", "PIN_20", "PIN_21", "PIN_22", "PIN_26"]
+col_pins = ["PIN_0", "PIN_1", "PIN_2", "PIN_3", "PIN_4", "PIN_5", "PIN_6", "PIN_7", "PIN_8", "PIN_9", "PIN_10", "PIN_11", "PIN_12", "PIN_13", "PIN_14", "PIN_15", "PIN_16"]
 # row2col = false
 
 [aliases]
@@ -248,8 +247,16 @@ combos = [
   { actions = ["Escape", "Tab"], output = "Macro0" }
 ]
 
-[behavior]
-tap_hold = { enable_hrm = true, prior_idle_time = "120ms", hold_timeout = "250ms", post_wait_time = "50ms"}
+[behavior.morse.profiles]
+H = { permissive_hold = true, unilateral_tap = true, hold_timeout = "250ms", gap_timeout = "250ms" }
+MRZ = { normal_mode = true, unilateral_tap = false, hold_timeout = "250ms", gap_timeout = "250ms" }
+
+[behavior.morse]
+enable_flow_tap = true
+prior_idle_time = "120ms"
+hold_on_other_press = true
+hold_timeout = "250ms"
+gap_timeout = "250ms"
 
 [behavior.fork]
 forks = [

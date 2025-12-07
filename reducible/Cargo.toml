@@ -15,28 +15,29 @@ license = "MIT OR Apache-2.0"
 #version = "0.7.8"
 #default-features = false,
 # rmk = { ersion = "0.7.8", features = [    
-rmk = { path = "../../rmk/rmk", default-features = false, features = [
-    "col2row",
-    "storage",
+rmk = { path = "../../rmk/rmk", default-features = true, features = [
+    #"col2row",
+    #compile_fixes "storage",
     "nrf52840_ble",
     "split", 
     "async_matrix", 
     "adafruit_bl", 
-    "controller",
+    #"controller",
+    #"vial"
     #"_ble","rapid_debouncer","defmt","log","_nrf_ble"
 ] }
-nrf-sdc = { git = "https://github.com/alexmoon/nrf-sdc", rev = "11d5c3c", default-features = false, features = [
+nrf-sdc = { git = "https://github.com/alexmoon/nrf-sdc", rev = "11d5c3c", features = [
     "defmt",
     "peripheral",
     "central",
     "nrf52840",
 ] }
-nrf-mpsl = { git = "https://github.com/alexmoon/nrf-sdc", rev = "11d5c3c", default-features = false, features = [
+nrf-mpsl = { git = "https://github.com/alexmoon/nrf-sdc", rev = "11d5c3c", features = [
     "defmt",
     "critical-section-impl",
     "nrf52840",
 ] }
-bt-hci = { version = "0.6", default-features = false, features = ["defmt"] }
+bt-hci = { version = "0.6", features = ["defmt"] }
 
 cortex-m = "0.7.7"
 cortex-m-rt = "0.7.5"
