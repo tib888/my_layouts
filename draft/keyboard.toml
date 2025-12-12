@@ -135,18 +135,18 @@ redo="WM(Y, LCtrl)"
 lock="WM(L, LGui)"
 comment="WM(Slash, LCtrl)"
 
-hK="LT(sym_hun, K)"
-K="LT(sym, K)"
-S="MT(S, LAlt)"
-T="MT(T, LCtrl)"
-L="MT(L, LShift)"
+hK="LT(sym_hun, K, HRM)"
+K="LT(sym, K, HRM)"
+S="MT(S, LAlt, HRM)"
+T="MT(T, LCtrl, HRM)"
+L="MT(L, LShift, HRM)"
 V="TD(7)" #toggle num layer
 J="TD(8)" #toggle nav layer
-N="MT(N, RShift)"
-A="MT(A, RCtrl)"
-E="MT(E, RAlt)"
-I="LT(sym, I)"
-hI="LT(sym_hun, I)"
+N="MT(N, RShift, HRM)"
+A="MT(A, RCtrl, HRM)"
+E="MT(E, RAlt, HRM)"
+I="LT(sym, I, HRM)"
+hI="LT(sym_hun, I, HRM)"
 
 [layout]
 rows = 5
@@ -157,44 +157,36 @@ matrix_map = """
 (3, 0, L) (3, 1, L) (2, 2, L) (2, 3, L) (2, 4, L) (2, 5, L)      (2, 6, R) (2, 7, R) (2, 8, R) (2, 9, R) (3, 10, R) (3, 11, R)
 (4, 0, L) (4, 1, L) (3, 2, L) (3, 3, L) (3, 4, L) (3, 5, L)      (3, 6, R) (3, 7, R) (3, 8, R) (3, 9, R) (4, 10, R) (4, 11, R)
                                 (4, 2, L) (4, 3, L) (4, 4, L)  (4, 7, R) (4, 8, R) (4, 9, R)
-(4, 5)
+(4, 5, L)
 """
-
-# matrix_map = """
-# (2, 0) (2, 1) (1, 2) (1, 3) (1, 4) (1, 5)              (1, 6) (1, 7) (1, 8) (1, 9) (2, 10) (2, 11)
-# (3, 0) (3, 1) (2, 2) (2, 3) (2, 4) (2, 5)              (2, 6) (2, 7) (2, 8) (2, 9) (3, 10) (3, 11)
-# (4, 0) (4, 1) (3, 2) (3, 3) (3, 4) (3, 5)              (3, 6) (3, 7) (3, 8) (3, 9) (4, 10) (4, 11)
-#                            (4, 2) (4, 3) (4, 4)  (4, 7) (4, 8) (4, 9)
-# (4, 5)                           
-# """
 
 [[layer]]
 name = "eng" #0
 keys ="""
-Escape     G  Y  M            R              B      W  C             O             U @; Delete
-LShift    @K  S  MT(T, LCtrl) MT(L, LShift)  @V     @J MT(N, RShift) MT(A, RCtrl)  E @I LAlt
-LCtrl      F  D  P            H              Q      X  Z             @,           @' @. LGui
-LT(mouse, Esc) LT(nav, Space) LT(num, Tab)          LT(sym, Enter) LT(nav, Backspace) LT(num, Delete)
+Escape     G  Y  M  R  B         W  C  O  U @; Delete
+LShift    @K  S @T @L  V         J @N @A  E @I LAlt
+LCtrl      F  D  P  H  Q         X  Z @, @' @. LGui
+LT(mouse, Esc, FH) LT(nav, Space, FH) LT(num, Tab, FH)           LT(sym, Enter, FH) LT(nav, Backspace, FH) LT(num, Delete, FH)
 TD(7)
 """
 
 [[layer]]
 name = "hun" #1
 keys ="""
-Escape     G  Y  M            R             B       W  TD(5)         TD(3)        TD(4) TD(6) Delete
-LShift    @hK S  MT(T, LCtrl) MT(L, LShift) @V      @J MT(N, RShift) MT(A, RCtrl) TD(1) TD(2) LAlt
-LCtrl      F  D  P            H             Q       X  Z             @,           @á    @.    LGui
-LT(mouse, Esc) LT(nav, Space) LT(num, Tab)          LT(sym_hun, Enter) LT(nav, Backspace) LT(num, Delete)
+Escape     G  Y  M   R  B        W  TD(5) TD(3)  TD(4) TD(6) Delete
+LShift    @hK S  @T @L  V        J  @N    @A     TD(1) TD(2) LAlt
+LCtrl      F  D  P   H  Q        X  Z     @,     @á    @.    LGui
+LT(mouse, Esc, FH) LT(nav, Space, FH) LT(num, Tab, FH)               LT(sym_hun, Enter, FH) LT(nav, Backspace, FH) LT(num, Delete, FH)
 TD(7)
 """
 
 [[layer]]
 name = "qwerty" #2
 keys ="""
-Escape     Q  W  E             R             T       Y  U              I             O  P  Delete
-LShift     A  S  MT(D, LCtrl)  MT(F, LShift) G       H  MT(j, RShift)  MT(K, RCtrl)  L @;  LAlt
-LCtrl      Z  X  C             V             B       N  M              @,           @. @/  LGui
-LT(mouse, Esc) LT(nav, Space) LT(num, Tab)          LT(sym, Enter) LT(nav, Backspace) LT(num, Delete)
+Escape     Q  W  E             R             T                         Y  U              I             O  P  Delete
+LShift     A  S  MT(D, LCtrl, HRM)  MT(F, LShift, HRM)  G              H  MT(j, RShift, HRM)  MT(K, RCtrl, HRM)  L @;  LAlt
+LCtrl      Z  X  C             V             B                         N  M              @,           @. @/  LGui
+LT(mouse, Esc, FH) LT(nav, Space, FH) LT(num, Tab, FH)                 LT(sym, Enter, FH) LT(nav, Backspace, FH) LT(num, Delete, FH)
 TD(7)
 """
 
@@ -204,7 +196,7 @@ keys ="""
 Escape PrintScreen  F9            F10            F11            F12        KpPlus  Kp7             Kp8            Kp9            KpAsterisk Delete
 LShift Insert       MT(F5, LAlt)  MT(F6, LCtrl)  MT(F7, LShift) F8         KpMinus MT(Kp4, RShift) MT(Kp5, RCtrl) MT(Kp6, LAlt)  KpSlash    LAlt
 LCtrl  Pause        F1            F2             F3             F4         Kp0     Kp1             Kp2            Kp3            KpDot      LGui
-LT(mouse, Esc) LT(nav, Space) LT(num, Tab)                                 LT(sym, Enter) LT(nav, Backspace) LT(num, Delete)
+LT(mouse, Esc, FH) LT(nav, Space, FH) LT(num, Tab, FH)                     LT(sym, Enter, FH) LT(nav, Backspace, FH) LT(num, Delete, FH)
 TG(num)
 """
 
@@ -214,7 +206,7 @@ keys ="""
 Escape @redo  @find  @find_global  @replace  @replace_global               @cut       @copy @paste @paste_noformat @undo Delete
 LShift LGui   LAlt   LCtrl         LShift    @comment                      WwwForward Left  UP     Down            Right RAlt
 LCtrl  @undo  @cut   @copy         @paste    @lock                         WwwBack    Home  PageUp PageDown        End   LGui
-LT(mouse, Esc) LT(nav, Space) LT(num, Tab)                                 LT(sym, Enter) LT(nav, Backspace) LT(num, Delete)
+LT(mouse, Esc, FH) LT(nav, Space, FH) LT(num, Tab, FH)                     LT(sym, Enter, FH) LT(nav, Backspace, FH) LT(num, Delete, FH)
 TG(nav)                          
 """
 
@@ -224,7 +216,7 @@ keys ="""
 TO(eng)     CapsLock NumLock ScrollLock MyComputer  AudioVolUp             @cut            @copy          @paste         @paste_noformat  @undo            Delete
 TO(hun)     LGui     LAlt    LCtrl      LShift      AudioMute              BrightnessUp    MouseWheelLeft MouseWheelUp   MouseWheelDown   MouseWheelRight  RAlt
 TO(qwerty)  @undo    @cut    @copy      @paste      AudioVolDown           BrightnessDown  MouseLeft      MouseUp        MouseDown        MouseRight       LGui
-LT(mouse, Esc) LT(nav, Space) LT(num, Tab)                                 LT(sym, Enter) LT(nav, Backspace) LT(num, Delete)
+LT(mouse, Esc, FH) LT(nav, Space, FH) LT(num, Tab, FH)                     LT(sym, Enter, FH) LT(nav, Backspace, FH) LT(num, Delete, FH)
 TG(mouse)                             
 """
 
@@ -234,7 +226,7 @@ keys ="""
 Escape @~ @` @? @! @#                      @+ @{ @< @} @* Delete
 LShift @' @" @: @; @_                      @- @( @= @) @/ LAlt
 LCtrl  @$ @@ @& @| @\\                     @^ @[ @> @] @% LGui
-LT(mouse, Esc) LT(nav, Space) LT(num, Tab)          LT(sym, Enter) LT(nav, Backspace) LT(num, Delete)
+LT(mouse, Esc, FH) LT(nav, Space, FH) LT(num, Tab, FH)          LT(sym, Enter, FH) LT(nav, Backspace, FH) LT(num, Delete, FH)
 TD(7)
 """
 
@@ -245,7 +237,7 @@ keys ="""
 Escape @h~ @h` @h? @h! @h#                 @h+ @h{ @h< @h} @h* Delete
 LShift @h' @h" @h: @h; @h_                 @h- @h( @h= @h) @h/ LAlt
 LCtrl  @h$ @h@ @h& @h| @h\\                @h^ @h[ @h> @h] @h% LGui
-LT(mouse, Esc) LT(nav, Space) LT(num, Tab)          LT(sym, Enter) LT(nav, Backspace) LT(num, Delete)
+LT(mouse, Esc, FH) LT(nav, Space, FH) LT(num, Tab, FH)          LT(sym, Enter, FH) LT(nav, Backspace, FH) LT(num, Delete, FH)
 TD(7)
 """
 
@@ -279,17 +271,21 @@ combos = [
 [behavior.fork]
 forks = [
   # Shift + ' ' output '_' key
-  { trigger = "Space", negative_output = "Space", positive_output = "WM(Minus, LShift)", match_any = "LShift|RShift" },  
+  { trigger = "Space", negative_output = "Space", positive_output = "WM(Minus, LShift)", match_any = "LShift|RShift" }
 ]
 
+# To avoid compile errors this must stay before [behavior.morse] section
 [behavior.morse.profiles]
-H = { permissive_hold = true, unilateral_tap = true, hold_timeout = "250ms", gap_timeout = "250ms" }
+# This profile is recommended on the home row, when enable_flow_tap = true, and the hold action activates a layer or acts as a modifier (aka home row mod)
+HRM = { permissive_hold = true, unilateral_tap = true, hold_timeout = "250ms", gap_timeout = "250ms" }
+# This profile is recommended when the hold action activates a layer or acts as a modifier (without HRM) (for example thumb keys)
+FH = { hold_on_other_press = true, unilateral_tap = false, hold_timeout = "200ms", gap_timeout = "200ms" }
+# This profile is recommended for "real" morse keys
 MRZ = { normal_mode = true, unilateral_tap = false, hold_timeout = "250ms", gap_timeout = "250ms" }
 
 [behavior.morse]
 enable_flow_tap = true
 prior_idle_time = "120ms"
-
 hold_on_other_press = true
 hold_timeout = "250ms"
 gap_timeout = "250ms"
@@ -315,44 +311,44 @@ morses = [
   { tap = "J", hold = "TG(4)"},
 
   # TD(9):
-  { morse_actions = [
-      {pattern = ".-", action = "A"}, 
-      {pattern = "-...", action = "B"}, 
-      {pattern = "-.-.", action = "C"}, 
-      {pattern = "-..", action = "D"}, 
-      {pattern = ".", action = "E"}, 
-      {pattern = "..-.", action = "F"}, 
-      {pattern = "--.", action = "G"}, 
-      {pattern = "....", action = "H"}, 
-      {pattern = "..", action = "I"}, 
-      {pattern = ".---", action = "J"}, 
-      {pattern = "-.-", action = "K"}, 
-      {pattern = ".-..", action = "L"}, 
-      {pattern = "--", action = "M"}, 
-      {pattern = "-.", action = "N"}, 
-      {pattern = "---", action = "O"}, 
-      {pattern = ".--.", action = "P"}, 
-      {pattern = "--.-", action = "Q"}, 
-      {pattern = ".-.", action = "R"}, 
-      {pattern = "...", action = "S"}, 
-      {pattern = "-", action = "T"}, 
-      {pattern = "..-", action = "U"}, 
-      {pattern = "...-", action = "V"}, 
-      {pattern = ".--", action = "W"}, 
-      {pattern = "-..-", action = "X"}, 
-      {pattern = "-.--", action = "Y"}, 
-      {pattern = "--..", action = "Z"}, 
-      {pattern = ".----", action = "Kc1"}, 
-      {pattern = "..---", action = "Kc2"}, 
-      {pattern = "...--", action = "Kc3"}, 
-      {pattern = "....-", action = "Kc4"}, 
-      {pattern = ".....", action = "Kc5"}, 
-      {pattern = "-....", action = "Kc6"}, 
-      {pattern = "--...", action = "Kc7"}, 
-      {pattern = "---..", action = "Kc8"}, 
-      {pattern = "----.", action = "Kc9"}, 
-      {pattern = "-----", action = "Kc0"}
-    ], profile = "MRZ" },
+  # { morse_actions = [
+  #     {pattern = ".-", action = "A"}, 
+  #     {pattern = "-...", action = "B"}, 
+  #     {pattern = "-.-.", action = "C"}, 
+  #     {pattern = "-..", action = "D"}, 
+  #     {pattern = ".", action = "E"}, 
+  #     {pattern = "..-.", action = "F"}, 
+  #     {pattern = "--.", action = "G"}, 
+  #     {pattern = "....", action = "H"}, 
+  #     {pattern = "..", action = "I"}, 
+  #     {pattern = ".---", action = "J"}, 
+  #     {pattern = "-.-", action = "K"}, 
+  #     {pattern = ".-..", action = "L"}, 
+  #     {pattern = "--", action = "M"}, 
+  #     {pattern = "-.", action = "N"}, 
+  #     {pattern = "---", action = "O"}, 
+  #     {pattern = ".--.", action = "P"}, 
+  #     {pattern = "--.-", action = "Q"}, 
+  #     {pattern = ".-.", action = "R"}, 
+  #     {pattern = "...", action = "S"}, 
+  #     {pattern = "-", action = "T"}, 
+  #     {pattern = "..-", action = "U"}, 
+  #     {pattern = "...-", action = "V"}, 
+  #     {pattern = ".--", action = "W"}, 
+  #     {pattern = "-..-", action = "X"}, 
+  #     {pattern = "-.--", action = "Y"}, 
+  #     {pattern = "--..", action = "Z"}, 
+  #     {pattern = ".----", action = "Kc1"}, 
+  #     {pattern = "..---", action = "Kc2"}, 
+  #     {pattern = "...--", action = "Kc3"}, 
+  #     {pattern = "....-", action = "Kc4"}, 
+  #     {pattern = ".....", action = "Kc5"}, 
+  #     {pattern = "-....", action = "Kc6"}, 
+  #     {pattern = "--...", action = "Kc7"}, 
+  #     {pattern = "---..", action = "Kc8"}, 
+  #     {pattern = "----.", action = "Kc9"}, 
+  #     {pattern = "-----", action = "Kc0"}
+  #   ], profile = "MRZ" },
 ]
 
 [storage]
@@ -364,7 +360,7 @@ enabled = true
 clear_storage = false
 # Clear layout at keyboard boot.
 # Set it to true will reset the layout(including keymap, encoder map, behavior config, etc.) at each reboot.
-# This option is useful when testing the firmware without losing bluetooth pairing informations.
+# This option is useful when testing the firmware without losing bluetooth pairing information.
 clear_layout = true
 
 # Start address of local storage, MUST BE start of a sector.

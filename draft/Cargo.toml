@@ -11,16 +11,17 @@ license = "MIT OR Apache-2.0"
 
 [dependencies]
 #rmk = { default-features = false, git = "https://github.com/HaoboGu/rmk", rev = "111461052b421ce94ccd4731f94fdc35487d8ebf", features = ["nrf52840_ble", "split", "async_matrix", "adafruit_bl"] } 
-#path = "../../rmk.rust/rmk",
-#version = "0.7.8"
+#path = "../../rmk/rmk",
+#version = "0.8.1"
 rmk = { path = "../../rmk/rmk", features = [
     "nrf52840_ble",
     "split", 
     "async_matrix", 
     "adafruit_bl", 
+    
     #"storage",
     #"controller",
-    #"_ble","rapid_debouncer","defmt","log","col2row","_nrf_ble"
+    #"_ble","defmt","log","_nrf_ble"
 ] }
 nrf-sdc = { git = "https://github.com/alexmoon/nrf-sdc", rev = "11d5c3c", features = [
     "defmt",
@@ -61,6 +62,8 @@ rand = { version = "0.8.4", default-features = false }
 rand_core = { version = "0.6" }
 rand_chacha = { version = "0.3", default-features = false }
 
+#cyw43 = { version = "0.5", features = ["defmt", "firmware-logs", "bluetooth"] }
+#cyw43-pio = { version = "0.8.0", features = ["defmt"] }
 
 [build-dependencies]
 xz2 = "0.1.7"
