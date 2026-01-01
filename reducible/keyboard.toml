@@ -125,7 +125,7 @@ ble_profiles_num = 3
 cut="WM(X, LCtrl)"
 copy="WM(C, LCtrl)"
 paste="WM(V, LCtrl)"
-paste_noformat="WM(V, LCtrl|LShift)"
+paste_no_fmt="WM(V, LCtrl|LShift)"
 find="WM(F, LCtrl)"
 find_global="WM(F, LCtrl|LShift)"
 replace="WM(H, LCtrl)"
@@ -134,19 +134,37 @@ undo="WM(Z, LCtrl)"
 redo="WM(Y, LCtrl)"
 lock="WM(L, LGui)"
 comment="WM(Slash, LCtrl)"
+terminal="WM(Grave, LCtrl)"
 
 hK="LT(sym_hun, K, HRM)"
 K="LT(sym, K, HRM)"
-S="MT(S, LAlt, HRM)"
+hS="LT(sym_hun, S, HRM)"
+S="LT(sym, S, HRM)"
 T="MT(T, LCtrl, HRM)"
 L="MT(L, LShift, HRM)"
 V="TD(7)" #toggle num layer
 J="TD(8)" #toggle nav layer
 N="MT(N, RShift, HRM)"
 A="MT(A, RCtrl, HRM)"
-E="MT(E, RAlt, HRM)"
+E="LT(sym, E, HRM)"
+hE="LT(sym_hun, E, HRM)"
 I="LT(sym, I, HRM)"
-hI="LT(sym_hun, I, HRM)"
+hI="TD(2)" #"LT(sym_hun, TD(2), HRM)"
+
+delete="LT(num, Delete, FH)" 
+space="LT(nav, Space, FH)"
+enter="LT(sym, Enter, FH)"
+tab="LT(sym, Tab, FH)"
+backspace="LT(nav, Backspace, FH)"
+esc="LT(num, Esc, FH)" 
+fn="LT(nav, Tab, FH)"
+
+# esc="LT(mouse, Esc, FH)" 
+# space="LT(nav, Space, FH)"
+# tab="LT(num, Tab, FH)"
+# enter="LT(sym, Enter, FH)"
+# backspace="LT(nav, Backspace, FH)"
+# delete="LT(num, Delete, FH)" 
 
 [layout]
 rows = 5
@@ -154,155 +172,130 @@ cols = 18
 layers = 9
 
 matrix_map = """
- (0, 5, L) (0, 4, L)    (0, 3, L)    (0, 2, L)    (0, 1, L)    (0, 0, L)                         (0, 9, R) (0, 10, R)    (0, 11, R)    (0, 12, R)    (0, 13, R)    (0, 14, R) 
+ (0, 5, L) (0, 4, L)    (0, 3, L)    (0, 2, L)    (0, 1, L)    (0, 0, L)                         (0, 9, R) (0, 10, R)    (0, 11, R)    (0, 12, R)    (0, 13, R)
            (1, 4, L)                                                                                                                                 (1, 13, R)
- (2, 5, L) (2, 4, L)    (1, 3, L)    (1, 2, L)    (1, 1, L)    (1, 0, L)                         (1, 9, R) (1, 10, R)    (1, 11, R)    (1, 12, R)    (2, 13, R)    (2, 14, R)
- (3, 5, L) (3, 4, L)    (2, 3, L)    (2, 2, L)    (2, 1, L)    (2, 0, L)                         (2, 9, R) (2, 10, R)    (2, 11, R)    (2, 12, R)    (3, 13, R)    (3, 14, R)
- (4, 5, L) (4, 4, L)    (3, 3, L)    (3, 2, L)    (3, 1, L)    (3, 0, L)                         (3, 9, R) (3, 10, R)    (3, 11, R)    (3, 12, R)    (4, 13, R)    (4, 14, R)
+ (2, 5, L) (2, 4, L)    (1, 3, L)    (1, 2, L)    (1, 1, L)    (1, 0, L)                         (1, 9, R) (1, 10, R)    (1, 11, R)    (1, 12, R)    (2, 13, R)
+ (3, 5, L) (3, 4, L)    (2, 3, L)    (2, 2, L)    (2, 1, L)    (2, 0, L)                         (2, 9, R) (2, 10, R)    (2, 11, R)    (2, 12, R)    (3, 13, R)
+ (4, 5, L) (4, 4, L)    (3, 3, L)    (3, 2, L)    (3, 1, L)    (3, 0, L)                         (3, 9, R) (3, 10, R)    (3, 11, R)    (3, 12, R)    (4, 13, R)
                         (4, 3, L)                 (4, 1, L)    (4, 0, L) (4, 2, L)    (4, 11, R) (4, 9, R) (4, 10, R)                  (4, 12, R)
- (0, 8, L) (0, 7, L) (0, 6, L)                                                                                                               (0, 15, R) (0, 16, R) (0, 17, R)
- (1, 8, L) (1, 7, L) (1, 6, L)                                                                                                               (1, 15, R) (1, 16, R) (1, 17, R)
- (2, 8, L) (2, 7, L) (2, 6, L)                                                                                                                                               
- (3, 8, L) (3, 7, L) (3, 6, L)                                                                                                                          (3, 16, R)
- (4, 8, L) (4, 7, L) (4, 6, L)                                                                                                               (4, 15, R) (4, 16, R) (4, 17, R)
+ (0, 8, L) (0, 7, L) (0, 6, L)                                                                   (0, 14, R)    (0, 15, R) (0, 16, R) (0, 17, R)
+ (1, 8, L) (1, 7, L) (1, 6, L)                                                                                 (1, 15, R) (1, 16, R) (1, 17, R)
+ (2, 8, L) (2, 7, L) (2, 6, L)                                                                   (2, 14, R)                                                 
+ (3, 8, L) (3, 7, L) (3, 6, L)                                                                   (3, 14, R)               (3, 16, R)
+ (4, 8, L) (4, 7, L) (4, 6, L)                                                                   (4, 14, R)    (4, 15, R) (4, 16, R) (4, 17, R)
 """
-
-# matrix_map = """
-# (2, 5, L) (2, 4, L)    (1, 3, L)    (1, 2, L)    (1, 1, L)    (1, 0, L)                         (1, 9, R) (1, 10, R)    (1, 11, R)    (1, 12, R)    (2, 13, R)    (2, 14, R)
-# (3, 5, L) (3, 4, L :H) (2, 3, L :H) (2, 2, L :H) (2, 1, L :H) (2, 0, L)                         (2, 9, R) (2, 10, R :H) (2, 11, R :H) (2, 12, R :H) (3, 13, R :H) (3, 14, R)
-# (4, 5, L) (4, 4, L)    (3, 3, L)    (3, 2, L)    (3, 1, L)    (3, 0, L)                         (3, 9, R) (3, 10, R)    (3, 11, R)    (3, 12, R)    (4, 13, R)    (4, 14, R)
-#                                                  (4, 1, L)    (4, 0, L) (4, 2, L)    (4, 11, R) (4, 9, R) (4, 10, R)
-# """
-# """
-# (0, 8, L) (0, 7, L) (0, 6, L)  (0, 5, L)  (0, 4, L) (0, 3, L) (0, 2, L) (0, 1, L) (0, 0, L)    (0, 9, R) (0, 10, R) (0, 11, R) (0, 12, R) (0, 13, R) (0, 14, R) (0, 15, R) (0, 16, R) (0, 17, R)
-# (1, 8, L) (1, 7, L) (1, 6, L)  (1, 5, L)  (1, 4, L)                                                                                       (1, 13, R) (1, 14, R) (1, 15, R) (1, 16, R) (1, 17, R)
-# (2, 8, L) (2, 7, L) (2, 6, L)                                                                                                                                   (2, 15, R) (2, 16, R) (2, 17, R)
-# (3, 8, L) (3, 7, L) (3, 6, L)                                                                                                                                   (3, 15, R) (3, 16, R) (3, 17, R)
-# (4, 8, L) (4, 7, L) (4, 6, L)                                                                                                                                   (4, 15, R) (4, 16, R) (4, 17, R)
-# """
-
-# """
-# (0, 8, L) (0, 7, L) (0, 6, L)       (0, 15, R) (0, 16, R) (0, 17, R)
-# (1, 8, L) (1, 7, L) (1, 6, L)       (1, 15, R) (1, 16, R) (1, 17, R)
-# (2, 8, L) (2, 7, L) (2, 6, L)       (2, 15, R) (2, 16, R) (2, 17, R)
-# (3, 8, L) (3, 7, L) (3, 6, L)       (3, 15, R) (3, 16, R) (3, 17, R)
-# (4, 8, L) (4, 7, L) (4, 6, L)       (4, 15, R) (4, 16, R) (4, 17, R)
-# (1, 4, L) (0, 4, L) (0, 3, L) (0, 2, L)   (0, 1, L) (0, 0, L)       (0, 9, R) (0, 10, R)   (0, 11, R) (0, 12, R) (0, 13, R) (1, 13, R) 
-# """
-
-
-
+ 
 [[layer]]
 name = "eng" #0
 keys ="""
-Escape     F2 F3 F4 F5 F6                             F7 F8 F9 F10 F11 Backspace
+Escape     F2 F3 F4 F5 F6                             F7 F8 F9 F10 F11 
            F1                                                      F12   
-Tab        G  Y  M  R  B                              W  C  O  U   @;   Enter
-LShift    @K  S @T  L  V                              J @N @A  E   @I   RShift
-LCtrl      F  D  P  H  Q                              X  Z  @, @'   @.   RCtrL
-LAlt LT(mouse, Esc, FH) LT(nav, Space, FH) Tab        LT(sym, Enter, FH) LT(nav, Backspace, FH) Delete LGui
-Escape Minus Equal                                                              Insert Home PageUp
-Kc7    Kc8   Kc9                                                                Delete End  PageDown
-Kc4    Kc5   Kc6                                                                
-Kc1    Kc2   Kc3                                                                       Up
-Kp0    KpDot KpSlash                                                            Left   Down Right
+@fn        G  Y  M  R  B                              W  C  O  U   @;  
+LShift    @K @S @T @L  V                              J @N @A  @E  @I   
+LCtrl      F  D  P  H  Q                              X  Z  @, @'  @.   
+LAlt              @delete @backspace @enter           @tab @space @esc LGui
+Escape Minus Equal                                    Backspace     Insert Home PageUp
+Kc7    Kc8   Kc9                                                    Delete End  PageDown
+Kc4    Kc5   Kc6                                      Enter             
+Kc1    Kc2   Kc3                                      RShift               Up
+Kp0    KpDot KpSlash                                  RCtrl         Left   Down Right
 """
 
 [[layer]]
 name = "hun" #1
 keys ="""
-Escape     F2 F3 F4 F5 F6                              F7 F8    F9    F10   F11   Backspace
-           F1                                                               F12
-Tab        G  Y  M  R  B                               W  TD(5) TD(3) TD(4) TD(6) Enter
-LShift    @hK S @T  L  V                               J @N     @A    TD(1) TD(2) RShift
-LCtrl      F  D  P  H  Q                               X  Z     @,    @á    @.    RCtrl
-LAlt LT(mouse, Esc, FH) LT(nav, Space, FH) Tab         LT(sym_hun, Enter, FH) LT(nav, Backspace, FH) Delete LGui
-Escape Minus Equal                                                              Insert Home PageUp
-Kc7    Kc8   Kc9                                                                Delete End  PageDown
-Kc4    Kc5   Kc6                                                                
-Kc1    Kc2   Kc3                                                                       Up
-Kp0    KpDot KpSlash                                                            Left   Down Right
+Escape     F2  F3  F4 F5 F6                              F7 F8    F9    F10   F11   
+           F1                                                                 F12
+@fn        G   Y   M  R  B                               W  TD(5) TD(3) TD(4) TD(6) 
+LShift    @hK @hS @T @L  V                               J @N    @A    @hE   @hI
+LCtrl      F   D   P  H  Q                               X  Z    @,    @á    @.
+LAlt              @delete @backspace @enter           @tab @space @esc LGui
+Escape Minus Equal                                       Backspace     Insert Home PageUp
+Kc7    Kc8   Kc9                                                       Delete End  PageDown
+Kc4    Kc5   Kc6                                         Enter             
+Kc1    Kc2   Kc3                                         RShift               Up
+Kp0    KpDot KpSlash                                     RCtrl         Left   Down Right
 """
 
 [[layer]]
 name = "qwerty" #2
 keys ="""
-Escape     F2 F3 F4 F5 F6                              F7 F8 F9 F10 F11 Backspace
-           F1                                                       F12
-Tab        Q  W  E  R  T                               Y  U  I  O   P   Enter
-LShift     A  S  D  F  G                               H  J  K  L  @;   RShift
-LCtrl      Z  X  C  V  B                               N  M @, @.  @/   RCtrl
-LAlt LT(mouse, Esc, FH) LT(nav, Space, FH) Tab         LT(sym, Enter, FH) LT(nav, Backspace, FH) Delete LGui
-Escape Minus Equal                                                              Insert Home PageUp
-Kc7    Kc8   Kc9                                                                Delete End  PageDown
-Kc4    Kc5   Kc6                                                                
-Kc1    Kc2   Kc3                                                                       Up
-Kp0    KpDot KpSlash                                                            Left   Down Right
+Escape     F2 F3 F4 F5 F6                                            F7 F8 F9 F10 F11 
+           F1                                                                     F12
+@fn        Q  W  E  R  T                                             Y  U  I  O   P   
+LShift     LT(sym, A, HRM)  S  MT(D, LCtrl)  MT(F, LShift)  G        H  MT(J, RShift) MT(K, RCtrl)  L  LT(sym, Semicolon, HRM)   
+LCtrl      Z  X  C  V  B                                             N  M @, @.  @/   
+LAlt              @delete @backspace @enter           @tab @space @esc LGui
+Escape Minus Equal                                       Backspace     Insert Home PageUp
+Kc7    Kc8   Kc9                                                       Delete End  PageDown
+Kc4    Kc5   Kc6                                         Enter             
+Kc1    Kc2   Kc3                                         RShift               Up
+Kp0    KpDot KpSlash                                     RCtrl         Left   Down Right
 """
 
 [[layer]]
-name = "nav" #4
+name = "num" #3
 keys ="""
-Escape F2     F3     F4            F5        F6                            F7         F8    F9     F10             F11   Backspace
-       F1                                                                                                          F12
-Tab    @redo  @find  @find_global  @replace  @replace_global               @cut       @copy @paste @paste_noformat @undo Enter
-LShift LGui   LAlt   LCtrl         LShift    @comment                      WwwForward Left  UP     Down            Right RShift
-LCtrl  @undo  @cut   @copy         @paste    @lock                         WwwBack    Home  PageUp PageDown        End   RCtrl
-LAlt LT(mouse, Esc, FH) LT(nav, Space, FH) Tab                             LT(sym, Enter, FH) LT(nav, Backspace, FH) Delete LGui
-Escape Minus Equal                                                              Insert Home PageUp
-Kc7    Kc8   Kc9                                                                Delete End  PageDown
-Kc4    Kc5   Kc6                                                                
-Kc1    Kc2   Kc3                                                                       Up
-Kp0    KpDot KpSlash                                                            Left   Down Right
+Escape     F2 F3 F4 F5 D                             F7 F8 F9 F10 F11 
+           F1                                                     F12
+@fn    NumLock      Kc7            Kc8             Kc9             Equal     KpPlus  Kp7             Kp8            Kp9            KpAsterisk 
+LShift Insert       MT(KC4, LAlt)  MT(Kc5, LCtrl)  MT(Kc6, LShift) Minus     KpMinus MT(Kp4, RShift) MT(Kp5, RCtrl) MT(Kp6, LAlt)  KpSlash    
+LCtrl  Pause        Kc1            Kc2             Kc3             Kc0       Kp0     Kp1             Kp2            Kp3            KpDot      
+LAlt              @delete @backspace @enter           @tab @space @esc LGui
+Escape Minus Equal                                       Backspace     Insert Home PageUp
+Kc7    Kc8   Kc9                                                       Delete End  PageDown
+Kc4    Kc5   Kc6                                         Enter             
+Kc1    Kc2   Kc3                                         RShift               Up
+Kp0    KpDot KpSlash                                     RCtrl         Left   Down Right
 """
 
 [[layer]]
-name = "mouse" #+media #5
+name = "nav" #+media #4 
 keys ="""
-Escape      F2       F3      F4         F5          F6                     F7              F8             F9             F10              F11              Backspace
-            F1                                                                                                                            F12
-TO(eng)     CapsLock NumLock ScrollLock MyComputer  AudioVolUp             @cut            @copy          @paste         @paste_noformat  @undo            Enter
-TO(hun)     LGui     LAlt    LCtrl      LShift      AudioMute              BrightnessUp    MouseWheelLeft MouseWheelUp   MouseWheelDown   MouseWheelRight  RShift
-TO(qwerty)  @undo    @cut    @copy      @paste      AudioVolDown           BrightnessDown  MouseLeft      MouseUp        MouseDown        MouseRight       RCtrl
-LAlt LT(mouse, Esc, FH) LT(nav, Space, FH) Tab                             LT(sym, Enter, FH) LT(nav, Backspace, FH) Delete LGui
-Escape Minus Equal                                                              Insert Home PageUp
-Kc7    Kc8   Kc9                                                                Delete End  PageDown
-Kc4    Kc5   Kc6                                                                
-Kc1    Kc2   Kc3                                                                       Up
-Kp0    KpDot KpSlash                                                            Left   Down Right
+@terminal TO(eng) TO(hun) TO(qwerty) BrightnessDown BrightnessUp        AudioVolDown AudioVolUp AudioMute PrintScreen Pause
+          Insert                                                                                                      NumLock                                                                                               
+CapsLock  @redo  @find  @find_global  @replace  @replace_global               @cut       @copy @paste @paste_no_fmt   @undo
+LShift    LGui   LAlt   LCtrl         LShift    @comment                      WwwForward Left  UP     Down            Right
+LCtrl     @undo  @cut   @copy         @paste    @lock                         WwwBack    Home  PageUp PageDown        End  
+LAlt              @delete @backspace @enter           @tab @space @esc LGui
+Escape Minus Equal                                       ScrollLock    WwwForward     BrightnessUp   AudioVolUp
+Kc7    Kc8   Kc9                                                       WwwBack        BrightnessDown AudioVolDown
+Kc4    Kc5   Kc6                                         Enter             
+Kc1    Kc2   Kc3                                         RShift                       MouseWheelUp
+Kp0    KpDot KpSlash                                     RCtrl         MouseWheelLeft MouseWheelDown MouseWheelRight
 """
 
 [[layer]]
 name = "sym" #6
 keys ="""
-Escape F2 F3 F4 F5 F6                                    F7 F8 F9 F10 F11 Backspace
+Escape F2 F3 F4 F5 F6                                    F7 F8 F9 F10 F11 
        F1                                                             F12
-Tab    @~ @` @? @! @#                                    @+ @{ @< @} @* Enter
-LShift @' @" @: @; @_                                    @- @( @= @) @/ RShift
-LCtrl  @$ @@ @& @| @\\                                   @^ @[ @> @] @% RCtrl
-LAlt LT(mouse, Esc) LT(nav, Space) Tab                   LT(sym, Enter) LT(nav, Backspace) Delete LGui
-Escape Minus Equal                                                              Insert Home PageUp
-Kc7    Kc8   Kc9                                                                Delete End  PageDown
-Kc4    Kc5   Kc6                                                                
-Kc1    Kc2   Kc3                                                                       Up
-Kp0    KpDot KpSlash                                                            Left   Down Right
+@fn    @~ @` @? @! @#                                    @+ @{ @< @} @* 
+LShift @' @" @: @; @_                                    @- @( @= @) @/ 
+LCtrl  @$ @@ @& @| @\\                                   @^ @[ @> @] @% 
+LAlt              @delete @backspace @enter           @tab @space @esc LGui
+Escape Minus Equal                                       Backspace     Insert Home PageUp
+Kc7    Kc8   Kc9                                                       Delete End  PageDown
+Kc4    Kc5   Kc6                                         Enter             
+Kc1    Kc2   Kc3                                         RShift               Up
+Kp0    KpDot KpSlash                                     RCtrl         Left   Down Right
 """
 
 
 [[layer]]
 name = "sym_hun" #7
 keys ="""
-Escape F2  F3  F4  F5  F6                                F7  F8  F9  F10 F11 Backspace
+Escape F2  F3  F4  F5  F6                                F7  F8  F9  F10 F11 
        F1                                                                F12
-Tab    @h~ @h` @h? @h! @h#                               @h+ @h{ @h< @h} @h* Enter
-LShift @h' @h" @h: @h; @h_                               @h- @h( @h= @h) @h/ RShift
-LCtrl  @h$ @h@ @h& @h| @h\\                              @h^ @h[ @h> @h] @h% RCtrl
-LAlt LT(mouse, Esc) LT(nav, Space) Tab                   LT(sym, Enter) LT(nav, Backspace) Delete LGui
-Escape Minus Equal                                                              Insert Home PageUp
-Kc7    Kc8   Kc9                                                                Delete End  PageDown
-Kc4    Kc5   Kc6                                                                
-Kc1    Kc2   Kc3                                                                       Up
-Kp0    KpDot KpSlash                                                            Left   Down Right
+@fn    @h~ @h` @h? @h! @h#                               @h+ @h{ @h< @h} @h* 
+LShift @h' @h" @h: @h; @h_                               @h- @h( @h= @h) @h/ 
+LCtrl  @h$ @h@ @h& @h| @h\\                              @h^ @h[ @h> @h] @h% 
+LAlt              @delete @backspace @enter           @tab @space @esc LGui
+Escape Minus Equal                                       Backspace     Insert Home PageUp
+Kc7    Kc8   Kc9                                                       Delete End  PageDown
+Kc4    Kc5   Kc6                                         Enter             
+Kc1    Kc2   Kc3                                         RShift               Up
+Kp0    KpDot KpSlash                                     RCtrl         Left   Down Right
 """
 
 [behavior.combo]
@@ -316,6 +309,8 @@ combos = [
 forks = [
   # Shift + ' ' output '_' key
   { trigger = "Space", negative_output = "Space", positive_output = "WM(Minus, LShift)", match_any = "LShift|RShift" },  
+  #{ trigger = "Esc", negative_output = "Esc", positive_output = "Grave", match_any = "LShift|RShift" },
+  #{ trigger = "Esc", negative_output = "Esc", positive_output = "WM(Grave, LCtrl)", match_any = "LCtrl|RCtrl" },
 ]
 
 [behavior.morse.profiles]
