@@ -136,27 +136,31 @@ lock="WM(L, LGui)"
 comment="WM(Slash, LCtrl)"
 terminal="WM(Grave, LCtrl)"
 
-hK="LT(sym_hun, K, HRM)"
-K="LT(sym, K, HRM)"
-hS="LT(sym_hun, S, HRM)"
-S="LT(sym, S, HRM)"
+hK="K" # "LT(sym_hun, K, HRM)"
+K="K" # "LT(sym, K, HRM)"
+hS="S" # "LT(sym_hun, S, HRM)"
+S="S" # "LT(sym, S, HRM)"
 T="MT(T, LCtrl, HRM)"
 L="MT(L, LShift, HRM)"
 V="TD(7)" #toggle num layer
 J="TD(8)" #toggle nav layer
 N="MT(N, RShift, HRM)"
 A="MT(A, RCtrl, HRM)"
-E="LT(sym, E, HRM)"
-hE="LT(sym_hun, E, HRM)"
-I="LT(sym, I, HRM)"
+E="E" # "LT(sym, E, HRM)"
+hE="E" # "LT(sym_hun, E, HRM)"
+I="I"   # "LT(sym, I, HRM)"
 hI="TD(2)" #"LT(sym_hun, TD(2), HRM)"
 
 delete="LT(num, Delete, FH)" 
-space="LT(nav, Space, FH)"
-enter="LT(sym, Enter, FH)"
-tab="LT(sym, Tab, FH)"
-backspace="LT(nav, Backspace, FH)"
+backspace="LT(sym, Backspace, FH)"
+hBackspace="LT(sym_hun, Backspace, FH)"
+enter="LT(nav, Enter, FH)"
+
+tab="LT(nav, Tab, FH)"
+space="LT(sym, Space, FH)"
+hSpace="LT(sym_hun, Space, FH)"
 esc="LT(num, Esc, FH)" 
+
 fn="LT(nav, Tab, FH)"
 
 # esc="LT(mouse, Esc, FH)" 
@@ -209,7 +213,7 @@ Escape     F2  F3  F4 F5 F6                              F7 F8    F9    F10   F1
 @fn        G   Y   M  R  B                               W  TD(5) TD(3) TD(4) TD(6) 
 LShift    @hK @hS @T @L  V                               J @N    @A    @hE   @hI
 LCtrl      F   D   P  H  Q                               X  Z    @,    @á    @.
-LAlt              @delete @backspace @enter           @tab @space @esc LGui
+LAlt              @delete @hBackspace @enter     @tab @hSpace @esc           LGui
 Escape Minus Equal                                       Backspace     Insert Home PageUp
 Kc7    Kc8   Kc9                                                       Delete End  PageDown
 Kc4    Kc5   Kc6                                         Enter             
@@ -290,7 +294,7 @@ Escape F2  F3  F4  F5  F6                                F7  F8  F9  F10 F11
 @fn    @h~ @h` @h? @h! @h#                               @h+ @h{ @h< @h} @h* 
 LShift @h' @h" @h: @h; @h_                               @h- @h( @h= @h) @h/ 
 LCtrl  @h$ @h@ @h& @h| @h\\                              @h^ @h[ @h> @h] @h% 
-LAlt              @delete @backspace @enter           @tab @space @esc LGui
+LAlt      @delete @hBackspace @enter              @tab @hSpace @esc           LGui
 Escape Minus Equal                                       Backspace     Insert Home PageUp
 Kc7    Kc8   Kc9                                                       Delete End  PageDown
 Kc4    Kc5   Kc6                                         Enter             
